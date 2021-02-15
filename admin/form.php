@@ -473,11 +473,13 @@ $result = $conn->query($sql);
                         unset($_SESSION['success_message']);
                     }
                     ?><br>
-                    <div id="progress container">
+                    <div class="container">
+                    <div id="progress">
             <div id="bar"></div>
             <div id="percent">0%</div >
     </div>
-    <div id="message"></div><br />
+    <div id="message"></div>
+    </div><br>
                             <?php
                             if ($result->num_rows > 0) {
                                 // output data of each row
