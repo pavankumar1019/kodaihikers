@@ -25,7 +25,7 @@ include '../../db_connection/db.php';
                                             </div>
 
                                             <div>
-                                                <button type="button" name="save" class="buttonload btn btn-outline-primary btn-lg btn-block"  id="upload_carousels"> 
+                                                <button type="button" name="save" class="buttonload btn btn-outline-primary btn-lg btn-block"  id=""> 
                                       <i class="loder fa fa-refresh fa-spin"></i>Change Image</button>
                                             </div>
                                         </form>
