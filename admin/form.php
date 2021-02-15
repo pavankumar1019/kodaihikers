@@ -498,7 +498,7 @@ $result = $conn->query($sql);
                                     <input type="file" name="fileToUpload" id="fileToUpload" class="form-control form-control-lg">
   </div>   
                                     <div class="form-group">
-                                    <input type="submit" value="Upload Image" name="submit"  class="btn btn-success ">
+                                    <input type="submit" value="Upload Image" name="submit" id="save"  class="btn btn-success ">
   </div>   
 </form>
                                         <br>
@@ -1506,7 +1506,12 @@ $result = $conn->query($sql);
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
-
+<script>
+$("#save").click(function(){
+  $("#save").addClass("btn-dark");
+  $("div").removeClass("btn-success");
+});
+</script>
 </body>
 
 </html>
