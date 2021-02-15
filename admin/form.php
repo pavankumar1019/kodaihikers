@@ -521,8 +521,9 @@ $result = $conn->query($sql);
                                     </div>
                                     <div class="card-body card-block">
                                         <div class="form-group">
-                                            <label for="company" class=" form-control-label">Company</label>
-                                            <input type="text" id="company" placeholder="Enter your company name" class="form-control">
+                                            <label for="company" class=" form-control-label">Choose Image</label>
+                                            <input type='file' onchange="readURL(this);" />
+    <img id="blah" src="#" class="width:300px;" alt="your image" />
                                         </div>
                                         <div class="form-group">
                                             <label for="vat" class=" form-control-label">VAT</label>
@@ -1511,6 +1512,23 @@ $("#save").click(function(){
   $("#save").addClass("btn-dark");
   $("div").removeClass("btn-success");
 });
+
+</script>
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                   
+                    
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 </script>
 </body>
 
