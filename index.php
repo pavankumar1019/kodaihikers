@@ -1,5 +1,5 @@
 <?php
-include '../db_connection/db.php';
+include 'db_connection/db.php';
 $sql = "SELECT * FROM kh_dynamic_scrolling_banners";
 $result = $conn->query($sql);
 
