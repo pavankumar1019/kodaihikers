@@ -493,7 +493,7 @@ $result = $conn->query($sql);
                                             </div>
 
                                             <div>
-                                                <button type="submit" name="save" class="buttonload btn btn-outline-primary btn-lg btn-block"  id="upload_carousels"> 
+                                                <button type="submit" name="submit" class="buttonload btn btn-outline-primary btn-lg btn-block"  id="upload_carousels"> 
                                       <i class="loder fa fa-refresh fa-spin"></i>Change Image</button>
                                             </div>
                                         </form>
