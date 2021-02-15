@@ -46,11 +46,11 @@ if ($uploadOk == 0) {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
    $first_name=$_FILES["fileToUpload"]["name"];
-    $stu_query = "UPDATE `slider_img` SET `path`='" . $first_name . "' WHERE id ='" . $id . "'";
+    $stu_query = "UPDATE `kh_dynamic_scrolling_banners` SET `path`='" . $first_name . "' WHERE id ='" . $id . "'";
 $result = mysqli_query($conn, $stu_query);
 
 if ($result) {
-    header('location:index.php');
+    header('location: form.php');
 }
   } else {
     echo "Sorry, there was an error uploading your file.";
