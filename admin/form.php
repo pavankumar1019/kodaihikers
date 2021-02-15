@@ -520,10 +520,11 @@ $result = $conn->query($sql);
                                         <small> Add Images & information to Gallery</small>
                                     </div>
                                     <div class="card-body card-block">
+                                    <div class="form-group">
+                                    <img id="blah" style="width:300px;display:none;" src="#" alt="your image" />
+                                        </div>
                                         <div class="form-group">
                                             <label for="company" class=" form-control-label">Choose Image</label>
-                                            
-    <img id="blah" style="width:300px;display:none;" src="#" alt="your image" /><br>
     <input type='file' onchange="readURL(this);" />
                                         </div>
                                         <div class="form-group">
