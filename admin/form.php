@@ -39,8 +39,7 @@ $result = $conn->query($sql);
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
- <script src="//oss.maxcdn.com/jquery.form/3.50/jquery.form.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
       .buttonload {
 /* Green background */
@@ -57,7 +56,6 @@ $result = $conn->query($sql);
   visibility: hidden;
 }
         </style>
-   
 </head>
 
 <body class="animsition">
@@ -473,15 +471,8 @@ $result = $conn->query($sql);
                         <?php
                         unset($_SESSION['success_message']);
                     }
-                    ?><br>
-                    <div class="container">
-                  <!-- Area to display the percent of progress -->
- 
- <div id='percent'></div>
- 
- <!-- area to display a message after completion of upload --> 
- <div id='status'></div>
-    </div><br>
+                    ?>
+                    
                             <?php
                             if ($result->num_rows > 0) {
                                 // output data of each row
@@ -501,13 +492,13 @@ $result = $conn->query($sql);
   </div>
                              
                                   
-                                    <form action="upload.php" method="post" enctype="multipart/form-data" id="myform">
+                                    <form action="upload.php" method="post" enctype="multipart/form-data">
                                     <input type="hidden" name="id" value="<?php echo $row["id"];?>">
                                     <div class="form-group">
                                     <input type="file" name="fileToUpload" id="fileToUpload" class="form-control form-control-lg">
   </div>   
                                     <div class="form-group">
-                                    <input type="submit" value="Upload Image" name="submit" id="send" class="btn btn-success ">
+                                    <input type="submit" value="Upload Image" name="submit"  class="btn btn-success ">
   </div>   
 </form>
                                         <br>
@@ -1515,31 +1506,7 @@ $result = $conn->query($sql);
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
-    <script>
- 
- $(function() {
- $(document).ready(function(){
- var percent = $('#percent');
- var status = $('#status');
- 
- $('#myform').ajaxForm({
- beforeSend: function() {
- status.empty();
- var percentVal = '0%';
- percent.html(percentVal);
- },
- uploadProgress: function(event, position, total, percentComplete) {
- var percentVal = percentComplete + '%';
- percent.html(percentVal);
- },
- complete: function(xhr) {
- status.html(xhr.responseText);
- }
- });
- });
- });
- </script>
- 
+
 </body>
 
 </html>
