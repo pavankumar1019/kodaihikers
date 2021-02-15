@@ -480,22 +480,14 @@ $result = $conn->query($sql);
                                             <h3 class="text-center title-2">Home page Carousels</h3>
                                         </div>
                                         <hr>
-                                        <form action="./upload_carousels/upload.php" method="post" id="my_form" novalidate="novalidate">
-                                            <div class="form-group">
+                                        <form action="upload_carousels/upload.php" method="post" id="my_form" novalidate="novalidate">
+                                           
                                                <img class="img-fluid" style="width: 300px;" src="../images/<?=$row['path'];?>" alt="">
-                                               <input  type="hidden" name="id" value="<?=$row['id'];?>" />
-                                            </div>
-                                            <div class="form-group has-success">
-                                                <label for="cc-name" class="control-label mb-1">Choose Image To Change</label>
-                                                
-                                                <input type="file" name="fileToUpload" id="fileToUpload" class="form-control form-control-lg">
-                                                <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
-                                            </div>
-
-                                            <div>
-                                                <button type="submit" name="submit" class="buttonload btn btn-outline-primary btn-lg btn-block"  id="upload_carousels"> 
-                                      <i class="loder fa fa-refresh fa-spin"></i>Change Image</button>
-                                            </div>
+                                               <form action="upload.php" method="post" enctype="multipart/form-data">
+                                    <input type="hidden" name="id" value="<?php echo $row["id"];?>">
+  <input type="file" name="fileToUpload" id="fileToUpload" class="form-control form-control-lg">
+  <input type="submit" value="Upload Image" name="submit"  class="btn btn-success">
+</form>
                                         </form>
                                         <br>
                                         <span  id="err" style="color: rgb(2, 172, 121);visibility: hidden;" class="border border-success"></span>
