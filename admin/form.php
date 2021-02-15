@@ -481,7 +481,7 @@ $result = $conn->query($sql);
                                         </div>
                                         <hr>
                                         <div class="form-group">
-   <img src="../images/<?php  echo $row["path"];?>" class="img-fluid" style="width:300px;" alt="">
+   <img src="../dynamic_scrolling_banners/<?php  echo $row["path"];?>" class="img-fluid" style="width:300px;" alt="">
   </div>
                              
                                   
