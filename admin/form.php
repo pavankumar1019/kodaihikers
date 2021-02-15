@@ -523,8 +523,7 @@ $result = $conn->query($sql);
                                         <small> Add Images & information to Gallery</small>
                                     </div>
                                     <div class="card-body card-block">
-                                        <form action="upload_image_gallery.php" method="post">
-                                        <div class="form-group">
+                                    <div class="form-group">
                                         <?php if (isset($_SESSION['message2']) && !empty($_SESSION['message2'])) { ?>
                         <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message2']; ?></div>
                         <?php
@@ -532,6 +531,8 @@ $result = $conn->query($sql);
                     }
                     ?>
                                         </div>
+                                        <form action="upload_image_gallery.php" method="post">
+                                        
                                         <div class="form-group">
                                        <img id="blah" style="width:300px;display:none;" src="#" alt="your image" />
                                         </div>
