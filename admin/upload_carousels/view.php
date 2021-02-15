@@ -16,7 +16,7 @@ include '../../db_connection/db.php';
                                         <hr>
                                         <form action="" method="post" novalidate="novalidate">
                                             <div class="form-group">
-                                               <img class="img-fluid" style="width: 300px;" src="../../images/<?=$row['name'];?>" alt="">
+                                               <img class="img-fluid" style="width: 300px;" src="../images/<?=$row['name'];?>" alt="">
                                             </div>
                                             <div class="form-group has-success">
                                                 <label for="cc-name" class="control-label mb-1">Choose Image To Change</label>
