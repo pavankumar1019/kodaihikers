@@ -1,5 +1,5 @@
 <?php
-include("./db/db.php");
+include("../../db_connection/db.php");
 $target_dir = "../../images/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
