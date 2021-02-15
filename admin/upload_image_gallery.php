@@ -47,7 +47,7 @@ if ($uploadOk == 0) {
   if (move_uploaded_file($_FILES["fileToUpload1"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload1"]["name"])). " has been uploaded.";
    $first_name=$_FILES["fileToUpload1"]["name"];
-    $stu_query = "INSERT INTO kh_animated_gallery (path, description) VALUES ('$first_name', '$description')";
+    $stu_query = "INSERT INTO kh_animated_gallery (path,description) VALUES ('$first_name','$description')";
 $result = mysqli_query($conn, $stu_query);
 
 if ($result) {
