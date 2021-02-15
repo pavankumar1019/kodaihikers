@@ -474,7 +474,7 @@ $result = $conn->query($sql);
 ?>
     <div class="col-lg-6">
                                 <div class="card">
-                                    <div class="card-header">Credit Card</div>
+                                    <div class="card-header">Change Carousels</div>
                                     <div class="card-body">
                                         <div class="card-title">
                                             <h3 class="text-center title-2">Home page Carousels</h3>
