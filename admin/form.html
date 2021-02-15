@@ -483,7 +483,7 @@
                                             </div>
                                         </form>
                                         <br>
-                                        <span  id="err" style="color: rgb(2, 172, 121);" class="border border-success"></span>
+                                        <span  id="err" style="color: rgb(2, 172, 121);visibility: hidden;" class="border border-success"></span>
                                     </div>
                                 </div>
                             </div>
@@ -1487,11 +1487,13 @@
             var file_data = $('.uploadimg').prop('files')[0];   
             var form_data = new FormData();
             $(".loder").css("visibility", "visible");
+            $("#loder").css("visibility", "visible");
             $("#upload_carousels").attr("disabled", "disabled");
             var ext = $('.uploadimg').val().split('.').pop().toLowerCase();
             if ($.inArray(ext, ['png','jpg','jpeg']) == -1)   {
                 alert("only jpg and png images allowed");
                 $(".loder").css("visibility", "hidden");
+                $("#loder").css("visibility", "hidden");
                 return;
             }  
             var picsize = (file_data.size);
@@ -1516,11 +1518,13 @@
 					if(dataResult.statusCode==200){
                         $("#upload_carousels").removeAttr("disabled");
 						$("#err").html('Changed Success..!');
-                        $(".loder").css("visibility", "hidden"); 				
+                        $(".loder").css("visibility", "hidden"); 
+                        $("#loder").css("visibility", "hidden");				
 					}
 					else if(dataResult.statusCode==201){
 					   alert("Error occured !");
                        $(".loder").css("visibility", "hidden");
+                       $("#loder").css("visibility", "hidden");
 					}
 					
 				}
