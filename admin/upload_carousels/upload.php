@@ -21,7 +21,7 @@ $path=$_POST["id"];
            
             $result = move_uploaded_file($_FILES['file']['tmp_name'], '../../images/' . $code.'.'.$ext);
             echo json_encode(array("statusCode"=>200 ,'code'=>$code));
-    $sql="UPDATE kh_dynamic_scrolling_banners SET path='$code.$ext' WHERE id=$path"
+    $sql="UPDATE kh_dynamic_scrolling_banners SET path='charan' WHERE id=52"
     mysqli_query($conn, $sql);
         }
         
