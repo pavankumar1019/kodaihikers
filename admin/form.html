@@ -458,7 +458,7 @@
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-                        <div class="row">
+                        <div class="carousels row">
                             <div class="col-lg-6">
                                 <div class="card">
                                     <div class="card-header">Credit Card</div>
@@ -1480,6 +1480,17 @@
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
+    <script>
+        $.ajax({
+            url: "./upload_carousels/view.php",
+            type: "POST",
+            cache: false,
+            success: function(data){
+                alert(data);
+                $('.carousels').html(data); 
+            }
+        });
+    </script>
     <script>
         $(document).ready(function(){
             $('#upload_carousels').on('click', function() {
