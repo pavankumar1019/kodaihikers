@@ -466,6 +466,12 @@ $result = $conn->query($sql);
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="row">
+                        <?php if (isset($_SESSION['success_message']) && !empty($_SESSION['success_message'])) { ?>
+                        <div class="success-message" style="margin-bottom: 20px;font-size: 20px;color: green;"><?php echo $_SESSION['success_message']; ?></div>
+                        <?php
+                        unset($_SESSION['success_message']);
+                    }
+                    ?>
                             <?php
                             if ($result->num_rows > 0) {
                                 // output data of each row

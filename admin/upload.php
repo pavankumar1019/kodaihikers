@@ -50,7 +50,10 @@ if ($uploadOk == 0) {
 $result = mysqli_query($conn, $stu_query);
 
 if ($result) {
+  session_start();
+  $_SESSION['success_message'] = "Contact form saved successfully.";
     header('location: form.php');
+    exit();
 }
   } else {
     echo "Sorry, there was an error uploading your file.";
