@@ -480,7 +480,7 @@ $result = $conn->query($sql);
                                             <h3 class="text-center title-2">Home page Carousels</h3>
                                         </div>
                                         <hr>
-                                        <form action="" method="post" id="myform" novalidate="novalidate">
+                                        <form action="./upload_carousels/upload.php" method="post" id="myform" novalidate="novalidate">
                                             <div class="form-group">
                                                <img class="img-fluid" style="width: 300px;" src="../images/<?=$row['path'];?>" alt="">
                                                <input id="id" type="text" name="id" value="<?=$row['id'];?>" />

@@ -2,7 +2,7 @@
 include '../../db_connection/db.php';
 if($_POST){
     $valid_extensions = array('jpeg', 'jpg','png'); 
-    $path=$_POST["id"];
+    $path= $_POST['id'];
         if ( 0 < $_FILES['file']['error'] ) {
             echo 'Error: ' . $_FILES['file']['error'] . '<br>';
         }
