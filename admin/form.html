@@ -33,6 +33,28 @@
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        .loader {
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid #3498db;
+          width: 120px;
+          height: 120px;
+          -webkit-animation: spin 2s linear infinite; /* Safari */
+          animation: spin 2s linear infinite;
+        }
+        
+        /* Safari */
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        </style>
 </head>
 
 <body class="animsition">
@@ -463,6 +485,7 @@
 
                                             <div>
                                                 <input type="button" name="save" class="btn btn-outline-primary btn-lg btn-block" value="Change Image" id="upload_carousels"> 
+                                                <div class="loader"></div>
                                             </div>
                                         </form>
                                         <br>
@@ -1469,17 +1492,20 @@
                 console.log("test");
             var file_data = $('.uploadimg').prop('files')[0];   
             var form_data = new FormData();
+            $(".loader").css("visibility", "visible");
             $("#upload_carousels").attr("disabled", "disabled");
             var ext = $('.uploadimg').val().split('.').pop().toLowerCase();
             if ($.inArray(ext, ['png','jpg','jpeg']) == -1)   {
                 alert("only jpg and png images allowed");
+                $(".loader").css("visibility", "hidden");
                 return;
             }  
             var picsize = (file_data.size);
             console.log(picsize); /*in byte*/
             if(picsize > 2097152) /* 2mb*/
                 {
-                    alert("Image allowd less than 2 mb")
+                    alert("Image allowd less than 2 mb");
+                    $(".loader").css("visibility", "hidden");
                     return;
                 }
             form_data.append('file', file_data);   
@@ -1495,10 +1521,12 @@
 					var dataResult = JSON.parse(dataResult);
 					if(dataResult.statusCode==200){
                         $("#upload_carousels").removeAttr("disabled");
-						$("#err").html('Changed Success..!'); 				
+						$("#err").html('Changed Success..!');
+                        $(".loader").css("visibility", "hidden"); 				
 					}
 					else if(dataResult.statusCode==201){
 					   alert("Error occured !");
+                       $(".loader").css("visibility", "hidden");
 					}
 					
 				}
