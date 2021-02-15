@@ -487,7 +487,7 @@ $result = $conn->query($sql);
                                             <div class="form-group has-success">
                                                 <label for="cc-name" class="control-label mb-1">Choose Image To Change</label>
                                                 <input id="uploadImage" type="file" accept="image/*" name="image" class="uploadimg"/>
-                                                <input type="text" name="" id="id" value="<?=$row['id'];?>">
+                                                <input type="hidden" name="id" id="id" value="<?=$row['id'];?>">
                                                 <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
                                             </div>
 
