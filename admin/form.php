@@ -522,8 +522,9 @@ $result = $conn->query($sql);
                                     <div class="card-body card-block">
                                         <div class="form-group">
                                             <label for="company" class=" form-control-label">Choose Image</label>
-                                            <input type='file' onchange="readURL(this);" />
-    <img id="blah" style="width:300px;" src="#" alt="your image" />
+                                            
+    <img id="blah" style="width:300px;visibility:hidden;" src="#" alt="your image" /><br>
+    <input type='file' onchange="readURL(this);" />
                                         </div>
                                         <div class="form-group">
                                             <label for="vat" class=" form-control-label">VAT</label>
@@ -1521,7 +1522,7 @@ $("#save").click(function(){
 
             reader.onload = function (e) {
                 $('#blah')
-                    .attr('src', e.target.result);
+                    .attr('src', e.target.result).css('visibility', 'visible');
               
             };
 
