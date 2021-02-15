@@ -483,12 +483,16 @@ $result = $conn->query($sql);
                                         <div class="form-group">
    <img src="../images/<?php  echo $row["path"];?>" class="img-fluid" style="width:300px;" alt="">
   </div>
-                                      
+                             
                                   
                                     <form action="upload.php" method="post" enctype="multipart/form-data">
                                     <input type="hidden" name="id" value="<?php echo $row["id"];?>">
-  <input type="file" name="fileToUpload" id="fileToUpload" class="form-control form-control-lg">
-  <input type="submit" value="Upload Image" name="submit"  class="btn btn-success">
+                                    <div class="form-group">
+                                    <input type="file" name="fileToUpload" id="fileToUpload" class="form-control form-control-lg">
+  </div>   
+                                    <div class="form-group">
+                                    <input type="submit" value="Upload Image" name="submit"  class="btn btn-success ">
+  </div>   
 </form>
                                         <br>
                                         <span  id="err" style="color: rgb(2, 172, 121);visibility: hidden;" class="border border-success"></span>
