@@ -53,7 +53,7 @@ $result = mysqli_query($conn, $stu_query);
 if ($result) {
   session_start();
   $_SESSION['message2'] = "Posted to Image Image Gallery.!";
-    header('location: form.php');
+    header('location: form.php/#gallery');
     exit();
 }
   } else {
