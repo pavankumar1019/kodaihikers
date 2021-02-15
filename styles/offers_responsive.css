@@ -46,7 +46,7 @@
 		width: 100%;
 		height: auto;
 		background: rgb(138,131,252);
-	background: linear-gradient(90deg, rgba(138,131,252,1) 0%, rgba(79,79,226,1) 38%, rgba(0,212,255,1) 100%);
+		background: linear-gradient(90deg,#00A4CCFF 0%,#00A4CCFF 38%, rgba(0,212,255,1) 100%);
 		z-index: 10;
 	}
 	.search_inner

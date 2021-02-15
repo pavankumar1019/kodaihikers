@@ -256,8 +256,8 @@ section
 	left: 0;
 	width: 200%;
 	height: 100%;
-	background: rgb(138,131,252);
-	background: linear-gradient(90deg, rgba(138,131,252,1) 0%, rgba(79,79,226,1) 38%, rgba(0,212,255,1) 100%);
+		background: rgb(138,131,252);
+	background: linear-gradient(90deg,#00A4CCFF 0%,#00A4CCFF 38%, rgba(0,212,255,1) 100%);
 	z-index: -1;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
@@ -630,7 +630,7 @@ section
 .hamburger i
 {
 	font-size: 24px;
-	color: #FFFFFF;
+	color: black;
 }
 .hamburger:hover i
 {
@@ -642,7 +642,7 @@ section
 	width: 100vw;
 	height: 100vh;
 	background: rgb(138,131,252);
-	background: linear-gradient(90deg, rgba(138,131,252,1) 0%, rgba(79,79,226,1) 38%, rgba(0,212,255,1) 100%);
+	background: linear-gradient(90deg,#00A4CCFF 0%,#00A4CCFF 38%, rgba(0,212,255,1) 100%);
 	z-index: 100;
 	opacity: 0;
 	visibility: hidden;
@@ -678,7 +678,7 @@ section
 {
 	display: inline-block;
 	position: relative;
-	font-family: 'Beyond';
+
 	font-size: 36px;
 	color: #FFFFFF;
 	font-weight: 400;
