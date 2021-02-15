@@ -531,7 +531,7 @@ $result = $conn->query($sql);
                     }
                     ?>
                                         </div>
-                                        <form action="upload_image_gallery.php" method="post">
+                                        <form action="upload_image_gallery.php" method="post" enctype="multipart/form-data">
                                         
                                         <div class="form-group">
                                        <img id="blah" style="width:300px;display:none;" src="#" alt="your image" />

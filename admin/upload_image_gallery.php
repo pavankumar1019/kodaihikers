@@ -16,7 +16,7 @@ if(isset($_POST["save1"])) {
     $uploadOk = 1;
   } else {
     echo "File is not an image.";
-    $uploadOk = 1;
+    $uploadOk = 0;
   }
 }
 
