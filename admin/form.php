@@ -1507,7 +1507,7 @@ $result = $conn->query($sql);
                 console.log("test");
             var file_data = $('.uploadimg').prop('files')[0];   
             var form_data = new FormData();
-            var id = $('#id').val();
+           
             $(".loder").css("visibility", "visible");
             
             $("#upload_carousels").attr("disabled", "disabled");
