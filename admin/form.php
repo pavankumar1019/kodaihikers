@@ -497,13 +497,13 @@ $result = $conn->query($sql);
   </div>
                              
                                   
-                                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                                    <form action="upload.php" method="post" enctype="multipart/form-data" id="myform">
                                     <input type="hidden" name="id" value="<?php echo $row["id"];?>">
                                     <div class="form-group">
                                     <input type="file" name="fileToUpload" id="fileToUpload" class="form-control form-control-lg">
   </div>   
                                     <div class="form-group">
-                                    <input type="submit" value="Upload Image" name="submit"  class="btn btn-success ">
+                                    <input type="submit" value="Upload Image" name="submit" id="send" class="btn btn-success ">
   </div>   
 </form>
                                         <br>
@@ -1514,7 +1514,7 @@ $result = $conn->query($sql);
     <script>
     $(document).ready(function()
             {
-        $("#ajax_up").click(function(){
+        $("#send").click(function(){
          var options = { 
                 beforeSend: function() 
                 {
@@ -1542,7 +1542,7 @@ $result = $conn->query($sql);
                     $("#message").html("<font color='red'> ERROR: unable to upload files</font>");
             }
             }; 
-        $("#myForm").ajaxForm(options);
+        $("#myform").ajaxForm(options);
 
         });
             });
