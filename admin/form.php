@@ -467,7 +467,7 @@ $result = $conn->query($sql);
                     <div class="container-fluid">
                         <div class="row">
                         <?php if (isset($_SESSION['success_message']) && !empty($_SESSION['success_message'])) { ?>
-                        <div  class="alert alert-success" role="alert"><?php echo $_SESSION['success_message']; ?></div>
+                        <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['success_message']; ?></div>
                         <?php
                         unset($_SESSION['success_message']);
                     }
