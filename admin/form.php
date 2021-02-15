@@ -4,7 +4,7 @@ $sql = "SELECT * FROM kh_dynamic_scrolling_banners";
 $result = $conn->query($sql);
 ?>
 
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -481,7 +481,7 @@ $result = $conn->query($sql);
                                         <hr>
                                         <form action="" method="post" novalidate="novalidate">
                                             <div class="form-group">
-                                               <img class="img-fluid" style="width: 300px;" src="../images/<?=$row['name'];?>" alt="">
+                                               <img class="img-fluid" style="width: 300px;" src="../images/<?=$row['path'];?>" alt="">
                                             </div>
                                             <div class="form-group has-success">
                                                 <label for="cc-name" class="control-label mb-1">Choose Image To Change</label>
