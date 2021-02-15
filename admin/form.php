@@ -1,3 +1,9 @@
+<?php
+include '../../db_connection/db.php';
+$sql = "SELECT * FROM kh_dynamic_scrolling_banners";
+$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -459,7 +465,13 @@
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <?php
+                            if ($result->num_rows > 0) {
+                                // output data of each row
+                                while($row = $result->fetch_assoc()) {
+                              
+?>
+    <div class="col-lg-6">
                                 <div class="card">
                                     <div class="card-header">Credit Card</div>
                                     <div class="card-body">
@@ -469,7 +481,7 @@
                                         <hr>
                                         <form action="" method="post" novalidate="novalidate">
                                             <div class="form-group">
-                                               <img class="img-fluid" style="width: 300px;" src="../images/kodai_coakerswalk.jpg" alt="">
+                                               <img class="img-fluid" style="width: 300px;" src="../images/<?=$row['name'];?>" alt="">
                                             </div>
                                             <div class="form-group has-success">
                                                 <label for="cc-name" class="control-label mb-1">Choose Image To Change</label>
@@ -487,6 +499,13 @@
                                     </div>
                                 </div>
                             </div>
+<?php
+                                }
+                              } else {
+                                echo "0 results";
+                              }
+                            ?>
+                        
                             <div class="col-lg-6">
                                 <div class="card">
                                     <div class="card-header">
