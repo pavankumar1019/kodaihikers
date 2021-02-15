@@ -481,7 +481,7 @@ $result = $conn->query($sql);
                                         </div>
                                         <hr>
                                        
-                                        <img src="./img/<?php  echo $row["path"];?>" alt="">
+                                        <img src="../images/<?php  echo $row["path"];?>" alt="">
                                   
                                     <form action="upload.php" method="post" enctype="multipart/form-data">
                                     <input type="hidden" name="id" value="<?php echo $row["id"];?>">
