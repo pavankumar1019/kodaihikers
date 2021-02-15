@@ -1,30 +1,56 @@
 <?php
 include '../../db_connection/db.php';
-$valid_extensions = array('jpeg', 'jpg','png'); 
-$path=$_POST["id"];
-    if ( 0 < $_FILES['file']['error'] ) {
-        echo 'Error: ' . $_FILES['file']['error'] . '<br>';
-    }
-    else {
-       
-        $code=mt_rand(10,100000);/* rename the file name*/
-        $size= $_FILES['file']['size'];
-        $ext = strtolower(pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION));
-        if($size > 2097152) /*2 mb 1024*1024 bytes*/
-        {
-            echo json_encode(array("statusCode"=>400,'msg'=>"Image allowd less than 2 mb"));
-        }
-        else if(!in_array($ext, $valid_extensions)) {
-            echo json_encode(array("statusCode"=>400,'msg'=>$ext.' not allowed'));
-        }
-        else{
-           
-            $result = move_uploaded_file($_FILES['file']['tmp_name'], '../../images/' . $code.'.'.$ext);
-            $sql="UPDATE kh_dynamic_scrolling_banners SET path='$code.$ext' WHERE id=$path";
-            mysqli_query($conn, $sql);
-            echo json_encode(array("statusCode"=>200 ,'code'=>$code));
-   
-        }
-        
-    }
+?>
+<?php
+
+$target_dir = "../../images/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+// Check if image file is a actual image or fake image
+if(isset($_POST["submit"])) {
+  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+  $id=$_POST["id"];
+  if($check !== false) {
+    echo "File is an image - " . $check["mime"] . ".";
+    $uploadOk = 1;
+  } else {
+    echo "File is not an image.";
+    $uploadOk = 0;
+  }
+}
+
+// Check if file already exists
+if (file_exists($target_file)) {
+  echo "Sorry, file already exists.";
+  $uploadOk = 0;
+}
+
+// Check file size
+if ($_FILES["fileToUpload"]["size"] > 500000) {
+  echo "Sorry, your file is too large.";
+  $uploadOk = 0;
+}
+
+// Allow certain file formats
+if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+&& $imageFileType != "gif" ) {
+  echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+  $uploadOk = 0;
+}
+
+// Check if $uploadOk is set to 0 by an error
+if ($uploadOk == 0) {
+  echo "Sorry, your file was not uploaded.";
+// if everything is ok, try to upload file
+} else {
+  if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+    $sql="UPDATE kh_dynamic_scrolling_banners SET path='$target_file' WHERE id=$id";
+    mysqli_query($conn, $sql);
+    echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+  } else {
+    echo "Sorry, there was an error uploading your file.";
+  }
+}
 ?>
