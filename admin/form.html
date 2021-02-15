@@ -20,7 +20,7 @@
 
     <!-- Bootstrap CSS-->
     <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Vendor CSS-->
     <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
     <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
@@ -34,27 +34,19 @@
     <link href="css/theme.css" rel="stylesheet" media="all">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
-        .loader {
-            border: 5px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 5px solid blue;
-  border-bottom: 5px solid blue;
-          width: 10px;
-  height: 10px;
-          -webkit-animation: spin 2s linear infinite; /* Safari */
-          animation: spin 2s linear infinite;
-        }
-        
-        /* Safari */
-        @-webkit-keyframes spin {
-          0% { -webkit-transform: rotate(0deg); }
-          100% { -webkit-transform: rotate(360deg); }
-        }
-        
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
+      .buttonload {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 24px; /* Some padding */
+  font-size: 16px; /* Set a font-size */
+}
+
+/* Add a right margin to each icon */
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
         </style>
 </head>
 
@@ -485,8 +477,8 @@
                                             </div>
 
                                             <div>
-                                                <button type="button" name="save" class="btn btn-outline-primary btn-lg btn-block"  id="upload_carousels"> 
-                                                    Change Image<div class="loader" style="visibility: hidden;"></div></button>
+                                                <button type="button" name="save" class="buttonload btn btn-outline-primary btn-lg btn-block"  id="upload_carousels"> 
+                                      <i class="loder fa fa-refresh fa-spin"></i>Change Image</button>
                                             </div>
                                         </form>
                                         <br>
@@ -1493,12 +1485,12 @@
                 console.log("test");
             var file_data = $('.uploadimg').prop('files')[0];   
             var form_data = new FormData();
-            $(".loader").css("visibility", "visible");
+            $(".loder").css("visibility", "visible");
             $("#upload_carousels").attr("disabled", "disabled");
             var ext = $('.uploadimg').val().split('.').pop().toLowerCase();
             if ($.inArray(ext, ['png','jpg','jpeg']) == -1)   {
                 alert("only jpg and png images allowed");
-                $(".loader").css("visibility", "hidden");
+                $(".loder").css("visibility", "hidden");
                 return;
             }  
             var picsize = (file_data.size);
@@ -1506,7 +1498,7 @@
             if(picsize > 2097152) /* 2mb*/
                 {
                     alert("Image allowd less than 2 mb");
-                    $(".loader").css("visibility", "hidden");
+                    $(".loder").css("visibility", "hidden");
                     return;
                 }
             form_data.append('file', file_data);   
@@ -1523,11 +1515,11 @@
 					if(dataResult.statusCode==200){
                         $("#upload_carousels").removeAttr("disabled");
 						$("#err").html('Changed Success..!');
-                        $(".loader").css("visibility", "hidden"); 				
+                        $(".loder").css("visibility", "hidden"); 				
 					}
 					else if(dataResult.statusCode==201){
 					   alert("Error occured !");
-                       $(".loader").css("visibility", "hidden");
+                       $(".loder").css("visibility", "hidden");
 					}
 					
 				}
