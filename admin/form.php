@@ -56,6 +56,7 @@ $result = $conn->query($sql);
   visibility: hidden;
 }
         </style>
+        
 </head>
 
 <body class="animsition">
@@ -471,7 +472,12 @@ $result = $conn->query($sql);
                         <?php
                         unset($_SESSION['success_message']);
                     }
-                    ?>
+                    ?><br>
+                    <div id="progress container">
+            <div id="bar"></div>
+            <div id="percent">0%</div >
+    </div>
+    <div id="message"></div><br />
                             <?php
                             if ($result->num_rows > 0) {
                                 // output data of each row
@@ -1505,7 +1511,42 @@ $result = $conn->query($sql);
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function()
+            {
+        $("#ajax_up").click(function(){
+         var options = { 
+                beforeSend: function() 
+                {
+                    $("#progress").show();
+                    $("#bar").width('0%');
+                    $("#message").html("");
+                    $("#percent").html("0%");
+                },
+                uploadProgress: function(event, position, total, percentComplete) 
+                {
+                    $("#bar").width(percentComplete+'%');
+                    $("#percent").html(percentComplete+'%');
+                },
+                success: function() 
+                {
+                    $("#bar").width('100%');
+                    $("#percent").html('100%');
+                },
+                complete: function(response) 
+                {
+                $("#message").html("<font color='green'><div style='height:1000px;'>"+response.responseText+"</div></font>");
+                },
+                error: function()
+                {
+                    $("#message").html("<font color='red'> ERROR: unable to upload files</font>");
+            }
+            }; 
+        $("#myForm").ajaxForm(options);
 
+        });
+            });
+    </script>
 </body>
 
 </html>
