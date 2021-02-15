@@ -517,7 +517,7 @@ $result = $conn->query($sql);
                                 <div class="card">
                                     <div class="card-header">
                                         <strong>Gallery</strong>
-                                        <small> Add Images to Gallery</small>
+                                        <small> Add Images & information to Gallery</small>
                                     </div>
                                     <div class="card-body card-block">
                                         <div class="form-group">
