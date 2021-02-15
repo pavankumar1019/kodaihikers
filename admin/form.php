@@ -1535,7 +1535,7 @@ $result = $conn->query($sql);
                 cache: false,
                 contentType: false,
                 processData: false,
-                data:  new FormData(this),                         
+                data: form_data,                         
                 type: 'post',
                 success: function(dataResult){
 					var dataResult = JSON.parse(dataResult);
