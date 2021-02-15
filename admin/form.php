@@ -483,10 +483,11 @@ $result = $conn->query($sql);
                                         <form action="" method="post" id="my_form" novalidate="novalidate">
                                             <div class="form-group">
                                                <img class="img-fluid" style="width: 300px;" src="../images/<?=$row['path'];?>" alt="">
+                                               <input id="id" type="text" name="id" value="<?=$row['id'];?>" />
                                             </div>
                                             <div class="form-group has-success">
                                                 <label for="cc-name" class="control-label mb-1">Choose Image To Change</label>
-                                                <input id="id" type="text" name="id" value="<?=$row['id'];?>" />
+                                                
                                                 <input id="uploadImage" type="file" accept="image/*" name="image" class="uploadimg"/>
                                                 <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
                                             </div>
