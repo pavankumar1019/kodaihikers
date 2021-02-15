@@ -545,7 +545,7 @@ $result = $conn->query($sql);
                                             <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Content..." class="form-control" name="description"></textarea>
                                         </div>
                                         <div class="form-group">
-                                    <input type="submit" class="btn btn-primary" value="Add TO Gallery">
+                                    <input type="submit" name="submit" class="btn btn-primary" value="Add TO Gallery">
                                         </div>
                                         </form>
                                     </div>
