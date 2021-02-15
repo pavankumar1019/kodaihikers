@@ -530,7 +530,7 @@ $result = $conn->query($sql);
                                         </div>
                                         <div class="form-group">
                                             <label for="vat" class=" form-control-label">VAT</label>
-                                            <input type="text" id="vat" placeholder="DE1234567890" class="form-control">
+                                            <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Content..." class="form-control"></textarea>
                                         </div>
                                         <div class="form-group">
                                     <input type="submit" class="btn btn-primary" value="Add TO Gallery">
