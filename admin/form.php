@@ -523,7 +523,7 @@ $result = $conn->query($sql);
                                         <div class="form-group">
                                             <label for="company" class=" form-control-label">Choose Image</label>
                                             <input type='file' onchange="readURL(this);" />
-    <img id="blah" src="#" alt="your image" />
+    <img id="blah" style="width:300px;" src="#" alt="your image" />
                                         </div>
                                         <div class="form-group">
                                             <label for="vat" class=" form-control-label">VAT</label>
