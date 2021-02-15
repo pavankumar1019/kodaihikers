@@ -51,7 +51,7 @@ $result = mysqli_query($conn, $stu_query);
 
 if ($result) {
   session_start();
-  $_SESSION['success_message'] = "Contact form saved successfully.";
+  $_SESSION['success_message'] = "Changed.....";
     header('location: form.php');
     exit();
 }
