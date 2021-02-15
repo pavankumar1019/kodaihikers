@@ -502,6 +502,7 @@
     <!-- Main JS-->
     <script src="js/main.js"></script>
     <script>
+        $(document).ready(function(){
         $.ajax({
             url: "./upload_carousels/view.php",
             type: "POST",
@@ -511,6 +512,7 @@
                 $('.carousels').html(data); 
             }
         });
+    })
     </script>
     <script>
         $(document).ready(function(){
