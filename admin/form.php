@@ -480,15 +480,14 @@ $result = $conn->query($sql);
                                             <h3 class="text-center title-2">Home page Carousels</h3>
                                         </div>
                                         <hr>
-                                        <form action="upload_carousels/upload.php" method="post" id="my_form" novalidate="novalidate">
-                                           
-                                               <img class="img-fluid" style="width: 300px;" src="../images/<?=$row['path'];?>" alt="">
-                                               <form action="upload.php" method="post" enctype="multipart/form-data">
+                                       
+                                        <img src="./img/<?php  echo $row["path"];?>" alt="">
+                                  
+                                    <form action="upload.php" method="post" enctype="multipart/form-data">
                                     <input type="hidden" name="id" value="<?php echo $row["id"];?>">
   <input type="file" name="fileToUpload" id="fileToUpload" class="form-control form-control-lg">
   <input type="submit" value="Upload Image" name="submit"  class="btn btn-success">
 </form>
-                                        </form>
                                         <br>
                                         <span  id="err" style="color: rgb(2, 172, 121);visibility: hidden;" class="border border-success"></span>
                                     </div>
