@@ -487,6 +487,7 @@ $result = $conn->query($sql);
                                             <div class="form-group has-success">
                                                 <label for="cc-name" class="control-label mb-1">Choose Image To Change</label>
                                                 <input id="uploadImage" type="file" accept="image/*" name="image" class="uploadimg"/>
+                                                <input type="text" name="" id="id" value="<?=$row['id'];">
                                                 <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
                                             </div>
 
@@ -1506,6 +1507,7 @@ $result = $conn->query($sql);
                 console.log("test");
             var file_data = $('.uploadimg').prop('files')[0];   
             var form_data = new FormData();
+            var id = $('#id').val();
             $(".loder").css("visibility", "visible");
             
             $("#upload_carousels").attr("disabled", "disabled");
@@ -1539,7 +1541,7 @@ $result = $conn->query($sql);
                         $("#upload_carousels").removeAttr("disabled");
                         $(".loder").css("visibility", "hidden"); 
                         $("#err").html('Changed Success..!');
-
+                        location.reload();
                         $("#err").css("visibility", "visible");				
 					}
 					else if(dataResult.statusCode==201){
