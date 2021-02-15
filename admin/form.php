@@ -538,14 +538,14 @@ $result = $conn->query($sql);
                                         </div>
                                         <div class="form-group">
                                             <label for="company" class=" form-control-label">Choose Image</label>
-    <input type='file' name="fileToUpload" onchange="readURL(this);" />
+    <input type='file' name="fileToUpload1" onchange="readURL(this);" />
                                         </div>
                                         <div class="form-group">
                                             <label for="vat" class=" form-control-label">Brief Description </label>
                                             <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Content..." class="form-control" name="description"></textarea>
                                         </div>
                                         <div class="form-group">
-                                    <input type="submit" name="submit" class="btn btn-primary" value="Add TO Gallery">
+                                    <input type="submit" name="save1" class="btn btn-primary" value="Add TO Gallery">
                                         </div>
                                         </form>
                                     </div>
