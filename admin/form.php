@@ -520,8 +520,9 @@ $result = $conn->query($sql);
                                         <small> Add Images & information to Gallery</small>
                                     </div>
                                     <div class="card-body card-block">
-                                    <div class="form-group">
-                                    <img id="blah" style="width:300px;display:none;" src="#" alt="your image" />
+                                        <form action="" method="post">
+                                        <div class="form-group">
+                                       <img id="blah" style="width:300px;display:none;" src="#" alt="your image" />
                                         </div>
                                         <div class="form-group">
                                             <label for="company" class=" form-control-label">Choose Image</label>
@@ -532,27 +533,9 @@ $result = $conn->query($sql);
                                             <input type="text" id="vat" placeholder="DE1234567890" class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label for="street" class=" form-control-label">Street</label>
-                                            <input type="text" id="street" placeholder="Enter street name" class="form-control">
+                                    <input type="submit" class="btn btn-primary" value="Add TO Gallery">
                                         </div>
-                                        <div class="row form-group">
-                                            <div class="col-8">
-                                                <div class="form-group">
-                                                    <label for="city" class=" form-control-label">City</label>
-                                                    <input type="text" id="city" placeholder="Enter your city" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-8">
-                                                <div class="form-group">
-                                                    <label for="postal-code" class=" form-control-label">Postal Code</label>
-                                                    <input type="text" id="postal-code" placeholder="Postal Code" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="country" class=" form-control-label">Country</label>
-                                            <input type="text" id="country" placeholder="Country name" class="form-control">
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
