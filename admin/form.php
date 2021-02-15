@@ -56,7 +56,11 @@ $result = $conn->query($sql);
   visibility: hidden;
 }
         </style>
-        
+       <style>
+        #progress { position:relative; width:400px; border: 1px solid #ddd; padding: 1px; border-radius: 3px; }
+        #bar { background-color: #B4F5B4; width:0%; height:10px; border-radius: 3px; padding-bottom:10px; }
+        #percent { position:absolute;top:3px; left:48%; }
+    </style>  
 </head>
 
 <body class="animsition">
