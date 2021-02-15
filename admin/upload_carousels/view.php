@@ -4,7 +4,8 @@ include '../../db_connection/db.php';
 	$sql = "SELECT * FROM kh_dynamic_scrolling_banners";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
-		while($row = $result->fetch_assoc()) {
+    while($row = $result->fetch_assoc()) {
+        echo(
 ?>	
 	<div class="col-lg-6">
                                 <div class="card">
@@ -25,7 +26,7 @@ include '../../db_connection/db.php';
                                             </div>
 
                                             <div>
-                                                <button type="button" name="save" class="buttonload btn btn-outline-primary btn-lg btn-block"  id=""> 
+                                                <button type="button" name="save" class="buttonload btn btn-outline-primary btn-lg btn-block"  id="upload_carousels"> 
                                       <i class="loder fa fa-refresh fa-spin"></i>Change Image</button>
                                             </div>
                                         </form>
@@ -34,7 +35,8 @@ include '../../db_connection/db.php';
                                     </div>
                                 </div>
     </div>
-<?php	
+<?php
+);	
 	}
 	}
 	else {
