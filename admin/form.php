@@ -480,7 +480,7 @@ $result = $conn->query($sql);
                                             <h3 class="text-center title-2">Home page Carousels</h3>
                                         </div>
                                         <hr>
-                                        <form action="" method="post" id="my_form" novalidate="novalidate">
+                                        <form action="./upload_carousels/upload.php" method="post" id="myform" novalidate="novalidate">
                                             <div class="form-group">
                                                <img class="img-fluid" style="width: 300px;" src="../images/<?=$row['path'];?>" alt="">
                                                <input id="id" type="text" name="id" value="<?=$row['id'];?>" />
@@ -493,7 +493,7 @@ $result = $conn->query($sql);
                                             </div>
 
                                             <div>
-                                                <button type="button" name="save" class="buttonload btn btn-outline-primary btn-lg btn-block"  id="upload_carousels"> 
+                                                <button type="submit" name="save" class="buttonload btn btn-outline-primary btn-lg btn-block"  id="upload_carousels"> 
                                       <i class="loder fa fa-refresh fa-spin"></i>Change Image</button>
                                             </div>
                                         </form>
@@ -1504,7 +1504,7 @@ $result = $conn->query($sql);
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function(){
-            $('#upload_carousels').on('click', function() {
+            $('#myform').on('submit', function() {
                 console.log("test");
             var file_data = $('.uploadimg').prop('files')[0];   
             var form_data = new FormData();
