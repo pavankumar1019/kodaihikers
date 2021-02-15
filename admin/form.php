@@ -513,6 +513,9 @@ $result = $conn->query($sql);
                               }
                             ?>
                         
+
+<!-- Image And Information Gallery -->
+
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-header">
@@ -520,17 +523,25 @@ $result = $conn->query($sql);
                                         <small> Add Images & information to Gallery</small>
                                     </div>
                                     <div class="card-body card-block">
-                                        <form action="" method="post">
+                                        <form action="upload_image_gallery.php" method="post">
+                                        <div class="form-group">
+                                        <?php if (isset($_SESSION['message2']) && !empty($_SESSION['message2'])) { ?>
+                        <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message2']; ?></div>
+                        <?php
+                        unset($_SESSION['message2']);
+                    }
+                    ?>
+                                        </div>
                                         <div class="form-group">
                                        <img id="blah" style="width:300px;display:none;" src="#" alt="your image" />
                                         </div>
                                         <div class="form-group">
                                             <label for="company" class=" form-control-label">Choose Image</label>
-    <input type='file' onchange="readURL(this);" />
+    <input type='file' name="fileToUpload" onchange="readURL(this);" />
                                         </div>
                                         <div class="form-group">
                                             <label for="vat" class=" form-control-label">Brief Description </label>
-                                            <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Content..." class="form-control"></textarea>
+                                            <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Content..." class="form-control" name="description"></textarea>
                                         </div>
                                         <div class="form-group">
                                     <input type="submit" class="btn btn-primary" value="Add TO Gallery">
@@ -539,7 +550,7 @@ $result = $conn->query($sql);
                                     </div>
                                 </div>
                             </div>
-                        
+                        <!-- Image And Information Gallery   close........... -->
                             <div class="col-lg-6">
                                 <div class="card">
                                     <div class="card-header">
