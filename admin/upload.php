@@ -51,7 +51,7 @@ $result = mysqli_query($conn, $stu_query);
 
 if ($result) {
   session_start();
-  $_SESSION['success_message'] = "Changed.....";
+  $_SESSION['success_message'] = "Carousel Changed.!";
     header('location: form.php');
     exit();
 }
