@@ -523,7 +523,7 @@ $result = $conn->query($sql);
                                         <div class="form-group">
                                             <label for="company" class=" form-control-label">Choose Image</label>
                                             
-    <img id="blah" style="width:300px;visibility:hidden;" src="#" alt="your image" /><br>
+    <img id="blah" style="width:300px;display:none;" src="#" alt="your image" /><br>
     <input type='file' onchange="readURL(this);" />
                                         </div>
                                         <div class="form-group">
@@ -1522,7 +1522,7 @@ $("#save").click(function(){
 
             reader.onload = function (e) {
                 $('#blah')
-                    .attr('src', e.target.result).css('visibility', 'visible');
+                    .attr('src', e.target.result).show();
               
             };
 
