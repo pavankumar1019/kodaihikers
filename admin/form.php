@@ -479,11 +479,12 @@ $result = $conn->query($sql);
                     }
                     ?><br>
                     <div class="container">
-                    <div id="progress">
-            <div id="bar"></div>
-            <div id="percent">0%</div >
-    </div>
-    <div id="message"></div>
+                  <!-- Area to display the percent of progress -->
+ 
+ <div id='percent'></div>
+ 
+ <!-- area to display a message after completion of upload --> 
+ <div id='status'></div>
     </div><br>
                             <?php
                             if ($result->num_rows > 0) {
@@ -1519,41 +1520,30 @@ $result = $conn->query($sql);
     <!-- Main JS-->
     <script src="js/main.js"></script>
     <script>
-    $(document).ready(function()
-            {
-        $("#send").click(function(){
-         var options = { 
-                beforeSend: function() 
-                {
-                    $("#progress").show();
-                    $("#bar").width('0%');
-                    $("#message").html("");
-                    $("#percent").html("0%");
-                },
-                uploadProgress: function(event, position, total, percentComplete) 
-                {
-                    $("#bar").width(percentComplete+'%');
-                    $("#percent").html(percentComplete+'%');
-                },
-                success: function() 
-                {
-                    $("#bar").width('100%');
-                    $("#percent").html('100%');
-                },
-                complete: function(response) 
-                {
-                $("#message").html("<font color='green'><div style='height:1000px;'>"+response.responseText+"</div></font>");
-                },
-                error: function()
-                {
-                    $("#message").html("<font color='red'> ERROR: unable to upload files</font>");
-            }
-            }; 
-        $("#myform").ajaxForm(options);
-
-        });
-            });
-    </script>
+ 
+ $(function() {
+ $(document).ready(function(){
+ var percent = $('#percent');
+ var status = $('#status');
+ 
+ $('form').ajaxForm({
+ beforeSend: function() {
+ status.empty();
+ var percentVal = '0%';
+ percent.html(percentVal);
+ },
+ uploadProgress: function(event, position, total, percentComplete) {
+ var percentVal = percentComplete + '%';
+ percent.html(percentVal);
+ },
+ complete: function(xhr) {
+ status.html(xhr.responseText);
+ }
+ });
+ });
+ });
+ </script>
+ 
 </body>
 
 </html>
