@@ -1259,9 +1259,8 @@ $result = $conn->query($sql);
 <script>
 	var owl = $('.owl-carousel');
 owl.owlCarousel({
-    items:4,
+    items:1,
     loop:true,
-    margin:10,
     autoplay:true,
     autoplayTimeout:1000,
     autoplayHoverPause:true
