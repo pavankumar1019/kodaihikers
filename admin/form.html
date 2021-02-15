@@ -1469,6 +1469,7 @@
                 console.log("test");
             var file_data = $('.uploadimg').prop('files')[0];   
             var form_data = new FormData();
+
             var ext = $('.uploadimg').val().split('.').pop().toLowerCase();
             if ($.inArray(ext, ['png','jpg','jpeg']) == -1)   {
                 alert("only jpg and png images allowed");
@@ -1488,7 +1489,10 @@
                 cache: false,
                 contentType: false,
                 processData: false,
-                data: form_data,                         
+                data: {
+                    form_data  			
+				},
+                                      
                 type: 'post',
                 success: function(res){
                    console.log(res);

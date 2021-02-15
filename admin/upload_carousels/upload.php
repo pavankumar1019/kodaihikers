@@ -20,6 +20,7 @@ $valid_extensions = array('jpeg', 'jpg','png');
            
             $result = move_uploaded_file($_FILES['file']['tmp_name'], '../../images/' . $code.'.'.$ext);
             echo json_encode(array("statusCode"=>200 ,'code'=>$code));
+            
         }
         
     }
