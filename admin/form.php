@@ -1507,7 +1507,7 @@ $result = $conn->query($sql);
             $('#upload_carousels').on('click', function() {
                 console.log("test");
             var file_data = $('.uploadimg').prop('files')[0];   
-            var form_data = new FormData('#my_form');
+            var form_data = new FormData();
            
             $(".loder").css("visibility", "visible");
             
@@ -1528,6 +1528,7 @@ $result = $conn->query($sql);
                     return;
                 }
             form_data.append('file', file_data);   
+            form_data.append('id', $('#id').val());   
             $.ajax({
                 url: './upload_carousels/upload.php', /*point to server-side PHP script */
                 dataType: 'text',  /* what to expect back from the PHP script, if anything*/
