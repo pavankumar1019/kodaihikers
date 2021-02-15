@@ -5,7 +5,6 @@ $target_dir = "../animated_gallery/";
 $target_file = $target_dir . basename($_FILES["fileToUpload1"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-$id=$_POST['id'];
 $description=$_POST['description'];
 
 // Check if image file is a actual image or fake image
