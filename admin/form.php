@@ -516,8 +516,8 @@ $result = $conn->query($sql);
                             <div class="col-lg-6">
                                 <div class="card">
                                     <div class="card-header">
-                                        <strong>Company</strong>
-                                        <small> Form</small>
+                                        <strong>Gallery</strong>
+                                        <small> Add Images to Gallery</small>
                                     </div>
                                     <div class="card-body card-block">
                                         <div class="form-group">
