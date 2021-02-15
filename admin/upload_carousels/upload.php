@@ -21,7 +21,9 @@ $valid_extensions = array('jpeg', 'jpg','png');
            
             $result = move_uploaded_file($_FILES['file']['tmp_name'], '../../images/' . $code.'.'.$ext);
             echo json_encode(array("statusCode"=>200 ,'code'=>$code));
-          
+            $sql = "INSERT INTO `kh_dynamic_scrolling_banners`( `path`) 
+	VALUES ('$_POST["id"]')";
+    mysqli_query($conn, $sql);
         }
         
     }
