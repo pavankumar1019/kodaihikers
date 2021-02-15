@@ -516,7 +516,7 @@ $result = $conn->query($sql);
 
 <!-- Image And Information Gallery -->
 
-                            <div class="col-lg-12">
+                            <div class="col-lg-12" id="gallery">
                                 <div class="card">
                                     <div class="card-header">
                                         <strong>Gallery</strong>
@@ -552,7 +552,7 @@ $result = $conn->query($sql);
                                 </div>
                             </div>
                         <!-- Image And Information Gallery   close........... -->
-                            <div class="col-lg-6" id="gallery">
+                            <div class="col-lg-6" >
                                 <div class="card">
                                     <div class="card-header">
                                         <strong>Horizontal</strong> Form
