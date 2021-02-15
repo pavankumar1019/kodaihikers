@@ -1521,9 +1521,8 @@ $("#save").click(function(){
 
             reader.onload = function (e) {
                 $('#blah')
-                    .attr('src', e.target.result)
-                    .width(500)
-                    .height(500);
+                    .attr('src', e.target.result);
+              
             };
 
             reader.readAsDataURL(input.files[0]);
