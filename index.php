@@ -1,3 +1,9 @@
+<?php
+include '../db_connection/db.php';
+$sql = "SELECT * FROM kh_dynamic_scrolling_banners";
+$result = $conn->query($sql);
+
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -122,9 +128,15 @@
 				<div class="owl-carousel owl-theme home_slider">
 
 					<!-- Slider Item -->
-					<div class="owl-item home_slider_item">
+					<?php
+                            if ($result->num_rows > 0) {
+                                // output data of each row
+                                while($row = $result->fetch_assoc()) {
+
+?>
+                  <div class="owl-item home_slider_item">
 						<!-- Image by https://unsplash.com/@anikindimitry -->
-						<div class="home_slider_background" style="background-image:url(images/slider\ 2.jpg)"></div>
+						<div class="home_slider_background" style="background-image:url(dynamic_scrolling_banners/<?php  echo $row["path"];?>)"></div>
 
 						<div class="home_slider_content text-center">
 							<div class="home_slider_content_inner" data-animation-in="flipInX"
@@ -138,40 +150,16 @@
 							</div>
 						</div>
 					</div>
+<?php
 
-					<!-- Slider Item -->
-					<div class="owl-item home_slider_item">
-						<div class="home_slider_background" style="background-image:url(images/slider\ 3.jpg)"></div>
+								}
+								}
+								
+								?>
 
-						<div class="home_slider_content text-center">
-							<div class="home_slider_content_inner" data-animation-in="flipInX"
-								data-animation-out="animate-out fadeOut">
-								<h1>Make your</h1>
-								<h1>Journey Easy...</h1>
-								<div class="button home_slider_button">
-									<div class="button_bcg"></div><a href="#">contact
-										us<span></span><span></span><span></span></a>
-								</div>
-							</div>
-						</div>
-					</div>
+		
 
-					<!-- Slider Item -->
-					<div class="owl-item home_slider_item">
-						<div class="home_slider_background" style="background-image:url(images/slider\ 1.jpg)"></div>
-
-						<div class="home_slider_content text-center">
-							<div class="home_slider_content_inner" data-animation-in="flipInX"
-								data-animation-out="animate-out fadeOut">
-								<h1>Make your</h1>
-								<h1>Journey Easy...</h1>
-								<div class="button home_slider_button">
-									<div class="button_bcg"></div><a href="#">contact
-										us<span></span><span></span><span></span></a>
-								</div>
-							</div>
-						</div>
-					</div>
+					
 
 				</div>
 
