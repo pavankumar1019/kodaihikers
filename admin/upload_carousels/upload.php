@@ -1,4 +1,5 @@
 <?php
+include '../../db_connection/db.php';
 $valid_extensions = array('jpeg', 'jpg','png'); 
 
     if ( 0 < $_FILES['file']['error'] ) {
@@ -20,7 +21,9 @@ $valid_extensions = array('jpeg', 'jpg','png');
            
             $result = move_uploaded_file($_FILES['file']['tmp_name'], '../../images/' . $code.'.'.$ext);
             echo json_encode(array("statusCode"=>200 ,'code'=>$code));
-            
+            $sql = "INSERT INTO `kh_dynamic_scrolling_banners`( `path`) 
+	VALUES ('$ext')";
+    mysqli_query($conn, $sql);
         }
         
     }
