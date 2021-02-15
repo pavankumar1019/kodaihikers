@@ -466,7 +466,7 @@
                                             </div>
                                         </form>
                                         <br>
-                                        <span  id="err" style="color: rgb(2, 172, 121);" class="border border-success">done</span>
+                                        <span  id="err" style="color: rgb(2, 172, 121);" class="border border-success"></span>
                                     </div>
                                 </div>
                             </div>
@@ -1469,7 +1469,7 @@
                 console.log("test");
             var file_data = $('.uploadimg').prop('files')[0];   
             var form_data = new FormData();
-            
+            $("#upload_carousels").attr("disabled", "disabled");
             var ext = $('.uploadimg').val().split('.').pop().toLowerCase();
             if ($.inArray(ext, ['png','jpg','jpeg']) == -1)   {
                 alert("only jpg and png images allowed");
@@ -1494,7 +1494,8 @@
                 success: function(dataResult){
 					var dataResult = JSON.parse(dataResult);
 					if(dataResult.statusCode==200){
-						$("#err").html('Changed Success!'); 				
+                        $("#upload_carousels").removeAttr("disabled");
+						$("#err").html('Changed Success..!'); 				
 					}
 					else if(dataResult.statusCode==201){
 					   alert("Error occured !");
