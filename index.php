@@ -1108,7 +1108,6 @@ $result1 = $conn->query($sql1);
                                 while($row1 = $result1->fetch_assoc()) {
                               
                                                             ?>
-															<li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
 									<li class="footer_social_item"><a href="<?php echo $row1["links"]; ?>"><?php echo $row1["social_media_icon"]; ?></a></li>
                                                             <?php
 								}
