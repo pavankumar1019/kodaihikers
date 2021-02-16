@@ -10,8 +10,9 @@ function sendMessage() {
     $hashes_array = array();
     array_push($hashes_array, array(
         "id" => "like-button-2",
-        "text" => "Like2",
+        "text" => "Like",
         "icon" => "https://www.kodaihikers.com/images/kodai_logo.png",
+        "chrome_web_image" => "https://www.kodaihikers.com/images/kodai_logo.png",
         "url" => "https://kodaihikers.com"
     ));
     $fields = array(
