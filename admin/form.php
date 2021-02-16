@@ -573,7 +573,7 @@ $result1 = $conn->query($sql1);
                                                     <label for="hf-email" class=" form-control-label">Social Medai</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                            <select name="social_media"  class="form-control" id="social_media">
+                            <select name="socialmedia" class="form-control">
                             <?php
                             if ($result1->num_rows > 0) {
                                 // output data of each row
