@@ -26,10 +26,6 @@ $result2 = $conn->query($sql2);
 	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-</head>
-
-<body>
-
 <script>
   window.OneSignal = window.OneSignal || [];
   OneSignal.push(function() {
@@ -38,6 +34,10 @@ $result2 = $conn->query($sql2);
     });
   });
 </script>
+</head>
+
+<body>
+
 	<div class="super_container">
 
 		<!-- Header -->
