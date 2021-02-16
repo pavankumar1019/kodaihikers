@@ -2,7 +2,7 @@
 <?PHP
 function sendMessage() {
     $content      = array(
-        "en" => 'English Message'
+        "en" => 'Hello Hi Subscriber thank you for subscribing'
     );
     $headings      = array(
         "en" => 'Kodai Hikers website'
