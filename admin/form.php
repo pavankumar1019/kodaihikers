@@ -567,7 +567,7 @@ $result1 = $conn->query($sql1);
                                                     <label for="hf-email" class=" form-control-label">Select the Social Medai</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                            <select name="social_media" id="">
+                            <select name="social_media"  class="form-control" id="social_media">
                             <?php
                             if ($result1->num_rows > 0) {
                                 // output data of each row
@@ -586,7 +586,7 @@ $result1 = $conn->query($sql1);
                                             </div>
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="hf-password" class=" form-control-label">Password</label>
+                                                    <label for="hf-password" class=" form-control-label">Social Media Links</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                     <input type="password" id="hf-password" name="hf-password" placeholder="Enter Password..." class="form-control">
