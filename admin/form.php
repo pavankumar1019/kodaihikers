@@ -555,12 +555,18 @@ $result1 = $conn->query($sql1);
                                 </div>
                             </div>
                         <!-- Image And Information Gallery   close........... -->
-                            <div class="col-lg-6" >
+                            <div class="col-lg-6" id="social_media" >
                                 <div class="card">
                                     <div class="card-header">
                                         <strong>Social Media</strong>&nbsp;Links Change
                                     </div>
                                     <div class="card-body card-block">
+                                    <?php if (isset($_SESSION['message3']) && !empty($_SESSION['message3'])) { ?>
+                        <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message3']; ?></div>
+                        <?php
+                        unset($_SESSION['message3']);
+                    }
+                    ?>
                                         <form  action="change_social_media.php" method="post" enctype="multipart/form-data">
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
@@ -589,14 +595,14 @@ $result1 = $conn->query($sql1);
                                                     <label for="hf-password" class=" form-control-label">Social Media Links</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                <textarea  id="textarea-input" rows="3" placeholder="Content..." class="form-control" name="description"></textarea>
+                                                <textarea  id="textarea-input" rows="3" placeholder="" class="form-control" name="links"></textarea>
 
                                                 </div>
                   
                                               
                                             </div>
                                             <br>
-                                            <input type="submit"  name="save1" class="form-control btn btn-primary" value="Post Link">
+                                            <input type="submit"  name="save2" class="form-control btn btn-primary" value="Post Link">
                                         </form>
                                     </div>
                                    
