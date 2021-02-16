@@ -589,7 +589,7 @@ $result1 = $conn->query($sql1);
                                                     <label for="hf-password" class=" form-control-label">Social Media Links</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                <textarea  id="textarea-input" rows="4" placeholder="Content..." class="form-control" name="description"></textarea>
+                                                <textarea  id="textarea-input" rows="3" placeholder="Content..." class="form-control" name="description"></textarea>
 
                                                 </div>
                                                 <div class="col-12 col-md-9">
