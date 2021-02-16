@@ -3,6 +3,7 @@ include '../db_connection/db.php';
  session_start();
 $sql = "SELECT * FROM kh_dynamic_scrolling_banners";
 $result = $conn->query($sql);
+
 $sql1 = "SELECT * FROM kh_social_media_links";
 $result1 = $conn->query($sql1);
 ?>
@@ -570,7 +571,7 @@ $result1 = $conn->query($sql1);
                             <?php
                             if ($result1->num_rows > 0) {
                                 // output data of each row
-                                while($row1 = $result->fetch_assoc()) {
+                                while($row1 = $result1->fetch_assoc()) {
                               
                                                             ?>
 <option value="<?php echo $row["id"]; ?>">
