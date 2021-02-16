@@ -580,7 +580,7 @@ $result1 = $conn->query($sql1);
                                 while($row1 = $result1->fetch_assoc()) {
                               
                                                             ?>
-<option value="<?php echo $row["id"]; ?>">
+<option value="<?php echo $row1["id"]; ?>">
 <?php echo $row1["social_media_name"]; ?>
 </option>
                                                             <?php
