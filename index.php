@@ -41,18 +41,17 @@ $result1 = $conn->query($sql1);
 							<div class="phone">+123456789</div>
 							<div class="social">
 								<ul class="social_list">
-									<li class="social_list_item"><a href="#"><i class="fa fa-pinterest"
-												aria-hidden="true"></i></a></li>
-									<li class="social_list_item"><a href="#"><i class="fa fa-facebook"
-												aria-hidden="true"></i></a></li>
-									<li class="social_list_item"><a href="#"><i class="fa fa-twitter"
-												aria-hidden="true"></i></a></li>
-									<li class="social_list_item"><a href="#"><i class="fa fa-dribbble"
-												aria-hidden="true"></i></a></li>
-									<li class="social_list_item"><a href="#"><i class="fa fa-behance"
-												aria-hidden="true"></i></a></li>
-									<li class="social_list_item"><a href="#"><i class="fa fa-linkedin"
-												aria-hidden="true"></i></a></li>
+								<?php
+                            if ($result1->num_rows > 0) {
+                                // output data of each row
+                                while($row1 = $result1->fetch_assoc()) {
+                              
+                                                            ?>
+									<li class="social_list_item"><a href="<?php echo $row1["links"]; ?>"><?php echo $row1["social_media_icon"]; ?></a></li>
+                                                            <?php
+								}
+								}
+								?>
 								</ul>
 							</div>
 							<div class="user_box ml-auto">
