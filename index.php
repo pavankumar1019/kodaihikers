@@ -79,11 +79,11 @@ $result2 = $conn->query($sql2);
 							<div class="main_nav_container ml-auto">
 								<ul class="main_nav_list">
 									<li class="main_nav_item"><a href="#">home</a></li>
-									<li class="main_nav_item"><a href="about.html">about us</a></li>
-									<li class="main_nav_item"><a href="hirevehicals.html">hire vehicals</a></li>
-									<li class="main_nav_item"><a href="bookmytour.html">book my tour</a></li>
-									<li class="main_nav_item"><a href="blog.html">blogs</a></li>
-									<li class="main_nav_item"><a href="contact.html">contact</a></li>
+									<li class="main_nav_item"><a href="about.php">about us</a></li>
+									<li class="main_nav_item"><a href="hirevehicals.php">hire vehicals</a></li>
+									<li class="main_nav_item"><a href="bookmytour.php">book my tour</a></li>
+									<li class="main_nav_item"><a href="blog.php">blogs</a></li>
+									<li class="main_nav_item"><a href="contact.php">contact</a></li>
 								</ul>
 							</div>
 							<div class="content_search ml-lg-0 ml-auto">
@@ -112,11 +112,11 @@ $result2 = $conn->query($sql2);
 				<div class="logo menu_logo"><a href="#"><img src="images/kodai-logo.png" alt=""></a></div>
 				<ul>
 					<li class="menu_item"><a href="#">home</a></li>
-					<li class="menu_item"><a href="about.html">about us</a></li>
-					<li class="menu_item"><a href="hirevehicals.html">hire vehicals</a></li>
-					<li class="menu_item"><a href="bookmytour.html">book my tour</a></li>
-					<li class="menu_item"><a href="blog.html">blog</a></li>
-					<li class="menu_item"><a href="contact.html">contact</a></li>
+					<li class="menu_item"><a href="about.php">about us</a></li>
+					<li class="menu_item"><a href="hirevehicals.php">hire vehicals</a></li>
+					<li class="menu_item"><a href="bookmytour.php">book my tour</a></li>
+					<li class="menu_item"><a href="blog.php">blog</a></li>
+					<li class="menu_item"><a href="contact.php">contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -1133,7 +1133,7 @@ $result2 = $conn->query($sql2);
 									<div class="footer_blog_image"><img src="images/kodai_footerblog1.jpg"
 											alt="https://unsplash.com/@avidenov"></div>
 									<div class="footer_blog_content">
-										<div class="footer_blog_title"><a href="blog.html">Beauty of river. </a>
+										<div class="footer_blog_title"><a href="blog.php">Beauty of river. </a>
 										</div>
 										<div class="footer_blog_date">Feb 14, 2021</div>
 									</div>
@@ -1144,7 +1144,7 @@ $result2 = $conn->query($sql2);
 									<div class="footer_blog_image"><img src="images/kodai_footerblog2.png"
 											alt="https://unsplash.com/@deannaritchie"></div>
 									<div class="footer_blog_content">
-										<div class="footer_blog_title"><a href="blog.html">Chettiar Park. </a>
+										<div class="footer_blog_title"><a href="blog.php">Chettiar Park. </a>
 										</div>
 										<div class="footer_blog_date">Feb 14, 2021</div>
 									</div>
@@ -1155,7 +1155,7 @@ $result2 = $conn->query($sql2);
 									<div class="footer_blog_image"><img src="images/kodai_footerblog3.webp"
 											alt="https://unsplash.com/@bergeryap87"></div>
 									<div class="footer_blog_content">
-										<div class="footer_blog_title"><a href="blog.html">Kodaikanal. </a>
+										<div class="footer_blog_title"><a href="blog.php">Kodaikanal. </a>
 										</div>
 										<div class="footer_blog_date">Feb 14, 2021</div>
 									</div>
@@ -1247,11 +1247,11 @@ $result2 = $conn->query($sql2);
 							<div class="footer_nav">
 								<ul class="footer_nav_list">
 									<li class="footer_nav_item"><a href="#">home</a></li>
-									<li class="footer_nav_item"><a href="about.html">about us</a></li>
-									<li class="footer_nav_item"><a href="hirevehicals.html">hire vehicals</a></li>
-									<li class="footer_nav_item"><a href="bookmytour.html">book my tour</a></li>
-									<li class="footer_nav_item"><a href="blog.html">blogs</a></li>
-									<li class="footer_nav_item"><a href="contact.html">contact</a></li>
+									<li class="footer_nav_item"><a href="about.php">about us</a></li>
+									<li class="footer_nav_item"><a href="hirevehicals.php">hire vehicals</a></li>
+									<li class="footer_nav_item"><a href="bookmytour.php">book my tour</a></li>
+									<li class="footer_nav_item"><a href="blog.php">blogs</a></li>
+									<li class="footer_nav_item"><a href="contact.php">contact</a></li>
 								</ul>
 							</div>
 						</div>

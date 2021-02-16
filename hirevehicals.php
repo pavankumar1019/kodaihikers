@@ -57,12 +57,12 @@
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
-								<li class="main_nav_item"><a href="index.html">home</a></li>
-								<li class="main_nav_item"><a href="about.html">about us</a></li>
+								<li class="main_nav_item"><a href="index.php">home</a></li>
+								<li class="main_nav_item"><a href="about.php">about us</a></li>
 								<li class="main_nav_item"><a href="#">hire vehicals</a></li>
-								<li class="main_nav_item"><a href="bookmytour.html">book my tour</a></li>
-								<li class="main_nav_item"><a href="blog.html">blogs</a></li>
-								<li class="main_nav_item"><a href="contact.html">contact</a></li>
+								<li class="main_nav_item"><a href="bookmytour.php">book my tour</a></li>
+								<li class="main_nav_item"><a href="blog.php">blogs</a></li>
+								<li class="main_nav_item"><a href="contact.php">contact</a></li>
 							</ul>
 						</div>
 						<div class="content_search ml-lg-0 ml-auto">
@@ -88,12 +88,12 @@
 			<div class="menu_close_container"><div class="menu_close"></div></div>
 			<div class="logo menu_logo"><a href="#"><img src="" alt=""></a></div>
 			<ul>
-				<li class="menu_item"><a href="index.html">home</a></li>
-				<li class="menu_item"><a href="about.html">about us</a></li>
+				<li class="menu_item"><a href="index.php">home</a></li>
+				<li class="menu_item"><a href="about.php">about us</a></li>
 				<li class="menu_item"><a href="#"> hire vehicals</a></li>
-				<li class="menu_item"><a href="bookmytour.html">book my tour</a></li>
-				<li class="menu_item"><a href="blog.html">blogs</a></li>
-				<li class="menu_item"><a href="contact.html">contact</a></li>
+				<li class="menu_item"><a href="bookmytour.php">book my tour</a></li>
+				<li class="menu_item"><a href="blog.php">blogs</a></li>
+				<li class="menu_item"><a href="contact.php">contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -753,7 +753,7 @@
 							<div class="footer_blog_item clearfix">
 								<div class="footer_blog_image"><img src="images/kodai_footerblog1.jpg" alt="https://unsplash.com/@avidenov"></div>
 								<div class="footer_blog_content">
-									<div class="footer_blog_title"><a href="blog.html">Beauty of river.</a></div>
+									<div class="footer_blog_title"><a href="blog.php">Beauty of river.</a></div>
 									<div class="footer_blog_date">Feb 14,2021</div>
 								</div>
 							</div>
@@ -762,7 +762,7 @@
 							<div class="footer_blog_item clearfix">
 								<div class="footer_blog_image"><img src="images/kodai_footerblog2.png" alt="https://unsplash.com/@deannaritchie"></div>
 								<div class="footer_blog_content">
-									<div class="footer_blog_title"><a href="blog.html">Chettiar Park.</a></div>
+									<div class="footer_blog_title"><a href="blog.php">Chettiar Park.</a></div>
 									<div class="footer_blog_date">Feb 14,2021</div>
 								</div>
 							</div>
@@ -771,7 +771,7 @@
 							<div class="footer_blog_item clearfix">
 								<div class="footer_blog_image"><img src="images/kodai_footerblog3.webp" alt="https://unsplash.com/@bergeryap87"></div>
 								<div class="footer_blog_content">
-									<div class="footer_blog_title"><a href="blog.html">Kodaikanal.</a></div>
+									<div class="footer_blog_title"><a href="blog.php">Kodaikanal.</a></div>
 									<div class="footer_blog_date">Feb 14,2021</div>
 								</div>
 							</div>
@@ -845,12 +845,12 @@ Technologies
 					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
 						<div class="footer_nav">
 							<ul class="footer_nav_list">
-								<li class="footer_nav_item"><a href="index.html">home</a></li>
-								<li class="footer_nav_item"><a href="about.html">about us</a></li>
+								<li class="footer_nav_item"><a href="index.php">home</a></li>
+								<li class="footer_nav_item"><a href="about.php">about us</a></li>
 								<li class="footer_nav_item"><a href="#"> hire vehicals</a></li>
-								<li class="footer_nav_item"><a href="bookmytour.html">book my tour</a></li>
-								<li class="footer_nav_item"><a href="blog.html">blogs</a></li>
-								<li class="footer_nav_item"><a href="contact.html">contact</a></li>
+								<li class="footer_nav_item"><a href="bookmytour.php">book my tour</a></li>
+								<li class="footer_nav_item"><a href="blog.php">blogs</a></li>
+								<li class="footer_nav_item"><a href="contact.php">contact</a></li>
 							</ul>
 						</div>
 					</div>

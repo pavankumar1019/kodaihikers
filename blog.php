@@ -61,9 +61,9 @@
 								<li class="main_nav_item"><a href="index.php">home</a></li>
 								<li class="main_nav_item"><a href="about.php">about us</a></li>
 								<li class="main_nav_item"><a href="hirevehicals.php">hire vehicals</a></li>
-								<li class="main_nav_item"><a href="bookmytour">book my tour</a></li>
+								<li class="main_nav_item"><a href="bookmytour.php">book my tour</a></li>
 								<li class="main_nav_item"><a href="#">blogs</a></li>
-								<li class="main_nav_item"><a href="contact.html">contact</a></li>
+								<li class="main_nav_item"><a href="contact.php">contact</a></li>
 							</ul>
 						</div>
 						<div class="content_search ml-lg-0 ml-auto">
@@ -94,7 +94,7 @@
 				<li class="menu_item"><a href="hirevehicals.php">hire vehicals</a></li>
 				<li class="menu_item"><a href="bookmytour">book my tour</a></li>
 				<li class="menu_item"><a href="#">blogs</a></li>
-				<li class="menu_item"><a href="contact.html">contact</a></li>
+				<li class="menu_item"><a href="contact.php">contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -504,9 +504,9 @@ Technologies
 								<li class="footer_nav_item"><a href="index.php">home</a></li>
 								<li class="footer_nav_item"><a href="about.php">about us</a></li>
 								<li class="footer_nav_item"><a href="hirevehicals.php">hire vehicals</a></li>
-								<li class="footer_nav_item"><a href="bookmytour.html">book my tour</a></li>
+								<li class="footer_nav_item"><a href="bookmytour.php">book my tour</a></li>
 								<li class="footer_nav_item"><a href="blog.html">blogs</a></li>	
-								<li class="footer_nav_item"><a href="contact.html">contact</a></li>
+								<li class="footer_nav_item"><a href="contact.php">contact</a></li>
 							</ul>
 						</div>
 					</div>
