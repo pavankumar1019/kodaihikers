@@ -5,16 +5,9 @@ function sendMessage() {
         "en" => 'English Message'
     );
     $headings      = array(
-        "en" => 'Kodai Hikerswebsite'
+        "en" => 'Kodai Hikers website'
     );
-    $hashes_array = array();
-    array_push($hashes_array, array(
-        "id" => "like-button-2",
-        "text" => "Like",
-        "icon" => "https://www.kodaihikers.com/images/kodai_logo.png",
-        "chrome_web_image" => "https://www.kodaihikers.com/images/kodai_logo.png",
-        "url" => "https://kodaihikers.com"
-    ));
+
     $fields = array(
         'app_id' => "678fdb16-8824-4b99-b872-4281424bafbd",
         'included_segments' => array(
@@ -22,7 +15,9 @@ function sendMessage() {
         ),
         'contents' => $content,
         'headings' => $headings,
-        'web_buttons' => $hashes_array
+        "chrome_web_image" => "https://www.kodaihikers.com/images/slider2.jpg",
+        "url" => "https://kodaihikers.com"
+     
     );
     
     $fields = json_encode($fields);
