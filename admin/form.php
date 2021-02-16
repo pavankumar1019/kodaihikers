@@ -555,7 +555,7 @@ $result = $conn->query($sql);
                             <div class="col-lg-6" >
                                 <div class="card">
                                     <div class="card-header">
-                                        <strong>Social Media</strong>Links Change
+                                        <strong>Social Media</strong>&nbsp;Links Change
                                     </div>
                                     <div class="card-body card-block">
                                         <form action="" method="post" class="form-horizontal">
