@@ -37,7 +37,7 @@ $result2 = $conn->query($sql2);
 </head>
 
 <body>
-
+<div class='onesignal-customlink-container'></div>
 	<div class="super_container">
 
 		<!-- Header -->
