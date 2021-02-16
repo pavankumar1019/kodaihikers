@@ -3,6 +3,8 @@ include '../db_connection/db.php';
  session_start();
 $sql = "SELECT * FROM kh_dynamic_scrolling_banners";
 $result = $conn->query($sql);
+$sql1 = "SELECT * FROM kh_social_media_links";
+$result1 = $conn->query($sql1);
 ?>
 
 
@@ -558,14 +560,27 @@ $result = $conn->query($sql);
                                         <strong>Social Media</strong>&nbsp;Links Change
                                     </div>
                                     <div class="card-body card-block">
-                                        <form action="" method="post" class="form-horizontal">
+                                        <form  action="change_social_media.php" method="post" enctype="multipart/form-data">
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="hf-email" class=" form-control-label">Email</label>
+                                                    <label for="hf-email" class=" form-control-label">Select the Social Medai</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                    <input type="email" id="hf-email" name="hf-email" placeholder="Enter Email..." class="form-control">
-                                                    <span class="help-block">Please enter your email</span>
+                            <select name="social_media" id="">
+                            <?php
+                            if ($result->num_rows > 0) {
+                                // output data of each row
+                                while($row = $result->fetch_assoc()) {
+                              
+                                                            ?>
+<option value="<?php echo $row["id"]; ?>">
+<?php echo $row["social_media_name"]; ?>
+</option>
+                                                            <?php
+                                                    }
+                                                    }
+                                                    ?>
+                            </select>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
