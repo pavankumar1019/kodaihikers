@@ -593,6 +593,7 @@ $result1 = $conn->query($sql1);
 
                                                 </div>
                                                 <div class="col-12 col-md-9">
+                                                    <h1></h1>
                                                 <input type="submit" name="save1" class="btn btn-primary" value="Add TO Gallery">
 
                                                 </div>
