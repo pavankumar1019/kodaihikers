@@ -27,15 +27,12 @@ $result2 = $conn->query($sql2);
 	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   window.OneSignal = window.OneSignal || [];
   OneSignal.push(function() {
     OneSignal.init({
-      appId: "b4caf7fc-6cc3-4599-af82-12b7d1be3177",
-      notifyButton: {
-        enable: true,
-      },
-      subdomainName: "kodaihikers",
+      appId: "21eb1e4f-6e05-40f3-abe9-4009b3c496f9",
     });
   });
 </script>
