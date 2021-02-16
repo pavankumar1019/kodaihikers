@@ -3,6 +3,8 @@ include 'db_connection/db.php';
 $sql = "SELECT * FROM kh_dynamic_scrolling_banners";
 $result = $conn->query($sql);
 
+$sql1 = "SELECT * FROM kh_social_media_links";
+$result1 = $conn->query($sql1);
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -1100,11 +1102,20 @@ $result = $conn->query($sql);
 									Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer
 									eleme ntum orci eu vehicula pretium.</p>
 								<ul class="footer_social_list">
-									<li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-									<li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-									<li class="footer_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li class="footer_social_item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-									<li class="footer_social_item"><a href="#"><i class="fa fa-behance"></i></a></li>
+								<?php
+                            if ($result1->num_rows > 0) {
+                                // output data of each row
+                                while($row1 = $result1->fetch_assoc()) {
+                              
+                                                            ?>
+															<li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+									<li class="footer_social_item"><a href="<?php echo $row1["links"]; ?>"><?php echo $row1["social_media_icon"]; ?></a></li>
+                                                            <?php
+								}
+								}
+								?>
+
+									
 								</ul>
 							</div>
 						</div>
