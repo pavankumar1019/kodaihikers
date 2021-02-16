@@ -592,11 +592,7 @@ $result1 = $conn->query($sql1);
                                                 <textarea  id="textarea-input" rows="3" placeholder="Content..." class="form-control" name="description"></textarea>
 
                                                 </div>
-                                                <div class="col-12 col-md-9">
-                                                    <h1></h1>
-                                              
-
-                                                </div>
+                       <br>
                                                 <input type="submit"  name="save1" class="form-control btn btn-primary" value="Post Link">
                                             </div>
                                         </form>
