@@ -30,7 +30,7 @@ $result2 = $conn->query($sql2);
   window.OneSignal = window.OneSignal || [];
   OneSignal.push(function() {
     OneSignal.init({
-      appId: "21eb1e4f-6e05-40f3-abe9-4009b3c496f9",
+      appId: "d46cd2b6-22ca-462b-a6ef-fbf34e42bf4e",
     });
   });
 </script>
