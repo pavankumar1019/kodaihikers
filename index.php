@@ -26,18 +26,18 @@ $result2 = $conn->query($sql2);
 	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "d46cd2b6-22ca-462b-a6ef-fbf34e42bf4e",
-    });
-  });
-</script>
 </head>
 
 <body>
 
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "678fdb16-8824-4b99-b872-4281424bafbd",
+    });
+  });
+</script>
 	<div class="super_container">
 
 		<!-- Header -->
