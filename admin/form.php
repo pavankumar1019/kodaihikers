@@ -568,13 +568,13 @@ $result1 = $conn->query($sql1);
                                                 <div class="col-12 col-md-9">
                             <select name="social_media" id="">
                             <?php
-                            if ($result->num_rows > 0) {
+                            if ($result1->num_rows > 0) {
                                 // output data of each row
-                                while($row = $result->fetch_assoc()) {
+                                while($row1 = $result->fetch_assoc()) {
                               
                                                             ?>
 <option value="<?php echo $row["id"]; ?>">
-<?php echo $row["social_media_name"]; ?>
+<?php echo $row1["social_media_name"]; ?>
 </option>
                                                             <?php
                                                     }
