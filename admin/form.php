@@ -564,7 +564,7 @@ $result1 = $conn->query($sql1);
                                         <form  action="change_social_media.php" method="post" enctype="multipart/form-data">
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="hf-email" class=" form-control-label">Select the Social Medai</label>
+                                                    <label for="hf-email" class=" form-control-label">Social Medai</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
                             <select name="social_media"  class="form-control" id="social_media">
