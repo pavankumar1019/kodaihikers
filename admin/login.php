@@ -31,7 +31,7 @@ include '../db_connection/db.php';
     Admin Login Here.!
   </div>
   <div class="card-body">
-  <form name="frmUser" method="post" action="" align="center">
+  <form name="frmUser" method="post" action="" >
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input class="form-control"  id="exampleInputEmail1" aria-describedby="emailHelp" type="text" name="user_name">
