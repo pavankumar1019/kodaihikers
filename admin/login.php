@@ -13,8 +13,8 @@ include '../db_connection/db.php';
          $message = "Invalid Username or Password!";
         }
     }
-    if(isset($_SESSION["id"])) {
-    header("Location:index.php");
+    if(isset($_SESSION["email"])) {
+    header("Location: index.php");
     }
 ?>
 <html>
