@@ -433,8 +433,8 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                         <i class="zmdi zmdi-money-box"></i>Billing</a>
                                                 </div>
                                             </div>
-                                            <div class="account-dropdown__footer">
-                                                <a href="#">
+                                            <div class="accounlogout.phpt-dropdown__footer">
+                                                <a href="">
                                                     <i class="zmdi zmdi-power"></i>Logout</a>
                                             </div>
                                         </div>
