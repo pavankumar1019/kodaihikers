@@ -127,7 +127,7 @@ $result2 = $conn->query($sql2);
 
 	<!-- Intro -->
 
-	<div class="intro">
+	<div class="intro" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">

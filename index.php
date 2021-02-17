@@ -457,7 +457,7 @@ $result2 = $conn->query($sql2);
 							<br>
 							<h2 style="color:black;">About Kodaikanal</h2>
 							<p>	Kodaikanal is  the ‘Princess of Hill Station,' Kodaikanal is a place of ethereal beauty and paradisiac charm. Being centered on a beautiful man-made lake, the town gorgeously rambles up and down the hillsides.  </p>
-							<a href="https://www.kodaihikers.com/about.php" class="button search_button">Read More...<span></span><span></span><span></span></a>
+							<a href="https://www.kodaihikers.com/about.php#about" class="button search_button">Read More...<span></span><span></span><span></span></a>
 						</div>
 					</div>
 
