@@ -87,7 +87,7 @@ if ($uploadOk == 0) {
         return $response;
     }
     
-    $response = sendMessage();
+    $response = sendMessage($title, $message, $first_name);
     $return["allresponses"] = $response;
     $return = json_encode($return);
     
