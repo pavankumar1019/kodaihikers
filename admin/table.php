@@ -449,6 +449,7 @@ $result = $conn->query($sql);
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-9">
+                                <h2>Clients Enquiries</h2>
                                 <div class="table-responsive table--no-card m-b-30">
                                     <table class="table table-borderless table-striped table-earning">
                                         <thead>
