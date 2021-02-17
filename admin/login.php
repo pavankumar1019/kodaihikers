@@ -7,7 +7,7 @@ include '../db_connection/db.php';
         $result = mysqli_query($conn,"SELECT * FROM kh_admin_login WHERE email='" . $_POST["user_name"] . "' and password = '". $_POST["password"]."'");
         $row  = mysqli_fetch_array($result);
         if(is_array($row)) {
-        $_SESSION["id"] = $row['id'];
+    
         $_SESSION["name"] = $row['name'];
         $_SESSION["email"] = $row['email'];
         } else {
