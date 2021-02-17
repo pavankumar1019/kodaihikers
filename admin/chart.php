@@ -57,9 +57,9 @@
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="index.php">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                            <!-- <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
                                     <a href="index.html">Dashboard 1</a>
                                 </li>
@@ -72,21 +72,21 @@
                                 <li>
                                     <a href="index4.html">Dashboard 4</a>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
-                            <a href="chart.html">
+                            <a href="chart.php">
                                 <i class="fas fa-chart-bar"></i>Charts</a>
                         </li>
                         <li>
-                            <a href="table.html">
-                                <i class="fas fa-table"></i>Tables</a>
+                            <a href="table.php">
+                                <i class="fas fa-table"></i>Report's</a>
                         </li>
                         <li>
-                            <a href="form.html">
-                                <i class="far fa-check-square"></i>Forms</a>
+                            <a href="form.php">
+                                <i class="far fa-check-square"></i>Website Modification</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="calendar.html">
                                 <i class="fas fa-calendar-alt"></i>Calendar</a>
                         </li>
@@ -147,7 +147,7 @@
                                     <a href="typo.html">Typography</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </nav>
@@ -167,7 +167,7 @@
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <!-- <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
                                     <a href="index.html">Dashboard 1</a>
                                 </li>
@@ -180,21 +180,21 @@
                                 <li>
                                     <a href="index4.html">Dashboard 4</a>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li class="active">
-                            <a href="chart.html">
+                            <a href="chart.php">
                                 <i class="fas fa-chart-bar"></i>Charts</a>
                         </li>
                         <li>
-                            <a href="table.html">
-                                <i class="fas fa-table"></i>Tables</a>
+                            <a href="table.php">
+                                <i class="fas fa-table"></i>Report's</a>
                         </li>
                         <li>
-                            <a href="form.html">
-                                <i class="far fa-check-square"></i>Forms</a>
+                            <a href="form.php">
+                                <i class="far fa-check-square"></i>Website Modification</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="calendar.html">
                                 <i class="fas fa-calendar-alt"></i>Calendar</a>
                         </li>
@@ -255,7 +255,7 @@
                                     <a href="typo.html">Typography</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
             </div>
@@ -270,14 +270,14 @@
                     <div class="container-fluid">
                         <div class="header-wrap">
                             <form class="form-header" action="" method="POST">
-                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for datas &amp; reports..." />
+                                <!-- <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for datas &amp; reports..." />
                                 <button class="au-btn--submit" type="submit">
                                     <i class="zmdi zmdi-search"></i>
-                                </button>
+                                </button> -->
                             </form>
                             <div class="header-button">
                                 <div class="noti-wrap">
-                                    <div class="noti__item js-item-menu">
+                                    <!-- <div class="noti__item js-item-menu">
                                         <i class="zmdi zmdi-comment-more"></i>
                                         <span class="quantity">1</span>
                                         <div class="mess-dropdown js-dropdown">
@@ -386,7 +386,7 @@
                                                 <a href="#">All notifications</a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
@@ -411,14 +411,14 @@
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__body">
-                                                <div class="account-dropdown__item">
+                                                <!-- <div class="account-dropdown__item">
                                                     <a href="#">
                                                         <i class="zmdi zmdi-account"></i>Account</a>
                                                 </div>
                                                 <div class="account-dropdown__item">
                                                     <a href="#">
                                                         <i class="zmdi zmdi-settings"></i>Setting</a>
-                                                </div>
+                                                </div> -->
                                                 <div class="account-dropdown__item">
                                                     <a href="#">
                                                         <i class="zmdi zmdi-money-box"></i>Billing</a>
