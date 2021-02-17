@@ -45,7 +45,7 @@ include '../db_connection/db.php';
   <div class="message"><?php if($message!="") { echo $message; } ?></div>
 
   </div>
-  <div class="mb-3">
+  <div class="d-grid gap-2 col-6 mx-auto">
   <input type="submit"  class="btn btn-primary btn-lg" name="submit" value="Submit"><br><br>
 <input  class="btn btn-outline-success btn-lg" type="reset">
   </div>
