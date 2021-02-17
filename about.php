@@ -135,7 +135,7 @@ $result2 = $conn->query($sql2);
 				</div>
 				<div class="col-lg-5">
 					<div class="intro_content">
-						<div class="intro_title">we have the best tours</div>
+						<div class="intro_title">About Kodai Hikers tours and travels</div>
 						<p class="intro_text">We are always searching for ways to make your holidays as beautiful as possible</p>
 						
 					</div>
@@ -149,6 +149,37 @@ $result2 = $conn->query($sql2);
 		</div>
 	</div>
 
+
+
+	<!-- Intro -->
+
+	<div class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="intro_image"><img src="images/Kodai_aboutusimg.png" alt=""></div>
+				</div>
+				<div class="col-lg-5">
+					<div class="intro_content">
+						<div class="intro_title">About Kodai Hikers tours and travels</div>
+						<p class="intro_text">We are always searching for ways to make your holidays as beautiful as possible</p>
+						
+					</div>
+					<div class="intro_content">
+						
+						<p class="intro_text">We offer best solution for your travel needs. We are one of the professional travelling agencies. We organize customized holiday tours by considering the requirements of our client’s. We are offering several four packages like family tours, student, couple and honeymoon tours packages with best price and quality services. Kodaikanal is also known as the princess of hills stations. Kodaikanal is one of the most visited tourist spot in India. Kodaikanal has lots of attractions you can explore the paradise of nature’s beauty. We make your journey imperishable.</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/kodai_lakeviewpoint.jpg"></div>
+		<div class="home_content">
+			<div class="home_title">about us</div>
+		</div>
+	</div>
 	<!-- Stats -->
 
 	<!-- <div class="stats">
