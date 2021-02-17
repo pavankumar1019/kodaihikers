@@ -141,15 +141,15 @@ $result2 = $conn->query($sql2);
 							<div class="blog_post_image">
 								<img src="images/blog_1.jpg" alt="https://unsplash.com/@anniespratt">
 								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
-								<!-- <div class="blog_post_month">Starts from</div> -->
+
 									<div class="blog_post_day">₹ <strong> 01</strong></div>
-									
+									<div class="blog_post_month">1 person</div>
 								</div>
 							</div>
 							<div class="blog_post_meta">
 								<ul>
 									<li class="blog_post_meta_item"><a href="">3 nights 4 days</a></li>
-									<li class="blog_post_meta_item"><a href="">Uncategorized</a></li>
+									<li class="blog_post_meta_item"><a href=""></a></li>
 									<li class="blog_post_meta_item"><a href="">3 Comments</a></li>
 								</ul>
 							</div>
