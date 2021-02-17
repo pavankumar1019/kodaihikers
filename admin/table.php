@@ -1,5 +1,5 @@
 <?php
-include 'db_connection/db.php';
+include '../db_connection/db.php';
 $sql = "SELECT * FROM kh_get_in_touch";
 $result = $conn->query($sql);
 ?>
