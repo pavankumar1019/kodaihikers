@@ -25,6 +25,7 @@ include '../db_connection/db.php';
 
 </head>
 <body>
+<div class="container-fluid">
 <div class="card">
   <div class="card-header">
     Admin Login Here.!
@@ -51,6 +52,8 @@ include '../db_connection/db.php';
 </form>
   </div>
 </div>
+</div>
+
 
 </body>
 </html>
