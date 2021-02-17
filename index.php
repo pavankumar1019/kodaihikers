@@ -1061,25 +1061,20 @@ $result3 = $conn->query($sql3);
 					<div class="col-lg-7 p-4">
 						<div class="contact_form_container">
 							<div class="contact_title">get in touch</div>
-							<form id="fupForm" name="form1" method="post">
-		<div class="form-group">
-			<label for="email">Name:</label>
-			<input type="text" class="form-control" id="name" placeholder="Name" name="name">
-		</div>
-		<div class="form-group">
-			<label for="pwd">Email:</label>
-			<input type="email" class="form-control" id="email" placeholder="Email" name="email">
-		</div>
-		<div class="form-group">
-			<label for="pwd">Phone:</label>
-			<input type="text" class="form-control" id="phone" placeholder="Phone" name="phone">
-		</div>
-		<div class="form-group" >
-			<label for="pwd">City:</label>
-			<input type="text" class="form-control" id="city" placeholder="Phone" name="city">
-		</div>
-		<input type="button" name="save" class="btn btn-primary" value="Save to database" id="butsave">
-	</form>
+							<form id="fupForm" name="form1" method="post" class="contact_form">
+								<input type="text" id="name" name="name" class="contact_form_name input_field"
+									placeholder="Name"  required="required" data-error="Name is required.">
+								<input type="text" id="email" name="email" class="contact_form_email input_field"
+									placeholder="E-mail" required="required" data-error="Email is required.">
+								<input type="text" id="number" name="number" class="contact_form_subject input_field"
+									placeholder="Phone Number" required="required" data-error="Subject is required.">
+								<textarea id="message" class="text_field contact_form_message"
+									name="message" rows="4" placeholder="Message" required="required"
+									data-error="Please, write us a message."></textarea>
+								<button type="submit" id="butsave" class="form_submit_button button">send
+									message<span></span><span></span><span></span></button>
+									<input type="button" name="save" class="btn btn-primary" value="Save to database" id="butsave">
+							</form>
 							<div id="success" style="color:red;"></div>
 						</div>
 					</div>
@@ -1277,15 +1272,16 @@ owl.owlCarousel({
     autoplayHoverPause:true
 });
 </script>
+
 <script>
 $(document).ready(function() {
 	$('#butsave').on('click', function() {
 		$("#butsave").attr("disabled", "disabled");
 		var name = $('#name').val();
 		var email = $('#email').val();
-		var phone = $('#phone').val();
-		var city = $('#city').val();
-		if(name!="" && email!="" && phone!="" && city!=""){
+		var phone = $('#number').val();
+		var message = $('#message').val();
+		if(name!="" && email!="" && phone!="" && message!=""){
 			$.ajax({
 				url: "save.php",
 				type: "POST",
@@ -1293,7 +1289,7 @@ $(document).ready(function() {
 					name: name,
 					email: email,
 					phone: phone,
-					city: city				
+					message: message				
 				},
 				cache: false,
 				success: function(dataResult){
