@@ -31,12 +31,8 @@ include '../db_connection/db.php';
 </head>
 <body>
 <div class="container-fluid">
-<div class="row d-flex p-2">
-      <div class="col-md-3">
-                    <div class="container">
-                      Admin Login Here.!
-                     </div>
-                      <div class="container">
+<div class="container d-flex p-2">
+                   
                             <form name="frmUser" method="post" action="" >
                             <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -56,9 +52,9 @@ include '../db_connection/db.php';
 
                             </div>
                           </form>
+
                     </div>
-                  </div>          
-      </div>
+                    </div>
 
 </body>
 </html>
