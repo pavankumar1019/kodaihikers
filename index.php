@@ -1298,7 +1298,7 @@ $(document).ready(function() {
 						$("#butsave").removeAttr("disabled");
 						$('#fupForm').find('input:text').val('');
 						$("#success").show();
-						$('#success').html('Data added successfully !'); 						
+						$('#success').html('Message Sent successfully !'); 						
 					}
 					else if(dataResult.statusCode==201){
 					   alert("Error occured !");
