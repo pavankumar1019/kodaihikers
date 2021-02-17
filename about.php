@@ -168,7 +168,7 @@ $result2 = $conn->query($sql2);
 					</div>
 				</div>
 				<div class="col-lg-7">
-					<div class="intro_image"><img src="images/kodai_pambarfalls.jpg"  width="300px" alt=""></div>
+					<div class="intro_image"><img src="images/kodai_pambarfalls.jpg"  width="600px" alt=""></div>
 				</div>
 			</div>
 		</div>
