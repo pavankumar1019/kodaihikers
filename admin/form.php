@@ -611,7 +611,7 @@ $result1 = $conn->query($sql1);
                                 
                                 </div>
                       
-                                <div class="col-lg-6" id="social_media" >
+                                <div class="col-lg-6" id="push_notification" >
                                 <div class="card">
                                     <div class="card-header">
                                         <strong>Send</strong>&nbsp;Push Notifications
@@ -623,13 +623,13 @@ $result1 = $conn->query($sql1);
                         unset($_SESSION['message4']);
                     }
                     ?>
-                                        <form  action="send_push_notifications.php" method="post" enctype="multipart/form-data">
+                                        <form  action="pushnot.php" method="post" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <div class="col col-md-3">
                                                     <label for="hf-email" class=" form-control-label">Title</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" value="" class="form-control">
+                                              <input type="text" value="" name="title" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -637,26 +637,21 @@ $result1 = $conn->query($sql1);
                                                
                                        <img id="blah1" style="width:300px;display:none;" src="#" alt="your image" />
                                             <label for="company" class="form-control-label">Image</label>
-    <input type='file' name="fileToUpload1" onchange="readURL1(this);" />
-
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                              <input type="text" value="" class="form-control">
-                                                </div>
+    <input type='file' name="fileToUpload2" onchange="readURL1(this);" />
                                             </div>
                                             <div class=" form-group">
                                                 <div class="col col-md-3">
                                                     <label for="hf-password" class=" form-control-label">Message</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                <textarea  id="textarea-input" rows="3" placeholder="" class="form-control" name="links"></textarea>
+                                                <textarea  id="textarea-input" rows="3" placeholder="" class="form-control" name="message" ></textarea>
 
                                                 </div>
                   
                                               
                                             </div>
                                             <br>
-                                            <input type="submit"  name="save3" class="form-control btn btn-primary" value="Post Link">
+                                            <input type="submit"  name="save3" class="form-control btn btn-info" value="Push Notification to Subscribers">
                                         </form>
                                     </div>
                                    
