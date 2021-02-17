@@ -156,8 +156,9 @@ $result2 = $conn->query($sql2);
 							<div class="blog_post_text">
 								<p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
 							</div>
+							<br>
 							<div class="button home_slider_button">
-									<div class="button_bcg"></div><a href="contact.php">contact
+									<div class="button_bcg"></div><a href="contact.php">book now
 										us<span></span><span></span><span></span></a>
 								</div>
 						</div>
