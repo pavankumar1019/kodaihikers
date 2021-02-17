@@ -22,6 +22,7 @@ $result3 = $conn->query($sql3);
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -155,13 +156,21 @@ $result3 = $conn->query($sql3);
 					<!-- Contact Form -->
 					<div class="contact_form_container">
 						<div class="contact_title text-center">get in touch</div>
-						<form action="#" id="contact_form" class="contact_form text-center">
-							<input type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="Name" required="required" data-error="Name is required.">
-							<input type="text" id="contact_form_email" class="contact_form_email input_field" placeholder="E-mail" required="required" data-error="Email is required.">
-							<input type="text" id="contact_form_subject" class="contact_form_subject input_field" placeholder="Phone number" required="required" data-error="Subject is required.">
-							<textarea id="contact_form_message" class="text_field contact_form_message" name="message" rows="4" placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
-							<button type="submit" id="form_submit_button" class="form_submit_button button trans_200">send message<span></span><span></span><span></span></button>
-						</form>
+						<form id="fupForm" name="form1" method="post" class="contact_form">
+								<input type="text" id="name" name="name" class="contact_form_name input_field"
+									placeholder="Name"  required="required" data-error="Name is required.">
+								<input type="text" id="email" name="email" class="contact_form_email input_field"
+									placeholder="E-mail" required="required" data-error="Email is required.">
+								<input type="text" id="number" name="number" class="contact_form_subject input_field"
+									placeholder="Phone Number" required="required" data-error="Subject is required.">
+								<textarea id="message" class="text_field contact_form_message"
+									name="message" rows="4" placeholder="Message" required="required"
+									data-error="Please, write us a message."></textarea>
+								<button type="submit" id="butsave" class="form_submit_button button">send
+									message<span></span><span></span><span></span></button>
+								
+							</form>
+							<div id="success" style="color:red;"></div>
 					</div>
 
 				</div>
@@ -409,7 +418,46 @@ Technologies
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="js/contact_custom.js"></script>
-
+<script>
+$(document).ready(function() {
+	$('#butsave').on('click', function() {
+		$("#butsave").attr("disabled", "disabled");
+		var name = $('#name').val();
+		var email = $('#email').val();
+		var phone = $('#number').val();
+		var message = $('#message').val();
+		if(name!="" && email!="" && phone!="" && message!=""){
+			$.ajax({
+				url: "save.php",
+				type: "POST",
+				data: {
+					name: name,
+					email: email,
+					phone: phone,
+					message: message				
+				},
+				cache: false,
+				success: function(dataResult){
+					var dataResult = JSON.parse(dataResult);
+					if(dataResult.statusCode==200){
+						$("#butsave").removeAttr("disabled");
+						$('#fupForm').find('input:text').val('');
+						$("#success").show();
+						$('#success').html('Message Sent successfully !'); 						
+					}
+					else if(dataResult.statusCode==201){
+					   alert("Error occured !");
+					}
+					
+				}
+			});
+		}
+		else{
+			alert('Please fill all the field !');
+		}
+	});
+});
+</script>
 </body>
 
 </html>
