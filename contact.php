@@ -191,7 +191,7 @@ $result3 = $conn->query($sql3);
 						<div class="logo_container about_logo">
 							<div class="logo"><a href="#"><img src="images/kodai_logo.png" alt=""></a></div>
 						</div>
-						<p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula iaculis consequat nisl. Nunc et suscipit urna pretium.</p>
+						<p class="about_text">We are always searching for ways to make your holidays as beautiful as possible</p>
 						<ul class="about_social_list">
 														
 			<?php
