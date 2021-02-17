@@ -611,7 +611,59 @@ $result1 = $conn->query($sql1);
                                 
                                 </div>
                       
-  
+                                <div class="col-lg-6" id="social_media" >
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong>Send</strong>&nbsp;Push Notifications
+                                    </div>
+                                    <div class="card-body card-block">
+                                    <?php if (isset($_SESSION['message4']) && !empty($_SESSION['message3'])) { ?>
+                        <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message3']; ?></div>
+                        <?php
+                        unset($_SESSION['message4']);
+                    }
+                    ?>
+                                        <form  action="send_push_notifications.php" method="post" enctype="multipart/form-data">
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Title</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" value="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                               
+                                       <img id="blah1" style="width:300px;display:none;" src="#" alt="your image" />
+                                            <label for="company" class=" form-control-label">Choose Image</label>
+    <input type='file' name="fileToUpload1" onchange="readURL1(this);" />
+
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" value="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class=" form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-password" class=" form-control-label">Message</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                <textarea  id="textarea-input" rows="3" placeholder="" class="form-control" name="links"></textarea>
+
+                                                </div>
+                  
+                                              
+                                            </div>
+                                            <br>
+                                            <input type="submit"  name="save3" class="form-control btn btn-primary" value="Post Link">
+                                        </form>
+                                    </div>
+                                   
+                                </div>
+                         
+                                
+                                </div>
                        
                           
                   
@@ -670,6 +722,21 @@ $("#save").click(function(){
 
             reader.onload = function (e) {
                 $('#blah')
+                    .attr('src', e.target.result).show();
+              
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+<script>
+    function readURL1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah1')
                     .attr('src', e.target.result).show();
               
             };
