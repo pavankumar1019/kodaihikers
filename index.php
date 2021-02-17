@@ -1068,7 +1068,7 @@ $result3 = $conn->query($sql3);
 									placeholder="E-mail" required="required" data-error="Email is required.">
 								<input type="text" id="contact_form_subject" name="contact_form_subject" class="contact_form_subject input_field"
 									placeholder="Phone Number" required="required" data-error="Subject is required.">
-								<textarea id="contact_form_message" name="message" class="text_field contact_form_message"
+								<textarea id="message" name="message" class="text_field contact_form_message"
 									name="message" rows="4" placeholder="Message" required="required"
 									data-error="Please, write us a message."></textarea>
 								<button type="submit" id="butsave" class="form_submit_button button">send
@@ -1279,7 +1279,7 @@ $(document).ready(function() {
 		var name = $('#contact_form_name').val();
 		var email = $('#contact_form_email').val();
 		var phone = $('#contact_form_subject').val();
-		var message = $('#contact_form_message').val();
+		var message = $('#message').val();
 		if(name!="" && email!="" && phone!="" && message!=""){
 			$.ajax({
 				url: "save.php",
