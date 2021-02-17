@@ -28,6 +28,7 @@ $result3 = $conn->query($sql3);
 	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   window.OneSignal = window.OneSignal || [];
@@ -1058,9 +1059,9 @@ $result3 = $conn->query($sql3);
 					<div class="col-lg-7 p-4">
 						<div class="contact_form_container">
 							<div class="contact_title">get in touch</div>
-							<form action="#" id="contact_form" class="contact_form">
+							<form action="#" id="fupForm" class="contact_form">
 								<input type="text" id="contact_form_name" class="contact_form_name input_field"
-									placeholder="Name" required="required" data-error="Name is required.">
+									placeholder="Name"  required="required" data-error="Name is required.">
 								<input type="text" id="contact_form_email" class="contact_form_email input_field"
 									placeholder="E-mail" required="required" data-error="Email is required.">
 								<input type="text" id="contact_form_subject" class="contact_form_subject input_field"
@@ -1068,9 +1069,10 @@ $result3 = $conn->query($sql3);
 								<textarea id="contact_form_message" class="text_field contact_form_message"
 									name="message" rows="4" placeholder="Message" required="required"
 									data-error="Please, write us a message."></textarea>
-								<button type="submit" id="form_submit_button" class="form_submit_button button">send
+								<button type="submit" id="butsave" class="form_submit_button button">send
 									message<span></span><span></span><span></span></button>
 							</form>
+							<div id="success" style="color:red;"></div>
 						</div>
 					</div>
 				</div>
@@ -1266,6 +1268,48 @@ owl.owlCarousel({
     autoplayTimeout:3000,
     autoplayHoverPause:true
 });
+</script>
+<script>
+<script>
+$(document).ready(function() {
+	$('#butsave').on('click', function() {
+		$("#butsave").attr("disabled", "disabled");
+		var name = $('#contact_form_name').val();
+		var email = $('#contact_form_email').val();
+		var phone = $('#contact_form_subject').val();
+		var message = $('#contact_form_message').val();
+		if(name!="" && email!="" && phone!="" && message!=""){
+			$.ajax({
+				url: "save.php",
+				type: "POST",
+				data: {
+					name: name,
+					email: email,
+					phone: phone,
+					message: message				
+				},
+				cache: false,
+				success: function(dataResult){
+					var dataResult = JSON.parse(dataResult);
+					if(dataResult.statusCode==200){
+						$("#butsave").removeAttr("disabled");
+						$('#fupForm').find('input:text').val('');
+						$("#success").show();
+						$('#success').html('Data added successfully !'); 						
+					}
+					else if(dataResult.statusCode==201){
+					   alert("Error occured !");
+					}
+					
+				}
+			});
+		}
+		else{
+			alert('Please fill all the field !');
+		}
+	});
+});
+</script>
 </script>
 </body>
 
