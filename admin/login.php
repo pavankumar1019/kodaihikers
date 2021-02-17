@@ -7,7 +7,6 @@ include '../db_connection/db.php';
         $result = mysqli_query($conn,"SELECT * FROM kh_admin_login WHERE email='" . $_POST["user_name"] . "' and password = '". $_POST["password"]."'");
         $row  = mysqli_fetch_array($result);
         if(is_array($row)) {
-    
         $_SESSION["name"] = $row['name'];
         $_SESSION["email"] = $row['email'];
         } else {
@@ -34,7 +33,7 @@ include '../db_connection/db.php';
   <form name="frmUser" method="post" action="" >
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input class="form-control"  id="exampleInputEmail1" aria-describedby="emailHelp" type="text" name="user_name">
+    <input class="form-control"  id="exampleInputEmail1" aria-describedby="emailHelp" type="text" name="user_name" required>
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-3">
