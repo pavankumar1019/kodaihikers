@@ -386,8 +386,8 @@
                                                 <a href="#">All notifications</a>
                                             </div>
                                         </div>
-                                    </div>
-                                </div> -->
+                                    </div>-->
+                                </div> 
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
