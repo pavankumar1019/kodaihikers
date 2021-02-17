@@ -158,8 +158,9 @@ $result2 = $conn->query($sql2);
 							<div class="blog_post_text">
 								<p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
 							</div>
-							<div class="blog_post_title content"><a href="#">Inclusions</a></div>
-							<div class="blog_post_text content">
+							<div class="content">
+							<div class="blog_post_title"><a href="#">Inclusions</a></div>
+							<div class="blog_post_text ">
 								<p>Accomodation as per Itinerary
 Daily Breakfast
 Important Notes:-
@@ -171,8 +172,8 @@ Suggested activities are not included in the itinerary
 Toll charges and Road taxes are not included in the cost of the package
 If you plan to travel with an infant, then it is advised to carry an infant car seats</p>
 							</div>
-							<div class="blog_post_title content"><a href="#">Exclusions</a></div>
-							<div class="blog_post_text content">
+							<div class="blog_post_title "><a href="#">Exclusions</a></div>
+							<div class="blog_post_text ">
 								<p>
 5% GSt Extra
 Anything not mentioned under ‘Package Inclusions’
@@ -183,11 +184,13 @@ Medical and travel insurance
 </p>
 							</div>
 							<br>
-							<a href="" class="show_hide">Rad More</a>
-							<div class="button home_slider_button content" >
+
+							<div class="button home_slider_button " >
 									<div class="button_bcg"></div><a href="contact.php">book now
 										us<span></span><span></span><span></span></a>
 								</div>
+								</div>
+								<a href="" class="show_hide">Rad More</a>
 						</div>
 
 						<!-- Blog Post -->
