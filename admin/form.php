@@ -651,7 +651,7 @@ $result1 = $conn->query($sql1);
                                               
                                             </div>
                                             <br>
-                                            <input type="submit"  name="save3" class="form-control btn btn-primary" value="Post Link">
+                                            <input type="submit"  name="save3" class="form-control btn btn-info" value="Push Notification to Subscribers">
                                         </form>
                                     </div>
                                    
