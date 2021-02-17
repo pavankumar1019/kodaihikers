@@ -1061,7 +1061,7 @@ $result3 = $conn->query($sql3);
 					<div class="col-lg-7 p-4">
 						<div class="contact_form_container">
 							<div class="contact_title">get in touch</div>
-							<form action="#" id="fupForm" class="contact_form">
+							<form id="fupForm" name="form1" method="post" class="contact_form">
 								<input type="text" id="contact_form_name" name="contact_form_name" class="contact_form_name input_field"
 									placeholder="Name"  required="required" data-error="Name is required.">
 								<input type="text" id="contact_form_email" name="contact_form_email" class="contact_form_email input_field"
