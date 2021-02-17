@@ -1073,7 +1073,7 @@ $result3 = $conn->query($sql3);
 									data-error="Please, write us a message."></textarea>
 								<button type="submit" id="butsave" class="form_submit_button button">send
 									message<span></span><span></span><span></span></button>
-									<input type="button" name="save" class="btn btn-primary" value="Save to database" id="butsave">
+								
 							</form>
 							<div id="success" style="color:red;"></div>
 						</div>
