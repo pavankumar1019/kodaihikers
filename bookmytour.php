@@ -148,7 +148,7 @@ $result2 = $conn->query($sql2);
 							</div>
 							<div class="blog_post_meta">
 								<ul>
-									<li class="blog_post_meta_item"><a href="">by Lore Papp</a></li>
+									<li class="blog_post_meta_item"><a href="">3 nights 4 days</a></li>
 									<li class="blog_post_meta_item"><a href="">Uncategorized</a></li>
 									<li class="blog_post_meta_item"><a href="">3 Comments</a></li>
 								</ul>
