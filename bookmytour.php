@@ -209,13 +209,7 @@ $result2 = $conn->query($sql2);
 
 					</div>
 						
-					<div class="blog_navigation">
-						<ul>
-							<li class="blog_dot active"><div></div>01.</li>
-							<li class="blog_dot"><div></div>02.</li>
-							<li class="blog_dot"><div></div>03.</li>
-						</ul>
-					</div>
+				
 				</div>
 
 				<!-- Blog Sidebar -->
