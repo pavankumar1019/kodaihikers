@@ -141,8 +141,9 @@ $result2 = $conn->query($sql2);
 							<div class="blog_post_image">
 								<img src="images/blog_1.jpg" alt="https://unsplash.com/@anniespratt">
 								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
+								<div class="blog_post_month">Dec, 2017</div>
 									<div class="blog_post_day">01</div>
-									<div class="blog_post_month">Dec, 2017</div>
+									
 								</div>
 							</div>
 							<div class="blog_post_meta">
