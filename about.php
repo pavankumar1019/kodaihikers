@@ -139,6 +139,11 @@ $result2 = $conn->query($sql2);
 						<p class="intro_text">We are always searching for ways to make your holidays as beautiful as possible</p>
 						
 					</div>
+					<div class="intro_content">
+						
+						<p class="intro_text">We offer best solution for your travel needs. We are one of the professional travelling agencies. We organize customized holiday tours by considering the requirements of our client’s. We are offering several four packages like family tours, student, couple and honeymoon tours packages with best price and quality services. Kodaikanal is also known as the princess of hills stations. Kodaikanal is one of the most visited tourist spot in India. Kodaikanal has lots of attractions you can explore the paradise of nature’s beauty. We make your journey imperishable.</p>
+						
+					</div>
 				</div>
 			</div>
 		</div>
