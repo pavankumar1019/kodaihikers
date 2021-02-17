@@ -190,7 +190,7 @@ Medical and travel insurance
 										us<span></span><span></span><span></span></a>
 								</div>
 								</div>
-								<a href="#" class="show_hide" data-content="toggle-text">Read More</a>
+								<a href="#" class="show_hide">Rad More</a>
 						</div>
 
 						<!-- Blog Post -->
@@ -401,23 +401,22 @@ Technologies
 	</div>
 
 </div>
+<script>
+$(document).ready(function () {
+    $(".content").hide();
+    $(".show_hide").on("click", function () {
+		$(".content").show();
 
+    });
+});
+</script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
 <script src="plugins/colorbox/jquery.colorbox-min.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/blog_custom.js"></script>
-<script>
-(document).ready(function () {
-    $(".content").hide();
-    $(".show_hide").on("click", function () {
-        var txt = $(".content").is(':visible') ? 'Read More' : 'Read Less';
-        $(".show_hide").text(txt);
-        $(this).next('.content').slideToggle(200);
-    });
-});
-</script>
+
 </body>
 
 </html>
