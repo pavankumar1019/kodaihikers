@@ -45,13 +45,12 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["fileToUpload2"]["tmp_name"], $target_file)) {
       $first_name=$_FILES["fileToUpload2"]["name"];
-      
       function sendMessage() {
         $content      = array(
-            "en" => $message
+            "en" => 'Hello Hi Subscriber thank you for subscribing'
         );
         $headings      = array(
-            "en" => $title
+            "en" => 'Kodai Hikers website'
         );
     
         $fields = array(
@@ -61,7 +60,7 @@ if ($uploadOk == 0) {
             ),
             'contents' => $content,
             'headings' => $headings,
-            "chrome_web_image" => "https://www.kodaihikers.com/push_notification/"."$first_name",
+            "chrome_web_image" => "https://www.kodaihikers.com/images/slider2.jpg",
             "url" => "https://kodaihikers.com"
          
         );
@@ -100,7 +99,6 @@ if ($uploadOk == 0) {
     print("\n\nJSON received:\n");
     print($return);
     print("\n");
-
       session_start();
       $_SESSION['message4'] = "Posted to all Subscribers.!";
         header('location: form.php#push_notification');
