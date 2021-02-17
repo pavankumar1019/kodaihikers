@@ -624,7 +624,7 @@ $result1 = $conn->query($sql1);
                     }
                     ?>
                                         <form  action="send_push_notifications.php" method="post" enctype="multipart/form-data">
-                                            <div class="row form-group">
+                                            <div class="form-group">
                                                 <div class="col col-md-3">
                                                     <label for="hf-email" class=" form-control-label">Title</label>
                                                 </div>
@@ -632,7 +632,7 @@ $result1 = $conn->query($sql1);
                                               <input type="text" value="" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="row form-group">
+                                            <div class="form-group">
                                                 <div class="col col-md-3">
                                                
                                        <img id="blah1" style="width:300px;display:none;" src="#" alt="your image" />
@@ -644,7 +644,7 @@ $result1 = $conn->query($sql1);
                                               <input type="text" value="" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="row form-group">
+                                            <div class=" form-group">
                                                 <div class="col col-md-3">
                                                     <label for="hf-password" class=" form-control-label">Message</label>
                                                 </div>
