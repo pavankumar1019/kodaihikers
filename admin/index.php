@@ -741,60 +741,50 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                         <div class="au-task__title">
                                             <p>Add the tour packages to website</p>
                                         </div>
-                                        <div class="au-task-list js-scrollbar3">
-                                            <div class="au-task__item au-task__item--danger">
-                                                <div class="au-task__item-inner">
-                                                    <h5 class="task">
-                                                        <a href="#">Meeting about plan for Admin Template 2018</a>
-                                                    </h5>
-                                                    <span class="time">10:00 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="au-task__item au-task__item--warning">
-                                                <div class="au-task__item-inner">
-                                                    <h5 class="task">
-                                                        <a href="#">Create new task for Dashboard</a>
-                                                    </h5>
-                                                    <span class="time">11:00 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="au-task__item au-task__item--primary">
-                                                <div class="au-task__item-inner">
-                                                    <h5 class="task">
-                                                        <a href="#">Meeting about plan for Admin Template 2018</a>
-                                                    </h5>
-                                                    <span class="time">02:00 PM</span>
-                                                </div>
-                                            </div>
-                                            <div class="au-task__item au-task__item--success">
-                                                <div class="au-task__item-inner">
-                                                    <h5 class="task">
-                                                        <a href="#">Create new task for Dashboard</a>
-                                                    </h5>
-                                                    <span class="time">03:30 PM</span>
-                                                </div>
-                                            </div>
-                                            <div class="au-task__item au-task__item--danger js-load-item">
-                                                <div class="au-task__item-inner">
-                                                    <h5 class="task">
-                                                        <a href="#">Meeting about plan for Admin Template 2018</a>
-                                                    </h5>
-                                                    <span class="time">10:00 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="au-task__item au-task__item--warning js-load-item">
-                                                <div class="au-task__item-inner">
-                                                    <h5 class="task">
-                                                        <a href="#">Create new task for Dashboard</a>
-                                                    </h5>
-                                                    <span class="time">11:00 AM</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="au-task__footer">
-                                            <button class="au-btn au-btn-load js-load-btn">load more</button>
-                                        </div>
+                                        <div class="card">
+                                    <div class="card-header">
+                                        <strong>Send</strong>&nbsp;Push Notifications
                                     </div>
+                                    <div class="card-body card-block">
+                                    <?php if (isset($_SESSION['message4']) && !empty($_SESSION['message4'])) { ?>
+                        <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message4']; ?></div>
+                        <?php
+                        unset($_SESSION['message4']);
+                    }
+                    ?>
+                                        <form  action="send_push_notifications.php" method="post" enctype="multipart/form-data">
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Title</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" value="" name="title" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                               
+                                       <img id="blah1" style="width:300px;display:none;" src="#" alt="your image" />
+                                            <label for="company" class="form-control-label">Image</label>
+    <input type='file' name="fileToUpload2" onchange="readURL1(this);" />
+                                            </div>
+                                            <div class=" form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-password" class=" form-control-label">Message</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                <textarea  id="textarea-input" rows="3" placeholder="" class="form-control" name="message" ></textarea>
+
+                                                </div>
+                  
+                                              
+                                            </div>
+                                            <br>
+                                            <input type="submit"  name="save3" class="form-control btn btn-info" value="Push Notification to Subscribers">
+                                        </form>
+                                    </div>
+                                   
+                                </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -1019,7 +1009,21 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
+    <script>
+    function readURL1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
 
+            reader.onload = function (e) {
+                $('#blah1')
+                    .attr('src', e.target.result).show();
+              
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
 </body>
 
 </html>
