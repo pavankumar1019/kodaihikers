@@ -162,7 +162,7 @@ $result3 = $conn->query($sql3);
 								<h1>Make your</h1>
 								<h1>Journey Easy...</h1>
 								<div class="button home_slider_button">
-									<div class="button_bcg"></div><a href="#">contact
+									<div class="button_bcg"></div><a href="contact.php">contact
 										us<span></span><span></span><span></span></a>
 								</div>
 							</div>
