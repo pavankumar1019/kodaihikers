@@ -31,7 +31,7 @@ include '../db_connection/db.php';
 </head>
 <body>
 <div class="container-fluid">
-<div class="container">
+<div class="container d-flex p-2 bd-highlight">
 <form name="frmUser" method="post" action="" >
 <div class="mb-3">
 <label for="exampleInputEmail1" class="form-label">Email address</label>
