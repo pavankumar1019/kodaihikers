@@ -20,7 +20,7 @@ $result2 = $conn->query($sql2);
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/blog_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
