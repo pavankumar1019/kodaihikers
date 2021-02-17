@@ -31,8 +31,8 @@ include '../db_connection/db.php';
 </head>
 <body>
 <div class="container-fluid">
-<div class="row  align-items-center">
-        <div class="col-md-12">
+<div class="row mx-auto">
+        <div class="col-md-3">
                               <div class="card-header">
                       Admin Login Here.!
                     </div>
