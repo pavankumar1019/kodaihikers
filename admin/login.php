@@ -31,8 +31,10 @@ include '../db_connection/db.php';
 </head>
 <body>
 <div class="container-fluid align-items-center">
-<div class="card">
-  <div class="card-header">
+<div class="row">
+        <div class="col-md-3">
+            <div class="card card-inverse card-primary text-center">
+            <div class="card-header">
     Admin Login Here.!
   </div>
   <div class="card-body">
@@ -57,8 +59,8 @@ include '../db_connection/db.php';
 </form>
   </div>
 </div>
-</div>
-
+            </div>
+        </div>
 
 </body>
 </html>
