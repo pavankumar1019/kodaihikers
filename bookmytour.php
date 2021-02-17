@@ -183,7 +183,7 @@ Medical and travel insurance
 </p>
 							</div>
 							<br>
-							<a href="" class="show_hide"></a>
+							<a href="" class="show_hide">Rad More</a>
 							<div class="button home_slider_button content" >
 									<div class="button_bcg"></div><a href="contact.php">book now
 										us<span></span><span></span><span></span></a>
