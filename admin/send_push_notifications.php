@@ -60,7 +60,7 @@ if ($uploadOk == 0) {
             ),
             'contents' => $content,
             'headings' => $headings,
-            "chrome_web_image" => "https://www.kodaihikers.com/push_notification/"."$first_name",
+            "chrome_web_image" => "https://www.kodaihikers.com/push_notification/".$first_name,
             "url" => "https://kodaihikers.com"
          
         );
