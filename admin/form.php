@@ -1,4 +1,13 @@
 <?php
+session_start();
+
+if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
+    header("Location: login.php");
+} else {
+	
+}
+?>
+<?php
 include '../db_connection/db.php';
  session_start();
 $sql = "SELECT * FROM kh_dynamic_scrolling_banners";

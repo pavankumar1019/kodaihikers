@@ -1,4 +1,13 @@
 <?php
+session_start();
+
+if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
+    header("Location: login.php");
+} else {
+	
+}
+?>
+<?php
 include '../db_connection/db.php';
 $sql = "SELECT * FROM kh_get_in_touch";
 $result = $conn->query($sql);

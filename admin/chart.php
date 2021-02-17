@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
+    header("Location: login.php");
+} else {
+	
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
