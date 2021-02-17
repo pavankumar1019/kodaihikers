@@ -45,7 +45,7 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["fileToUpload2"]["tmp_name"], $target_file)) {
       $first_name=$_FILES["fileToUpload2"]["name"];
-      function sendMessage() {
+      function sendMessage($title, $message, $first_name) {
         $content      = array(
             "en" => $message
         );
