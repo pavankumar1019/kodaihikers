@@ -33,10 +33,10 @@ include '../db_connection/db.php';
 <div class="container-fluid">
 <div class="row d-flex p-2">
       <div class="col-md-3">
-                    <div class="card-header">
+                    <div class="container">
                       Admin Login Here.!
                      </div>
-                      <div class="card-body">
+                      <div class="container">
                             <form name="frmUser" method="post" action="" >
                             <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Email address</label>
