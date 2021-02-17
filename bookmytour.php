@@ -153,9 +153,33 @@ $result2 = $conn->query($sql2);
 								    <li class="blog_post_meta_item"><a href="">1 person</a></li>
 								</ul>
 							</div>
-							<div class="blog_post_title"><a href="#">Try these new dream destinations</a></div>
+							<div class="blog_post_title"><a href="#">3 Nights to Ooty & Kodaikanal by Own Car</a></div>
 							<div class="blog_post_text">
 								<p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
+							</div>
+							<div class="blog_post_title"><a href="#">Inclusions</a></div>
+							<div class="blog_post_text">
+								<p>Accomodation as per Itinerary
+Daily Breakfast
+Important Notes:-
+The distance mentioned in the itinerary is correct, however, travel time depends on traffic and condition of the road
+Route and stops are only suggested. Since it is a self-drive package, you could amend the route as you desire
+Entry fees, wherever applicable, shall have to be paid for directly at the venue
+All the guests are required to carry valid photo identities (Passport/Driving License/Voter ID Card). It is mandatory to carry a valid driving license.
+Suggested activities are not included in the itinerary
+Toll charges and Road taxes are not included in the cost of the package
+If you plan to travel with an infant, then it is advised to carry an infant car seats</p>
+							</div>
+							<div class="blog_post_title"><a href="#">Exclusions</a></div>
+							<div class="blog_post_text">
+								<p>
+5% GSt Extra
+Anything not mentioned under ‘Package Inclusions’
+All personal expenses, optional tours and extra meals
+Camera fees, alcoholic/non-alcoholic beverages, mineral water and starters
+Entrance fees at all monuments and museums mentioned in the itinerary
+Medical and travel insurance
+</p>
 							</div>
 							<br>
 							<div class="button home_slider_button">
