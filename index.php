@@ -451,12 +451,13 @@ $result2 = $conn->query($sql2);
 						<div class=" intro_item">
 							
 							<!-- Image by https://unsplash.com/@willianjusten -->
-							<p>	We offer best solution for your travel needs. We are one of the professional travelling agencies. We organize customized holiday tours by considering the requirements of our client’s. We are offering several four packages like family tours, student, couple and honeymoon tours packages with best price and quality services. Kodaikanal is also known as the princess of hills stations. Kodaikanal is one of the most visited tourist spot in India. Kodaikanal has lots of attractions you can explore the paradise of nature’s beauty. We make your journey imperishable.
+							<p>	We offer best solution for your travel needs. We are one of the professional travelling agencies. We organize customized holiday tours by considering the requirements of our client’s. We are offering several four packages like family tours, student, couple and honeymoon tours packages with best price and quality services. Kodaikanal is also known as the princess of hills stations. Kodaikanal is one of the most visited tourist spot in India.
 
 								</p>
 							<br>
 							<h2 style="color:black;">About Kodaikanal</h2>
-							<p>	Kodaikanal is  the ‘Princess of Hill Station,' Kodaikanal is a place of ethereal beauty and paradisiac charm. Being centered on a beautiful man-made lake, the town gorgeously rambles up and down the hillsides. Nestled amidst the patches of Shola forest and evergreen broadleaved fauna, Kodaikanal overlooks the majestic Western Ghats. Every year millions of tourists from across the globe frequent this magnificent hill station of South India. It has also become very famous amongst the honeymooners and passionate bikers. Avoiding the heat-soaked plains, disembark into the misty chill of Kodaikanal. Get enchanted by the untouched beauty of nature and unravel the grandeur of the erstwhile colonialism. Visit the places of unparalleled beauty such as Kodaikanal Lake, Berijam Lake, Pine Forest, Pillar Rocks, Bryant Park and many others. Spend a marvelous vacation amidst the majestic hills of Kodai.</p>
+							<p>	Kodaikanal is  the ‘Princess of Hill Station,' Kodaikanal is a place of ethereal beauty and paradisiac charm. Being centered on a beautiful man-made lake, the town gorgeously rambles up and down the hillsides. Nestled amidst the patches of Shola forest and evergreen broadleaved fauna, Kodaikanal overlooks the majestic Western Ghats. Every year millions of tourists from across the globe frequent this magnificent hill station of South India. It has also become very famous amongst the honeymooners and passionate bikers. Avoiding the heat-soaked plains, disembark into the misty chill of Kodaikanal. Get enchanted by the untouched beauty of nature and unravel the grandeur of the erstwhile colonialism. </p>
+							<a href="https://www.kodaihikers.com/about.php" class="button search_button">Read More...<span></span><span></span><span></span></a>
 						</div>
 					</div>
 
