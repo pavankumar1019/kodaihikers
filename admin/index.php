@@ -182,19 +182,19 @@
                                 </li>
                             </ul> -->
                         </li>
-                        <!-- <li>
-                            <a href="chart.html">
+                        <li>
+                            <a href="chart.php">
                                 <i class="fas fa-chart-bar"></i>Charts</a>
                         </li>
                         <li>
-                            <a href="table.html">
-                                <i class="fas fa-table"></i>Tables</a>
+                            <a href="table.php">
+                                <i class="fas fa-table"></i>Report's</a>
                         </li>
                         <li>
-                            <a href="form.html">
-                                <i class="far fa-check-square"></i>Forms</a>
+                            <a href="form.php">
+                                <i class="far fa-check-square"></i>Website Modification</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="calendar.html">
                                 <i class="fas fa-calendar-alt"></i>Calendar</a>
                         </li>
