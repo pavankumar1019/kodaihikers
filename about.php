@@ -157,7 +157,7 @@ $result2 = $conn->query($sql2);
 				
 				<div class="col-lg-5">
 					<div class="intro_content">
-						<div class="intro_title">About Kodai Hikers tours and travels</div>
+						<div class="intro_title">About Kodaikanal</div>
 						<p class="intro_text">We are always searching for ways to make your holidays as beautiful as possible</p>
 						
 					</div>
@@ -168,7 +168,7 @@ $result2 = $conn->query($sql2);
 					</div>
 				</div>
 				<div class="col-lg-7">
-					<div class="intro_image"><img src="images/Kodai_aboutusimg.png" alt=""></div>
+					<div class="intro_image"><img src="images/Kodai_bearsholafalls.jpg" alt=""></div>
 				</div>
 			</div>
 		</div>

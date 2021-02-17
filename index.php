@@ -957,10 +957,10 @@ $result2 = $conn->query($sql2);
 					<!-- Trending Item -->
 					<div class="col-lg-3 col-sm-6">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="images/kodai_guinacaves.jpg"
+							<div class="trending_image"><img src="images/kodaikanal_lake.webp"
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
-							<div class="trending_title"><a href="#">guna caves</a></div>
+							<div class="trending_title"><a href="#">Kodaikanal Lake</a></div>
 							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
 							<!-- <div class="trending_location">read more</div> -->
 						</div>
@@ -970,10 +970,10 @@ $result2 = $conn->query($sql2);
 					<!-- Trending Item -->
 					<div class="col-lg-3 col-sm-6">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="images/kodai_guinacaves.jpg"
+							<div class="trending_image"><img src="images/kodai_bryantpark.jpg"
 									alt="https://unsplash.com/@grovemade"></div>
 							<div class="trending_content">
-								<div class="trending_title"><a href="#">guna caves</a></div>
+								<div class="trending_title"><a href="#">Bryant Park</a></div>
 								<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
 								<!-- <div class="trending_location">read more</div> -->
 							</div>
@@ -983,10 +983,36 @@ $result2 = $conn->query($sql2);
 					<!-- Trending Item -->
 					<div class="col-lg-3 col-sm-6">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="images/kodai_guinacaves.jpg"
+							<div class="trending_image"><img src="images/kodai_silvercascadefalls.jpg"
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
-							<div class="trending_title"><a href="#">guna caves</a></div>
+							<div class="trending_title"><a href="#">Silver Cascade Falls</a></div>
+							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
+							<!-- <div class="trending_location">read more</div> -->
+						</div>
+						</div>
+					</div>
+
+					<!-- Trending Item -->
+					<div class="col-lg-3 col-sm-6">
+						<div class="trending_item clearfix">
+							<div class="trending_image"><img src="images/kodai_bearsholafalls.jpg"
+								alt="https://unsplash.com/@grovemade"></div>
+						<div class="trending_content">
+							<div class="trending_title"><a href="#">Bear Shola Falls</a></div>
+							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
+							<!-- <div class="trending_location">read more</div> -->
+						</div>
+						</div>
+					</div>
+
+					<!-- Trending Item -->
+					<div class="col-lg-3 col-sm-6">
+						<div class="trending_item clearfix">
+							<div class="trending_image"><img src="images/kodai_coakerswalk.jpg"
+								alt="https://unsplash.com/@grovemade"></div>
+						<div class="trending_content">
+							<div class="trending_title"><a href="#">Coaker's Walk </a></div>
 							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
 							<!-- <div class="trending_location">read more</div> -->
 						</div>
@@ -1009,10 +1035,10 @@ $result2 = $conn->query($sql2);
 					<!-- Trending Item -->
 					<div class="col-lg-3 col-sm-6">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="images/kodai_guinacaves.jpg"
+							<div class="trending_image"><img src="images/kodai_moirpoint.jpg"
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
-							<div class="trending_title"><a href="#">guna caves</a></div>
+							<div class="trending_title"><a href="#">Moir Point</a></div>
 							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
 							<!-- <div class="trending_location">read more</div> -->
 						</div>
@@ -1022,36 +1048,10 @@ $result2 = $conn->query($sql2);
 					<!-- Trending Item -->
 					<div class="col-lg-3 col-sm-6">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="images/kodai_guinacaves.jpg"
+							<div class="trending_image"><img src="images/kodai_dolphinsnose.jpg"
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
-							<div class="trending_title"><a href="#">guna caves</a></div>
-							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
-							<!-- <div class="trending_location">read more</div> -->
-						</div>
-						</div>
-					</div>
-
-					<!-- Trending Item -->
-					<div class="col-lg-3 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="images/kodai_guinacaves.jpg"
-								alt="https://unsplash.com/@grovemade"></div>
-						<div class="trending_content">
-							<div class="trending_title"><a href="#">guna caves</a></div>
-							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
-							<!-- <div class="trending_location">read more</div> -->
-						</div>
-						</div>
-					</div>
-
-					<!-- Trending Item -->
-					<div class="col-lg-3 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="images/kodai_guinacaves.jpg"
-								alt="https://unsplash.com/@grovemade"></div>
-						<div class="trending_content">
-							<div class="trending_title"><a href="#">guna caves</a></div>
+							<div class="trending_title"><a href="#">Dolphin's Nose</a></div>
 							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
 							<!-- <div class="trending_location">read more</div> -->
 						</div>
@@ -1081,7 +1081,7 @@ $result2 = $conn->query($sql2);
 								<input type="text" id="contact_form_email" class="contact_form_email input_field"
 									placeholder="E-mail" required="required" data-error="Email is required.">
 								<input type="text" id="contact_form_subject" class="contact_form_subject input_field"
-									placeholder="Subject" required="required" data-error="Subject is required.">
+									placeholder="Phone Number" required="required" data-error="Subject is required.">
 								<textarea id="contact_form_message" class="text_field contact_form_message"
 									name="message" rows="4" placeholder="Message" required="required"
 									data-error="Please, write us a message."></textarea>
