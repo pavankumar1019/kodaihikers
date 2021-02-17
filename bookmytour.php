@@ -406,7 +406,7 @@ $(document).ready(function () {
     $(".content").hide();
     $(".show_hide").on("click", function () {
 		$(".content").show();
-
+$(this).hide();
     });
 });
 </script>
