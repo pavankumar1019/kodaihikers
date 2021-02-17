@@ -617,8 +617,8 @@ $result1 = $conn->query($sql1);
                                         <strong>Send</strong>&nbsp;Push Notifications
                                     </div>
                                     <div class="card-body card-block">
-                                    <?php if (isset($_SESSION['message4']) && !empty($_SESSION['message3'])) { ?>
-                        <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message3']; ?></div>
+                                    <?php if (isset($_SESSION['message4']) && !empty($_SESSION['message4'])) { ?>
+                        <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message4']; ?></div>
                         <?php
                         unset($_SESSION['message4']);
                     }
