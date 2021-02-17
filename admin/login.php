@@ -46,8 +46,8 @@ include '../db_connection/db.php';
 
   </div>
   <div class="mb-3">
-  <input type="submit"  class="btn btn-primary" name="submit" value="Submit"><br><br>
-<input  class="btn btn-success" type="reset">
+  <input type="submit"  class="btn btn-primary btn-lg" name="submit" value="Submit"><br><br>
+<input  class="btn btn-outline-success btn-lg" type="reset">
   </div>
 </form>
   </div>
