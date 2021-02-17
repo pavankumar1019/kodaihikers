@@ -25,15 +25,13 @@ include '../db_connection/db.php';
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Kodai Hikers is a best tours and travels agency in Kodaikanal ">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>User Login</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 </head>
 <body>
 <div class="container-fluid align-items-center p-4">
-<div class="card mx-auto" style="width:400px;
-">
+<div class="card mx-auto" style="width:400px;">
   <div class="card-header">
     Admin Login Here.!
   </div>
