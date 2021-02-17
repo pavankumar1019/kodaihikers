@@ -1,11 +1,10 @@
-
 <?php
 session_start();
 
 if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
-   
+    header("Location: login.php");
 } else {
-	header("Location: login.php");
+	
 }
 ?>
 <!DOCTYPE html>
