@@ -31,7 +31,7 @@ include '../db_connection/db.php';
 </head>
 <body>
 <div class="container-fluid align-items-center">
-<div class="card mx-auto" style="width:400px;">
+<div class="card">
   <div class="card-header">
     Admin Login Here.!
   </div>
