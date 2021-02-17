@@ -136,7 +136,7 @@ $result2 = $conn->query($sql2);
 				<div class="col-lg-5">
 					<div class="intro_content">
 						<div class="intro_title">we have the best tours</div>
-						<p class="intro_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum quam placerat non. Etiam venenatis nibh augue, sed eleifend justo tristique eu</p>
+						<p class="intro_text">We are always searching for ways to make your holidays as beautiful as possible</p>
 						
 					</div>
 				</div>
@@ -146,7 +146,7 @@ $result2 = $conn->query($sql2);
 
 	<!-- Stats -->
 
-	<div class="stats">
+	<!-- <div class="stats">
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
@@ -168,10 +168,10 @@ $result2 = $conn->query($sql2);
 			</div>
 			<div class="row">
 				<div class="col">
-					<div class="stats_contents">
+					<div class="stats_contents"> -->
 						
 						<!-- Stats Item -->
-						<div class="stats_item d-flex flex-md-row flex-column clearfix">
+						<!-- <div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
 									<img src="images/stats_1.png" alt="">
@@ -197,10 +197,10 @@ $result2 = $conn->query($sql2);
 									<div class="stats_type">Clients</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						
 						<!-- Stats Item -->
-						<div class="stats_item d-flex flex-md-row flex-column clearfix">
+						<!-- <div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
 									<img src="images/stats_2.png" alt="">
@@ -226,10 +226,10 @@ $result2 = $conn->query($sql2);
 									<div class="stats_type">Returning Clients</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 						<!-- Stats Item -->
-						<div class="stats_item d-flex flex-md-row flex-column clearfix">
+						<!-- <div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
 									<img src="images/stats_3.png" alt="">
@@ -255,10 +255,10 @@ $result2 = $conn->query($sql2);
 									<div class="stats_type">Reach</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 						<!-- Stats Item -->
-						<div class="stats_item d-flex flex-md-row flex-column clearfix">
+						<!-- <div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
 									<img src="images/stats_4.png" alt="">
@@ -290,11 +290,11 @@ $result2 = $conn->query($sql2);
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Add -->
 
-	<div class="add">
+	<!-- <div class="add">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -309,22 +309,22 @@ $result2 = $conn->query($sql2);
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Milestones -->
 
-	<div class="milestones">
+	<!-- <div class="milestones">
 		<div class="container">
 			<div class="row">
 				
 				<!-- Milestone -->
-				<div class="col-lg-3 milestone_col">
+				<!-- <div class="col-lg-3 milestone_col">
 					<div class="milestone text-center">
 						<div class="milestone_icon"><img src="images/milestone_1.png" alt=""></div>
 						<div class="milestone_counter" data-end-value="255">0</div>
 						<div class="milestone_text">Clients</div>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- Milestone
 				<div class="col-lg-3 milestone_col">
@@ -336,13 +336,13 @@ $result2 = $conn->query($sql2);
 				</div> -->
 
 				<!-- Milestone -->
-				<div class="col-lg-3 milestone_col">
+				<!-- <div class="col-lg-3 milestone_col">
 					<div class="milestone text-center">
 						<div class="milestone_icon"><img src="images/milestone_3.png" alt=""></div>
 						<div class="milestone_counter" data-end-value="39">0</div>
 						<div class="milestone_text">Tourist Places in Kodai Kanal</div>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- Milestone
 				<div class="col-lg-3 milestone_col">
@@ -353,9 +353,9 @@ $result2 = $conn->query($sql2);
 					</div>
 				</div> -->
 
-			</div>
+			<!-- </div>
 		</div>
-	</div>
+	</div>  -->
 
 	<!-- Footer -->
 
@@ -370,7 +370,7 @@ $result2 = $conn->query($sql2);
 							<div class="logo_container footer_logo">
 								<div class="logo"><a href="#"><img src="images/kodai_logo.png"  alt=""></a></div>
 							</div>
-							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
+							<p class="footer_about_text">We are always searching for ways to make your holidays as beautiful as possible</p>
 							<ul class="footer_social_list">
 							<?php
                             if ($result1->num_rows > 0) {

@@ -404,7 +404,7 @@ $result2 = $conn->query($sql2);
 							<div class="logo_container footer_logo">
 								<div class="logo"><a href="#"><img src="images/kodai_logo.png" alt=""></a></div>
 							</div>
-							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
+							<p class="footer_about_text">We are always searching for ways to make your holidays as beautiful as possible</p>
 							<ul class="footer_social_list">
 								
 			<?php

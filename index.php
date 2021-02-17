@@ -438,8 +438,7 @@ $result2 = $conn->query($sql2);
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1">
 						<div class="intro_text text-center">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.
-								Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. </p>
+							<p>      We are always searching for ways to make your holidays as beautiful as possible </p>
 						</div>
 					</div>
 				</div>
@@ -452,11 +451,12 @@ $result2 = $conn->query($sql2);
 						<div class=" intro_item">
 							
 							<!-- Image by https://unsplash.com/@willianjusten -->
-							<p>It is not known who first used this name or what they intended it to mean.
-								The word Kodaikanal is an amalgamation of two words: kodai and kanal. The Tamil language has at least four possible interpretations of the name Kodaikanal. By pronouncing the first syllable of Kodaikanal with a long Tamil 'O', as in koe-dei, it means "summer", whilst the final two syllables kanal can mean "to see", rendering Kodaikanal as a "place to see in summer". Kodaikanal is a summer forest, and it is a place that the first missionaries used as a refuge to escape the overbearing and mosquito-ridden heat of the plains — a place that they would have counted on seeing in the summer.
+							<p>	We offer best solution for your travel needs. We are one of the professional travelling agencies. We organize customized holiday tours by considering the requirements of our client’s. We are offering several four packages like family tours, student, couple and honeymoon tours packages with best price and quality services. Kodaikanal is also known as the princess of hills stations. Kodaikanal is one of the most visited tourist spot in India. Kodaikanal has lots of attractions you can explore the paradise of nature’s beauty. We make your journey imperishable.
+
 								</p>
 							<br>
-							<botton class="btn btn-primary">Read more...</botton>
+							<h2>About Kodaikanal</h2>
+							<p>	Dubbed as the ‘Princess of Hill Station,' Kodaikanal is a place of ethereal beauty and paradisiac charm. Being centered on a beautiful man-made lake, the town gorgeously rambles up and down the hillsides. Nestled amidst the patches of Shola forest and evergreen broadleaved fauna, Kodaikanal overlooks the majestic Western Ghats. Every year millions of tourists from across the globe frequent this magnificent hill station of South India. It has also become very famous amongst the honeymooners and passionate bikers. Avoiding the heat-soaked plains, disembark into the misty chill of Kodaikanal. Get enchanted by the untouched beauty of nature and unravel the grandeur of the erstwhile colonialism. Visit the places of unparalleled beauty such as Kodaikanal Lake, Berijam Lake, Pine Forest, Pillar Rocks, Bryant Park and many others. Spend a marvelous vacation amidst the majestic hills of Kodai.</p>
 						</div>
 					</div>
 
@@ -1108,9 +1108,7 @@ $result2 = $conn->query($sql2);
 									<div class="logo"><a href="#"><img class="kologo" src="images/kodai_logo.png"
 												alt=""></a></div>
 								</div>
-								<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer
-									eleme ntum orci eu vehicula pretium.</p>
+								<p class="footer_about_text">We are always searching for ways to make your holidays as beautiful as possible</p>
 								<ul class="footer_social_list">
 								<?php
                             if ($result1->num_rows > 0) {
