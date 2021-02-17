@@ -196,7 +196,7 @@ $result = $conn->query($sql);
                                 <i class="fas fa-table"></i>Report's</a>
                         </li>
                         <li>
-                            <a href="form.html">
+                            <a href="form.php">
                                 <i class="far fa-check-square"></i>Website Modification</a>
                         </li>
                         <!-- <li>
