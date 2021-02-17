@@ -638,11 +638,6 @@ $result1 = $conn->query($sql1);
                                        <img id="blah1" style="width:300px;display:none;" src="#" alt="your image" />
                                             <label for="company" class="form-control-label">Image</label>
     <input type='file' name="fileToUpload1" onchange="readURL1(this);" />
-
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                              <input type="text" value="" class="form-control">
-                                                </div>
                                             </div>
                                             <div class=" form-group">
                                                 <div class="col col-md-3">
