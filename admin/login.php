@@ -26,7 +26,7 @@ include '../db_connection/db.php';
 </head>
 <body>
 <div class="container-fluid">
-<div class="card" style="width: 28rem;">
+<div class="card d-flex justify-content-center p-2" style="width: 28rem;">
   <div class="card-header">
     Admin Login Here.!
   </div>
