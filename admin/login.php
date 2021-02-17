@@ -33,7 +33,7 @@ include '../db_connection/db.php';
 <div class="container-fluid align-items-center">
 <div class="row">
         <div class="col-md-3">
-        <div class="container-fluid">
+            <div class="card-header">
     Admin Login Here.!
   </div>
   <div class="card-body">
