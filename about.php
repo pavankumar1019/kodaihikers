@@ -149,16 +149,12 @@ $result2 = $conn->query($sql2);
 		</div>
 	</div>
 
-
-
-	<!-- Intro -->
+<!-- Intro -->
 
 	<div class="intro">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-7">
-					<div class="intro_image"><img src="images/Kodai_aboutusimg.png" alt=""></div>
-				</div>
+				
 				<div class="col-lg-5">
 					<div class="intro_content">
 						<div class="intro_title">About Kodai Hikers tours and travels</div>
@@ -171,13 +167,10 @@ $result2 = $conn->query($sql2);
 						
 					</div>
 				</div>
+				<div class="col-lg-7">
+					<div class="intro_image"><img src="images/Kodai_aboutusimg.png" alt=""></div>
+				</div>
 			</div>
-		</div>
-	</div>
-	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/kodai_lakeviewpoint.jpg"></div>
-		<div class="home_content">
-			<div class="home_title">about us</div>
 		</div>
 	</div>
 	<!-- Stats -->
