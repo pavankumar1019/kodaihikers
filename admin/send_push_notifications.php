@@ -1,6 +1,4 @@
 <?php
-include("../db_connection/db.php");
-
 $target_dir = "../push_notification/";
 $target_file = $target_dir . basename($_FILES["fileToUpload2"]["name"]);
 $uploadOk = 1;
