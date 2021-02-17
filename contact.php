@@ -6,6 +6,9 @@ $result1 = $conn->query($sql1);
 
 $sql2 = "SELECT * FROM kh_social_media_links";
 $result2 = $conn->query($sql2);
+
+$sql3 = "SELECT * FROM kh_social_media_links";
+$result3 = $conn->query($sql3);
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -190,11 +193,18 @@ $result2 = $conn->query($sql2);
 						</div>
 						<p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula iaculis consequat nisl. Nunc et suscipit urna pretium.</p>
 						<ul class="about_social_list">
-							<li class="about_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-							<li class="about_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-							<li class="about_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li class="about_social_item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-							<li class="about_social_item"><a href="#"><i class="fa fa-behance"></i></a></li>
+														
+			<?php
+                            if ($result3->num_rows > 0) {
+                                // output data of each row
+                                while($row3 = $result3->fetch_assoc()) {
+                              
+                                                            ?>
+									<li class="about_social_item"><a href="<?php echo $row3["links"]; ?>"><?php echo $row3["social_media_icon"]; ?></a></li>
+                                                            <?php
+								}
+								}
+								?>
 						</ul>
 					</div>
 
