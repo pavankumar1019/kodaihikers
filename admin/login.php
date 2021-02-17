@@ -47,7 +47,7 @@ include '../db_connection/db.php';
   </div>
   <div class="d-grid gap-2">
   <input type="submit"  class="btn btn-primary" name="submit" value="Submit"><br><br>
-<input  class="btn btn-outline-success" type="reset">
+
   </div>
 </form>
   </div>
