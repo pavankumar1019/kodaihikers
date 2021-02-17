@@ -623,7 +623,7 @@ $result1 = $conn->query($sql1);
                         unset($_SESSION['message4']);
                     }
                     ?>
-                                        <form  action="pushnot.php" method="post" enctype="multipart/form-data">
+                                        <form  action="send_push_notifications.php" method="post" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <div class="col col-md-3">
                                                     <label for="hf-email" class=" form-control-label">Title</label>
