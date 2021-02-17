@@ -434,7 +434,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
-                                                <a href="logout.php">
+                                                <a href="">
                                                     <i class="zmdi zmdi-power"></i>Logout</a>
                                             </div>
                                         </div>
