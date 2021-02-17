@@ -47,10 +47,10 @@ if ($uploadOk == 0) {
       $first_name=$_FILES["fileToUpload2"]["name"];
       function sendMessage() {
         $content      = array(
-            "en" => 'Hello Hi Subscriber thank you for subscribing'
+            "en" => '"$message"'
         );
         $headings      = array(
-            "en" => 'Kodai Hikers website'
+            "en" => '"$title"'
         );
     
         $fields = array(
@@ -60,7 +60,7 @@ if ($uploadOk == 0) {
             ),
             'contents' => $content,
             'headings' => $headings,
-            "chrome_web_image" => "https://www.kodaihikers.com/images/slider2.jpg",
+            "chrome_web_image" => "https://www.kodaihikers.com/push_notification/$first_name",
             "url" => "https://kodaihikers.com"
          
         );
