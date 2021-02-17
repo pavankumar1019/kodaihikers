@@ -45,10 +45,10 @@ include '../db_connection/db.php';
   <div class="message"><?php if($message!="") { echo $message; } ?></div>
 
   </div>
-
-  <input type="submit"  class="btn btn-primary btn-lg btn-block" name="submit" value="Submit"><br><br>
-<input  class="btn btn-outline-success btn-lg btn-block" type="reset">
-
+  <div class="d-grid gap-2">
+  <input type="submit"  class="btn btn-primary" name="submit" value="Submit"><br><br>
+<input  class="btn btn-outline-success" type="reset">
+  </div>
 </form>
   </div>
 </div>
