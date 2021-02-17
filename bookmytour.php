@@ -190,7 +190,7 @@ Medical and travel insurance
 										us<span></span><span></span><span></span></a>
 								</div>
 								</div>
-								<a href="#" class="show_hide">Rad More</a>
+								<a href="#" class="show_hide" data-content="toggle-text">Read More</a>
 						</div>
 
 						<!-- Blog Post -->
