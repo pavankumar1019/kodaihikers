@@ -31,16 +31,15 @@ include '../db_connection/db.php';
 </head>
 <body>
 <div class="container-fluid">
-
 <div class="container d-flex justify-content-center">
+<form name="frmUser" method="post" action="" >
 <div class="mb-3">
 <h3>Admin Login Here.!</h3>
-</div><br>
-<form name="frmUser" method="post" action="" >
+</div>
 <div class="mb-3">
 <label for="exampleInputEmail1" class="form-label">Email address</label>
 <input class="form-control"  id="exampleInputEmail1" aria-describedby="emailHelp" type="text" name="user_name" required>
-<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+<div id="emailHelp" class="form-text">Please enter the email</div>
 </div>
 <div class="mb-3">
 <label for="exampleInputPassword1" class="form-label">Password</label>
