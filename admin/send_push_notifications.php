@@ -47,10 +47,10 @@ if ($uploadOk == 0) {
       $first_name=$_FILES["fileToUpload2"]["name"];
       function sendMessage() {
         $content      = array(
-            "en" => "$message"
+            "en" => $message
         );
         $headings      = array(
-            "en" => "$title"
+            "en" => $title
         );
     
         $fields = array(
