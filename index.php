@@ -286,7 +286,7 @@ $result5 = $conn->query($sql5);
 											<div class="col-lg-4 ">	<img src="./images/kodai_greenvally.jpg" class="img-fluid" width="380px" alt="" srcset=""></div>
 											<div class="col-lg-8 ">
 												<h1 >Family tours</h1>
-												<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
+												<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amKodai Hikers features the list of top family holiday packages in Kodaikanal. Be it  any season of the year our packages give you the best options of embarking on an enjoyable family vacation in kodaikanal.  </p>
 											<a href="bookmytour.php" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 											</div>
 										  </div>
@@ -307,7 +307,7 @@ $result5 = $conn->query($sql5);
 										<div class="col-lg-4 col-sm-12">	<img src="./images/kodai_lakeviewpoint.jpg"  class="img-fluid" width="380px" alt="" srcset=""></div>
 										<div class="col-lg-8 col-sm-12">
 											<h1 >Student tours</h1>
-											<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
+											<p class="text-justify" style="color:white;">Students can enjoy the beauty of mother Nature in kodaikanal.And also learn about solar observatory.</p>
 											<a href="bookmytour.php" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 										</div>
 									  </div>
@@ -327,7 +327,8 @@ $result5 = $conn->query($sql5);
 										<div class="col-lg-4 col-sm-12">	<img src="./images/kodai_lakeviewpoint.jpg" class="img-fluid"  width="380px" alt="" srcset=""></div>
 										<div class="col-lg-8 col-sm-12">
 											<h1 >Couple tours</h1>
-											<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
+											<p class="text-justify" style="color:white;">The newly married couples as they come here due to the romantic breeze it holds in its ozone.Couples can enjoy a romantic afternoon on their honeymoon trip 
+</p>
 											<a href="bookmytour.php" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 										</div>
 									  </div>
@@ -347,7 +348,7 @@ $result5 = $conn->query($sql5);
 										<div class="col-lg-4 col-sm-12">	<img src="./images/kodai_lakeviewpoint.jpg" class="img-fluid"  width="380px" alt="" srcset=""></div>
 										<div class="col-lg-8 col-sm-12">
 											<h1 >Honeymoon</h1>
-											<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
+											<p class="text-justify" style="color:white;">Kodaikanal, the princess of hill station, is also mainly known for being honeymoon destinations among other places in India. Get set for a perfect paradise honeymoon.  Kodaikanal is one the best destination in India for a romantic honeymoon special. </p>
 											<a href="bookmytour.php" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 										</div>
 									  </div>
