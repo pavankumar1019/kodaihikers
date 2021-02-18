@@ -48,7 +48,7 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
-   $first_name=$_FILES["fileToUpload"]["name"];
+    $first_name=$newFileName;
     $stu_query = "UPDATE `kh_dynamic_scrolling_banners` SET `path`='" . $first_name . "' WHERE id ='" . $id . "'";
 $result = mysqli_query($conn, $stu_query);
 

@@ -50,7 +50,7 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["fileToUpload2"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload2"]["name"])). " has been uploaded.";
-   $first_name=$_FILES["fileToUpload2"]["name"];
+    $first_name=$newFileName;
     $stu_query = "INSERT INTO kh_blog (title,image,description) VALUES ('$title','$first_name','$message')";
 $result = mysqli_query($conn, $stu_query);
 
