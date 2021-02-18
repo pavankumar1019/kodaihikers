@@ -151,7 +151,7 @@ $result3 = $conn->query($sql3);
 
 									<div class="blog_post">
 							<div class="blog_post_image">
-								<img src="images/blog_1.jpg" alt="https://unsplash.com/@anniespratt">
+								<img src="../tourpackages/<?php echo $row3["photo"]; ?> " alt="https://unsplash.com/@anniespratt">
 								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center" style="width:160px;">
 
 									<div class="blog_post_day">₹ &nbsp;<strong><?php echo $row3["price"]; ?></strong></div>
@@ -181,7 +181,7 @@ $result3 = $conn->query($sql3);
 								<?php echo $row3["exclusion"]; ?>
 </p>
 							</div>
-							<div class="blog_post_title "><a href="#">Terms & condations</a></div>
+							<div class="blog_post_title "><a href="#">Terms & conditions</a></div>
 							<div class="blog_post_text ">
 								<p>
 								<?php echo $row3["terms_and_conditions"]; ?>
@@ -190,7 +190,7 @@ $result3 = $conn->query($sql3);
 							<br>
 
 							<div class="button home_slider_button " >
-									<div class="button_bcg"></div><a href="contact.php">book now
+									<div class="button_bcg"></div><a href="#">book now
 										us<span></span><span></span><span></span></a>
 								</div>
 								</div>
