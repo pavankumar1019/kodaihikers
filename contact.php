@@ -182,12 +182,9 @@ $result3 = $conn->query($sql3);
 						<form id="fupForm" name="form1" method="post" class="contact_form">
 						<div class="container-fluid" style="color:white;">
 						<h3>Savings Account</h3>
-						<br>
+						
 						A/C NAME - M.SARAVANAKUMAR
-						A/C NO - 6977475914
-						IFSC CODE - IDIB000K039
-						INDIAN BANK
-						KODAIKANAL BRANCH
+					
 						</div>
 								
 							</form>
