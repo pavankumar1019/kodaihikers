@@ -48,8 +48,8 @@ $result5 = $conn->query($sql5);
 <script type="text/javascript">
     (function () {
         var options = {
-            whatsapp: "7483737698", // WhatsApp number
-            viber: "7483737698", // Viber number
+            whatsapp: "+917483737698", // WhatsApp number
+            viber: "+917483737698", // Viber number
             call_to_action: "message us", // Call to action
             button_color: "#FF6550", // Color of button
             position: "left", // Position may be 'right' or 'left'
