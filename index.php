@@ -70,7 +70,7 @@ $result5 = $conn->query($sql5);
 </head>
 
 <body>
-<a href="https://api.whatsapp.com/send?phone=+91 7483767698&text=Hello" class="float" target="_blank">
+<a href="https://api.whatsapp.com/send?phone=+917483737698&text=Hello" class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
 	<div class="super_container">
