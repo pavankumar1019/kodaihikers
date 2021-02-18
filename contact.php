@@ -178,7 +178,7 @@ $result3 = $conn->query($sql3);
 
 					<!-- Contact Form -->
 					<div class="container-fluid bg-primary">
-						<div class="text-center">Online Payment</div>
+						<div class="contact_title text-center">Online Payment</div>
 						
 						<div class="container-fluid" style="color:white;">
 						<h3>Savings Account</h3>
