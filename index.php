@@ -123,7 +123,7 @@ $result3 = $conn->query($sql3);
 				<div class="menu_close_container">
 					<div class="menu_close"></div>
 				</div>
-				<div class="logo menu_logo"><a href="#"><img src="images/kodai-logo.png" alt=""></a></div>
+				<div class="logo menu_logo"><a href="#"><img src="" alt=""></a></div>
 				<ul>
 					<li class="menu_item"><a href="#">home</a></li>
 					<li class="menu_item"><a href="about.php">about us</a></li>
