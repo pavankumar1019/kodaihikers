@@ -284,7 +284,7 @@ $result4 = $conn->query($sql4);
 											<div class="col-lg-8 ">
 												<h1 >Family tours</h1>
 												<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
-											<a href="./familytours/index.html" class="button search_button">View All Packages<span></span><span></span><span></span></a>
+											<a href="bookmytour.php" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 											</div>
 										  </div>
 							
@@ -305,7 +305,7 @@ $result4 = $conn->query($sql4);
 										<div class="col-lg-8 col-sm-12">
 											<h1 >Student tours</h1>
 											<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
-											<a href="./student_tour/index.html" class="button search_button">View All Packages<span></span><span></span><span></span></a>
+											<a href="bookmytour.php" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 										</div>
 									  </div>
 						
@@ -325,7 +325,7 @@ $result4 = $conn->query($sql4);
 										<div class="col-lg-8 col-sm-12">
 											<h1 >Couple tours</h1>
 											<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
-											<a href="./couple_tour/index.html" class="button search_button">View All Packages<span></span><span></span><span></span></a>
+											<a href="bookmytour.php" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 										</div>
 									  </div>
 						
@@ -345,7 +345,7 @@ $result4 = $conn->query($sql4);
 										<div class="col-lg-8 col-sm-12">
 											<h1 >Honeymoon</h1>
 											<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
-											<a href="./hooneymoon/index.html" class="button search_button">View All Packages<span></span><span></span><span></span></a>
+											<a href="bookmytour.php" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 										</div>
 									  </div>
 						
