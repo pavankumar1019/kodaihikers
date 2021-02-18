@@ -574,7 +574,7 @@ $result3 = $conn->query($sql3);
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@kensuarez -->
 										<div class="offers_image_background"
-											style="background-image:url(images/offer_1.jpg)"></div>
+											style="background-image:url(images/kodai_logo.png)"></div>
 										<div class="offer_name"><a href="#"></a></div>
 									</div>
 								</div>
