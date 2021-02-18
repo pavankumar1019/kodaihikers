@@ -70,7 +70,7 @@ $result5 = $conn->query($sql5);
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:80px;
+	bottom:120px;
 	right:10px;
 	background-color:#0063B2FF;
 	color:#FFF;
@@ -82,7 +82,7 @@ $result5 = $conn->query($sql5);
 }
 
 .my-float1{
-	margin-top:1px;
+	margin-top:16px;
 }
 </style>
 </head>
