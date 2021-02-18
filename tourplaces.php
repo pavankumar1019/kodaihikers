@@ -178,7 +178,7 @@ Medical and travel insurance
 							<br>
 
 							<div class="button home_slider_button " >
-									<a href="#" class="show_hide">Rad More</a>
+									<a href="#" class="show_hide">Read More</a>
 								</div>
 							
 						</div>
