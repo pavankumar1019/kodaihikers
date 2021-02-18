@@ -208,13 +208,13 @@ $result2 = $conn->query($sql2);
 
 					</div>
 						
-					<div class="blog_navigation">
+					<!-- <div class="blog_navigation">
 						<ul>
 							<li class="blog_dot active"><div></div>01.</li>
 							<li class="blog_dot"><div></div>02.</li>
 							<li class="blog_dot"><div></div>03.</li>
 						</ul>
-					</div>
+					</div> -->
 				</div>
 
 				<!-- Blog Sidebar -->
@@ -222,7 +222,7 @@ $result2 = $conn->query($sql2);
 				<div class="col-lg-4 sidebar_col">
 
 					<!-- Sidebar Search -->
-					<div class="sidebar_search">
+					<!-- <div class="sidebar_search">
 						<form action="#">
 							<input id="sidebar_search_input" type="search" class="sidebar_search_input" placeholder="" required="required">
 							<button id="sidebar_search_button" type="submit" class="sidebar_search_button trans_300" value="Submit">
@@ -250,9 +250,9 @@ $result2 = $conn->query($sql2);
 							</button>
 						</form>
 					</div>
-					
+					 -->
 					<!-- Sidebar Archives -->
-					<div class="sidebar_archives">
+					<!-- <div class="sidebar_archives">
 						<div class="sidebar_title">Seasons</div>
 						<div class="sidebar_list">
 							<ul>
@@ -262,10 +262,10 @@ $result2 = $conn->query($sql2);
 								<li><a href="#">Oct-Nov 2021</a></li>
 							</ul>
 						</div>
-					</div>
+					</div> -->
 					
 					<!-- Sidebar Archives -->
-					<div class="sidebar_categories">
+					<!-- <div class="sidebar_categories">
 						<div class="sidebar_title">Categories</div>
 						<div class="sidebar_list">
 							<ul>
@@ -276,74 +276,74 @@ $result2 = $conn->query($sql2);
 								<li><a href="#">Honeymoon</a></li>
 							</ul>
 						</div>
-					</div>
+					</div> -->
 
 					<!-- Sidebar Latest Posts -->
 
-					<div class="sidebar_latest_posts">
+					<!-- <div class="sidebar_latest_posts">
 						<div class="sidebar_title">Latest Posts</div>
 						<div class="latest_posts_container">
-							<ul>
+							<ul> -->
 
 								<!-- Latest Post -->
-								<li class="latest_post clearfix">
+								<!-- <li class="latest_post clearfix">
 									<div class="latest_post_image">
 										<a href="#"><img src="images/kodai_lakeviewpoint.jpg" alt="" width="70px" height="70px"></a>
 									</div>
 									<div class="latest_post_content">
 										<div class="latest_post_title trans_200"><a href="#">Lake View Point</a></div>
 										<div class="latest_post_meta">
-											<div class="stylesheet"><a href="#">Make our tour with  only $2000</a></div><br>
+											<div class="stylesheet"><a href="#">Make our tour with  only $2000</a></div><br> -->
 										<!-- div class="latest_post_date trans_200"><a href="#">Feb 14, 2021</a></div>	< -->
-										</div>
+										<!-- </div>
 									</div>
-								</li>
+								</li> -->
 
 								<!-- Latest Post -->
-								<li class="latest_post clearfix">
+								<!-- <li class="latest_post clearfix">
 									<div class="latest_post_image">
 										<a href="#"><img src="images/kodai_solarobsarvetary.jpg" alt="" width="70px" height="70px"></a>
 									</div>
 									<div class="latest_post_content">
 										<div class="latest_post_title trans_200"><a href="#">Solar Observatory</a></div>
 										<div class="latest_post_meta">
-											<div class="stylesheet"><a href="#">Make our tour with only $2000</a></div>
+											<div class="stylesheet"><a href="#">Make our tour with only $2000</a></div> -->
 											<!-- <div class="latest_post_date trans_200"><a href="#">Aug 25, 2016</a></div> -->
-										</div>
+										<!-- </div>
 									</div>
-								</li>
+								</li> -->
 
 								<!-- Latest Post -->
-								<li class="latest_post clearfix">
+								<!-- <li class="latest_post clearfix">
 									<div class="latest_post_image">
 										<a href="#"><img src="images/kodai_vattakanalfalls.jpg" alt="" width="70px" height="70px"></a>
 									</div>
 									<div class="latest_post_content">
 										<div class="latest_post_title trans_200"><a href="#">Vattakanal Falls</a></div>
 										<div class="latest_post_meta">
-											<div class="stylesheet"><a href="#">Make our tour with only $2000</a></div>
+											<div class="stylesheet"><a href="#">Make our tour with only $2000</a></div> -->
 											<!-- <div class="latest_post_date trans_200"><a href="#">Aug 25, 2016</a></div> -->
-										</div>
+										<!-- </div>
 									</div>
-								</li>
+								</li> -->
 
 								<!-- Latest Post -->
-								<li class="latest_post clearfix">
+								<!-- <li class="latest_post clearfix">
 									<div class="latest_post_image">
 										<a href="#"><img src="images/kodai_permulpeak.jpg" alt="" width="70px" height="70px"></a>
 									</div>
 									<div class="latest_post_content">
 										<div class="latest_post_title trans_200"><a href="#">Perumal Peak</a></div>
 										<div class="latest_post_meta">
-											<div class="stylesheet"><a href="#">Make our tour with only $2000</a></div>
+											<div class="stylesheet"><a href="#">Make our tour with only $2000</a></div> -->
 											<!-- <div class="latest_post_date trans_200"><a href="#">Aug 25, 2016</a></div> -->
-										</div>
+										<!-- </div>
 									</div>
 								</li>
 
 							</ul>
 						</div>
-					</div>
+					</div> -->
 
 					<!-- Sidebar Gallery
 					<div class="sidebar_gallery">
