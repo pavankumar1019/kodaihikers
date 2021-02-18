@@ -2,9 +2,11 @@
 include("../db_connection/db.php");
 
 $target_dir = "../tourpackages/";
-$target_file = $target_dir . basename($_FILES["fileToUpload1"]["name"]);
+$random=rand(1111,9999);
+$target_file = $target_dir . $random.basename($_FILES["fileToUpload1"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
 
 $packagename=$_POST['packagename'];
 $noofdays=$_POST['noofdays'];
