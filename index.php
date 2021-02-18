@@ -581,7 +581,7 @@ $result4 = $conn->query($sql4);
 								<div class="col-lg-12">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@kensuarez -->
-										<img src="./blogimages/<?php echo $row4["photo"]; ?>" class="img-fluid" alt="">
+										<img src="./tourpackages/<?php echo $row4["photo"];?>" class="img-fluid" alt="">
 										<div class="offer_name"><a href="#"><?php echo $row4["package_name"]; ?></a></div>
 									</div>
 								</div>
