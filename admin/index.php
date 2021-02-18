@@ -680,7 +680,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                     </table>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <!-- <div class="col-lg-3">
                                 <h2 class="title-1 m-b-25">tourist places</h2>
                                 <div class="au-card au-card--bg-blue au-card-top-countries m-b-40">
                                     <div class="au-card-inner">
@@ -724,7 +724,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
