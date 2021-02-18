@@ -151,7 +151,7 @@ $result3 = $conn->query($sql3);
 								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
 <?php
 $yourDateTime=$row3["date"];
- date('Y-m-d', strtotime($yourDateTime)); 
+ date('d-m-Y', strtotime($yourDateTime)); 
  ?>
 									<div class="blog_post_month"><?php echo $yourDateTime;?></div>
 								</div>
