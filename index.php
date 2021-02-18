@@ -993,7 +993,7 @@ $result5 = $conn->query($sql5);
 									placeholder="Name"  required="required" data-error="Name is required.">
 								<input type="text" id="email" name="email" class="contact_form_email input_field"
 									placeholder="E-mail" required="required" data-error="Email is required.">
-								<input type="number" id="number" name="number" class="contact_form_subject input_field"
+								<input type="text" onkeypress="return onlyNumberKey(event)" id="number" name="number" class="contact_form_subject input_field"
 									placeholder="Phone Number" required="required" data-error="Subject is required.">
 								<textarea id="message" class="text_field contact_form_message"
 									name="message" rows="4" placeholder="Message" required="required"
@@ -1237,7 +1237,16 @@ $(document).ready(function() {
 	});
 });
 </script>
-</script>
+<script> 
+    function onlyNumberKey(evt) { 
+          
+        // Only ASCII charactar in that range allowed 
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) 
+            return false; 
+        return true; 
+    } 
+    </script>
 </body>
 
 </html>

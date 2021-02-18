@@ -947,6 +947,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
             return false; 
         return true; 
     } 
+    </script>
 </body>
 
 </html>
