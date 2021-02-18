@@ -748,10 +748,10 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                         <strong>Tours</strong>&nbsp;Packages
                                     </div>
                                     <div class="card-body card-block">
-                                    <?php if (isset($_SESSION['message4']) && !empty($_SESSION['message4'])) { ?>
-                                            <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message4']; ?></div>
+                                    <?php if (isset($_SESSION['message2']) && !empty($_SESSION['message2'])) { ?>
+                                            <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message2']; ?></div>
                                             <?php
-                                            unset($_SESSION['message4']);
+                                            unset($_SESSION['message2']);
                                         }
                                         ?>
                                         <form  action="uploadpackage.php" method="post" enctype="multipart/form-data">
