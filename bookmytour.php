@@ -328,7 +328,7 @@ $result3 = $conn->query($sql3);
 								</li>
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/kodai_iconweb.png" alt=""></div></div>
-									<div class="contact_info_text"><a href="https://colorlib.com">www.kodaihikers.com</a></div>
+									<div class="contact_info_text"><a href="https://www.kodaihikers.com">www.kodaihikers.com</a></div>
 								</li>
 							</ul>
 						</div>
