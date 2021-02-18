@@ -118,7 +118,7 @@ $result2 = $conn->query($sql2);
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="/images/kodai_blogbackground.jpg"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="./images/slider 1.jpg"></div>
 		<div class="home_content">
 			<div class="home_title">Famous Tour Places in Kodaikanal</div>
 		</div>
