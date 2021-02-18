@@ -1034,12 +1034,11 @@ $result5 = $conn->query($sql5);
                                                             ?>
 									<li class="social_list_item"><a href="<?php echo $row2["links"]; ?>"><?php echo $row2["social_media_icon"]; ?></a></li>
 									<div class="footer_blog_item clearfix">
-									<div class="footer_blog_image"><img src="./blogimages/<?php echo $row5["image"]; ?>"
-											alt="https://unsplash.com/@avidenov"></div>
+									<div class="footer_blog_image"><img src="./blogimages/<?php  echo $row5["image"];?>" alt="https://unsplash.com/@avidenov"></div>
 									<div class="footer_blog_content">
 										<div class="footer_blog_title"><a href="blog.php">Beauty of river. </a>
 										</div>
-										<div class="footer_blog_date" style="color:white;"><?php echo $row5["image"]; ?></div>
+										<div class="footer_blog_date" style="color:red;"><?php echo $row5["date"]; ?></div>
 									</div>
 								</div>
 
