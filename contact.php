@@ -174,7 +174,7 @@ $result3 = $conn->query($sql3);
 					</div>
 
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6" style="height:300px;">
 
 					<!-- Contact Form -->
 					<div class="container-fluid bg-primary">
@@ -190,6 +190,8 @@ $result3 = $conn->query($sql3);
 						<h6>IFSC CODE - IDIB000K039</h6>
 						<h6>INDIAN BANK</h6>
 						<h6>KODAIKANAL BRANCH</h6>
+						<br>
+						<h1></h1>
 						</div>
 						
 					
