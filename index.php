@@ -53,7 +53,7 @@ $result5 = $conn->query($sql5);
 	width:60px;
 	height:60px;
 	bottom:60px;
-	right:40px;
+	right:20px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
