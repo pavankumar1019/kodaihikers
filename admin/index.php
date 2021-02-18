@@ -859,20 +859,20 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                     <div class="au-card-title" style="background-image:url('images/bg-title-01.jpg');">
                                         <div class="bg-overlay bg-overlay--blue"></div>
                                         <h3>
-                                            <i class="zmdi zmdi-account-calendar"></i>Add Tour Packages</h3>
+                                            <i class="zmdi zmdi-account-calendar"></i>Post Blog</h3>
                                         <button class="au-btn-plus">
-                                            <i class="">Tour</i>
+                                            <i class="">Blog</i>
                                         </button>
                                     </div>
                                     <div class="au-task js-list-load">
                                         <div class="au-task__title">
-                                            <p>Add the tour packages to website</p>
+                                            <p>Post Blog to website</p>
                                         </div>
                                         <div class="au-task-list js-scrollbar3">
                                             <div class="au-task__item au-task__item--danger">
                                                  <div class="card">
                                     <div class="card-header">
-                                        <strong>Send</strong>&nbsp;Push Notifications
+                                        <strong>Blog</strong>&nbsp;Post
                                     </div>
                                     <div class="card-body card-block">
                                     <?php if (isset($_SESSION['message4']) && !empty($_SESSION['message4'])) { ?>
@@ -895,11 +895,11 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                
                                        <img id="blah1" style="width:300px;display:none;" src="#" alt="your image" />
                                             <label for="company" class="form-control-label">Image</label>
-    <input type='file' name="fileToUpload1" onchange="readURL1(this);" />
+    <input type='file' name="fileToUpload2" onchange="readURL1(this);" />
                                             </div>
                                             <div class=" form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="hf-password" class=" form-control-label">Message</label>
+                                                    <label for="hf-password" class=" form-control-label">Description</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                                 <textarea  id="textarea-input" rows="3" placeholder="" class="form-control" name="message" ></textarea>
