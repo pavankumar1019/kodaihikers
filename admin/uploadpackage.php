@@ -55,7 +55,7 @@ if ($uploadOk == 0) {
   if (move_uploaded_file($_FILES["fileToUpload1"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload1"]["name"])). " has been uploaded.";
    $first_name=$_FILES["fileToUpload1"]["name"];
-    $stu_query = "INSERT INTO kh_book_my_tours (package_name,no_of_days,photo,price,no_of_person,litnerary,inclusion,exclusion,terms_and_conditions) VALUES ('$packagename','$noofdays',' $first_name','$price','$numberofperson','$litnerary','$inclusion','$exclusion','$termsconditions')";
+    $stu_query = "INSERT INTO kh_book_my_tours (package_name,no_of_days,photo,price,no_of_person,litnerary,inclusion,exclusion,terms_and_conditions) VALUES ('$packagename','$noofdays','$first_name','$price','$numberofperson','$litnerary','$inclusion','$exclusion','$termsconditions')";
 $result = mysqli_query($conn, $stu_query);
 
 if ($result) {
