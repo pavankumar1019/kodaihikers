@@ -567,10 +567,10 @@ $result3 = $conn->query($sql3);
 				<div class="row offers_items">
 
 					<!-- Offers Item -->
-					<div class="col-lg-6 offers_col">
+					<div class="col-lg-12 offers_col">
 						<div class="offers_item">
 							<div class="row">
-								<div class="col-lg-6">
+								<div class="col-lg-12">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@kensuarez -->
 										<img src="./images/slider2.jpg" style="width:400px" alt="">
