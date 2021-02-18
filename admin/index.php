@@ -766,9 +766,9 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                             <div class="form-group">
                                                 <div class="col col-md-3">
                                                
-                                       <img id="blah1" style="width:300px;display:none;" src="#" alt="your image" />
+                                       <img id="blah" style="width:300px;display:none;" src="#" alt="your image" />
                                             <label for="company" class="form-control-label">Image</label>
-    <input type='file' name="fileToUpload2" onchange="readURL1(this);" />
+    <input type='file' name="fileToUpload2" onchange="readURL(this);" />
                                             </div>
                                             <div class=" form-group">
                                                 <div class="col col-md-3">
@@ -914,6 +914,21 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result).show();
+              
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
 <script>
     function readURL1(input) {
         if (input.files && input.files[0]) {
