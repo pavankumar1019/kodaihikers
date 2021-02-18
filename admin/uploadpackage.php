@@ -1,13 +1,6 @@
 <?php
 include("../db_connection/db.php");
 
-$target_dir = "../tourpackages/";
-$random=rand(1111,9999);
-$target_file = $target_dir .$random.basename($_FILES["fileToUpload1"]["name"]);
-$uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-
-
 $packagename=$_POST['packagename'];
 $noofdays=$_POST['noofdays'];
 $price=$_POST['price'];
@@ -18,45 +11,28 @@ $exclusion=$_POST['exclusion'];
 $termsconditions=$_POST['terms&conditions'];
 // $description=$_POST['description'];
 
-// Check if image file is a actual image or fake image
+// Check if image fileToUpload1 is a actual image or fake image
 if(isset($_POST["save1"])) {
-  $check = getimagesize($_FILES["fileToUpload1"]["tmp_name"]);
-  if($check !== false) {
-    echo "File is an image - " . $check["mime"] . ".";
-    $uploadOk = 1;
-  } else {
-    echo "File is not an image.";
-    $uploadOk = 0;
-  }
-}
+  $fileToUpload1 = rand(1000,100000)."-".$_fileToUpload1S['fileToUpload1']['name'];
+  $fileToUpload1_loc = $_fileToUpload1S['fileToUpload1']['tmp_name'];
+$fileToUpload1_size = $_fileToUpload1S['fileToUpload1']['size'];
+$fileToUpload1_type = $_fileToUpload1S['fileToUpload1']['type'];
+$folder="../tourpackages/";
 
-// Check if file already exists
-// if (file_exists($target_file)) {
-//   echo "Sorry, file already exists.";
-//   $uploadOk = 0;
-// }
+/* new fileToUpload1 size in KB */
+$new_size = $fileToUpload1_size/1024;  
+/* new fileToUpload1 size in KB */
 
-// Check file size
-if ($_FILES["fileToUpload1"]["size"] > 500000) {
-  echo "Sorry, your file is too large.";
-  $uploadOk = 0;
-}
+/* make fileToUpload1 name in lower case */
+$new_fileToUpload1_name = strtolower($fileToUpload1);
+/* make fileToUpload1 name in lower case */
 
-// Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-&& $imageFileType != "gif" ) {
-  echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-  $uploadOk = 0;
-}
+$final_fileToUpload1=str_replace(' ','-',$new_fileToUpload1_name);
 
-// Check if $uploadOk is set to 0 by an error
-if ($uploadOk == 0) {
-  echo "Sorry, your file was not uploaded.";
-// if everything is ok, try to upload file
-} else {
-  if (move_uploaded_file($_FILES["fileToUpload1"]["tmp_name"], $target_file)) {
-    echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload1"]["name"])). " has been uploaded.";
-   $first_name=$_FILES["fileToUpload1"]["name"];
+if(move_uploaded_fileToUpload1($fileToUpload1_loc,$folder.$final_fileToUpload1))
+{
+    echo "The fileToUpload1 ". htmlspecialchars( basename( $_fileToUpload1S["fileToUpload1ToUpload1"]["name"])). " has been uploaded.";
+   $first_name=$_fileToUpload1S["fileToUpload1ToUpload1"]["name"];
     $stu_query = "INSERT INTO kh_book_my_tours (package_name,no_of_days,photo,price,no_of_person,litnerary,inclusion,exclusion,terms_and_conditions) VALUES ('$packagename','$noofdays','$first_name','$price','$numberofperson','$litnerary','$inclusion','$exclusion','$termsconditions')";
 $result = mysqli_query($conn, $stu_query);
 
@@ -66,8 +42,6 @@ if ($result) {
     header('location: index.php#package');
     exit();
 }
-  } else {
-    echo "Sorry, there was an error uploading your file.";
-  }
+  } 
 }
 ?>
