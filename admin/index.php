@@ -754,33 +754,84 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                             unset($_SESSION['message4']);
                                         }
                                         ?>
-                                        <form  action="send_push_notifications.php" method="post" enctype="multipart/form-data">
+                                        <form  action="uploadpackage.php" method="post" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="hf-email" class=" form-control-label">Title</label>
+                                                    <label for="hf-email" class=" form-control-label">Package Name</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" value="" name="title" class="form-control">
+                                              <input type="text" id="packagename" value="" name="packagename" class="form-control">
                                                 </div>
                                             </div>
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Number of Days and Nights</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" id="noofdays" value="" name="noofdays" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Price</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" id="price" value="" name="price" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Number of person</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" id="numberofperson" value="" name="numberofperson" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class=" form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-password" class=" form-control-label">Litnerary</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                <textarea  id="" rows="3" placeholder="" class="form-control" name="message" ></textarea>
+
+                                                </div>   
+                                            </div>
+                                            <div class=" form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-password" class=" form-control-label">Inclusion</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                <textarea  id="textarea-input" rows="3" placeholder="" class="form-control" name="message" ></textarea>
+
+                                                </div>   
+                                            </div>
+                                            <div class=" form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-password" class=" form-control-label">Exclusion</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                <textarea  id="textarea-input" rows="3" placeholder="" class="form-control" name="message" ></textarea>
+
+                                                </div>   
+                                            </div>
+                                            <div class=" form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-password" class=" form-control-label">Terms & conditions</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                <textarea  id="textarea-input" rows="3" placeholder="" class="form-control" name="message" ></textarea>
+
+                                                </div>   
+                                            </div>
+
                                             <div class="form-group">
                                                 <div class="col col-md-3">
                                                
                                        <img id="blah" style="width:300px;display:none;" src="#" alt="your image" />
                                             <label for="company" class="form-control-label">Image</label>
-    <input type='file' name="fileToUpload2" onchange="readURL(this);" />
+    <input type='file' name="fileToUpload1" onchange="readURL(this);" />
                                             </div>
-                                            <div class=" form-group">
-                                                <div class="col col-md-3">
-                                                    <label for="hf-password" class=" form-control-label">Message</label>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                <textarea  id="textarea-input" rows="3" placeholder="" class="form-control" name="message" ></textarea>
 
-                                                </div>
-                  
-                                              
-                                            </div>
                                             <br>
                                             <input type="submit"  name="save3" class="form-control btn btn-info" value="Push Notification to Subscribers">
                                         </form>
@@ -844,7 +895,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                
                                        <img id="blah1" style="width:300px;display:none;" src="#" alt="your image" />
                                             <label for="company" class="form-control-label">Image</label>
-    <input type='file' name="fileToUpload2" onchange="readURL1(this);" />
+    <input type='file' name="fileToUpload1" onchange="readURL1(this);" />
                                             </div>
                                             <div class=" form-group">
                                                 <div class="col col-md-3">
