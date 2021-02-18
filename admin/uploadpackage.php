@@ -6,8 +6,8 @@ $target_file = $target_dir . basename($_FILES["fileToUpload1"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-$description=$_POST['description'];
-$description=$_POST['description'];
+$packagename=$_POST['packagename'];
+$noofdays=$_POST['noofdays'];
 $description=$_POST['description'];
 $description=$_POST['description'];
 $description=$_POST['description'];
