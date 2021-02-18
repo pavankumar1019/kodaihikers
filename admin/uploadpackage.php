@@ -60,7 +60,7 @@ $result = mysqli_query($conn, $stu_query);
 
 if ($result) {
   session_start();
-  $_SESSION['message2'] = "Posted to Image Image Gallery.!";
+  $_SESSION['message2'] = "Added successfully.!";
     header('location: index.php#package');
     exit();
 }
