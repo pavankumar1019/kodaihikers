@@ -180,55 +180,7 @@ Medical and travel insurance
 							
 								<a href="#" class="show_hide">Rad More</a>
 						</div>
-<!-- 2 -->
-
-
-<div class="blog_post">
-							<div class="blog_post_image">
-								<img src="images/blog_1.jpg" alt="https://unsplash.com/@anniespratt">
-						
-							</div>
-							<div class="blog_post_meta">
-								
-							</div>
-							<div class="blog_post_title"><a href="#">Lake Point</a></div>
-							<div class="blog_post_text">
-								<p></p>
-							</div>
-							<div class="content">
-
-							<div class="blog_post_text ">
-								<p>Accomodation as per Itinerary
-Daily Breakfast
-Important Notes:-
-The distance mentioned in the itinerary is correct, however, travel time depends on traffic and condition of the road
-Route and stops are only suggested. Since it is a self-drive package, you could amend the route as you desire
-Entry fees, wherever applicable, shall have to be paid for directly at the venue
-All the guests are required to carry valid photo identities (Passport/Driving License/Voter ID Card). It is mandatory to carry a valid driving license.
-Suggested activities are not included in the itinerary
-Toll charges and Road taxes are not included in the cost of the package
-If you plan to travel with an infant, then it is advised to carry an infant car seats</p>
-							</div>
-
-							<div class="blog_post_text ">
-								<p>
-5% GSt Extra
-Anything not mentioned under ‘Package Inclusions’
-All personal expenses, optional tours and extra meals
-Camera fees, alcoholic/non-alcoholic beverages, mineral water and starters
-Entrance fees at all monuments and museums mentioned in the itinerary
-Medical and travel insurance
-</p>
-							</div>
-							<br>
-
-							
-								<a href="#" class="show_hide">Rad More</a>
-						</div>
-
-
-
-
+                        
 					</div>
 						
 				
