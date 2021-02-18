@@ -177,18 +177,21 @@ Medical and travel insurance
 							</div>
 							<br>
 
-							
+							<div class="button home_slider_button " >
+									<div class="button_bcg"></div><a href="contact.php">book now
+										us<span></span><span></span><span></span></a>
+								</div>
+								</div>
 								<a href="#" class="show_hide">Rad More</a>
 						</div>
-                        
+
+						
+						
+
 					</div>
 						
 				
 				</div>
-
-
-                <!--2  -->
-                
 
 				<!-- Blog Sidebar -->
 
