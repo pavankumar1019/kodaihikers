@@ -148,7 +148,7 @@ $result3 = $conn->query($sql3);
 
 	<!-- Contact -->
 
-	<div class="contact_form_section">
+	<div class="contact_form_section" id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">

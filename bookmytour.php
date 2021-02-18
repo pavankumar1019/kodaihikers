@@ -190,7 +190,7 @@ $result3 = $conn->query($sql3);
 							<br>
 
 							<div class="button home_slider_button " >
-									<div class="button_bcg"></div><a href="#">book now
+									<div class="button_bcg"></div><a href="contact.php#contact">book now
 										us<span></span><span></span><span></span></a>
 								</div>
 								</div>
