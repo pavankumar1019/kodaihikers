@@ -982,7 +982,7 @@ $result3 = $conn->query($sql3);
 					<!-- Trending Item -->
 					<div class="col-lg-3 col-sm-6">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="images/kodai_bearsholafalls.jpg"
+							<div class="trending_image"><img src="./images/kodai_bearsholafalls.jpg"
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Bear Shola Falls</a></div>
