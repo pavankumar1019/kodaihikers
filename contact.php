@@ -185,11 +185,11 @@ $result3 = $conn->query($sql3);
 						<h3>Savings Account</h3>
 						<br>
 						<br>
-						<h6>A/C NAME - M.SARAVANAKUMAR</h6>
-						<h6>A/C NO - <u> 6977475914</u></h6>
-						<h6>IFSC CODE - IDIB000K039</h6>
-						<h6>INDIAN BANK</h6>
-						<h6>KODAIKANAL BRANCH</h6>
+						<h6>A/C NAME :- M.SARAVANAKUMAR</h6>
+						<h6>A/C NO :- <u> 6977475914</u></h6>
+						<h6>IFSC CODE :- IDIB000K039</h6>
+						<h6>BANK NAME :- INDIAN BANK</h6>
+						<h6>BRANCH NAME :- KODAIKANAL BRANCH</h6>
 						<br>
 						<h1></h1>
 						</div>
