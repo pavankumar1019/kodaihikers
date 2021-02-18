@@ -37,7 +37,7 @@ $result2 = $conn->query($sql2);
 			<div class="container">
 				<div class="row">
 					<div class="col d-flex flex-row">
-						<div class="phone">+1234567890</div>
+						<div class="phone">+91 9751882527</div>
 						<div class="social">
 							<ul class="social_list">
 							<?php
@@ -54,8 +54,8 @@ $result2 = $conn->query($sql2);
 							</ul>
 						</div>
 						<div class="user_box ml-auto">
-							<div class="user_box_login user_box_link"><a href="#">login</a></div>
-							<div class="user_box_register user_box_link"><a href="#">register</a></div>
+							<div class="user_box_login user_box_link"><a href="#">KODAI HIKERS</a></div>
+							<!-- <div class="user_box_register user_box_link"><a href="#">register</a></div> -->
 						</div>
 					</div>
 				</div>
@@ -478,19 +478,19 @@ $result2 = $conn->query($sql2);
 							<ul class="contact_info_list">
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/kodai_location_icon.png" alt=""></div></div>
-									<div class="contact_info_text">KodaiKanal.Madurai-Tamil Nadu</div>
+									<div class="contact_info_text">Kodai Hikers,Royal Complex,Near Upper Lake View,Pambarpuram,Kodaikanal, Tamilnadu-624101</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/kodai_iconphone.png" alt=""></div></div>
-									<div class="contact_info_text">+123456789</div>
+									<div class="contact_info_text">+91 9751882527 <br> +91 8073130545</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/kodai_iconemail.png" alt=""></div></div>
-									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">office@ratstechnologies.com</a></div>
+									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">info@kadaihikers.com</a></div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/kodai_iconweb.png" alt=""></div></div>
-									<div class="contact_info_text"><a href="https://colorlib.com">www.ratstechnologies.com</a></div>
+									<div class="contact_info_text"><a href="https://colorlib.com">www.kodaihikers.com</a></div>
 								</li>
 							</ul>
 						</div>
