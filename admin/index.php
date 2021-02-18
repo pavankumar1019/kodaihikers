@@ -876,7 +876,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                     </div>
                                     <div class="card-body card-block">
                                     <?php if (isset($_SESSION['message3']) && !empty($_SESSION['message3'])) { ?>
-                                            <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message4']; ?></div>
+                                            <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message3']; ?></div>
                                             <?php
                                             unset($_SESSION['message3']);
                                         }
@@ -909,7 +909,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                               
                                             </div>
                                             <br>
-                                            <input type="submit"  name="save2" class="form-control btn btn-info" value="Push Notification to Subscribers">
+                                            <input type="submit"  name="save2" class="form-control btn btn-info" value="Post Blog">
                                         </form>
                                     </div>
                                    
