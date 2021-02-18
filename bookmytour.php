@@ -6,6 +6,11 @@ $result1 = $conn->query($sql1);
 
 $sql2 = "SELECT * FROM kh_social_media_links";
 $result2 = $conn->query($sql2);
+
+$sql3 = "SELECT * FROM kh_book_my_tours";
+$result3 = $conn->query($sql3);
+
+
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -137,50 +142,49 @@ $result2 = $conn->query($sql2);
 					<div class="blog_post_container">
 
 						<!-- Blog Post -->
-						
-						<div class="blog_post">
+						<?php
+                            if ($result3->num_rows > 0) {
+                                // output data of each row
+                                while($row3 = $result3->fetch_assoc()) {
+                              
+                                                            ?>
+
+									<div class="blog_post">
 							<div class="blog_post_image">
 								<img src="images/blog_1.jpg" alt="https://unsplash.com/@anniespratt">
 								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center" style="width:160px;">
 
-									<div class="blog_post_day">₹ &nbsp;<strong>10,000</strong></div>
-									<div class="blog_post_month">1 person</div>
+									<div class="blog_post_day">₹ &nbsp;<strong><?php echo $row3["price"]; ?></strong></div>
+									<div class="blog_post_month"><?php echo $row3["no_of_person"]; ?> person</div>
 								</div>
 							</div>
 							<div class="blog_post_meta">
 								<ul>
-									<li class="blog_post_meta_item"><a href="">3 nights 4 days</a></li>
-								    <li class="blog_post_meta_item"><a href="">₹ 10,000</a></li>
-								    <li class="blog_post_meta_item"><a href="">1 person</a></li>
+									<li class="blog_post_meta_item"><a href=""><?php echo $row3["no_of_days"]; ?></a></li>
+								    <li class="blog_post_meta_item"><a href="">₹ <?php echo $row3["price"]; ?></a></li>
+								    <li class="blog_post_meta_item"><a href=""><?php echo $row3["no_of_person"]; ?> person</a></li>
 								</ul>
 							</div>
-							<div class="blog_post_title"><a href="#">3 Nights to Ooty & Kodaikanal by Own Car</a></div>
+							<div class="blog_post_title"><a href="#"><?php echo $row3["package_name"]; ?></a></div>
+							<div class="blog_post_title"><a href="#">Litnerary</a></div>
 							<div class="blog_post_text">
-								<p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
+								<p><?php echo $row3["litnerary"]; ?></p>
 							</div>
 							<div class="content">
 							<div class="blog_post_title"><a href="#">Inclusions</a></div>
 							<div class="blog_post_text ">
-								<p>Accomodation as per Itinerary
-Daily Breakfast
-Important Notes:-
-The distance mentioned in the itinerary is correct, however, travel time depends on traffic and condition of the road
-Route and stops are only suggested. Since it is a self-drive package, you could amend the route as you desire
-Entry fees, wherever applicable, shall have to be paid for directly at the venue
-All the guests are required to carry valid photo identities (Passport/Driving License/Voter ID Card). It is mandatory to carry a valid driving license.
-Suggested activities are not included in the itinerary
-Toll charges and Road taxes are not included in the cost of the package
-If you plan to travel with an infant, then it is advised to carry an infant car seats</p>
+								<p><?php echo $row3["inclusion"]; ?></p>
 							</div>
 							<div class="blog_post_title "><a href="#">Exclusions</a></div>
 							<div class="blog_post_text ">
 								<p>
-5% GSt Extra
-Anything not mentioned under ‘Package Inclusions’
-All personal expenses, optional tours and extra meals
-Camera fees, alcoholic/non-alcoholic beverages, mineral water and starters
-Entrance fees at all monuments and museums mentioned in the itinerary
-Medical and travel insurance
+								<?php echo $row3["exclusion"]; ?>
+</p>
+							</div>
+							<div class="blog_post_title "><a href="#">Terms & condations</a></div>
+							<div class="blog_post_text ">
+								<p>
+								<?php echo $row3["terms_and_condations"]; ?>
 </p>
 							</div>
 							<br>
@@ -190,56 +194,22 @@ Medical and travel insurance
 										us<span></span><span></span><span></span></a>
 								</div>
 								</div>
-								<a href="#" class="show_hide">Rad More</a>
+								<a href="#" onclick="return false;" class="show_hide">Read More</a>
 						</div>
 
-						<!-- Blog Post -->
-						
-						<div class="blog_post">
-							<div class="blog_post_image">
-								<img src="images/blog_2.jpg" alt="https://unsplash.com/@tschax">
-								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
-									<div class="blog_post_day">01</div>
-									<div class="blog_post_month">Dec, 2017</div>
-								</div>
-							</div>
-							<div class="blog_post_meta">
-								<ul>
-									<li class="blog_post_meta_item"><a href="">by Lore Papp</a></li>
-									<li class="blog_post_meta_item"><a href="">Uncategorized</a></li>
-									<li class="blog_post_meta_item"><a href="">3 Comments</a></li>
-								</ul>
-							</div>
-							<div class="blog_post_title"><a href="#">Try these new dream destinations</a></div>
-							<div class="blog_post_text">
-								<p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
-							</div>
-							<div class="blog_post_link"><a href="#">read more</a></div>
-						</div>
+                                                            <?php
+								}
+								}
+								?>
 
+
+
+						
 						<!-- Blog Post -->
 						
-						<div class="blog_post">
-							<div class="blog_post_image">
-								<img src="images/blog_3.jpg" alt="https://unsplash.com/@stilclassics">
-								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
-									<div class="blog_post_day">01</div>
-									<div class="blog_post_month">Dec, 2017</div>
-								</div>
-							</div>
-							<div class="blog_post_meta">
-								<ul>
-									<li class="blog_post_meta_item"><a href="">by Lore Papp</a></li>
-									<li class="blog_post_meta_item"><a href="">Uncategorized</a></li>
-									<li class="blog_post_meta_item"><a href="">3 Comments</a></li>
-								</ul>
-							</div>
-							<div class="blog_post_title"><a href="#">Try these new dream destinations</a></div>
-							<div class="blog_post_text">
-								<p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
-							</div>
-							<div class="blog_post_link"><a href="#">read more</a></div>
-						</div>
+					
+						
+
 
 					</div>
 						
