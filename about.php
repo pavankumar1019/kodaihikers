@@ -478,7 +478,7 @@ $result2 = $conn->query($sql2);
 							<ul class="contact_info_list">
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/kodai_location_icon.png" alt=""></div></div>
-									<div class="contact_info_text">Kodai Hikers,Royal Complex,Near Upper Lake View,Pambarpuram,&nbsp; Kodaikanal,Tamilnadu-624101</div>
+									<div class="contact_info_text">Kodai Hikers,Royal Complex,Near Upper Lake View,Pambarpuram,&nbsp; Kodaikanal,Tamilnadu-624103</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/kodai_iconphone.png" alt=""></div></div>

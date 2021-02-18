@@ -1085,7 +1085,7 @@ $result5 = $conn->query($sql5);
 											<div class="contact_info_icon"><img src="images/kodai_location_icon.png" alt="">
 											</div>
 										</div>
-										<div class="contact_info_text">Kodai Hikers,Royal Complex, Near Upper Lake View, Pambarpuram,Kodaikanal, Tamilnadu-624101 </div>
+										<div class="contact_info_text">Kodai Hikers,Royal Complex,Near Upper Lake View,Pambarpuram,&nbsp; Kodaikanal,Tamilnadu-624103</div>							</li>
 									</li>
 									<li class="contact_info_item d-flex flex-row">
 										<div>
