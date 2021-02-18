@@ -180,6 +180,7 @@ $result3 = $conn->query($sql3);
 					<div class="contact_form_container">
 						<div class="contact_title text-center">Online Payment
 						<br>
+						<div style="color:white;">
 						<p>
 						Savings Account
 						<br>
@@ -189,6 +190,7 @@ $result3 = $conn->query($sql3);
 						INDIAN BANK
 						KODAIKANAL BRANCH
 						</p>
+						</div>
 						</div>
 					
 					</div>
