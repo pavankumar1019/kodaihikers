@@ -2,7 +2,10 @@
 include("../db_connection/db.php");
 
 $target_dir = "../dynamic_scrolling_banners/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$fileName=$_FILES["fileToUpload"]["name"];
+$random=rand(1111,9999);
+ $newFileName=$random.$fileName;
+$target_file = $target_dir . $newFileName;
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $id=$_POST['id'];
