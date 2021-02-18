@@ -585,7 +585,8 @@ $result3 = $conn->query($sql3);
 										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor
 											sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
 										<div class="offers_icons">
-
+										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor
+											sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
 										</div>
 										<div class="offers_link"><a href="bookmytour.php">read more</a></div>
 									</div>
