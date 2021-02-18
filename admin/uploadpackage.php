@@ -35,7 +35,6 @@ if(move_uploaded_fileToUpload1($fileToUpload1_loc,$folder.$final_fileToUpload1))
    $first_name=$_fileToUpload1S["fileToUpload1ToUpload1"]["name"];
     $stu_query = "INSERT INTO kh_book_my_tours (package_name,no_of_days,photo,price,no_of_person,litnerary,inclusion,exclusion,terms_and_conditions) VALUES ('$packagename','$noofdays','$first_name','$price','$numberofperson','$litnerary','$inclusion','$exclusion','$termsconditions')";
 $result = mysqli_query($conn, $stu_query);
-
 if ($result) {
   session_start();
   $_SESSION['message2'] = "Added successfully.!";
@@ -43,5 +42,4 @@ if ($result) {
     exit();
 }
   } 
-}
 ?>
