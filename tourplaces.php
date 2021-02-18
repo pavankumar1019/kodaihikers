@@ -103,7 +103,7 @@ $result2 = $conn->query($sql2);
 	<div class="menu trans_500">
 		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 			<div class="menu_close_container"><div class="menu_close"></div></div>
-			<div class="logo menu_logo"><a href="#"><img class="img-fluid" src="./images/kodai_logo.png" alt=""></a></div>
+			<div class="logo menu_logo"><a href="#"><img class="img-fluid" src="" alt=""></a></div>
 			<ul>
 				<li class="menu_item"><a href="index.php">home</a></li>
 				<li class="menu_item"><a href="about.php">about us</a></li>
