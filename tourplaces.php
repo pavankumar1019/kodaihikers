@@ -196,7 +196,7 @@ Medical and travel insurance
 							<div class="blog_post_text">
 								<p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
 							</div>
-							<div class="content">
+							<div class="content1">
 							<div class="blog_post_title"><a href="#">Inclusions</a></div>
 							<div class="blog_post_text ">
 								<p>Accomodation as per Itinerary
@@ -223,8 +223,8 @@ Medical and travel insurance
 							</div>
 							<br>						
 						</div>
-                        <div class="button home_slider_button show_hide" >
-									<div class="button_bcg"></div><a href="#" class="show_hide">read more
+                        <div class="button home_slider_button show_hide1" >
+									<div class="button_bcg"></div><a href="#" class="show_hide1">read more
 										<span></span><span></span><span></span></a>
 								       </div>
 						   </div>
@@ -394,6 +394,15 @@ $(document).ready(function () {
     $(".content").hide();
     $(".show_hide").on("click", function () {
 		$(".content").show();
+$(this).hide();
+    });
+});
+</script>
+<script>
+$(document).ready(function () {
+    $(".content1").hide();
+    $(".show_hide1").on("click", function () {
+		$(".content1").show();
 $(this).hide();
     });
 });
