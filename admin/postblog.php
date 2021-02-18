@@ -6,8 +6,8 @@ $target_file = $target_dir . basename($_FILES["fileToUpload2"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-$description=$_POST['description'];
-$description=$_POST['description'];
+$title=$_POST['title'];
+$message=$_POST['message'];
 
 // Check if image file is a actual image or fake image
 if(isset($_POST["save2"])) {
@@ -48,13 +48,13 @@ if ($uploadOk == 0) {
   if (move_uploaded_file($_FILES["fileToUpload2"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload2"]["name"])). " has been uploaded.";
    $first_name=$_FILES["fileToUpload2"]["name"];
-    $stu_query = "INSERT INTO kh_animated_gallery (path,description) VALUES ('$first_name','$description')";
+    $stu_query = "INSERT INTO kh_blog (title,image,description) VALUES ('$title','$first_name','$message')";
 $result = mysqli_query($conn, $stu_query);
 
 if ($result) {
   session_start();
-  $_SESSION['message2'] = "Posted to Image Image Gallery.!";
-    header('location: form.php#gallery');
+  $_SESSION['message3'] = " Blog Posted.!";
+    header('location: index.php#blog');
     exit();
 }
   } else {

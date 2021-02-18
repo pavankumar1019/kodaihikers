@@ -853,7 +853,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                     </div>
                     
                 </div>
-                <div class="row">
+                <div class="row" id="blog">
                             <div class="col-lg-12">
                                 <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
                                     <div class="au-card-title" style="background-image:url('images/bg-title-01.jpg');">
@@ -875,10 +875,10 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                         <strong>Blog</strong>&nbsp;Post
                                     </div>
                                     <div class="card-body card-block">
-                                    <?php if (isset($_SESSION['message4']) && !empty($_SESSION['message4'])) { ?>
+                                    <?php if (isset($_SESSION['message3']) && !empty($_SESSION['message3'])) { ?>
                                             <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message4']; ?></div>
                                             <?php
-                                            unset($_SESSION['message4']);
+                                            unset($_SESSION['message3']);
                                         }
                                         ?>
                                         <form  action="postblog.php" method="post" enctype="multipart/form-data">
