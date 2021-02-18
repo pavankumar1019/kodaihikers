@@ -726,7 +726,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                 </div>
                             </div> -->
                         </div>
-                        <div class="row">
+                        <div class="row" id="package">
                             <div class="col-lg-12">
                                 <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
                                     <div class="au-card-title" style="background-image:url('images/bg-title-01.jpg');">
