@@ -184,7 +184,7 @@ $result3 = $conn->query($sql3);
 							<div class="blog_post_title "><a href="#">Terms & condations</a></div>
 							<div class="blog_post_text ">
 								<p>
-								<?php echo $row3["terms_and_condations"]; ?>
+								<?php echo $row3["terms_and_conditions"]; ?>
 </p>
 							</div>
 							<br>
