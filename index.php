@@ -70,7 +70,7 @@ $result5 = $conn->query($sql5);
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:140px;
+	bottom:160px;
 	right:10px;
 	background-color:#0063B2FF;
 	color:#FFF;
