@@ -179,8 +179,6 @@ $result3 = $conn->query($sql3);
 					<!-- Contact Form -->
 					<div class="contact_form_container">
 						<div class="contact_title text-center">Online Payment</div>
-
-						<div class="contact_title text-center"> 
 						<p>
 						Savings Account
 						A/C NAME - M.SARAVANAKUMAR
@@ -189,7 +187,6 @@ $result3 = $conn->query($sql3);
 						INDIAN BANK
 						KODAIKANAL BRANCH
 						</p>
-						</div>
 					</div>
 
 				</div>
