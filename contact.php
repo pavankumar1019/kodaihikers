@@ -180,7 +180,7 @@ $result3 = $conn->query($sql3);
 					<div class="contact_form_container">
 						<div class="contact_title text-center">Online Payment</div>
 						<form id="fupForm" name="form1" method="post" class="contact_form">
-						<div style="color:white;">
+						<div class="container-fluid" style="color:white;">
 						<h3>Savings Account</h3>
 						<br>
 						A/C NAME - M.SARAVANAKUMAR
