@@ -13,7 +13,7 @@ $numberofperson=$_POST['numberofperson'];
 $litnerary=$_POST['litnerary'];
 $inclusion=$_POST['inclusion'];
 $exclusion=$_POST['exclusion'];
-$terms&conditions=$_POST['terms&conditions'];
+$termsconditions=$_POST['terms&conditions'];
 // $description=$_POST['description'];
 
 // Check if image file is a actual image or fake image
