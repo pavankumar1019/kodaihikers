@@ -8,13 +8,13 @@ $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
 $packagename=$_POST['packagename'];
 $noofdays=$_POST['noofdays'];
-$description=$_POST['description'];
-$description=$_POST['description'];
-$description=$_POST['description'];
-$description=$_POST['description'];
-$description=$_POST['description'];
-$description=$_POST['description'];
-$description=$_POST['description'];
+$price=$_POST['price'];
+$numberofperson=$_POST['numberofperson'];
+$litnerary=$_POST['litnerary'];
+$inclusion=$_POST['inclusion'];
+$exclusion=$_POST['exclusion'];
+$terms&conditions=$_POST['terms&conditions'];
+// $description=$_POST['description'];
 
 // Check if image file is a actual image or fake image
 if(isset($_POST["save1"])) {
