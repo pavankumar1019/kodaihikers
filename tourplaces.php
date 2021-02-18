@@ -138,7 +138,7 @@ $result2 = $conn->query($sql2);
 
 						<!-- Blog Post -->
 						
-						<div class="blog_post">
+						<div class="blog_post" id="place1">
 							<div class="blog_post_image">
 								<img src="images/blog_1.jpg" alt="https://unsplash.com/@anniespratt">
 						
@@ -177,14 +177,14 @@ Medical and travel insurance
 							</div>	
 						</div>
                         <div class="button home_slider_button show_hide" >
-									<div class="button_bcg"></div><a href="#"  class="show_hide">read more
+									<div class="button_bcg"></div><a href="#place1"  class="show_hide">read more
 										<span></span><span></span><span></span></a>
 								       </div>
 						   </div>
 
 						
 						<!--2  -->
-                        <div class="blog_post">
+                        <div class="blog_post" id="place2">
 							<div class="blog_post_image">
 								<img src="images/blog_1.jpg" alt="https://unsplash.com/@anniespratt">
 						
@@ -224,7 +224,7 @@ Medical and travel insurance
 							<br>						
 						</div>
                         <div class="button home_slider_button show_hide1" >
-									<div class="button_bcg"></div><a href="#" class="show_hide1">read more
+									<div class="button_bcg"></div><a href="#place2" class="show_hide1">read more
 										<span></span><span></span><span></span></a>
 								       </div>
 						   </div>
