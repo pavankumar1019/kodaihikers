@@ -578,7 +578,9 @@ $result3 = $conn->query($sql3);
 									</div>
 								</div>
 								<div class="col-lg-12">
+								<br>
 									<div class="offers_content">
+									<br>
 										<div class="offers_price">$70<span>per night</span></div>
 										
 										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor
