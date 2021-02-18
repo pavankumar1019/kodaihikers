@@ -2,23 +2,16 @@
 include("../db_connection/db.php");
 
 $target_dir = "../animated_gallery/";
-$target_file = $target_dir . basename($_FILES["fileToUpload1"]["name"]);
+$target_file = $target_dir . basename($_FILES["fileToUpload2"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-$packagename=$_POST['packagename'];
-$noofdays=$_POST['noofdays'];
-$description=$_POST['description'];
-$description=$_POST['description'];
-$description=$_POST['description'];
-$description=$_POST['description'];
-$description=$_POST['description'];
 $description=$_POST['description'];
 $description=$_POST['description'];
 
 // Check if image file is a actual image or fake image
-if(isset($_POST["save1"])) {
-  $check = getimagesize($_FILES["fileToUpload1"]["tmp_name"]);
+if(isset($_POST["save2"])) {
+  $check = getimagesize($_FILES["fileToUpload2"]["tmp_name"]);
   if($check !== false) {
     echo "File is an image - " . $check["mime"] . ".";
     $uploadOk = 1;
@@ -35,7 +28,7 @@ if(isset($_POST["save1"])) {
 // }
 
 // Check file size
-if ($_FILES["fileToUpload1"]["size"] > 500000) {
+if ($_FILES["fileToUpload2"]["size"] > 500000) {
   echo "Sorry, your file is too large.";
   $uploadOk = 0;
 }
@@ -52,10 +45,10 @@ if ($uploadOk == 0) {
   echo "Sorry, your file was not uploaded.";
 // if everything is ok, try to upload file
 } else {
-  if (move_uploaded_file($_FILES["fileToUpload1"]["tmp_name"], $target_file)) {
-    echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload1"]["name"])). " has been uploaded.";
-   $first_name=$_FILES["fileToUpload1"]["name"];
-    $stu_query = "INSERT INTO kh_book_my_tours (package_name,no_of_days,) VALUES ('$packagename','$noofdays','')";
+  if (move_uploaded_file($_FILES["fileToUpload2"]["tmp_name"], $target_file)) {
+    echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload2"]["name"])). " has been uploaded.";
+   $first_name=$_FILES["fileToUpload2"]["name"];
+    $stu_query = "INSERT INTO kh_animated_gallery (path,description) VALUES ('$first_name','$description')";
 $result = mysqli_query($conn, $stu_query);
 
 if ($result) {

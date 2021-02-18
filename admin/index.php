@@ -881,7 +881,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                             unset($_SESSION['message4']);
                                         }
                                         ?>
-                                        <form  action="send_push_notifications.php" method="post" enctype="multipart/form-data">
+                                        <form  action="postblog.php" method="post" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <div class="col col-md-3">
                                                     <label for="hf-email" class=" form-control-label">Title</label>
@@ -909,7 +909,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                               
                                             </div>
                                             <br>
-                                            <input type="submit"  name="save1" class="form-control btn btn-info" value="Push Notification to Subscribers">
+                                            <input type="submit"  name="save2" class="form-control btn btn-info" value="Push Notification to Subscribers">
                                         </form>
                                     </div>
                                    
