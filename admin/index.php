@@ -732,9 +732,9 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                     <div class="au-card-title" style="background-image:url('images/bg-title-01.jpg');">
                                         <div class="bg-overlay bg-overlay--blue"></div>
                                         <h3>
-                                            <i class="zmdi zmdi-account-calendar"></i>Add Tour Packages</h3>
+                                            <i class="zmdi zmdi-account-calendar"></i>Add Tours Packages</h3>
                                         <button class="au-btn-plus">
-                                            <i class="">Tour</i>
+                                            <i class="">Tours</i>
                                         </button>
                                     </div>
                                     <div class="au-task js-list-load">
@@ -745,7 +745,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                             <div class="au-task__item au-task__item--danger">
                                                  <div class="card">
                                     <div class="card-header">
-                                        <strong>Send</strong>&nbsp;Push Notifications
+                                        <strong>Tours</strong>&nbsp;Packages
                                     </div>
                                     <div class="card-body card-block">
                                     <?php if (isset($_SESSION['message4']) && !empty($_SESSION['message4'])) { ?>
