@@ -1,7 +1,7 @@
 <?php
 include("../db_connection/db.php");
 
-$target_dir = "../animated_gallery/";
+$target_dir = "../tourpackages/";
 $target_file = $target_dir . basename($_FILES["fileToUpload1"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
