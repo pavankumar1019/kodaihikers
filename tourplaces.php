@@ -251,7 +251,7 @@ You must visit Byrant Park and its 325 species & religious Bodhi Tree.
 
                            <div class="blog_post" id="place4">
 							<div class="blog_post_image">
-								<img src="./images/kodai_bearsholafalls.jpb" alt="https://unsplash.com/@anniespratt">
+								<img src="./images/kodai_bearsholafalls.jpg" alt="https://unsplash.com/@anniespratt">
 						
 							</div>
 							<div class="blog_post_meta">
