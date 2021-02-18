@@ -11,6 +11,9 @@ $result2 = $conn->query($sql2);
 
 $sql3 = "SELECT * FROM kh_animated_gallery";
 $result3 = $conn->query($sql3);
+
+$sql4 = "SELECT * FROM kh_book_my_tours ORDER BY date DESC LIMIT 1";
+$result4 = $conn->query($sql4);
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -565,36 +568,47 @@ $result3 = $conn->query($sql3);
 					</div>
 				</div>
 				<div class="row offers_items">
-
-					<!-- Offers Item -->
-					<div class="col-lg-12 offers_col">
+				<?php
+                            if ($result4->num_rows > 0) {
+                                // output data of each row
+                                while($row4 = $result4->fetch_assoc()) {
+                              
+                                                            ?>
+									<li class="social_list_item"><a href=""></a></li>
+									<div class="col-lg-12 offers_col">
 						<div class="offers_item">
 							<div class="row">
 								<div class="col-lg-12">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@kensuarez -->
-										<img src="./images/slider2.jpg" class="img-fluid" alt="">
-										<div class="offer_name"><a href="#">fhgfhgfhgfh</a></div>
+										<img src="./blogimages/<?php echo $row4["photo"]; ?>" class="img-fluid" alt="">
+										<div class="offer_name"><a href="#"><?php echo $row4["package_name"]; ?></a></div>
 									</div>
 								</div>
 								<div class="col-lg-12">
 								<br>
 									<div class="offers_content">
 									<br>
-										<div class="offers_price">$70<span>per night</span></div>
+										<div class="offers_price">₹ <?php echo $row4["price"]; ?> <span> <?php echo $row4["no_of_days"]; ?></span></div>
 										
-										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor
-											sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
+										<p class="offers_text"><?php echo $row4["litnerary"]; ?></p>
 										<div class="offers_icons">
-										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor
-											sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
+										<!-- <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor
+											sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p> -->
 										</div>
-										<div class="offers_link"><a href="bookmytour.php">read more</a></div>
+										<div class="offers_link"><a href="bookmytour.php">View All Packages</a></div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+														   
+														    <?php
+								}
+								}
+								?>
+					<!-- Offers Item -->
+					
 
 					<!-- Offers Item -->
 					
