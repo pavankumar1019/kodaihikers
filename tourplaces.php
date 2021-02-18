@@ -174,16 +174,13 @@ Camera fees, alcoholic/non-alcoholic beverages, mineral water and starters
 Entrance fees at all monuments and museums mentioned in the itinerary
 Medical and travel insurance
 </p>
-							</div>
-							<br>
-
-							<div class="button home_slider_button show_hide" >
+							</div>	
+						</div>
+                        <div class="button home_slider_button show_hide" >
 									<div class="button_bcg"></div><a href="show_hide">read more
 										<span></span><span></span><span></span></a>
 								       </div>
 						   </div>
-								<a href="#" class="show_hide">Rad More</a>
-						</div>
 
 						
 						<!--2  -->
@@ -224,16 +221,13 @@ Entrance fees at all monuments and museums mentioned in the itinerary
 Medical and travel insurance
 </p>
 							</div>
-							<br>
-
-							<div class="button home_slider_button show_hide" >
+							<br>						
+						</div>
+                        <div class="button home_slider_button show_hide" >
 									<div class="button_bcg"></div><a href="show_hide">read more
 										<span></span><span></span><span></span></a>
 								       </div>
 						   </div>
-								
-						</div>
-
 
 
 
