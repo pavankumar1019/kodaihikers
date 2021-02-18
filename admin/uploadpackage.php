@@ -3,7 +3,7 @@ include("../db_connection/db.php");
 
 $target_dir = "../tourpackages/";
 $random=rand(1111,9999);
-$target_file = $target_dir . $random.basename($_FILES["fileToUpload1"]["name"]);
+$target_file = $target_dir .$random.basename($_FILES["fileToUpload1"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
