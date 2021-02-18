@@ -5,6 +5,10 @@ $result1 = $conn->query($sql1);
 
 $sql2 = "SELECT * FROM kh_social_media_links";
 $result2 = $conn->query($sql2);
+
+
+$sql3 = "SELECT * FROM kh_blog";
+$result3 = $conn->query($sql3);
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -135,76 +139,43 @@ $result2 = $conn->query($sql2);
 					<div class="blog_post_container">
 
 						<!-- Blog Post -->
-						
-						<div class="blog_post">
+						<?php
+                            if ($result3->num_rows > 0) {
+                                // output data of each row
+                                while($row3 = $result3->fetch_assoc()) {
+                              
+                                                            ?>
+									<div class="blog_post">
 							<div class="blog_post_image">
-								<img src="images/blog_1.jpg" alt="https://unsplash.com/@anniespratt">
+								<img src="./blogimages/<?php  echo $row3["image"];?>" alt="https://unsplash.com/">
 								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
-									<div class="blog_post_day">14</div>
-									<div class="blog_post_month">feb, 2021</div>
+<?php
+$yourDateTime=$row3["date"];
+ date('Y-m-d', strtotime($yourDateTime)); 
+ ?>
+									<div class="blog_post_month"><?php echo $yourDateTime;?></div>
 								</div>
 							</div>
 							<div class="blog_post_meta">
 								<ul>
-									<li class="blog_post_meta_item"><a href="">by Lore Papp</a></li>
-									<li class="blog_post_meta_item"><a href="">Uncategorized</a></li>
-									<li class="blog_post_meta_item"><a href="">3 Comments</a></li>
+									<li class="blog_post_meta_item"><a href="">Posted on <?php  echo $yourDateTime ?></a></li>
+
 								</ul>
 							</div>
-							<div class="blog_post_title"><a href="#">Try these new dream destinations</a></div>
+							<div class="blog_post_title"><a href="#"><?php  echo $row3["title"];?></a></div>
 							<div class="blog_post_text">
-								<p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
+								<p><?php  echo $row3["description"];?></p>
 							</div>
-							<div class="blog_post_link"><a href="#">read more</a></div>
 						</div>
+                                                            <?php
+								}
+								}
+								?>
+					
 
 						<!-- Blog Post -->
 						
-						<div class="blog_post">
-							<div class="blog_post_image">
-								<img src="images/blog_2.jpg" alt="https://unsplash.com/@tschax">
-								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
-									<div class="blog_post_day">14</div>
-									<div class="blog_post_month">feb, 2021</div>
-								</div>
-							</div>
-							<div class="blog_post_meta">
-								<ul>
-									<li class="blog_post_meta_item"><a href="">by Lore Papp</a></li>
-									<li class="blog_post_meta_item"><a href="">Uncategorized</a></li>
-									<li class="blog_post_meta_item"><a href="">3 Comments</a></li>
-								</ul>
-							</div>
-							<div class="blog_post_title"><a href="#">Try these new dream destinations</a></div>
-							<div class="blog_post_text">
-								<p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
-							</div>
-							<div class="blog_post_link"><a href="#">read more</a></div>
-						</div>
-
-						<!-- Blog Post -->
 						
-						<div class="blog_post">
-							<div class="blog_post_image">
-								<img src="images/blog_3.jpg" alt="https://unsplash.com/@stilclassics">
-								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
-									<div class="blog_post_day">14</div>
-									<div class="blog_post_month">feb, 2021</div>
-								</div>
-							</div>
-							<div class="blog_post_meta">
-								<ul>
-									<li class="blog_post_meta_item"><a href="">by Lore Papp</a></li>
-									<li class="blog_post_meta_item"><a href="">Uncategorized</a></li>
-									<li class="blog_post_meta_item"><a href="">3 Comments</a></li>
-								</ul>
-							</div>
-							<div class="blog_post_title"><a href="#">Try these new dream destinations</a></div>
-							<div class="blog_post_text">
-								<p>Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.</p>
-							</div>
-							<div class="blog_post_link"><a href="#">read more</a></div>
-						</div>
 
 					</div>
 						
