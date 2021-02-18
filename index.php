@@ -277,11 +277,11 @@ $result3 = $conn->query($sql3);
 								
 									<div class="container-fluid d-flex p-2 bd-highlight">
 										<div class="row">
-											<div class="col-lg-4 ">	<img src="./images/kodai_greenvally.jpg" class="img-fluid" width="350px" alt="" srcset=""></div>
+											<div class="col-lg-4 ">	<img src="./images/kodai_greenvally.jpg" class="img-fluid" width="380px" alt="" srcset=""></div>
 											<div class="col-lg-8 ">
 												<h1 >Family tours</h1>
 												<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
-											<a href="./familytours/index.html" class="button search_button">Book Now...<span></span><span></span><span></span></a>
+											<a href="./familytours/index.html" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 											</div>
 										  </div>
 							
@@ -298,11 +298,11 @@ $result3 = $conn->query($sql3);
 							
 								<div class="container-fluid d-flex p-2 bd-highlight">
 									<div class="row">
-										<div class="col-lg-4 col-sm-12">	<img src="./images/kodai_lakeviewpoint.jpg"  class="img-fluid" width="350px" alt="" srcset=""></div>
+										<div class="col-lg-4 col-sm-12">	<img src="./images/kodai_lakeviewpoint.jpg"  class="img-fluid" width="380px" alt="" srcset=""></div>
 										<div class="col-lg-8 col-sm-12">
 											<h1 >Student tours</h1>
 											<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
-											<a href="./student_tour/index.html" class="button search_button">Book Now...<span></span><span></span><span></span></a>
+											<a href="./student_tour/index.html" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 										</div>
 									  </div>
 						
@@ -318,11 +318,11 @@ $result3 = $conn->query($sql3);
 								class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 								<div class="container-fluid d-flex p-2 bd-highlight">
 									<div class="row">
-										<div class="col-lg-4 col-sm-12">	<img src="./images/kodai_lakeviewpoint.jpg" class="img-fluid"  width="350px" alt="" srcset=""></div>
+										<div class="col-lg-4 col-sm-12">	<img src="./images/kodai_lakeviewpoint.jpg" class="img-fluid"  width="380px" alt="" srcset=""></div>
 										<div class="col-lg-8 col-sm-12">
 											<h1 >Couple tours</h1>
 											<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
-											<a href="./couple_tour/index.html" class="button search_button">Book Now...<span></span><span></span><span></span></a>
+											<a href="./couple_tour/index.html" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 										</div>
 									  </div>
 						
@@ -338,11 +338,11 @@ $result3 = $conn->query($sql3);
 								class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 								<div class="container-fluid d-flex p-2 bd-highlight">
 									<div class="row">
-										<div class="col-lg-4 col-sm-12">	<img src="./images/kodai_lakeviewpoint.jpg" class="img-fluid"  width="350px" alt="" srcset=""></div>
+										<div class="col-lg-4 col-sm-12">	<img src="./images/kodai_lakeviewpoint.jpg" class="img-fluid"  width="380px" alt="" srcset=""></div>
 										<div class="col-lg-8 col-sm-12">
 											<h1 >Honeymoon</h1>
 											<p class="text-justify" style="color:white;">You take an above-ground view of the Kodaikanal Lake, and you will be amazed to find a star-shaped water body that is the soul of this city. What makes this exceptional amongst the other</p>
-											<a href="./hooneymoon/index.html" class="button search_button">Bok Now...<span></span><span></span><span></span></a>
+											<a href="./hooneymoon/index.html" class="button search_button">View All Packages<span></span><span></span><span></span></a>
 										</div>
 									  </div>
 						
@@ -947,8 +947,9 @@ $result3 = $conn->query($sql3);
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Kodaikanal Lake</a></div>
-							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
+							<!-- <div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div> -->
 							<!-- <div class="trending_location">read more</div> -->
+							<a href="tourplaces.php#place1">Read more</a>
 						</div>
 						</div>
 					</div>
