@@ -151,7 +151,7 @@ $result3 = $conn->query($sql3);
 
 									<div class="blog_post">
 							<div class="blog_post_image">
-								<img src="tourpackages/<?php echo $row3["photo"];?> " alt="<?php echo $row3["photo"]; ?> ">
+								<img src="./tourpackages/<?php echo $row3["photo"];?> " alt="<?php echo $row3["photo"]; ?> ">
 								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center" style="width:160px;">
 
 									<div class="blog_post_day">₹ &nbsp;<strong><?php echo $row3["price"]; ?></strong></div>
