@@ -177,7 +177,7 @@ Medical and travel insurance
 							</div>	
 						</div>
                         <div class="button home_slider_button show_hide" >
-									<div class="button_bcg"></div><a href="show_hide">read more
+									<div class="button_bcg"></div><a href="#"  class="show_hide">read more
 										<span></span><span></span><span></span></a>
 								       </div>
 						   </div>
@@ -224,7 +224,7 @@ Medical and travel insurance
 							<br>						
 						</div>
                         <div class="button home_slider_button show_hide" >
-									<div class="button_bcg"></div><a href="show_hide">read more
+									<div class="button_bcg"></div><a href="#" class="show_hide">read more
 										<span></span><span></span><span></span></a>
 								       </div>
 						   </div>
@@ -234,7 +234,6 @@ Medical and travel insurance
 
 					</div>
 				</div>
-
 				<!-- Blog Sidebar -->
 
 				
