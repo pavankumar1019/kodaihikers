@@ -630,17 +630,17 @@ $result3 = $conn->query($sql3);
 										<div class="row d-flex justify-content-center">
 										<img src="./images/kodai_studenttour.jpg" style="width:200px; height: 200px;" class="img-fluid rounded-circle" alt="">
 										<div class="col-12  d-flex justify-content-center">
-											<div class="rating rating_4">
+											<!-- <div class="rating rating_4">
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
-											</div> 
+											</div>  -->
 										</div>
 										<br>
 										<div class="col-12  d-flex justify-content-center">
-											<div class="test_name">Ajay Kumar</div>
+											<div class="test_name">Very nice and comfortable</div>
 										</div>
 										<div class="col-12  d-flex justify-content-center">
 											<div >"kodai hikers is the best travel website"</div>
@@ -656,17 +656,17 @@ $result3 = $conn->query($sql3);
 										<div class="row d-flex justify-content-center">
 										<img src="./images/kodai_studenttour.jpg" style="width:200px; height: 200px;" class="img-fluid rounded-circle" alt="">
 										<div class="col-12  d-flex justify-content-center">
-											<div class="rating rating_4">
+											<!-- <div class="rating rating_4">
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
-											</div> 
+											</div>  -->
 										</div>
 										<br>
 										<div class="col-12  d-flex justify-content-center">
-											<div class="test_name">Ajay Kumar</div>
+											<div class="test_name">Awesome</div>
 										</div>
 										<div class="col-12  d-flex justify-content-center">
 											<div >"kodai hikers is the best travel website"</div>
@@ -682,17 +682,17 @@ $result3 = $conn->query($sql3);
 										<div class="row d-flex justify-content-center">
 										<img src="./images/kodai_studenttour.jpg" style="width:200px; height: 200px;" class="img-fluid rounded-circle" alt="">
 										<div class="col-12  d-flex justify-content-center">
-											<div class="rating rating_4">
+											<!-- <div class="rating rating_4">
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
-											</div> 
+											</div>  -->
 										</div>
 										<br>
 										<div class="col-12  d-flex justify-content-center">
-											<div class="test_name">Ajay Kumar</div>
+											<div class="test_name">It's the best tours and travels website</div>
 										</div>
 										<div class="col-12  d-flex justify-content-center">
 											<div >"kodai hikers is the best travel website"</div>
@@ -708,17 +708,17 @@ $result3 = $conn->query($sql3);
 										<div class="row d-flex justify-content-center">
 										<img src="./images/kodai_studenttour.jpg" style="width:200px; height: 200px;" class="img-fluid rounded-circle" alt="">
 										<div class="col-12  d-flex justify-content-center">
-											<div class="rating rating_4">
+											<!-- <div class="rating rating_4">
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
-											</div> 
+											</div>  -->
 										</div>
 										<br>
 										<div class="col-12  d-flex justify-content-center">
-											<div class="test_name">Ajay Kumar</div>
+											<div class="test_name">It's gives happy and memoriable moments</div>
 										</div>
 										<div class="col-12  d-flex justify-content-center">
 											<div >"kodai hikers is the best travel website"</div>
@@ -734,17 +734,17 @@ $result3 = $conn->query($sql3);
 										<div class="row d-flex justify-content-center">
 										<img src="./images/kodai_studenttour.jpg" style="width:200px; height: 200px;" class="img-fluid rounded-circle" alt="">
 										<div class="col-12  d-flex justify-content-center">
-											<div class="rating rating_4">
+											<!-- <div class="rating rating_4">
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
 												<i class="fa fa-star"></i>
-											</div> 
+											</div>  -->
 										</div>
 										<br>
 										<div class="col-12  d-flex justify-content-center">
-											<div class="test_name">Ajay Kumar</div>
+											<div class="test_name">Best Tours and Travels </div>
 										</div>
 										<div class="col-12  d-flex justify-content-center">
 											<div >"kodai hikers is the best travel website"</div>
@@ -837,8 +837,9 @@ $result3 = $conn->query($sql3);
 									alt="https://unsplash.com/@grovemade"></div>
 							<div class="trending_content">
 								<div class="trending_title"><a href="#">Bryant Park</a></div>
-								<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
+								<!-- <div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div> -->
 								<!-- <div class="trending_location">read more</div> -->
+								<a href="tourplaces.php#place2">Read more</a>
 							</div>
 						</div>
 					</div>
@@ -850,8 +851,9 @@ $result3 = $conn->query($sql3);
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Silver Cascade Falls</a></div>
-							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
+							<!-- <div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div> -->
 							<!-- <div class="trending_location">read more</div> -->
+							<a href="tourplaces.php#place3">Read more</a>
 						</div>
 						</div>
 					</div>
@@ -863,8 +865,9 @@ $result3 = $conn->query($sql3);
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Bear Shola Falls</a></div>
-							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
+							<!-- <div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div> -->
 							<!-- <div class="trending_location">read more</div> -->
+							<a href="tourplaces.php#place4">Read more</a>
 						</div>
 						</div>
 					</div>
@@ -876,8 +879,9 @@ $result3 = $conn->query($sql3);
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Coaker's Walk </a></div>
-							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
+							<!-- <div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div> -->
 							<!-- <div class="trending_location">read more</div> -->
+							<a href="tourplaces.php#place5">Read more</a>
 						</div>
 						</div>
 					</div>
@@ -889,8 +893,9 @@ $result3 = $conn->query($sql3);
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">guna caves</a></div>
-							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
+							<!-- <div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div> -->
 							<!-- <div class="trending_location">read more</div> -->
+							<a href="tourplaces.php#place6">Read more</a>
 						</div>
 						</div>
 					</div>
@@ -902,8 +907,9 @@ $result3 = $conn->query($sql3);
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Moir Point</a></div>
-							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
+							<!-- <div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div> -->
 							<!-- <div class="trending_location">read more</div> -->
+							<a href="tourplaces.php#place7">Read more</a>
 						</div>
 						</div>
 					</div>
@@ -915,8 +921,9 @@ $result3 = $conn->query($sql3);
 								alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Dolphin's Nose</a></div>
-							<div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div>
+							<!-- <div class="trending_price">It is believed that the Pandavas used to cook their meals in these caves,</div> -->
 							<!-- <div class="trending_location">read more</div> -->
+							<a href="tourplaces.php#place8">Read more</a>
 						</div>
 						</div>
 					</div>
@@ -1084,7 +1091,7 @@ $result3 = $conn->query($sql3);
 											<div class="contact_info_icon"><img src="images/kodai_iconweb.png" alt="">
 											</div>
 										</div>
-										<div class="contact_info_text"><a href="https://colorlib.com">
+										<div class="contact_info_text"><a href="https://www.kodaihikers.com">
 												www.kodaihikers.com
 											</a></div>
 									</li>
