@@ -12,7 +12,7 @@ $result2 = $conn->query($sql2);
 $sql3 = "SELECT * FROM kh_animated_gallery";
 $result3 = $conn->query($sql3);
 
-$sql4 = "SELECT * FROM kh_book_my_tours ORDER BY date DESC LIMIT 1";
+$sql4 = "SELECT * FROM kh_book_my_tours ORDER BY date DESC LIMIT 2";
 $result4 = $conn->query($sql4);
     ?>
 <!DOCTYPE html>
@@ -574,11 +574,10 @@ $result4 = $conn->query($sql4);
                                 while($row4 = $result4->fetch_assoc()) {
                               
                                                             ?>
-									<li class="social_list_item"><a href=""></a></li>
-									<div class="col-lg-12 offers_col">
+			<div class="col-lg-6 offers_col">
 						<div class="offers_item">
 							<div class="row">
-								<div class="col-lg-12">
+								<div class="col-lg-6">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@kensuarez -->
 										<img src="./tourpackages/<?php echo $row4["photo"];?>" class="img-fluid" alt="">
