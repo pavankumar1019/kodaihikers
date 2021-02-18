@@ -180,7 +180,7 @@ $result3 = $conn->query($sql3);
 					<div class="container-fluid bg-primary">
 						<div class="contact_title text-center">Online Payment</div>
 						
-						<div class="container mx-auto" style="color:white;">
+						<div class="d-flex justify-content-between" style="color:white;">
 						<br><br>
 						<h3>Savings Account</h3>
 						<br>
