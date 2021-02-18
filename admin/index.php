@@ -833,7 +833,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                             </div>
 
                                             <br>
-                                            <input type="submit"  name="save3" class="form-control btn btn-info" value="Push Notification to Subscribers">
+                                            <input type="submit"  name="save1" class="form-control btn btn-info" value="Push Notification to Subscribers">
                                         </form>
                                     </div>
                                    
@@ -909,7 +909,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                               
                                             </div>
                                             <br>
-                                            <input type="submit"  name="save3" class="form-control btn btn-info" value="Push Notification to Subscribers">
+                                            <input type="submit"  name="save1" class="form-control btn btn-info" value="Push Notification to Subscribers">
                                         </form>
                                     </div>
                                    
