@@ -765,7 +765,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                             </div>
                                             <div class="form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="hf-email" class=" form-control-label">Number of Days and Nights</label>
+                                                    <label for="hf-email" class="form-control-label">Number of Days and Nights</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                               <input type="text" id="noofdays" value="" name="noofdays" class="form-control">
@@ -776,7 +776,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-email" class=" form-control-label">Price</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" id="price" value="" name="price" class="form-control">
+                                              <input type="text" id="price" onkeypress="return onlyNumberKey(event)" value="" name="price" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -784,7 +784,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-email" class=" form-control-label">Number of person</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" id="numberofperson" value="" name="numberofperson" class="form-control">
+                                              <input type="text" id="numberofperson" onkeypress="return onlyNumberKey(event)" value="" name="numberofperson" class="form-control">
                                                 </div>
                                             </div>
                                             <div class=" form-group">
@@ -995,6 +995,16 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
         }
     }
 </script>
+
+<script> 
+    function onlyNumberKey(evt) { 
+          
+        // Only ASCII charactar in that range allowed 
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) 
+            return false; 
+        return true; 
+    } 
 </body>
 
 </html>
