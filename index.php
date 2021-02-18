@@ -573,7 +573,7 @@ $result3 = $conn->query($sql3);
 								<div class="col-lg-12">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@kensuarez -->
-										<img src="./images/slider2.jpg" style="width:400px" alt="">
+										<img src="./images/slider2.jpg" class="img-fluid" alt="">
 										<div class="offer_name"><a href="#">fhgfhgfhgfh</a></div>
 									</div>
 								</div>
