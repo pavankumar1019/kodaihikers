@@ -180,20 +180,10 @@ Medical and travel insurance
 							
 								<a href="#" class="show_hide">Rad More</a>
 						</div>
-					</div>
-						
-				
-				</div>
+<!-- 2 -->
 
 
-                <!--2  -->
-                <div class="col-lg-8">
-					
-					<div class="blog_post_container">
-
-						<!-- Blog Post -->
-						
-						<div class="blog_post">
+<div class="blog_post">
 							<div class="blog_post_image">
 								<img src="images/blog_1.jpg" alt="https://unsplash.com/@anniespratt">
 						
@@ -235,10 +225,18 @@ Medical and travel insurance
 							
 								<a href="#" class="show_hide">Rad More</a>
 						</div>
+
+
+
+
 					</div>
 						
 				
 				</div>
+
+
+                <!--2  -->
+                
 
 				<!-- Blog Sidebar -->
 
