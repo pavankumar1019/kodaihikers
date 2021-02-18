@@ -151,7 +151,30 @@ $result3 = $conn->query($sql3);
 	<div class="contact_form_section">
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col-lg-6">
+
+					<!-- Contact Form -->
+					<div class="contact_form_container">
+						<div class="contact_title text-center">get in touch</div>
+						<form id="fupForm" name="form1" method="post" class="contact_form">
+								<input type="text" id="name" name="name" class="contact_form_name input_field"
+									placeholder="Name"  required="required" data-error="Name is required.">
+								<input type="text" id="email" name="email" class="contact_form_email input_field"
+									placeholder="E-mail" required="required" data-error="Email is required.">
+								<input type="text" id="number" name="number" class="contact_form_subject input_field"
+									placeholder="Phone Number" required="required" data-error="Subject is required.">
+								<textarea id="message" class="text_field contact_form_message"
+									name="message" rows="4" placeholder="Message" required="required"
+									data-error="Please, write us a message."></textarea>
+								<button type="submit" id="butsave" class="form_submit_button button">send
+									message<span></span><span></span><span></span></button>
+								
+							</form>
+							<div id="success" style="color:red;"></div>
+					</div>
+
+				</div>
+				<div class="col-lg-6">
 
 					<!-- Contact Form -->
 					<div class="contact_form_container">
