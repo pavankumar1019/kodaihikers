@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
       const proxy = "https://cors-anywhere.herokuapp.com/";
-      const api = `api.openweathermap.org/data/2.5/weather?q=London&appid=2b86e74fb5be73f5b02b0298b2b622fa`;
+      const api = `http://api.openweathermap.org/data/2.5/weather?q=Kodaikanal&appid=2b86e74fb5be73f5b02b0298b2b622fa`;
       fetch(api)
         .then((response) => {
           return response.json();
