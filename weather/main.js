@@ -41,7 +41,7 @@ function displayResults (weather) {
     tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685))' ;
   }
   else if(id>800){
-    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685))';
+    tempIcon.style.backgroundImage = "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685))";
   }
 
   let hilow = document.querySelector('.hi-low');
