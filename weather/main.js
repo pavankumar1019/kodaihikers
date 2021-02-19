@@ -3,14 +3,10 @@ const api = {
   base: "https://api.openweathermap.org/data/2.5/"
 }
 window.addEventListener("load", () => {
-
-
   fetch(`${api.base}weather?q=kodaikanal&units=metric&APPID=${api.key}`)
     .then(weather => {
       return weather.json();
     }).then(displayResults);
-
-
 function displayResults (weather) {
   let city = document.querySelector('.location .city');
   city.innerText = `${weather.name}, ${weather.sys.country}`;
