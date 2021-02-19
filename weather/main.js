@@ -26,22 +26,22 @@ function displayResults (weather) {
     tempIcon.src = '../images/kodai_logo.png' ;
   }
   else if (id<350){
-    tempIcon.src = '../images/kodai_logo.png' ;
+    tempIcon.src = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
   }
   else if (id<550){
-    tempIcon.src = './icons/rain.svg' ;
+    tempIcon.src = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
   }
   else if (id<650){
-    tempIcon.src = './icons/snow.svg' ;
+    tempIcon.src = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
   }
   else if (id<800){
-    tempIcon.src = './icons/atmosphere.svg' ;
+    tempIcon.src = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
   }
   else if (id===800){
-    tempIcon.src = './icons/sun.svg' ;
+    tempIcon.src = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685))' ;
   }
   else if(id>800){
-    tempIcon.style.backgroundImage = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 26, 255, 0.6));';
+    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685))';
   }
 
   let hilow = document.querySelector('.hi-low');
