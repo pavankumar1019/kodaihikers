@@ -174,7 +174,7 @@ $result3 = $conn->query($sql3);
 					</div>
 
 				</div>
-				<div class="col-lg-6">
+				<div class="">
 
 					<!-- Contact Form -->
 					<div class="container-fluid bg-info">
@@ -200,7 +200,7 @@ $result3 = $conn->query($sql3);
 					<div class="col-lg-12">
 
 <!-- Contact Form -->
-<div class="container-fluid bg-info">
+<div class="container-fluid bg-info" >
 	<div class="contact_title text-center">UPI Payments</div>
 	
 	<div class="container md-6" style="color:white;">
