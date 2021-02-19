@@ -23,25 +23,25 @@ function displayResults (weather) {
   weather_el.innerText = weather.weather[0].main;
   const { id, icon, main } = weather.weather[0];
   if (id<250){
-    tempIcon.style.backgroundImage = '../images/kodai_logo.png' ;
+    tempIcon.src = './icons/storm.svg' ;
   }
   else if (id<350){
-    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
+    tempIcon.src = './icons/drizzle.svg' ;
   }
   else if (id<550){
-    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
+    tempIcon.src = './icons/rain.svg' ;
   }
   else if (id<650){
-    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
+    tempIcon.src = './icons/snow.svg' ;
   }
   else if (id<800){
-    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
+    tempIcon.src = './icons/atmosphere.svg' ;
   }
   else if (id===800){
-    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685))' ;
+    tempIcon.src = './icons/sun.svg' ;
   }
   else if(id>800){
-    tempIcon.style.backgroundImage = "background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685))";
+    tempIcon.src = './icons/clouds.svg' ;
   }
 
   let hilow = document.querySelector('.hi-low');
