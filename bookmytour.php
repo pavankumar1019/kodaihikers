@@ -26,6 +26,12 @@ $result3 = $conn->query($sql3);
 <link rel="stylesheet" type="text/css" href="styles/blog_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+p{
+	text-align: justify;
+
+}
+</style>
 </head>
 
 <body>
