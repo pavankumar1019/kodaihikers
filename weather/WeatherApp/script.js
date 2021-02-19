@@ -4,6 +4,7 @@ let tempValue = document.getElementById("temp-value");
 let tempUnit = document.getElementById("temp-unit");
 let climate = document.getElementById("climate");
 let iconFile; 
+
 window.addEventListener("load", () => {
   let long;
   let lat;
