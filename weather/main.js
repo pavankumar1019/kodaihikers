@@ -41,7 +41,7 @@ function displayResults (weather) {
     tempIcon.src = './icons/sun.svg' ;
   }
   else if(id>800){
-    tempIcon.src = '../images/kodai_logo.png' ;
+    document.body.style.backgroundImage = "blue";
   }
 
   let hilow = document.querySelector('.hi-low');
