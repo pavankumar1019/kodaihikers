@@ -145,6 +145,7 @@ $result3 = $conn->query($sql3);
 			<p>
 				<h1>Kodai Kannal</h1>
 				<h6>Feb 10 2021</h6>
+				<h1 class="display-1">11C</h1>
 				<h1>Clouds</h1>
 				<h6>11c/11c</h6>
 			</p>
