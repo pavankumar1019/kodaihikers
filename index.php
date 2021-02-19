@@ -308,7 +308,7 @@ $result5 = $conn->query($sql5);
 								class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 								<div
 									class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start">
-									<img src="images/family01.png" alt=""><span>family tours</span></div>
+									<img src="images/family01.png" alt=""><span>Local Sight Seeing </span></div>
 								<div
 									class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start">
 									<img src="images/students.png" alt="">student tours</div>
