@@ -23,22 +23,22 @@ function displayResults (weather) {
   weather_el.innerText = weather.weather[0].main;
   const { id, icon, main } = weather.weather[0];
   if (id<250){
-    tempIcon.src = '../images/kodai_logo.png' ;
+    tempIcon.style.backgroundImage = '../images/kodai_logo.png' ;
   }
   else if (id<350){
-    tempIcon.src = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
+    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
   }
   else if (id<550){
-    tempIcon.src = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
+    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
   }
   else if (id<650){
-    tempIcon.src = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
+    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
   }
   else if (id<800){
-    tempIcon.src = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
+    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685));' ;
   }
   else if (id===800){
-    tempIcon.src = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685))' ;
+    tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685))' ;
   }
   else if(id>800){
     tempIcon.style.backgroundImage = 'background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(38, 0, 255, 0.685))';
