@@ -21,6 +21,12 @@ $result2 = $conn->query($sql2);
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/about_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/about_responsive.css">
+<style>
+p{
+	text-align: justify;
+
+}
+</style>
 </head>
 
 <body>
