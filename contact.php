@@ -207,7 +207,7 @@ $result3 = $conn->query($sql3);
 	<br><br>
 	<h3>+91 9751882527</h3>
 	<br>
-	<img src="phone.png" style="width:40px" /> &nbsp; <img src="download.png"/> &nbsp;<img src="downloada.png"/>&nbsp; <img src="downloadp.png"/> &nbsp;<img src="downloada.png"/>&nbsp; <img src="downloadp.png"/> &nbsp;<img src="paytm.png"/>
+	<img src="phone.png" style="width:40px" /> &nbsp; <img src="download.png" style="width:40px" /> &nbsp;<img src="downloada.png" style="width:40px" />&nbsp; <img src="downloadp.png" style="width:40px" /> &nbsp;<img src="downloada.png" style="width:40px" />&nbsp; <img src="downloadp.png" style="width:40px" /> &nbsp;<img src="paytm.png" style="width:40px" />
 	<h1></h1>
 	</div>
 	
