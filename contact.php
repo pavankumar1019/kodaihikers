@@ -197,11 +197,11 @@ $result3 = $conn->query($sql3);
 					
 							
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-12">
 
 <!-- Contact Form -->
 <div class="container-fluid bg-info">
-	<div class="contact_title text-center">Online Payment</div>
+	<div class="contact_title text-center">UPI Payments</div>
 	
 	<div class="container md-6" style="color:white;">
 	<br><br>
