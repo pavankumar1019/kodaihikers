@@ -21,7 +21,7 @@ function displayResults (weather) {
 
   let weather_el = document.querySelector('.current .weather');
   weather_el.innerText = weather.weather[0].main;
-  const { id, icon, main } = data.weather[0];
+  const { id, icon, main } = weather.weather[0];
   if (id<250){
     tempIcon.src = '../images/kodai_logo.png' ;
   }
