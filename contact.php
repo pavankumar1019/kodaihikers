@@ -23,103 +23,6 @@ $result3 = $conn->query($sql3);
 <link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<style>
-	* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'montserrat', sans-serif;
-  background-image: url('bg.jpg');
-  background-size: cover;
-  background-position: top center;
-}
-
-.app-wrap {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 15px 15px;
-}
-
-header input {
-  width: 100%;
-  max-width: 280px;
-  padding: 10px 15px;
-  border: none;
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 16px 0px 16px 0px;
-  border-bottom: 3px solid #DF8E00;
-  
-  color: #313131;
-  font-size: 20px;
-  font-weight: 300;
-  transition: 0.2s ease-out;
-}
-
-header input:focus {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-main {
-  flex: 1 1 100%;
-  padding: 25px 25px 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.location .city {
-  color: #FFF;
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.location .date {
-  color: #FFF;
-  font-size: 16px;
-}
-
-.current .temp {
-  color: #FFF;
-  font-size: 102px;
-  font-weight: 900;
-  margin: 30px 0px;
-  text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
-}
-
-.current .temp span {
-  font-weight: 500;
-}
-
-.current .weather {
-  color: #FFF;
-  font-size: 32px;
-  font-weight: 700;
-  font-style: italic;
-  margin-bottom: 15px;
-  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
-}
-
-.current .hi-low {
-  color: #FFF;
-  font-size: 24px;
-  font-weight: 500;
-  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
-}
-</style>
 </head>
 
 <body>
@@ -239,20 +142,20 @@ main {
 	<div class="home">
 		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/kodai_contactback123.jpg"></div>
 		<div class="home_content">
-		<div class="app-wrap">
+		
 <img src="" style="display:hidden;" id="temp-icon" alt="" srcset="">
-    <main>
-      <section class="location">
+    
+      <div class="location">
         <div class="city">Northampton, GB</div>
         <div class="date">Thursday 10 January 2020</div>
-      </section>
+							</div>
       <div class="current">
         <div class="temp">15<span>°c</span></div>
         <div class="weather">Sunny</div>
         <div class="hi-low">13°c / 16°c</div>
       </div>
-    </main>
-  </div>
+
+ 
 
 		</div>
 	</div>
