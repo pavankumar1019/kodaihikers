@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
  
-      const api = `https://api.openweathermap.org/data/2.5/weather?q=Kodaikanal&appid=2b86e74fb5be73f5b02b0298b2b622fa`;
+      const api = `https://api.openweathermap.org/data/2.5/weather?lat=10.2381136&lon=77.48918219999996&appid=2b86e74fb5be73f5b02b0298b2b622fa`;
       fetch(api)
         .then((response) => {
           return response.json();
