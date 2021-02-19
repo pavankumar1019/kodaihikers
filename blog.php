@@ -23,6 +23,11 @@ $result3 = $conn->query($sql3);
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/blog_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
+<style>
+p{
+	text-align: justify;
+}
+</style>
 </head>
 
 <body>

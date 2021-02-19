@@ -29,7 +29,6 @@ $result3 = $conn->query($sql3);
 <style>
 p{
 	text-align: justify;
-
 }
 </style>
 </head>
