@@ -2,7 +2,10 @@
 include("../db_connection/db.php");
 
 $target_dir = "../dynamic_scrolling_banners/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$fileName=$_FILES["fileToUpload"]["name"];
+$random=rand(1111,9999);
+ $newFileName=$random.$fileName;
+$target_file = $target_dir . $newFileName;
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $id=$_POST['id'];
@@ -45,7 +48,7 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
-   $first_name=$_FILES["fileToUpload"]["name"];
+    $first_name=$newFileName;
     $stu_query = "UPDATE `kh_dynamic_scrolling_banners` SET `path`='" . $first_name . "' WHERE id ='" . $id . "'";
 $result = mysqli_query($conn, $stu_query);
 

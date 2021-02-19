@@ -2,7 +2,10 @@
 include("../db_connection/db.php");
 
 $target_dir = "../blogimages/";
-$target_file = $target_dir . basename($_FILES["fileToUpload2"]["name"]);
+$fileName=$_FILES["fileToUpload2"]["name"];
+$random=rand(1111,9999);
+ $newFileName=$random.$fileName;
+$target_file = $target_dir . $newFileName;
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
@@ -47,7 +50,7 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["fileToUpload2"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload2"]["name"])). " has been uploaded.";
-   $first_name=$_FILES["fileToUpload2"]["name"];
+    $first_name=$newFileName;
     $stu_query = "INSERT INTO kh_blog (title,image,description) VALUES ('$title','$first_name','$message')";
 $result = mysqli_query($conn, $stu_query);
 

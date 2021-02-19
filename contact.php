@@ -148,10 +148,10 @@ $result3 = $conn->query($sql3);
 
 	<!-- Contact -->
 
-	<div class="contact_form_section">
+	<div class="contact_form_section" id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col-lg-6">
 
 					<!-- Contact Form -->
 					<div class="contact_form_container">
@@ -161,7 +161,7 @@ $result3 = $conn->query($sql3);
 									placeholder="Name"  required="required" data-error="Name is required.">
 								<input type="text" id="email" name="email" class="contact_form_email input_field"
 									placeholder="E-mail" required="required" data-error="Email is required.">
-								<input type="text" id="number" name="number" class="contact_form_subject input_field"
+								<input type="text" onkeypress="return onlyNumberKey(event)" id="number" name="number" class="contact_form_subject input_field"
 									placeholder="Phone Number" required="required" data-error="Subject is required.">
 								<textarea id="message" class="text_field contact_form_message"
 									name="message" rows="4" placeholder="Message" required="required"
@@ -171,6 +171,31 @@ $result3 = $conn->query($sql3);
 								
 							</form>
 							<div id="success" style="color:red;"></div>
+					</div>
+
+				</div>
+				<div class="col-lg-6">
+
+					<!-- Contact Form -->
+					<div class="container-fluid bg-info">
+						<div class="contact_title text-center">Online Payment</div>
+						
+						<div class="container md-6" style="color:white;">
+						<br><br>
+						<h3>Savings Account</h3>
+						<br>
+						<br>
+						<h6>A/C NAME :- &nbsp;<span style="font-weight:normal">M.SARAVANAKUMAR</span></h6>
+						<h6>A/C NO :- &nbsp;<span style="font-weight:normal"><u>6977475914</u></span></h6>
+						<h6>IFSC CODE :-&nbsp; <span style="font-weight:normal">IDIB000K039</span></h6>
+						<h6>BANK NAME :- &nbsp;<span style="font-weight:normal">INDIAN BANK</span></h6>
+						<h6>BRANCH NAME :- &nbsp;<span style="font-weight:normal">KODAIKANAL BRANCH</span></h6>
+						<br>
+						<h1></h1>
+						</div>
+						
+					
+							
 					</div>
 
 				</div>
@@ -227,8 +252,7 @@ $result3 = $conn->query($sql3);
 						<ul class="contact_info_list">
 							<li class="contact_info_item d-flex flex-row">
 								<div><div class="contact_info_icon"><img src="images/kodai_location_icon.png" alt=""></div></div>
-								<div class="contact_info_text">Kodaihikers,Royal Complex,Near Upper Lake View,Pambarpuram,Kodaikanal, Tamilnadu-624101</div>
-							</li>
+								<div class="contact_info_text">Kodai Hikers,Royal Complex,Near Upper Lake View,Pambarpuram,&nbsp; Kodaikanal,Tamilnadu-624103</div>							</li>
 							<li class="contact_info_item d-flex flex-row">
 								<div><div class="contact_info_icon"><img src="images/kodai_iconphone.png" alt=""></div></div>
 								<div class="contact_info_text">+91 9751882527 <br> +91 8073130545</div>
@@ -458,6 +482,16 @@ $(document).ready(function() {
 	});
 });
 </script>
+<script> 
+    function onlyNumberKey(evt) { 
+          
+        // Only ASCII charactar in that range allowed 
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) 
+            return false; 
+        return true; 
+    } 
+    </script>
 </body>
 
 </html>

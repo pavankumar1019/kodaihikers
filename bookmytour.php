@@ -190,7 +190,7 @@ $result3 = $conn->query($sql3);
 							<br>
 
 							<div class="button home_slider_button " >
-									<div class="button_bcg"></div><a href="#">book now
+									<div class="button_bcg"></div><a href="contact.php#contact">book now
 										us<span></span><span></span><span></span></a>
 								</div>
 								</div>
@@ -316,8 +316,7 @@ $result3 = $conn->query($sql3);
 							<ul class="contact_info_list">
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/kodai_location_icon.png" alt=""></div></div>
-									<div class="contact_info_text">Kodai Hikers,Royal Complex,Near Upper Lake View,Pambarpuram,Kodaikanal, Tamilnadu-624101</div>
-								</li>
+									<div class="contact_info_text">Kodai Hikers,Royal Complex,Near Upper Lake View,Pambarpuram,&nbsp; Kodaikanal,Tamilnadu-624103</div>								</li>
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/kodai_iconphone.png" alt=""></div></div>
 									<div class="contact_info_text">+91 9751882527 <br> +91 8073130545</div>

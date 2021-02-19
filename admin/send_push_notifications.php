@@ -1,6 +1,9 @@
 <?php
 $target_dir = "../push_notification/";
-$target_file = $target_dir . basename($_FILES["fileToUpload2"]["name"]);
+$fileName=$_FILES["fileToUpload2"]["name"];
+$random=rand(1111,9999);
+ $newFileName=$random.$fileName;
+$target_file = $target_dir . $newFileName;
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $title=$_POST['title'];
@@ -44,7 +47,7 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
   if (move_uploaded_file($_FILES["fileToUpload2"]["tmp_name"], $target_file)) {
-      $first_name=$_FILES["fileToUpload2"]["name"];
+    $first_name=$newFileName;
       function sendMessage($title, $message, $first_name) {
         $content      = array(
             "en" => $message

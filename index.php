@@ -46,9 +46,54 @@ $result5 = $conn->query($sql5);
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<style>
+	.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:80px;
+	right:10px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+	.float1{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:160px;
+	right:10px;
+	background-color:#0063B2FF;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float1{
+	margin-top:16px;
+}
+</style>
 </head>
 
 <body>
+<a href="https://api.whatsapp.com/send?phone=+917483737698&text=Hello" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+<a href="tel:+917483737698" class="float1" target="_blank">
+<i class="fa fa-phone my-float1"></i>
+</a>
 	<div class="super_container">
 
 		<!-- Header -->
@@ -969,7 +1014,7 @@ $result5 = $conn->query($sql5);
 									placeholder="Name"  required="required" data-error="Name is required.">
 								<input type="text" id="email" name="email" class="contact_form_email input_field"
 									placeholder="E-mail" required="required" data-error="Email is required.">
-								<input type="text" id="number" name="number" class="contact_form_subject input_field"
+								<input type="text" onkeypress="return onlyNumberKey(event)" id="number" name="number" class="contact_form_subject input_field"
 									placeholder="Phone Number" required="required" data-error="Subject is required.">
 								<textarea id="message" class="text_field contact_form_message"
 									name="message" rows="4" placeholder="Message" required="required"
@@ -1085,7 +1130,7 @@ $result5 = $conn->query($sql5);
 											<div class="contact_info_icon"><img src="images/kodai_location_icon.png" alt="">
 											</div>
 										</div>
-										<div class="contact_info_text">Kodai Hikers,Royal Complex, Near Upper Lake View, Pambarpuram,Kodaikanal, Tamilnadu-624101 </div>
+										<div class="contact_info_text">Kodai Hikers,Royal Complex,Near Upper Lake View,Pambarpuram,&nbsp; Kodaikanal,Tamilnadu-624103</div>							</li>
 									</li>
 									<li class="contact_info_item d-flex flex-row">
 										<div>
@@ -1213,7 +1258,16 @@ $(document).ready(function() {
 	});
 });
 </script>
-</script>
+<script> 
+    function onlyNumberKey(evt) { 
+          
+        // Only ASCII charactar in that range allowed 
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) 
+            return false; 
+        return true; 
+    } 
+    </script>
 </body>
 
 </html>
