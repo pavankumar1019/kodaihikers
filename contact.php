@@ -143,11 +143,15 @@ $result3 = $conn->query($sql3);
 		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="./weather/bg.jpg"></div>
 		<div class="home_content" style="color:white;">
 			<p>
-				<h1>Kodai Kannal</h1>
-				<h6>Feb 10 2021</h6>
-				<h1 class="display-1">11C</h1>
-				<h1>Clouds</h1>
-				<h6>11c/11c</h6>
+		<div class="location">
+				<h1 class="city">Kodai Kannal</h1>
+				<h6 class="date">Feb 10 2021</h6>
+							</div>
+				<div class="current">
+        <h1 class="temp display-1">15<span>°c</span></h1>
+        <h1 class="weather">Sunny</h1>
+        <h6 class="hi-low">13°c / 16°c</h6>
+      </div>
 			</p>
 		</div>
 	</div>

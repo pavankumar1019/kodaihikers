@@ -772,7 +772,7 @@ section
 .home_content
 {
 	position: absolute;
-	bottom: 106px;
+	bottom: 10px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
