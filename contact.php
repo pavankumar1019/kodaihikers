@@ -147,7 +147,7 @@ $result3 = $conn->query($sql3);
 				<h1 class="city">Kodai Kannal</h1>
 				<h6 class="date">Feb 10 2021</h6>
 							</div>
-							<img src="" class="img-fluid" id="temp-icon" alt="" srcset="">
+							<img src="" class="img-fluid" style="width:40px" id="temp-icon" alt="" srcset="">
 				<div class="current">
         <h1 class="temp display-1">15<span>°c</span></h1>
         <h1 class="weather">Sunny</h1>
