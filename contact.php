@@ -142,21 +142,20 @@ $result3 = $conn->query($sql3);
 	<div class="home">
 		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/kodai_contactback123.jpg"></div>
 		<div class="home_content">
-		
+			<div class="home_title">
+	
 <img src="" style="display:hidden;" id="temp-icon" alt="" srcset="">
-    
-      <div class="location">
+      <p class="location">
         <div class="city">Northampton, GB</div>
         <div class="date">Thursday 10 January 2020</div>
-							</div>
+							</p>
       <div class="current">
         <div class="temp">15<span>°c</span></div>
         <div class="weather">Sunny</div>
         <div class="hi-low">13°c / 16°c</div>
       </div>
 
- 
-
+			</div>
 		</div>
 	</div>
 
