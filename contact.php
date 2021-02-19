@@ -199,8 +199,7 @@ $result3 = $conn->query($sql3);
 					</div>
 
 				</div>
-			</div>
-			<div class="col-lg-6">
+				<div class="col-lg-6">
 
 					<!-- Contact Form -->
 					<div class="container-fluid bg-info">
@@ -225,6 +224,7 @@ $result3 = $conn->query($sql3);
 					</div>
 
 				</div>
+			</div>
 		</div>
 	</div>
 
