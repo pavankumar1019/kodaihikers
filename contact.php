@@ -139,7 +139,7 @@ $result3 = $conn->query($sql3);
 
 	<!-- Home -->
 
-	<div class="home" id="temp-icon" >
+	<div class="home" id="temp-icon">
 		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="./weather/bg.jpg"></div>
 		<div class="home_content"  style="color:white;">
 			<p>

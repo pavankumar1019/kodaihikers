@@ -774,6 +774,7 @@ section
 	position: absolute;
 	bottom: 10px;
 	left: 50%;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 255, 76, 0.685));
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
