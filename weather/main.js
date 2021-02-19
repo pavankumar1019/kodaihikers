@@ -41,7 +41,7 @@ function displayResults (weather) {
     tempIcon.src = './icons/sun.svg' ;
   }
   else if(id>800){
-    tempIcon.style.backgroundImage = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(247, 12, 12, 0.6)0.6))';
+    tempIcon.style.backgroundImage = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 26, 255, 0.6));';
   }
 
   let hilow = document.querySelector('.hi-low');
