@@ -168,24 +168,24 @@ $result3 = $conn->query($sql3);
 							<div class="blog_post_title"><a href="#"><?php echo $row3["package_name"]; ?></a></div>
 							<div class="blog_post_title"><a href="#">Litnerary</a></div>
 							<div class="blog_post_text">
-								<div><?php echo $row3["litnerary"]; ?></div>
+								<p><?php echo $row3["litnerary"]; ?></p>
 							</div>
 							<div class="content">
 							<div class="blog_post_title"><a href="#">Inclusions</a></div>
 							<div class="blog_post_text ">
-								<div><?php echo $row3["inclusion"]; ?></div>
+								<p><?php echo $row3["inclusion"]; ?></p>
 							</div>
 							<div class="blog_post_title "><a href="#">Exclusions</a></div>
 							<div class="blog_post_text ">
-								<div>
+								<p>
 								<?php echo $row3["exclusion"]; ?>
-</div>
+</p>
 							</div>
 							<div class="blog_post_title "><a href="#">Terms & conditions</a></div>
 							<div class="blog_post_text ">
-								<div>
+								<p>
 								<?php echo $row3["terms_and_conditions"]; ?>
-</div>
+</p>
 							</div>
 							<br>
 
