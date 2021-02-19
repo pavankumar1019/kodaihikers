@@ -140,7 +140,7 @@ $result3 = $conn->query($sql3);
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/kodai_contactback123.jpg"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="./weather/bg.jpg"></div>
 		<div class="home_content" style="color:white;">
 			<p>
 				<h2>Kodai Kannal</h2><br>
