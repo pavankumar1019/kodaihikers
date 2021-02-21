@@ -43,8 +43,8 @@ function displayResults (weather) {
   }
   else if(id>800){
     tempIcon.src = './icons/clouds.svg' ;
-    colo.style.backgroundColor = ' rgb(2,0,36);';
-    colo.style.backgroundColor = 'linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,66,121,1) 27%, rgba(0,212,255,0.711922268907563) 100%)';
+    colo.style.backgroundColor = 'rgb(2,0,36)';
+    colo.style.backgroundColor = 'linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,66,121,0.48783263305322133) 27%, rgba(0,212,255,0.711922268907563) 100%)';
   }
 
   let hilow = document.querySelector('.hi-low');
