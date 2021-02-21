@@ -3,6 +3,7 @@ const api = {
   base: "https://api.openweathermap.org/data/2.5/"
 }
 let tempIcon = document.getElementById("temp-icon");
+let colo = document.getElementById("home_content");
 window.addEventListener("load", () => {
   fetch(`${api.base}weather?q=kodaikanal&units=metric&APPID=${api.key}`)
     .then(weather => {
@@ -42,6 +43,7 @@ function displayResults (weather) {
   }
   else if(id>800){
     tempIcon.src = './icons/clouds.svg' ;
+    colo.style.backgroundColor = '#FFFFFF';
   }
 
   let hilow = document.querySelector('.hi-low');
