@@ -43,7 +43,8 @@ function displayResults (weather) {
   }
   else if(id>800){
     tempIcon.src = './icons/clouds.svg' ;
-    colo.style.backgroundColor = '#FFFFFF';
+    colo.style.backgroundColor = 'rgb(138,131,252)';
+    colo.style.backgroundColor = 'linear-gradient(90deg,#00A4CCFF 0%,#00A4CCFF 38%, rgba(0,212,255,1) 100%)';
   }
 
   let hilow = document.querySelector('.hi-low');
