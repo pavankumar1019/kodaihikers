@@ -44,7 +44,6 @@ function displayResults (weather) {
   else if(id>800){
     tempIcon.src = './icons/clouds.svg' ;
     colo.style.background = 'linear-gradient(359deg, blue, transparent)';
-      ]
   }
 
   let hilow = document.querySelector('.hi-low');
