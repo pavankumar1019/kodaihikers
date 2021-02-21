@@ -735,7 +735,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-password" class=" form-control-label">Litnerary</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                <textarea  id="litnerary" rows="3" placeholder="" class="form-control" name="litnerary" ></textarea>
+                                                <textarea  id="editor2" rows="3" placeholder="" class="form-control" name="litnerary" ></textarea>
 
                                                 </div>   
                                             </div>
@@ -744,7 +744,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-password" class=" form-control-label">Inclusion</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                <textarea  id="inclusion" rows="3" placeholder="" class="form-control" name="inclusion" ></textarea>
+                                                <textarea  id="editor3" rows="3" placeholder="" class="form-control" name="inclusion" ></textarea>
 
                                                 </div>   
                                             </div>
@@ -753,7 +753,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-password" class=" form-control-label">Exclusion</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                <textarea  id="exclusion" rows="3" placeholder="" class="form-control" name="exclusion" ></textarea>
+                                                <textarea  id="editor4" rows="3" placeholder="" class="form-control" name="exclusion" ></textarea>
 
                                                 </div>   
                                             </div>
@@ -762,7 +762,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-password" class=" form-control-label">Terms & conditions</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                <textarea  id="terms&conditions" rows="3" placeholder="" class="form-control" name="terms&conditions" ></textarea>
+                                                <textarea  id="editor5" rows="3" placeholder="" class="form-control" name="terms&conditions" ></textarea>
 
                                                 </div>   
                                             </div>
@@ -888,6 +888,10 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
 
     <script>
                         CKEDITOR.replace( 'editor1' );
+                        CKEDITOR.replace( 'editor2' );
+                        CKEDITOR.replace( 'editor3' );
+                        CKEDITOR.replace( 'editor4' );
+                        CKEDITOR.replace( 'editor5' );
                 </script>
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
