@@ -144,14 +144,14 @@ $result3 = $conn->query($sql3);
 		<div class="home_content"  style="color:white;">
 			<p>
 		<div class="location">
-				<h1 class="city">Kodai Kannal</h1>
-				<h6 class="date">Feb 10 2021</h6>
+				<h1 class="city"></h1>
+				<h6 class="date"></h6>
 							</div>
 							<img src="" class="img-fluid" style="width:40px" id="temp-icon" alt="" srcset="">
 				<div class="current">
-        <h1 class="temp display-1">15<span>°c</span></h1>
-        <h1 class="weather">Sunny</h1>
-        <h6 class="hi-low">13°c / 16°c</h6>
+        <h1 class="temp display-1"><span></span></h1>
+        <h1 class="weather"></h1>
+        <h6 class="hi-low"></h6>
       </div>
 			</p>
 		</div>
