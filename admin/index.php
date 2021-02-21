@@ -42,6 +42,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
 
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
 </head>
 
 <body class="animsition">
@@ -844,7 +845,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-password" class=" form-control-label">Description</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                <textarea  id="textarea-input" rows="3" placeholder="" class="form-control" name="message" ></textarea>
+                                                <textarea  id="editor1" rows="3" placeholder="" class="form-control" name="message" ></textarea>
 
                                                 </div>
                   
@@ -884,6 +885,10 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
 
     </div>
 
+
+    <script>
+                        CKEDITOR.replace( 'editor1' );
+                </script>
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
