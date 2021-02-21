@@ -139,9 +139,9 @@ $result3 = $conn->query($sql3);
 
 	<!-- Home -->
 
-	<div class="home">
+	<div class="home" id="home_content">
 		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="./weather/bg.jpg"></div>
-		<div class="home_content"  id="home_content" style="color:white;" >
+		<div class="home_content" style="color:white;" >
 			<p>
 		<div class="location">
 				<h1 class="city"></h1>
