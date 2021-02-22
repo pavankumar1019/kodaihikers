@@ -157,7 +157,7 @@ $result3 = $conn->query($sql3);
 					<div>
 
 						<!-- Offers Item -->
-<table>
+<table class="table">
 <tbody id="myTable" >
 <?php
                             if ($result3->num_rows > 0) {
