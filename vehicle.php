@@ -156,7 +156,11 @@ $result3 = $conn->query($sql3);
   <th>Distance</th>
         <th>Duration</th>
   <th>Indigo</th>
-     
+        <th>Swift Dzire</th>
+  <th>Etios</th>
+  <th>Tavera</th>
+        <th>Innova</th>
+  <th>Tempo Traveller</th>
 
 </tr>
 
@@ -174,6 +178,9 @@ $result3 = $conn->query($sql3);
             <td><?php echo $row3["description"]; ?></td>
             <td><?php echo $row3["price"]; ?></td>
             <td><?php echo $row3["duration"]; ?></td>
+            <td><?php echo $row3["distance_km"]; ?>
+            <td><?php echo $row3["duration"]; ?></td>
+            <td><?php echo $row3["distance_km"]; ?>
             <td><?php echo $row3["distance_km"]; ?>
             </tr>
          
