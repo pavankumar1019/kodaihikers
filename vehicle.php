@@ -156,11 +156,7 @@ $result3 = $conn->query($sql3);
   <th>Distance</th>
         <th>Duration</th>
   <th>Indigo</th>
-        <th>Swift Dzire</th>
-  <th>Etios</th>
-  <th>Tavera</th>
-        <th>Innova</th>
-  <th>Tempo Traveller</th>
+     
 
 </tr>
 
