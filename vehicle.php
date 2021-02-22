@@ -164,7 +164,15 @@ tr{
 <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
 <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
 </div>
-					
+<form id="image_form" method="post" enctype="multipart/form-data">
+     <p><label>Select Image</label>
+     <input type="file" name="image" id="image" /></p><br />
+     <input type="hidden" name="action" id="action" value="insert" />
+     <input type="text" name="text" id="text" />
+     <input type="hidden" name="image_id" id="image_id" />
+     <input type="submit" name="insert" id="insert" value="Insert" class="btn btn-info" />
+      
+    </form>
 				</div>
 
 			</div>
