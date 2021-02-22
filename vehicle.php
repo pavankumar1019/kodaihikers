@@ -351,7 +351,7 @@ $(document).ready(function(){
 });
 </script>
 <script>  
- $('#clickme').submit(function(event){
+ $('#clickme').click(function(event){
  
  fetch_data();
 
