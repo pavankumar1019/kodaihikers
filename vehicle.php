@@ -149,7 +149,7 @@ $result3 = $conn->query($sql3);
 
 <!-- Offers Item -->
 <table  id='myTable' style="display: none;">
-<thead>
+
 <tr>
   <th>Pick Up Place</th>
   <th>Drop Place</th> 
@@ -163,7 +163,7 @@ $result3 = $conn->query($sql3);
   <th>Tempo Traveller</th>
 
 </tr>
-</thead>
+
 <tbody id="myTable" >
 <?php
     if ($result3->num_rows > 0) {
