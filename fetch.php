@@ -32,14 +32,14 @@ if(isset($_POST["action"]))
     <tr>
      <td>'.$row["pickup_place"].'</td>
      <td>'.$row["drop_place"].'</td>
-     <td>'.$row["vehicle_name"].'</td>
-     <td>'.$row["description"].'</td>
-     <td>'.$row["price"].'</td>
-     <td>'.$row["duration"].'</td>
      <td>'.$row["distance_km"].'</td>
      <td>'.$row["duration"].'</td>
-     <td>'.$row["duration"].'</td>
-     <td>'.$row["duration"].'</td>
+     <td>'.$row["price"].'₹</td>
+     <td>'.$row["price"].'₹</td>
+     <td>'.$row["price"].'₹</td>
+     <td>'.$row["price"].'₹</td>
+     <td>'.$row["price"].'₹</td>
+     <td>'.$row["price"].'₹</td>
     </tr>
    ';
    $des=$row["description"];
