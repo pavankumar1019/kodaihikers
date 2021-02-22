@@ -44,7 +44,7 @@ if(isset($_POST["action"]))
    ';
   }
   $output .= '
-  </table>';
+  </table><p>'.$row["description"].'</p>';
   echo $output;
  }
 }
