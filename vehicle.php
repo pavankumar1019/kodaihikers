@@ -165,7 +165,7 @@ tr{
                                 while($row3 = $result3->fetch_assoc()) {
                               
                                                             ?>
-									<li class="social_list_item"><a href=""><?php echo $row2["social_media_icon"]; ?></a></li>
+									
                                     <form id="image_form" method="post" enctype="multipart/form-data">
      <input type="hidden" name="id" value="<?php echo $row3["id"];?>" id="id" />
      <input type="button" class="btn btn-primary btn-lg btn-block" id="insert" value="<?php echo $row3["pickup_place"]; ?>&nbsp;To&nbsp;<?php echo $row3["drop_place"]; ?>" class="btn btn-info" />
