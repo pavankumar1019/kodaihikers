@@ -11,25 +11,38 @@ if(isset($_POST["action"]))
   $result = mysqli_query($conn, $query);
   $output = '
   <table class="table table-striped table-hover mt-5"   id="transposeThis">  
-    <tr>
-     <th>ID</th>
-     <th>Image</th>
-     <th>info</th>
-     <th>Change</th>
-     <th>Remove</th>
-    </tr>
+  <tr>
+  <th>Pick Up Place</th>
+  <th>Drop Place</th> 
+  <th>Distance</th>
+        <th>Duration</th>
+  <th>Indigo</th>
+        <th>Swift Dzire</th>
+  <th>Etios</th>
+  <th>Tavera</th>
+        <th>Innova</th>
+  <th>Tempo Traveller</th>
+
+</tr>
   ';
   while($row = mysqli_fetch_array($result))
   {
-   $output .= '
-    <tr>
-     <td>'.$row["id"].'</td>
-     <td>'.$row["id"].'</td>
-     <td>'.$row["id"].'</td>
-     <td>'.$row["id"].'</td>
-     <td>'.$row["id"].'</td>
-    </tr>
-   ';
+   $output .= ?>
+   <tr>
+   <td><?php echo $row3["pickup_place"]; ?></td>
+   <td><?php echo $row3["drop_place"]; ?></td>
+   <td><?php echo $row3["vehicle_name"]; ?></td>
+   <td><?php echo $row3["description"]; ?></td>
+   <td><?php echo $row3["price"]; ?></td>
+   <td><?php echo $row3["duration"]; ?></td>
+   <td><?php echo $row3["distance_km"]; ?>
+   <td><?php echo $row3["duration"]; ?></td>
+   <td><?php echo $row3["distance_km"]; ?>
+   <td><?php echo $row3["distance_km"]; ?>
+   </tr>
+
+
+<?php;
   }
   $output .= '
 
