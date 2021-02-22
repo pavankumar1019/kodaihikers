@@ -29,16 +29,16 @@ if(isset($_POST["action"]))
   {
    $output .= ?>
    <tr>
-   <td><?php echo $row3["pickup_place"]; ?></td>
-   <td><?php echo $row3["drop_place"]; ?></td>
-   <td><?php echo $row3["vehicle_name"]; ?></td>
-   <td><?php echo $row3["description"]; ?></td>
-   <td><?php echo $row3["price"]; ?></td>
-   <td><?php echo $row3["duration"]; ?></td>
-   <td><?php echo $row3["distance_km"]; ?>
-   <td><?php echo $row3["duration"]; ?></td>
-   <td><?php echo $row3["distance_km"]; ?>
-   <td><?php echo $row3["distance_km"]; ?>
+   <td><?php echo $row["pickup_place"]; ?></td>
+   <td><?php echo $row["drop_place"]; ?></td>
+   <td><?php echo $row["vehicle_name"]; ?></td>
+   <td><?php echo $row["description"]; ?></td>
+   <td><?php echo $row["price"]; ?></td>
+   <td><?php echo $row["duration"]; ?></td>
+   <td><?php echo $row["distance_km"]; ?>
+   <td><?php echo $row["duration"]; ?></td>
+   <td><?php echo $row["distance_km"]; ?>
+   <td><?php echo $row["distance_km"]; ?>
    </tr>
 
 
