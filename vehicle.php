@@ -336,13 +336,8 @@ Technologies
  $(document).on('click', '.delete', function(){
 
 	$('#image_data').html('');
-    fetch_data();
-});
-
- function fetch_data()
- {
-  var action = "fetch";
-  var id = $('.delete').attr("id");
+	var action = "fetch";
+  var id = $(this).attr("id");
   $.ajax({
    url:"fetch.php",
    method:"POST",
@@ -356,9 +351,7 @@ Technologies
     table1();
    }
   })
- }
-
- 
+});
 </script>
 <script>
  function table1(){
