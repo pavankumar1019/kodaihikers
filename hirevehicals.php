@@ -539,14 +539,15 @@ $result5 = $conn->query($sql5);
 											</ul>
 										</div>
 										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
-										<div class="offer_reviews" style="font-size:3vw;">
+										
+									</div>
+									<div class="offer_reviews" style="font-size:3vw;">
 											<div class="offer_reviews_content">
 												<div class="offer_reviews_title">Kilometers</div>
 												<div class="offer_reviews_subtitle">2h45m</div>
 											</div>
 											<div class="offer_reviews_rating text-center">80</div>
 										</div>
-									</div>
 								</div>
 							</div>
 						</div>
