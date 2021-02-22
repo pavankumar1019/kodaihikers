@@ -359,7 +359,7 @@ $(document).ready(function(){
  {
   var action = "fetch";
   $.ajax({
-   url:"action.php",
+   url:"fetch.php",
    method:"POST",
    data:{action:action},
    success:function(data)
