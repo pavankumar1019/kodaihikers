@@ -389,10 +389,10 @@ for(var c = 0; c < maxColumns; c++) {
 }
 var div = document.getElementById('newt');
 newTable.classList.add("table");
-myTable.append(newTable);
+myTable.appendChild(newTable);
 newTable.classList.add("table-striped");
 
-div.appendChild(newTable);
+
 </script>
 <script>
 $(document).ready(function(){
