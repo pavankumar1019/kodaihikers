@@ -133,12 +133,12 @@ $result2 = $conn->query($sql2);
 
 				<!-- Search Contents -->
 				
-				<div class="container fill_height no-padding">
+				<!-- <div class="container fill_height no-padding">
 					<div class="row fill_height no-margin">
 						<div class="col fill_height no-padding">
 
 							<!-- Search Tabs -->
-
+<!-- 
 							<div class="search_tabs_container">
 								<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 									<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
@@ -148,11 +148,11 @@ $result2 = $conn->query($sql2);
 									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>
 									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
 								</div>		
-							</div>
+							</div> -->
 
 							<!-- Search Panel -->
 
-							<div class="search_panel active">
+							<!-- <div class="search_panel active">
 								<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 									<div class="search_item">
 										<div>destination</div>
@@ -255,11 +255,11 @@ $result2 = $conn->query($sql2);
 									</div>
 									<button class="button search_button">search<span></span><span></span><span></span></button>
 								</form>
-							</div>
+							</div> -->
 
 							<!-- Search Panel -->
 
-							<div class="search_panel">
+							<!-- <div class="search_panel">
 								<form action="#" id="search_form_2" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 									<div class="search_item">
 										<div>destination</div>
@@ -291,11 +291,11 @@ $result2 = $conn->query($sql2);
 									</div>
 									<button class="button search_button">search<span></span><span></span><span></span></button>
 								</form>
-							</div>
+							</div> -->
 
 							<!-- Search Panel -->
 
-							<div class="search_panel">
+							<!-- <div class="search_panel">
 								<form action="#" id="search_form_3" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 									<div class="search_item">
 										<div>destination</div>
@@ -327,11 +327,11 @@ $result2 = $conn->query($sql2);
 									</div>
 									<button class="button search_button">search<span></span><span></span><span></span></button>
 								</form>
-							</div>
+							</div> -->
 
 							<!-- Search Panel -->
 
-							<div class="search_panel">
+							<!-- <div class="search_panel">
 								<form action="#" id="search_form_4" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 									<div class="search_item">
 										<div>destination</div>
@@ -363,11 +363,11 @@ $result2 = $conn->query($sql2);
 									</div>
 									<button class="button search_button">search<span></span><span></span><span></span></button>
 								</form>
-							</div>
+							</div> -->
 
 							<!-- Search Panel -->
 
-							<div class="search_panel">
+							<!-- <div class="search_panel">
 								<form action="#" id="search_form_5" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 									<div class="search_item">
 										<div>destination</div>
@@ -399,11 +399,11 @@ $result2 = $conn->query($sql2);
 									</div>
 									<button class="button search_button">search<span></span><span></span><span></span></button>
 								</form>
-							</div>
+							</div> -->
 
 							<!-- Search Panel -->
 
-							<div class="search_panel">
+							<!-- <div class="search_panel">
 								<form action="#" id="search_form_6" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 									<div class="search_item">
 										<div>destination</div>
@@ -438,7 +438,7 @@ $result2 = $conn->query($sql2);
 							</div>
 						</div>
 					</div>
-				</div>	
+				</div>	 --> -->
 			</div>	
 		</div>
 
