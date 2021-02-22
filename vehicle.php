@@ -366,7 +366,8 @@ $(document).ready(function(){
    success:function(data)
    {
     $('#image_data').html(data);
-   }
+   },
+   error:errorFunc
   })
  }
 
