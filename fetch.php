@@ -11,7 +11,7 @@ if(isset($_POST["action"]))
  
   while($row = mysqli_fetch_array($result))
   {
-   $output .=?>
+   $output =?>
    <table class="table table-striped table-hover mt-5"   id="transposeThis"> 
    <tr>
             <td><?php echo $row["pickup_place"];?></td>
@@ -26,7 +26,7 @@ if(isset($_POST["action"]))
             <td><?php echo $row["pickup_place"];?></td>
             </tr>
   <tbody id="myTable" >
-   <?php;
+   <?php
   }
   $output .= '</tbody></table>';
   echo $output;
