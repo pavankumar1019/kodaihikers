@@ -7,23 +7,17 @@ if(isset($_POST["action"]))
 
  if($_POST["action"] == "fetch")
  {
-  $query = "SELECT * FROM kh_social_media_links ORDER BY id DESC";
+  $query = "SELECT * FROM tbl_images ORDER BY id DESC";
   $result = mysqli_query($conn, $query);
   $output = '
-  <table class="table table-striped table-hover mt-5"   id="transposeThis"> 
-   <tr>
-   <th>Pick Up Place</th>
-   <th>Drop Place</th> 
-   <th>Distance</th>
-         <th>Duration</th>
-   <th>Indigo</th>
-         <th>Swift Dzire</th>
-   <th>Etios</th>
-   <th>Tavera</th>
-         <th>Innova</th>
-   <th>Tempo Traveller</th>
- 
- </tr>
+   <table class="table table-bordered table-striped">  
+    <tr>
+     <th width="10%">ID</th>
+     <th width="70%">Image</th>
+     <th width="70%">info</th>
+     <th width="10%">Change</th>
+     <th width="10%">Remove</th>
+    </tr>
   ';
   while($row = mysqli_fetch_array($result))
   {
@@ -31,7 +25,9 @@ if(isset($_POST["action"]))
 
     <tr>
      <td>'.$row["id"].'</td>
-    
+     <td>
+      <img src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="60" width="75" class="img-thumbnail" />
+     </td>
      <td>'.$row["info"].'</td>
      <td><button type="button" name="update" class="btn btn-warning bt-xs update" id="'.$row["id"].'">Change</button></td>
      <td><button type="button" name="delete" class="btn btn-danger bt-xs delete" id="'.$row["id"].'">Remove</button></td>
