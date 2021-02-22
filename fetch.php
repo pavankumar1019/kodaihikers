@@ -43,8 +43,7 @@ if(isset($_POST["action"]))
            </tr>
    ';
   }
-  $output .= '</tbody>
-  </table>';
+  $output .= '</tbody></table>';
   echo $output;
  }
  ?>
