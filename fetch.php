@@ -6,7 +6,7 @@ if(isset($_POST["action"]))
 {
  if($_POST["action"] == "fetch")
  {
-  $query = "SELECT * FROM kh_add_hire_vehicles where id=2";
+  $query = "SELECT * FROM kh_add_hire_vehicles";
   $result = mysqli_query($conn, $query);
   $output = '
   <table class="table table-striped table-hover mt-5"   id="transposeThis"> 
