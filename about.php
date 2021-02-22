@@ -5,6 +5,9 @@ $result1 = $conn->query($sql1);
 
 $sql2 = "SELECT * FROM kh_social_media_links";
 $result2 = $conn->query($sql2);
+
+$sql5 = "SELECT * FROM kh_blog ORDER BY date DESC LIMIT 3";
+$result5 = $conn->query($sql5);
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -428,35 +431,38 @@ p{
 					<div class="footer_col">
 						<div class="footer_title">blog posts</div>
 						<div class="footer_content footer_blog">
-							
-							<!-- Footer blog item -->
-							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/kodai_footerblog1.jpg" alt="https://unsplash.com/@avidenov"></div>
-								<div class="footer_blog_content">
-									<div class="footer_blog_title"><a href="blog.php">Beauty of river.</a></div>
-									<div class="footer_blog_date">Feb 14, 2021</div>
-								</div>
-							</div>
-							
-							<!-- Footer blog item -->
-							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/kodai_footerblog2.png" alt="https://unsplash.com/@deannaritchie"></div>
-								<div class="footer_blog_content">
-									<div class="footer_blog_title"><a href="blog.php">Chettiar Park.</a></div>
-									<div class="footer_blog_date">Feb 14, 2021</div>
-								</div>
-							</div>
 
-							<!-- Footer blog item -->
-							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/kodai_footerblog3.webp" alt="https://unsplash.com/@bergeryap87"></div>
-								<div class="footer_blog_content">
-									<div class="footer_blog_title"><a href="blog.php">Kodaikanal.</a></div>
-									<div class="footer_blog_date">Feb 14, 2021</div>
-								</div>
-							</div>
+								<!-- Footer blog item -->
 
-						</div>
+								<?php
+                            if ($result5->num_rows > 0) {
+                                // output data of each row
+                                while($row5 = $result5->fetch_assoc()) {
+                              
+                                                            ?>
+									<li class="social_list_item"><a href="<?php echo $row2["links"]; ?>"><?php echo $row2["social_media_icon"]; ?></a></li>
+									<div class="footer_blog_item clearfix">
+									<div class="footer_blog_image"><img src="./blogimages/<?php  echo $row5["image"];?>" alt="https://unsplash.com/@avidenov"></div>
+									<div class="footer_blog_content">
+										<div class="footer_blog_title"><a href="blog.php"><?php echo $row5["title"]; ?> </a>
+										</div>
+										<div class="footer_blog_date" style="color:red;"><?php echo $row5["date"]; ?></div>
+									</div>
+								</div>
+
+                                                            <?php
+								}
+								}
+								?>
+								
+
+								<!-- Footer blog item -->
+								
+
+								<!-- Footer blog item -->
+								
+
+							</div>
 					</div>
 				</div>
 
