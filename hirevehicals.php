@@ -154,7 +154,7 @@ $result3 = $conn->query($sql3);
 				<div class="col-lg-12">
 					<!-- Offers Grid -->
 
-					<div class="offers_grid">
+					<div class="" >
 
 						<!-- Offers Item -->
 <table>
