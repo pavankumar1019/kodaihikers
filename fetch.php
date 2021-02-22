@@ -11,7 +11,7 @@ if(isset($_POST["action"]))
   $output = '
   <table class="table table-striped table-hover mt-5"   id="transposeThis"> 
   <tr>
-           <td>'.$row["pickup_place"].'</td>
+           <td>'echo $row["pickup_place"].'</td>
            <td>'.$row["drop_place"].'</td>
            <td>"'.$row["vehicle_name"].'"</td>
            <td>"'.$row["description"].'" </td>
