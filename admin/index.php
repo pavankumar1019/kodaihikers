@@ -880,20 +880,20 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                     <div class="au-card-title" style="background-image:url('images/bg-title-01.jpg');">
                                         <div class="bg-overlay bg-overlay--blue"></div>
                                         <h3>
-                                            <i class="zmdi zmdi-account-calendar"></i>ADD Vechiles</h3>
-                                        <button class="au-btn-plus">
+                                        <i class="zmdi zmdi-bus"></i>Add Vehicles</h3>
+                                        <!-- <button class="au-btn-plus">
                                             <i class="">Blog</i>
-                                        </button>
+                                        </button> -->
                                     </div>
                                     <div class="au-task js-list-load">
                                         <div class="au-task__title">
-                                            <p>Post Blog to website</p>
+                                            <p>Vehicles</p>
                                         </div>
                                         <div class="au-task-list js-scrollbar3">
                                             <div class="au-task__item au-task__item--danger">
                                                  <div class="card">
                                     <div class="card-header">
-                                        <strong>Blog</strong>&nbsp;Post
+                                        <strong>Vehicles</strong>&nbsp;
                                     </div>
                                     <div class="card-body card-block">
                                     <?php if (isset($_SESSION['message3']) && !empty($_SESSION['message3'])) { ?>
@@ -905,7 +905,47 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                         <form  action="postblog.php" method="post" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="hf-email" class=" form-control-label">Title</label>
+                                                    <label for="hf-email" class=" form-control-label">Pickup Place</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" value="" name="title" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Drop Place</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" value="" name="title" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Distance in KM</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" value="" name="title" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Duration</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" value="" name="title" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Vehicles-names</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" value="" name="title" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Price</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
                                               <input type="text" value="" name="title" class="form-control">
