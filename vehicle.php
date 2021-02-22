@@ -154,7 +154,7 @@ tr{
 <!-- Offers Item -->
 <table class="table table-bordered mt-5"   id='transposeThis'>
 
-<tr>
+<tr class="table-primary">
   <th>Pick Up Place</th>
   <th>Drop Place</th> 
   <th>Distance</th>
@@ -175,7 +175,7 @@ tr{
         while($row3 = $result3->fetch_assoc()) {
       
                                     ?>
-            <tr>
+            <tr class="table-active">
             <td><?php echo $row3["pickup_place"]; ?></td>
             <td><?php echo $row3["drop_place"]; ?></td>
             <td><?php echo $row3["vehicle_name"]; ?></td>
