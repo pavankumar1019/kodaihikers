@@ -25,7 +25,17 @@ $result3 = $conn->query($sql3);
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/offers_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/offers_responsive.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 </head>
 
 <body>
@@ -146,53 +156,7 @@ $result3 = $conn->query($sql3);
 					
 					<!-- Offers Sorting -->
 					<div class="offers_sorting_container">
-						<ul class="offers_sorting">
-							<li>
-								<span class="sorting_text">PRICE</span>
-								<i class="fa fa-chevron-down"></i>
-								<ul>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "original-order" }' data-parent=".price_sorting"><span>Low to High</span></li>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "price" }' data-parent=".price_sorting"><span>High to Low</span></li>
-								</ul>
-							</li>
-							<li>
-								<span class="sorting_text">VEHICLES TYPE</span>
-								<i class="fa fa-chevron-down"></i>
-								<ul>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>default</span></li>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "name" }'><span>alphabetical</span></li>
-								</ul>
-							</li>
-							<!-- <li>
-								<span class="sorting_text">stars</span>
-								<i class="fa fa-chevron-down"></i>
-								<ul>
-									<li class="filter_btn" data-filter="*"><span>show all</span></li>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "stars" }'><span>ascending</span></li>
-									<li class="filter_btn" data-filter=".rating_3"><span>3</span></li>
-									<li class="filter_btn" data-filter=".rating_4"><span>4</span></li>
-									<li class="filter_btn" data-filter=".rating_5"><span>5</span></li>
-								</ul>
-							</li> -->
-							<!-- <li class="distance_item">
-								<span class="sorting_text">distance from center</span>
-								<i class="fa fa-chevron-down"></i>
-								<ul>
-									<li class="num_sorting_btn"><span>distance</span></li>
-									<li class="num_sorting_btn"><span>distance</span></li>
-									<li class="num_sorting_btn"><span>distance</span></li>
-								</ul>
-							</li> -->
-							<li>
-								<span class="sorting_text">PICKUP AND DROP</span>
-								<i class="fa fa-chevron-down"></i>
-								<ul>
-									<li class="num_sorting_btn"><span>review</span></li>
-									<li class="num_sorting_btn"><span>review</span></li>
-									<li class="num_sorting_btn"><span>review</span></li>
-								</ul>
-							</li>
-						</ul>
+					<input id="myInput" type="text" placeholder="Search..">
 					</div>
 				</div>
 
@@ -203,7 +167,7 @@ $result3 = $conn->query($sql3);
 
 						<!-- Offers Item -->
 <table>
-
+<tbody id="myTable">
 <?php
                             if ($result3->num_rows > 0) {
                                 // output data of each row
@@ -241,7 +205,7 @@ $result3 = $conn->query($sql3);
 								}
 								}
 								?>
-
+</tbody>
 						</table>
 						<!-- end -->
 
