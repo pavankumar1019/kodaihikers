@@ -9,6 +9,9 @@ $result2 = $conn->query($sql2);
 
 $sql5 = "SELECT * FROM kh_blog ORDER BY date DESC LIMIT 3";
 $result5 = $conn->query($sql5);
+
+$sql3 = "SELECT * FROM kh_add_hire_vehicles";
+$result3 = $conn->query($sql3);
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -200,18 +203,25 @@ $result5 = $conn->query($sql5);
 
 						<!-- Offers Item -->
 <table>
-<tr>
+
+<?php
+                            if ($result3->num_rows > 0) {
+                                // output data of each row
+                                while($row3 = $result3->fetch_assoc()) {
+                              
+                                                            ?>
+								<tr>
 						<div class="offers_item rating_4">
 							<div class="row">
 									<div class="col-lg-12">
 									<div class="offers_content">
-										<div class="offers_price"><h2>Kodai Road</h2> <i class="fa fa-arrows-v" aria-hidden="true"></i> <h2>kodai Kanal</h2><span></span></div>
+										<div class="offers_price"><h2><?php echo $row3["pickup_place"]; ?></h2> <i class="fa fa-arrows-v" aria-hidden="true"></i> <h2><?php echo $row3["drop_place"]; ?></h2><span></span></div>
 										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
-										<h4>Vehicle&nbsp; - &nbsp; Swift Dizer</h4>
+										<h4>Vehicle&nbsp; - &nbsp; <?php echo $row3["vehicle_name"]; ?></h4>
 										</div>
-										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
+										<p class="offers_text"><?php echo $row3["description"]; ?></p>
 										<div class="offers_icons">
-										<div class="offers_price">₹3000<span></span></div>
+										<div class="offers_price">₹<?php echo $row3["price"]; ?><span></span></div>
 										</div>
 										<div class="button book_button"><a href="#">book now<span></span><span></span><span></span></a></div>
 										
@@ -219,14 +229,19 @@ $result5 = $conn->query($sql5);
 									<div class="offer_reviews" style="font-size:3vw;">
 											<div class="offer_reviews_content">
 												<div class="offer_reviews_title">Kilometers</div>
-												<div class="offer_reviews_subtitle">2h45m</div>
+												<div class="offer_reviews_subtitle"><?php echo $row3["duration"]; ?></div>
 											</div>
-											<div class="offer_reviews_rating text-center">80</div>
+											<div class="offer_reviews_rating text-center"><?php echo $row3["distance_km"]; ?></div>
 										</div>
 								</div>
 							</div>
 						</div>
 						</tr>
+                                                            <?php
+								}
+								}
+								?>
+
 						</table>
 						<!-- end -->
 
