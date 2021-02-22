@@ -77,7 +77,7 @@ $result5 = $conn->query($sql5);
 							<ul class="main_nav_list">
 								<li class="main_nav_item"><a href="index.php">home</a></li>
 								<li class="main_nav_item"><a href="about.php">about us</a></li>
-								<li class="main_nav_item"><a href="#">hire vehicals</a></li>
+								<li class="main_nav_item"><a href="#">hire vehicles</a></li>
 								<li class="main_nav_item"><a href="bookmytour.php">book my tour</a></li>
 								<li class="main_nav_item"><a href="blog.php">blogs</a></li>
 								<li class="main_nav_item"><a href="contact.php">contact</a></li>
@@ -108,7 +108,7 @@ $result5 = $conn->query($sql5);
 			<ul>
 				<li class="menu_item"><a href="index.php">home</a></li>
 				<li class="menu_item"><a href="about.php">about us</a></li>
-				<li class="menu_item"><a href="#"> hire vehicals</a></li>
+				<li class="menu_item"><a href="#"> hire vehicles</a></li>
 				<li class="menu_item"><a href="bookmytour.php">book my tour</a></li>
 				<li class="menu_item"><a href="blog.php">blogs</a></li>
 				<li class="menu_item"><a href="contact.php">contact</a></li>
@@ -121,7 +121,7 @@ $result5 = $conn->query($sql5);
 	<div class="home">
 		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/about_background.jpg"></div>
 		<div class="home_content">
-			<div class="home_title">hire vehicals</div>
+			<div class="home_title">hire vehicles</div>
 		</div>
 	</div>
 
@@ -816,7 +816,7 @@ $result5 = $conn->query($sql5);
 						<div class="footer_content footer_tags">
 							<ul class="tags_list clearfix">
 								
-								<li class="tag_item"><a href="#">hire vehicals</a></li>
+								<li class="tag_item"><a href="#">hire vehicles</a></li>
 								<li class="tag_item"><a href="#">book my tour</a></li>
 								<li class="tag_item"><a href="#">give feedback</a></li>
 								
@@ -875,7 +875,7 @@ Technologies
 							<ul class="footer_nav_list">
 								<li class="footer_nav_item"><a href="index.php">home</a></li>
 								<li class="footer_nav_item"><a href="about.php">about us</a></li>
-								<li class="footer_nav_item"><a href="#"> hire vehicals</a></li>
+								<li class="footer_nav_item"><a href="#"> hire vehicles</a></li>
 								<li class="footer_nav_item"><a href="bookmytour.php">book my tour</a></li>
 								<li class="footer_nav_item"><a href="blog.php">blogs</a></li>
 								<li class="footer_nav_item"><a href="contact.php">contact</a></li>
