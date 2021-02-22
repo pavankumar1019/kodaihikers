@@ -164,15 +164,7 @@ tr{
 <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
 <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
 </div>
-<form id="image_form" method="post" enctype="multipart/form-data">
-     <p><label>Select Image</label>
-     <input type="file" name="image" id="image" /></p><br />
-     <input type="hidden" name="action" id="action" value="insert" />
-     <input type="text" name="text" id="text" />
-     <input type="hidden" name="image_id" id="image_id" />
-     <input type="submit" name="insert" id="insert" value="Insert" class="btn btn-info" />
-      
-    </form>
+					
 				</div>
 
 			</div>
@@ -360,7 +352,7 @@ $(document).ready(function(){
 });
 </script>
 <script>  
-$(document).ready(function(){
+
  
  fetch_data();
 
@@ -377,79 +369,8 @@ $(document).ready(function(){
    }
   })
  }
- $('#add').click(function(){
-  $('#imageModal').modal('show');
-  $('#image_form')[0].reset();
-  $('.modal-title').text("Add Image");
-  $('#image_id').val('');
-  $('#action').val('insert');
-  $('#insert').val("Insert");
- });
- $('#image_form').submit(function(event){
-  event.preventDefault();
-  var image_name = $('#image').val();
-  if(image_name == '')
-  {
-   alert("Please Select Image");
-   return false;
-  }
-  else
-  {
-   var extension = $('#image').val().split('.').pop().toLowerCase();
-   if(jQuery.inArray(extension, ['gif','png','jpg','jpeg']) == -1)
-   {
-    alert("Invalid Image File");
-    $('#image').val('');
-    return false;
-   }
-   else
-   {
-    $.ajax({
-     url:"action.php",
-     method:"POST",
-     data:new FormData(this),
-     contentType:false,
-     processData:false,
-     success:function(data)
-     {
-      alert(data);
-      fetch_data();
-      $('#image_form')[0].reset();
-      $('#imageModal').modal('hide');
-     }
-    });
-   }
-  }
- });
- $(document).on('click', '.update', function(){
-  $('#image_id').val($(this).attr("id"));
-  $('#action').val("update");
-  $('.modal-title').text("Update Image");
-  $('#insert').val("Update");
-  $('#imageModal').modal("show");
- });
- $(document).on('click', '.delete', function(){
-  var image_id = $(this).attr("id");
-  var action = "delete";
-  if(confirm("Are you sure you want to remove this image from database?"))
-  {
-   $.ajax({
-    url:"action.php",
-    method:"POST",
-    data:{image_id:image_id, action:action},
-    success:function(data)
-    {
-     alert(data);
-     fetch_data();
-    }
-   })
-  }
-  else
-  {
-   return false;
-  }
- });
-});  
+
+ 
 </script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
