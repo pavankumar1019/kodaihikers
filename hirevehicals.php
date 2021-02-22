@@ -518,7 +518,7 @@ $result2 = $conn->query($sql2);
 										<div class="offer_name"><a href="single_listing.html">grand castle</a></div> -->
 									</div>
 								</div>
-								<div class="col-lg-8">
+								<div class="col-lg-12">
 									<div class="offers_content">
 										<div class="offers_price">$70<span>per night</span></div>
 										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
