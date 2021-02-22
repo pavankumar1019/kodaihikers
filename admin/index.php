@@ -868,6 +868,84 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
 
 
                         </div>
+                     
+                    </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+
+            <div class="row" id="blog">
+                            <div class="col-lg-12">
+                                <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
+                                    <div class="au-card-title" style="background-image:url('images/bg-title-01.jpg');">
+                                        <div class="bg-overlay bg-overlay--blue"></div>
+                                        <h3>
+                                            <i class="zmdi zmdi-account-calendar"></i>Post Blog</h3>
+                                        <button class="au-btn-plus">
+                                            <i class="">Blog</i>
+                                        </button>
+                                    </div>
+                                    <div class="au-task js-list-load">
+                                        <div class="au-task__title">
+                                            <p>Post Blog to website</p>
+                                        </div>
+                                        <div class="au-task-list js-scrollbar3">
+                                            <div class="au-task__item au-task__item--danger">
+                                                 <div class="card">
+                                    <div class="card-header">
+                                        <strong>Blog</strong>&nbsp;Post
+                                    </div>
+                                    <div class="card-body card-block">
+                                    <?php if (isset($_SESSION['message3']) && !empty($_SESSION['message3'])) { ?>
+                                            <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message3']; ?></div>
+                                            <?php
+                                            unset($_SESSION['message3']);
+                                        }
+                                        ?>
+                                        <form  action="postblog.php" method="post" enctype="multipart/form-data">
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Title</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="text" value="" name="title" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col col-md-3">
+                                               
+                                       <img id="blah1" style="width:300px;display:none;" src="#" alt="your image" />
+                                            <label for="company" class="form-control-label">Image</label>
+    <input type='file' name="fileToUpload2" onchange="readURL1(this);" />
+                                            </div>
+                                            <div class=" form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-password" class=" form-control-label">Description</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                <textarea  id="editor1" rows="3" placeholder="" class="form-control" name="message" ></textarea>
+
+                                                </div>
+                  
+                                              
+                                            </div>
+                                            <br>
+                                            <input type="submit"  name="save2" class="form-control btn btn-info" value="Post Blog">
+                                        </form>
+                                    </div>
+                                   
+                                </div>
+                                            </div>
+                                        <div class="au-task__footer">
+                                            <!-- <button class="au-btn au-btn-load js-load-btn">load more</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
@@ -879,8 +957,9 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                         </div>
                     </div>
             </div>
-            <!-- END MAIN CONTENT-->
-            <!-- END PAGE CONTAINER-->
+
+
+            <!-- end of vechiles -->
         </div>
 
     </div>
@@ -892,6 +971,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                         CKEDITOR.replace( 'editor3' );
                         CKEDITOR.replace( 'editor4' );
                         CKEDITOR.replace( 'editor5' );
+                        CKEDITOR.replace( 'editor6' );
                 </script>
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
