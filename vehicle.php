@@ -145,17 +145,48 @@ $result3 = $conn->query($sql3);
 				
 				<div class="col-lg-6">
 					
-					<!-- Offers Sorting -->
-					<div class="form-group">
-                     <br><br><h1></h1>
-                      <input type="text" id="myInput" class="form-control" placeholder="Search">
-	                     
-                   </div>
+                <div>
+
+<!-- Offers Item -->
+<table class="table">
+<tr>
+  <th>Header</th>
+  <th>company 1</th> 
+  <th>company 2</th>
+        <th>company 3</th>
+  <th>company 2</th>
+        <th>company 3</th>
+  <th>company 2</th>
+
+</tr>
+<tbody id="myTable" >
+<?php
+    if ($result3->num_rows > 0) {
+        // output data of each row
+        while($row3 = $result3->fetch_assoc()) {
+      
+                                    ?>
+            <tr><td><?php echo $row3["pickup_place"]; ?></td></tr>
+            <tr><td><?php echo $row3["drop_place"]; ?></td></tr>
+            <tr><td><?php echo $row3["vehicle_name"]; ?></td></tr>
+            <tr><td><?php echo $row3["description"]; ?></td></tr>
+            <tr><td><?php echo $row3["price"]; ?></td></tr>
+            <tr><td><?php echo $row3["duration"]; ?></td></tr>
+            <tr><td><?php echo $row3["distance_km"]; ?></td></tr>
+
+   <?php
+        }
+        }
+        ?>
+</tbody>
+</table>
+
+</div>
 				</div>
 
 				<div class="col-lg-6">
 					<!-- Offers Grid -->
-dsdfsdf
+
 					
 				</div>
 
