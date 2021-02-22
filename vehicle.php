@@ -150,16 +150,16 @@ tr{
 				
 				<div class="col-lg-6" id="image_data">
 					
-                <div>
+                  <div>
 
 
-</div>
+
 				</div>
 
 				<div class="col-lg-6">
 					<!-- Offers Grid -->
-<div class=" container-fluid mt-5 mb-5">
-<?php
+                        <div class=" container-fluid mt-5 mb-5">
+                         <?php
                             if ($result3->num_rows > 0) {
                                 // output data of each row
                                 while($row3 = $result3->fetch_assoc()) {
@@ -168,13 +168,13 @@ tr{
 									
 									<button type="button" name="delete" class="btn btn-primary btn-lg btn-block delete" id="<?php echo $row3["id"];?>"><?php echo $row3["pickup_place"];?>&nbsp;To&nbsp;<?php echo $row3["drop_place"]; ?></button>     
 
-	<br><h1></h1>
+	                            <br><h1></h1>
                                                             <?php
 								}
 								}
 								?>
 
-			
+                        </div>
 				</div>
 
 			</div>
