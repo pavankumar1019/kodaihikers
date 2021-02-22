@@ -132,7 +132,7 @@ $result3 = $conn->query($sql3);
 
 	<!-- Offers -->
 
-	<div class="offers">
+	<div class="container-fluid offers">
 
 		<!-- Search -->
 
@@ -140,7 +140,7 @@ $result3 = $conn->query($sql3);
 
 		<!-- Offers -->
 
-		<div class="container" style="width:500px">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-1 temp_col"></div>
 				<div class="col-lg-11">
@@ -168,7 +168,7 @@ $result3 = $conn->query($sql3);
 									<tr>	
 									<td>
 
-									
+									<div class="offers_item rating_4">
 							<div class="row">
 									<div class="col-lg-12">
 									<div class="offers_content">
@@ -192,7 +192,7 @@ $result3 = $conn->query($sql3);
 										</div>
 								</div>
 							</div>
-					
+						</div>
 									</td>	
 					</tr>
 					
