@@ -167,14 +167,14 @@ $(document).ready(function(){
 
 						<!-- Offers Item -->
 <table>
-<tbody id="myTable">
+<tbody id="myTable" >
 <?php
                             if ($result3->num_rows > 0) {
                                 // output data of each row
                                 while($row3 = $result3->fetch_assoc()) {
                               
                                                             ?>
-								<tr>
+								<tr>			
 						<div class="offers_item rating_4">
 							<div class="row">
 									<div class="col-lg-12">
