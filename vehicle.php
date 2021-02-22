@@ -334,7 +334,7 @@ Technologies
 </div>
 <script>  
  $(document).on('click', '.delete', function(){
-  var image_id = $(this).attr("id");
+  var id = $(this).attr("id");
 	$('#image_data').html('');
     fetch_data();
 });
