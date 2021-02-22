@@ -324,7 +324,7 @@ Technologies
 
 </div>
 <script>  
-$( "#fetch" ).click(function() {
+$( "#insert" ).click(function() {
     fetch_data();
 });
 
@@ -335,7 +335,10 @@ $( "#fetch" ).click(function() {
   $.ajax({
    url:"fetch.php",
    method:"POST",
-   data:{action:action},
+   data:{
+       action:action,
+       id:id
+       },
    success:function(data)
    {
     $('#image_data').html(data);
