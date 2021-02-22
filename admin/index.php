@@ -911,13 +911,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                               <input type="text" value="" name="title" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <div class="col col-md-3">
-                                               
-                                       <img id="blah1" style="width:300px;display:none;" src="#" alt="your image" />
-                                            <label for="company" class="form-control-label">Image</label>
-    <input type='file' name="fileToUpload2" onchange="readURL1(this);" />
-                                            </div>
+
                                             <div class=" form-group">
                                                 <div class="col col-md-3">
                                                     <label for="hf-password" class=" form-control-label">Description</label>
