@@ -158,6 +158,7 @@ $result3 = $conn->query($sql3);
 
 						<!-- Offers Item -->
 <table id="myTable" style="background:blue;">
+<tr><th>Headding</th></tr>
 <tr>	
 <?php
                             if ($result3->num_rows > 0) {
