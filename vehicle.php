@@ -201,7 +201,7 @@ tr{
 
 				<div class="col-lg-6">
 					<!-- Offers Grid -->
-<div class="mx-auto">
+<div class=" container-fluid mt-5">
 <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
 <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
 </div>
