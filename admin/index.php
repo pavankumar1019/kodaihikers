@@ -874,7 +874,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
             <!-- END MAIN CONTENT-->
             <!-- END PAGE CONTAINER-->
 
-            <div class="row" id="blog">
+            <div class="row" id="Vehicles">
                             <div class="col-lg-12">
                                 <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
                                     <div class="au-card-title" style="background-image:url('images/bg-title-01.jpg');">
@@ -896,19 +896,19 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                         <strong>Vehicles</strong>&nbsp;
                                     </div>
                                     <div class="card-body card-block">
-                                    <?php if (isset($_SESSION['message3']) && !empty($_SESSION['message3'])) { ?>
-                                            <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message3']; ?></div>
+                                    <?php if (isset($_SESSION['message5']) && !empty($_SESSION['message5'])) { ?>
+                                            <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['message5']; ?></div>
                                             <?php
-                                            unset($_SESSION['message3']);
+                                            unset($_SESSION['message5']);
                                         }
                                         ?>
-                                        <form  action="postblog.php" method="post" enctype="multipart/form-data">
+                                        <form  action="addvechile.php" method="post" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <div class="col col-md-3">
                                                     <label for="hf-email" class=" form-control-label">Pickup Place</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" value="" name="title" class="form-control">
+                                              <input type="text" value="" name="pickupplace" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -916,7 +916,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-email" class=" form-control-label">Drop Place</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" value="" name="title" class="form-control">
+                                              <input type="text" value="" name="dropplace" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -924,7 +924,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-email" class=" form-control-label">Distance in KM</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" value="" name="title" class="form-control">
+                                              <input type="text" value="" name="distance" class="form-control" placeholder="ex:- 24km" >
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -932,15 +932,15 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-email" class=" form-control-label">Duration</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" value="" name="title" class="form-control">
+                                              <input type="text" value="" placeholder="ex:- 2h45m" name="duration" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="hf-email" class=" form-control-label">Vehicles-names</label>
+                                                    <label for="hf-email" class=" form-control-label">Vehicles Name</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" value="" name="title" class="form-control">
+                                              <input type="text" value="" name="vechile" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -948,7 +948,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-email" class=" form-control-label">Price</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" value="" name="title" class="form-control">
+                                              <input type="number" value=""  name="price" class="form-control">
                                                 </div>
                                             </div>
 
@@ -957,14 +957,14 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-password" class=" form-control-label">Description</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                <textarea  id="editor6" rows="3" placeholder="" class="form-control" name="message" ></textarea>
+                                                <textarea  id="editor6" rows="3" placeholder="" class="form-control" name="description" ></textarea>
 
                                                 </div>
                   
                                               
                                             </div>
                                             <br>
-                                            <input type="submit"  name="save2" class="form-control btn btn-info" value="Book Vehicles">
+                                            <input type="submit"  name="save5" class="form-control btn btn-info" value="Book Vehicles">
                                         </form>
                                     </div>
                                    
