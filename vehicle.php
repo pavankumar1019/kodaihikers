@@ -338,6 +338,7 @@ Technologies
 <script>  
  $('#insert_form').submit(function(event){
 	event.preventDefault();
+	$('#image_data').html('');
     fetch_data();
 });
 
