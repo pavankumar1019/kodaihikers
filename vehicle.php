@@ -152,7 +152,7 @@ tr{
                 <div>
 
 <!-- Offers Item -->
-<table  id='myTable'>
+<table  id='transposeThis'>
 
 <tr>
   <th>Pick Up Place</th>
@@ -361,15 +361,16 @@ Technologies
 
 </div>
 <script>
-   $("table").each(function() {
+$("table#transposeThis").each(function() {
         var $this = $(this);
         var newrows = [];
-        $this.find("tr").each(function(){
-            var i = 0;
-            $(this).find("td").each(function(){
-                i++;
-                if(newrows[i] === undefined) { newrows[i] = $("<tr></tr>"); }
-                newrows[i].append($(this));
+        $this.find("tr").each(function(rowToColIndex){
+            $(this).find("td, th").each(function(colToRowIndex){
+                if(newrows[colToRowIndex] === undefined) { newrows[colToRowIndex] = $("<tr></tr>"); }
+                while(newrows[colToRowIndex].find("td, th").length < rowToColIndex){
+                    newrows[colToRowIndex].append($("<td></td>"));
+                }
+                newrows[colToRowIndex].append($(this));
             });
         });
         $this.find("tr").remove();
