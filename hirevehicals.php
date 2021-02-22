@@ -157,6 +157,7 @@ $result3 = $conn->query($sql3);
 					<div class="offers_grid">
 
 						<!-- Offers Item -->
+<table id="myTable">
 
 <?php
                             if ($result3->num_rows > 0) {
@@ -164,9 +165,9 @@ $result3 = $conn->query($sql3);
                                 while($row3 = $result3->fetch_assoc()) {
                               
                                                             ?>
-									
-						<div class="offers_item rating_4" id="myTable">
-							<div class="row" id="row">
+								<tr>			
+						<div class="offers_item rating_4">
+							<div class="row">
 									<div class="col-lg-12">
 									<div class="offers_content">
 										<div class="offers_price"><h2><?php echo $row3["pickup_place"]; ?></h2> <i class="fa fa-arrows-v" aria-hidden="true"></i> <h2><?php echo $row3["drop_place"]; ?></h2><span></span></div>
@@ -190,12 +191,13 @@ $result3 = $conn->query($sql3);
 								</div>
 							</div>
 						</div>
-						
+						</tr>
                                                             <?php
 								}
 								}
 								?>
 
+						</table>
 					
 					</div>
 				</div>
@@ -356,15 +358,13 @@ Technologies
 
 </div>
 <script>
-
-var $rows = $('#myTable row');
-$('#myInput').keyup(function() {
-    var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
-
-    $rows.show().filter(function() {
-        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
-        return !~text.indexOf(val);
-    }).hide();
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
 });
 </script>
 <script src="js/jquery-3.2.1.min.js"></script>
