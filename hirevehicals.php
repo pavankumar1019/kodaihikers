@@ -453,22 +453,22 @@ $result2 = $conn->query($sql2);
 					<div class="offers_sorting_container">
 						<ul class="offers_sorting">
 							<li>
-								<span class="sorting_text">price</span>
+								<span class="sorting_text">PRICE</span>
 								<i class="fa fa-chevron-down"></i>
 								<ul>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "original-order" }' data-parent=".price_sorting"><span>show all</span></li>
-									<li class="sort_btn" data-isotope-option='{ "sortBy": "price" }' data-parent=".price_sorting"><span>ascending</span></li>
+									<li class="sort_btn" data-isotope-option='{ "sortBy": "original-order" }' data-parent=".price_sorting"><span>Low to High</span></li>
+									<li class="sort_btn" data-isotope-option='{ "sortBy": "price" }' data-parent=".price_sorting"><span>High to Low</span></li>
 								</ul>
 							</li>
 							<li>
-								<span class="sorting_text">location</span>
+								<span class="sorting_text">VEHICLES TYPE</span>
 								<i class="fa fa-chevron-down"></i>
 								<ul>
 									<li class="sort_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>default</span></li>
 									<li class="sort_btn" data-isotope-option='{ "sortBy": "name" }'><span>alphabetical</span></li>
 								</ul>
 							</li>
-							<li>
+							<!-- <li>
 								<span class="sorting_text">stars</span>
 								<i class="fa fa-chevron-down"></i>
 								<ul>
@@ -478,8 +478,8 @@ $result2 = $conn->query($sql2);
 									<li class="filter_btn" data-filter=".rating_4"><span>4</span></li>
 									<li class="filter_btn" data-filter=".rating_5"><span>5</span></li>
 								</ul>
-							</li>
-							<li class="distance_item">
+							</li> -->
+							<!-- <li class="distance_item">
 								<span class="sorting_text">distance from center</span>
 								<i class="fa fa-chevron-down"></i>
 								<ul>
@@ -487,9 +487,9 @@ $result2 = $conn->query($sql2);
 									<li class="num_sorting_btn"><span>distance</span></li>
 									<li class="num_sorting_btn"><span>distance</span></li>
 								</ul>
-							</li>
+							</li> -->
 							<li>
-								<span class="sorting_text">reviews</span>
+								<span class="sorting_text">PICKUP AND DROP PLACE</span>
 								<i class="fa fa-chevron-down"></i>
 								<ul>
 									<li class="num_sorting_btn"><span>review</span></li>
@@ -549,16 +549,17 @@ $result2 = $conn->query($sql2);
 								</div>
 							</div>
 						</div>
+						<!-- end -->
 
 						<!-- Offers Item -->
-
-						<div class="offers_item rating_3">
+<!-- 
+						<!-- <div class="offers_item rating_3">
 							<div class="row">
 								<div class="col-lg-1 temp_col"></div>
 								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
+									<div class="offers_image_container"> -->
 										<!-- Image by https://unsplash.com/@thoughtcatalog -->
-										<div class="offers_image_background" style="background-image:url(images/offer_5.jpg)"></div>
+										<!-- <div class="offers_image_background" style="background-image:url(images/offer_5.jpg)"></div>
 										<div class="offer_name"><a href="single_listing.html">eurostar hotel</a></div>
 									</div>
 								</div>
@@ -592,17 +593,17 @@ $result2 = $conn->query($sql2);
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> --> -->
 
 						<!-- Offers Item -->
 
-						<div class="offers_item rating_5">
+						<!-- <div class="offers_item rating_5">
 							<div class="row">
 								<div class="col-lg-1 temp_col"></div>
 								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
+									<div class="offers_image_container"> -->
 										<!-- Image by https://unsplash.com/@mindaugas -->
-										<div class="offers_image_background" style="background-image:url(images/offer_6.jpg)"></div>
+										<!-- <div class="offers_image_background" style="background-image:url(images/offer_6.jpg)"></div>
 										<div class="offer_name"><a href="single_listing.html">grand castle</a></div>
 									</div>
 								</div>
@@ -636,17 +637,17 @@ $result2 = $conn->query($sql2);
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 						<!-- Offers Item -->
 
-						<div class="offers_item rating_4">
+						<!-- <div class="offers_item rating_4">
 							<div class="row">
 								<div class="col-lg-1 temp_col"></div>
 								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
+									<div class="offers_image_container"> -->
 										<!-- Image by https://unsplash.com/@rktkn -->
-										<div class="offers_image_background" style="background-image:url(images/offer_7.jpg)"></div>
+										<!-- <div class="offers_image_background" style="background-image:url(images/offer_7.jpg)"></div>
 										<div class="offer_name"><a href="single_listing.html">eurostar hotel</a></div>
 									</div>
 								</div>
@@ -680,17 +681,17 @@ $result2 = $conn->query($sql2);
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 						<!-- Offers Item -->
 
-						<div class="offers_item rating_3">
+						<!-- <div class="offers_item rating_3">
 							<div class="row">
 								<div class="col-lg-1 temp_col"></div>
 								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
+									<div class="offers_image_container"> -->
 										<!-- Image by https://unsplash.com/@itsnwa -->
-										<div class="offers_image_background" style="background-image:url(images/offer_8.jpg)"></div>
+										<!-- <div class="offers_image_background" style="background-image:url(images/offer_8.jpg)"></div>
 										<div class="offer_name"><a href="single_listing.html">grand castle</a></div>
 									</div>
 								</div>
@@ -724,7 +725,7 @@ $result2 = $conn->query($sql2);
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 					</div>
 				</div>
