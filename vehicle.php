@@ -166,11 +166,8 @@ tr{
                               
                                                             ?>
 									
-									<form id="insert_form" method="post" enctype="multipart/form-data">
-     <input type="text" name="id" value="<?php echo $row3["id"];?>" id="id" />
-     <input type="submit" name="submit" id="submit"  class="btn btn-info" value="<?php echo $row3["pickup_place"]; ?>&nbsp;To&nbsp;<?php echo $row3["drop_place"]; ?>" />
-      
-    </form>
+									<button type="button" name="delete" class="btn btn-danger bt-xs delete" id="<?php echo $row3["id"];?>"><?php echo $row3["pickup_place"];?>&nbsp;To&nbsp;<?php echo $row3["drop_place"]; ?></button>     
+
 	<br><h1></h1>
                                                             <?php
 								}
@@ -336,8 +333,8 @@ Technologies
 
 </div>
 <script>  
- $('#insert_form').submit(function(event){
-	event.preventDefault();
+ $(document).on('click', '.delete', function(){
+  var image_id = $(this).attr("id");
 	$('#image_data').html('');
     fetch_data();
 });
