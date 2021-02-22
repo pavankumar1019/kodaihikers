@@ -159,14 +159,14 @@ $result3 = $conn->query($sql3);
 						<!-- Offers Item -->
 <table id="myTable" style="background:blue;">
 <tr><th>Headding</th></tr>
-<tr>	
+
 <?php
                             if ($result3->num_rows > 0) {
                                 // output data of each row
                                 while($row3 = $result3->fetch_assoc()) {
                               
                                                             ?>
-									
+									<tr>	
 						<div class="offers_item rating_4">
 							<div class="row">
 									<div class="col-lg-12">
@@ -191,13 +191,13 @@ $result3 = $conn->query($sql3);
 										</div>
 								</div>
 							</div>
-						</div>
+						</div>	</tr>
 					
                                                             <?php
 								}
 								}
 								?>
-	</tr>
+
 						</table>
 					
 					</div>
