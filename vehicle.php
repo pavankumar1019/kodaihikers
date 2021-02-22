@@ -201,7 +201,15 @@ tr{
 
 				<div class="col-lg-6">
 					<!-- Offers Grid -->
-
+                    <button type="button" class="btn btn-info rounded-circle">Info</button>
+                    <button type="button" class="btn btn-info rounded-circle">Info</button>
+                    <button type="button" class="btn btn-info rounded-circle">Info</button>
+                    <button type="button" class="btn btn-info rounded-circle">Info</button>
+                    <button type="button" class="btn btn-info rounded-circle">Info</button>
+                    <button type="button" class="btn btn-info rounded-circle">Info</button>
+                    <button type="button" class="btn btn-info rounded-circle">Info</button>
+                    <button type="button" class="btn btn-info rounded-circle">Info</button>
+                    <button type="button" class="btn btn-info rounded-circle">Info</button>
 					
 				</div>
 
