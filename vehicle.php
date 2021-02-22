@@ -161,7 +161,7 @@ tr{
 <div class=" container-fluid mt-5">
 
 <form id="image_form" method="post" enctype="multipart/form-data">
-     <input type="hiddent" name="id" value="2" id="id" />
+     <input type="hidden" name="id" value="2" id="id" />
      <input type="button" class="btn btn-primary btn-lg btn-block" id="insert" value="Insert" class="btn btn-info" />
       
     </form>
