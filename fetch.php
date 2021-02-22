@@ -18,24 +18,21 @@ if(isset($_POST["action"]))
      <th>Change</th>
      <th>Remove</th>
     </tr>
-    <tbody id="myTable" >
   ';
   while($row = mysqli_fetch_array($result))
   {
    $output .= '
-
     <tr>
      <td>'.$row["id"].'</td>
      <td>'.$row["id"].'</td>
      <td>'.$row["id"].'</td>
      <td>'.$row["id"].'</td>
      <td>'.$row["id"].'</td>
-    
     </tr>
    ';
   }
   $output .= '
-  </tbody>
+
   </table>';
   echo $output;
  }
