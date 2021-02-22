@@ -158,7 +158,7 @@ tr{
 
 				<div class="col-lg-6">
 					<!-- Offers Grid -->
-<div class=" container-fluid mt-5">
+<div class=" container-fluid mt-5 mb-5">
 
 <form id="image_form" method="post" enctype="multipart/form-data">
      <input type="hidden" name="id" value="2" id="id" />
