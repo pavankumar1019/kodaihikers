@@ -150,10 +150,10 @@ tr{
 				
 				<div class="col-lg-6" id="image_data">
 					
-                  <div>
+                <div>
 
 
-
+</div>
 				</div>
 
 				<div class="col-lg-6">
@@ -174,7 +174,8 @@ tr{
 								}
 								?>
 
-                        </div>
+				</div>
+			
 				</div>
 
 			</div>
