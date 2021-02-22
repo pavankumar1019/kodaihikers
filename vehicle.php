@@ -166,7 +166,7 @@ tr{
                               
                                                             ?>
 									
-									<button type="button" name="delete" class="btn btn-danger bt-xs delete" id="<?php echo $row3["id"];?>"><?php echo $row3["pickup_place"];?>&nbsp;To&nbsp;<?php echo $row3["drop_place"]; ?></button>     
+									<button type="button" name="delete" class="btn btn-primary btn-lg btn-block delete" id="<?php echo $row3["id"];?>"><?php echo $row3["pickup_place"];?>&nbsp;To&nbsp;<?php echo $row3["drop_place"]; ?></button>     
 
 	<br><h1></h1>
                                                             <?php
