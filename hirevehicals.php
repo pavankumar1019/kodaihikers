@@ -600,7 +600,7 @@ $result5 = $conn->query($sql5);
 									</div>
 								</div>
 							</div>
-						</div> --> -->
+						</div> --> 
 
 						<!-- Offers Item -->
 
