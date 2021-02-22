@@ -167,7 +167,7 @@ tr{
                                                             ?>
 									
 									<form id="insert_form" method="post" enctype="multipart/form-data">
-     <input type="hidden" name="id" value="<?php echo $row3["id"];?>" id="id" />
+     <input type="text" name="id" value="<?php echo $row3["id"];?>" id="id" />
      <input type="submit" name="submit" id="submit"  class="btn btn-info" value="<?php echo $row3["pickup_place"]; ?>&nbsp;To&nbsp;<?php echo $row3["drop_place"]; ?>" />
       
     </form>
