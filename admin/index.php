@@ -964,7 +964,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                               
                                             </div>
                                             <br>
-                                            <input type="submit"  name="save2" class="form-control btn btn-info" value="Post Blog">
+                                            <input type="submit"  name="save2" class="form-control btn btn-info" value="Book Vehicles">
                                         </form>
                                     </div>
                                    
