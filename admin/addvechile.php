@@ -16,7 +16,7 @@ $description=$_POST['description'];
 
 // Check if image file is a actual image or fake image
 if(isset($_POST["save5"])) {
-    $stu_query = "INSERT INTO kh_add_hire_vehicles (pickup_place,drop_place,distance_km,duration,indigo,swift,etios,tavera,innova,tempo,description) VALUES ('$pickupplace','$dropplace','$distance','$duration','$vechile','$price','$description')";
+    $stu_query = "INSERT INTO kh_add_hire_vehicles (pickup_place,drop_place,distance_km,duration,indigo,swift,etios,tavera,innova,tempo,description) VALUES ('$pickupplace','$dropplace','$distance','$duration','$Indigo','$Swift','$Etios','$Tavera','$Innova',$Tempo,'$description')";
 $result = mysqli_query($conn, $stu_query);
 if ($result) {
   session_start();
