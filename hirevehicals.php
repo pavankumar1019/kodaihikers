@@ -510,7 +510,8 @@ $result5 = $conn->query($sql5);
 					<div class="offers_grid">
 
 						<!-- Offers Item -->
-
+<table>
+<tr>
 						<div class="offers_item rating_4">
 							<div class="row">
 								<div class="col-lg-1 temp_col"></div>
@@ -523,7 +524,7 @@ $result5 = $conn->query($sql5);
 								</div>
 								<div class="col-lg-12">
 									<div class="offers_content">
-										<div class="offers_price">$70<span>per night</span></div>
+										<div class="offers_price">Kodai Road TO kodai Kanal<span>per night</span></div>
 										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
 											<i></i>
 											<i></i>
@@ -552,11 +553,13 @@ $result5 = $conn->query($sql5);
 								</div>
 							</div>
 						</div>
+						</tr>
+						</table>
 						<!-- end -->
 
 						<!-- Offers Item -->
 <!-- 
-						<!-- <div class="offers_item rating_3">
+					 <div class="offers_item rating_3">
 							<div class="row">
 								<div class="col-lg-1 temp_col"></div>
 								<div class="col-lg-3 col-1680-4">
