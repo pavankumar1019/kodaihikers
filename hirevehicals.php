@@ -142,7 +142,7 @@ $result3 = $conn->query($sql3);
 
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-1 temp_col"></div>
+				
 				<div class="col-lg-11">
 					
 					<!-- Offers Sorting -->
