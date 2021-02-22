@@ -13,7 +13,7 @@ if(isset($_POST["action"]))
   {
    $output .= $row["distance_km"];
   }
-  $output .= '</tbody></table>';
+  $output .= '';
   echo $output;
 }
  }
