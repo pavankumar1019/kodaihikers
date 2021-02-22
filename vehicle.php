@@ -201,15 +201,8 @@ tr{
 
 				<div class="col-lg-6">
 					<!-- Offers Grid -->
-                    <button type="button" class="btn btn-info rounded-pill">Info</button><br>
-                    <button type="button" class="btn btn-info rounded-pill">Info</button><br>
-                    <button type="button" class="btn btn-info rounded-pill">Info</button><br>
-                    <button type="button" class="btn btn-info rounded-pill">Info</button><br>
-                    <button type="button" class="btn btn-info rounded-pill">Info</button><br>
-                    <button type="button" class="btn btn-info rounded-pill">Info</button><br>
-                    <button type="button" class="btn btn-info rounded-pill">Info</button><br>
-                    <button type="button" class="btn btn-info rounded-pill">Info</button><br>
-                    <button type="button" class="btn btn-info rounded-pill">Info</button><br>
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
 					
 				</div>
 
