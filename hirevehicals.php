@@ -167,10 +167,10 @@ $result3 = $conn->query($sql3);
                               
                                                             ?>
 									<tr>	
-										fgdgdfg
+									<td>ghfh</td>	
 					</tr>
 					
-                                                            <?php
+                           <?php
 								}
 								}
 								?>
