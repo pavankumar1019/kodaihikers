@@ -935,20 +935,52 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                               <input type="text" value="" placeholder="ex:- 2h45m" name="duration" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="form-group">
+                                           <div class="form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="hf-email" class=" form-control-label">Vehicles Name</label>
+                                                    <label for="hf-email" class=" form-control-label">Indigo Price</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" value="" name="vechile" class="form-control">
+                                              <input type="number" value=""  name="Indigo" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="form-group">
+                                           <div class="form-group">
                                                 <div class="col col-md-3">
-                                                    <label for="hf-email" class=" form-control-label">Price</label>
+                                                    <label for="hf-email" class=" form-control-label">Swift Dzire Price</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="number" value=""  name="price" class="form-control">
+                                              <input type="number" value=""  name="Swift" class="form-control">
+                                                </div>
+                                            </div>
+                                           <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Etios Price</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="number" value=""  name="Etios" class="form-control">
+                                                </div>
+                                            </div>
+                                           <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label"> Tavera Price</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="number" value=""  name="Tavera" class="form-control">
+                                                </div>
+                                            </div>
+                                           <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Innova Price</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="number" value=""  name="Innova" class="form-control">
+                                                </div>
+                                            </div>
+                                           <div class="form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-email" class=" form-control-label">Tempo Traveller Price</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                              <input type="number" value=""  name="Tempo" class="form-control">
                                                 </div>
                                             </div>
 
