@@ -152,7 +152,7 @@ tr{
                 <div>
 
 <!-- Offers Item -->
-<table class="table table-bordered mt-5"   id='transposeThis' style="border: 1px solid red;">
+<table class="table table-striped table-hover mt-5"   id='transposeThis'>
 
 <tr>
   <th>Pick Up Place</th>
