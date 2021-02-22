@@ -27,29 +27,27 @@ if(isset($_POST["action"]))
   ';
   while($row = mysqli_fetch_array($result))
   {
-   $output .= ?>
-   <tr>
-   <td><?php echo $row["pickup_place"]; ?></td>
-   <td><?php echo $row["drop_place"]; ?></td>
-   <td><?php echo $row["vehicle_name"]; ?></td>
-   <td><?php echo $row["description"]; ?></td>
-   <td><?php echo $row["price"]; ?></td>
-   <td><?php echo $row["duration"]; ?></td>
-   <td><?php echo $row["distance_km"]; ?>
-   <td><?php echo $row["duration"]; ?></td>
-   <td><?php echo $row["distance_km"]; ?>
-   <td><?php echo $row["distance_km"]; ?>
-   </tr>
-
-
-<?php;
+   $output .= '
+    <tr>
+     <td>'.$row["pickup_place"].'</td>
+     <td>'.$row["drop_place"].'</td>
+     <td>'.$row["vehicle_name"].'</td>
+     <td>'.$row["description"].'</td>
+     <td>'.$row["price"].'</td>
+     <td>'.$row["duration"].'</td>
+     <td>'.$row["distance_km"].'</td>
+     <td>'.$row["duration"].'</td>
+     <td>'.$row["duration"].'</td>
+     <td>'.$row["duration"].'</td>
+    </tr>
+   ';
   }
   $output .= '
-
   </table>';
   echo $output;
  }
 }
  ?>
+
 
  
