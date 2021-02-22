@@ -207,16 +207,11 @@ $result5 = $conn->query($sql5);
 									<div class="offers_content">
 										<div class="offers_price"><h2>Kodai Road</h2> <i class="fa fa-arrows-v" aria-hidden="true"></i> <h2>kodai Kanal</h2><span></span></div>
 										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
-										<h4>Swift Dizer</h4>
+										<h4>Vehicle&nbsp; - &nbsp; Swift Dizer</h4>
 										</div>
 										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
 										<div class="offers_icons">
-											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-											</ul>
+										<div class="offers_price">₹3000<span></span></div>
 										</div>
 										<div class="button book_button"><a href="#">book now<span></span><span></span><span></span></a></div>
 										
