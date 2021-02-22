@@ -146,17 +146,21 @@ $result3 = $conn->query($sql3);
 				<div class="col-lg-11">
 					
 					<!-- Offers Sorting -->
-					<!-- <div class="form-group">
-   <br><br><h1></h1>
-    <input type="text" id="myInput" class="form-control" placeholder="Search"></div>
-				</div> -->
-				<div class="input-group mb-3">
-
-  <input type="text" id="myInput" class="form-control" aria-label="Amount (to the nearest dollar)">
-  <div class="input-group-append">
-    <span class="input-group-text">Search</span>
+					<div class="form-group">
+                     <br><br><h1></h1>
+                      <input type="text" id="myInput" class="form-control" placeholder="Search">
+	                 <div class="input-group-append">
+                        <span class="input-group-text">Search</span>
+                         </div>
+                   </div>
+				</div>
+				<!-- <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">$</span>
   </div>
-</div>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+
+</div> -->
 				<div class="col-lg-12">
 					<!-- Offers Grid -->
 
