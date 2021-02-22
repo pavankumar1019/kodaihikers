@@ -880,7 +880,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                     <div class="au-card-title" style="background-image:url('images/bg-title-01.jpg');">
                                         <div class="bg-overlay bg-overlay--blue"></div>
                                         <h3>
-                                            <i class="zmdi zmdi-account-calendar"></i>Post Blog</h3>
+                                            <i class="zmdi zmdi-account-calendar"></i>ADD Vechiles</h3>
                                         <button class="au-btn-plus">
                                             <i class="">Blog</i>
                                         </button>
@@ -923,7 +923,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-password" class=" form-control-label">Description</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                                <textarea  id="editor1" rows="3" placeholder="" class="form-control" name="message" ></textarea>
+                                                <textarea  id="editor6" rows="3" placeholder="" class="form-control" name="message" ></textarea>
 
                                                 </div>
                   
