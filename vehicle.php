@@ -342,7 +342,6 @@ Technologies
  function fetch_data()
  {
   var action = "fetch";
-  var id = $('#id').val();
   $.ajax({
    url:"fetch.php",
    method:"POST",
