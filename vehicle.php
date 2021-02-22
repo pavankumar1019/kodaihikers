@@ -152,7 +152,7 @@ tr{
                 <div>
 
 <!-- Offers Item -->
-<table  id='myTable' style="display: none;">
+<table  id='myTable'>
 
 <tr>
   <th>Pick Up Place</th>
@@ -389,7 +389,9 @@ for(var c = 0; c < maxColumns; c++) {
 }
 var div = document.getElementById('newt');
 newTable.classList.add("table");
+myTable.append(newTable);
 newTable.classList.add("table-striped");
+
 div.appendChild(newTable);
 </script>
 <script>
