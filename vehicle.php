@@ -159,12 +159,13 @@ tr{
 				<div class="col-lg-6">
 					<!-- Offers Grid -->
 <div class=" container-fluid mt-5">
-<button type="button" id="clickme" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-</div>
-					
+
+<form id="image_form" method="post" enctype="multipart/form-data">
+     <input type="hiddent" name="id" value="2" id="id" />
+     <input type="button" class="btn btn-primary btn-lg btn-block" id="insert" value="Insert" class="btn btn-info" />
+      
+    </form>
+			
 				</div>
 
 			</div>
@@ -323,13 +324,14 @@ Technologies
 
 </div>
 <script>  
-
- 
- fetch_data();
+$( "#fetch" ).click(function() {
+    fetch_data();
+});
 
  function fetch_data()
  {
   var action = "fetch";
+  var id = $('#id').val();
   $.ajax({
    url:"fetch.php",
    method:"POST",
