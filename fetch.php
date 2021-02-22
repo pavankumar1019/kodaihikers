@@ -32,7 +32,7 @@ if(isset($_POST["action"]))
     <tr>
      <td>'.$row["pickup_place"].'</td>
      <td>'.$row["drop_place"].'</td>
-     <td>'.$row["distance_km"].'</td>
+     <td>'.$row["distance_km"].'km</td>
      <td>'.$row["duration"].'</td>
      <td>'.$row["indigo"].'₹</td>
      <td>'.$row["swift"].'₹</td>
