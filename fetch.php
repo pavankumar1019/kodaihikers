@@ -1,6 +1,6 @@
 <?php
 //action.php
-include 'db_connion/db.php';
+include 'db_connection/db.php';
 
 if(isset($_POST["action"]))
 {
