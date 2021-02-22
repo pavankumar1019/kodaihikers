@@ -334,7 +334,7 @@ Technologies
 </div>
 <script>  
  $(document).on('click', '.delete', function(){
-  var id = $(this).attr("id");
+
 	$('#image_data').html('');
     fetch_data();
 });
@@ -342,6 +342,7 @@ Technologies
  function fetch_data()
  {
   var action = "fetch";
+  var id = $('.delete').attr("id");
   $.ajax({
    url:"fetch.php",
    method:"POST",
