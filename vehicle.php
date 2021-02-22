@@ -376,7 +376,7 @@ for(var c = 0; c < maxColumns; c++) {
     }
 }
 var div = document.getElementById('newt');
-
+newTable.classList.add("table");
 div.appendChild(newTable);
 </script>
 <script>
