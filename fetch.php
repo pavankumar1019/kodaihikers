@@ -41,10 +41,11 @@ if(isset($_POST["action"]))
      <td>'.$row["duration"].'</td>
      <td>'.$row["duration"].'</td>
     </tr>
+    <p>'.$row["description"].'</p>
    ';
   }
   $output .= '
-  </table><p>'.$row["description"].'</p>';
+  </table>';
   echo $output;
  }
 }
