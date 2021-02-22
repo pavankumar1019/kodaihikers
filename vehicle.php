@@ -376,7 +376,8 @@ for(var c = 0; c < maxColumns; c++) {
     }
 }
 var div = document.getElementById('newt');
-newTable.classList.add("table table-striped");
+newTable.classList.add("table");
+newTable.classList.add("table-striped");
 div.appendChild(newTable);
 </script>
 <script>
