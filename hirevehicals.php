@@ -524,7 +524,7 @@ $result5 = $conn->query($sql5);
 								</div>
 								<div class="col-lg-12">
 									<div class="offers_content">
-										<div class="offers_price">Kodai Road TO kodai Kanal<span>per night</span></div>
+										<div class="offers_price">Kodai Road <div>Icons made by <a href="http://fontawesome.io" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> kodai Kanal<span>per night</span></div>
 										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
 											<i></i>
 											<i></i>
