@@ -157,7 +157,8 @@ $result3 = $conn->query($sql3);
 					<div class="offers_grid">
 
 						<!-- Offers Item -->
-<table id="myTable" style="background:blue;">
+<table>
+<tbody id="myTable" >
 <?php
                             if ($result3->num_rows > 0) {
                                 // output data of each row
@@ -199,7 +200,7 @@ $result3 = $conn->query($sql3);
 								}
 								}
 								?>
-
+</tbody>
 						</table>
 					
 					</div>
