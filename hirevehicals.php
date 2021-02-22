@@ -507,11 +507,11 @@ $result3 = $conn->query($sql3);
 						<div class="footer_content footer_tags">
 							<ul class="tags_list clearfix">
 								
-								<li class="tag_item"><a href="#">hire vehicles</a></li>
-								<li class="tag_item"><a href="#">book my tour</a></li>
-								<li class="tag_item"><a href="#">give feedback</a></li>
+								<li class="tag_item"><a href="#">Hire vehicles</a></li>
+								<li class="tag_item"><a href="#">Book my tour</a></li>
+								<li class="tag_item"><a href="#">Give feedback</a></li>
 								
-								<li class="tag_item"><a href="#">videos</a></li>
+								<li class="tag_item"><a href="#">Videos</a></li>
 							</ul>
 						</div>
 					</div>
