@@ -361,13 +361,13 @@ $(document).ready(function(){
   var action = "fetch";
   $.ajax({
    url:"fetch.php",
+   type:'POST',
    method:"POST",
    data:{action:action},
    success:function(data)
    {
     $('#image_data').html(data);
-   },
-   error:errorFunc
+   }
   })
  }
 
