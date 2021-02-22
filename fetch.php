@@ -42,7 +42,7 @@ if(isset($_POST["action"]))
    </tr>
 
 
-<?php
+<?php;
   }
   $output .= '
 
