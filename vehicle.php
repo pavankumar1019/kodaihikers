@@ -337,6 +337,7 @@ Technologies
 </div>
 <script>  
  $('#insert_form').submit(function(event){
+	event.preventDefault();
     fetch_data();
 });
 
