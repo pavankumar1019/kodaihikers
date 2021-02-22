@@ -148,8 +148,19 @@ tr{
 		<div class="container-fluid">
 			<div class="row">
 				
-				<div class="col-lg-6" id="image_data">
-					
+				<div class="col-lg-6" >
+                <table class="table table-striped table-hover mt-5"   id="transposeThis">  
+    <tr>
+     <th>ID</th>
+     <th>Image</th>
+     <th>info</th>
+     <th>Change</th>
+     <th>Remove</th>
+    </tr>
+    <tbody id="image_data">
+    
+    </tbody>
+    </table>
                 <div>
 
 
