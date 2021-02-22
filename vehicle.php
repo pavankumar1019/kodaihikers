@@ -10,7 +10,7 @@ $result2 = $conn->query($sql2);
 $sql5 = "SELECT * FROM kh_blog ORDER BY date DESC LIMIT 3";
 $result5 = $conn->query($sql5);
 
-$sql3 = "SELECT * FROM kh_add_hire_vehicles";
+$sql3 = "SELECT * FROM kh_add_hire_vehicles where id=1";
 $result3 = $conn->query($sql3);
     ?>
 <!DOCTYPE html>
