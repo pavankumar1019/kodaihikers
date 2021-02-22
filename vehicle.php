@@ -152,7 +152,7 @@ tr{
                 <div>
 
 <!-- Offers Item -->
-<table  id='transposeThis'>
+<table class="table table-bordered border-primary"  id='transposeThis'>
 
 <tr>
   <th>Pick Up Place</th>
