@@ -337,6 +337,7 @@ Technologies
    success:function(data)
    {
     $('#image_data').html(data);
+    table1();
    }
   })
  }
@@ -344,6 +345,7 @@ Technologies
  
 </script>
 <script>
+ function table1(){
 $("table#transposeThis").each(function() {
         var $this = $(this);
         var newrows = [];
@@ -361,6 +363,7 @@ $("table#transposeThis").each(function() {
             $this.append(this);
         });
     });
+ }
 </script>
 <script>
 $(document).ready(function(){
