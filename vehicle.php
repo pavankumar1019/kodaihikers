@@ -143,7 +143,7 @@ $result3 = $conn->query($sql3);
 		<div class="container-fluid">
 			<div class="row">
 				
-				<div class="col-lg-11">
+				<div class="col-lg-6">
 					
 					<!-- Offers Sorting -->
 					<div class="form-group">
@@ -152,66 +152,11 @@ $result3 = $conn->query($sql3);
 	                     
                    </div>
 				</div>
-				<!-- <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text">$</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
 
-</div> -->
-				<div class="col-lg-12">
+				<div class="col-lg-6">
 					<!-- Offers Grid -->
 
-					<div>
-
-						<!-- Offers Item -->
-<table class="table">
-<tbody id="myTable" >
-<?php
-                            if ($result3->num_rows > 0) {
-                                // output data of each row
-                                while($row3 = $result3->fetch_assoc()) {
-                              
-                                                            ?>
-									<tr>	
-									<td>
-
-									<div class="offers_item rating_4">
-							<div class="row">
-									<div class="col-lg-12">
-									<div class="offers_content">
-										<div class="offers_price"><h2><?php echo $row3["pickup_place"]; ?></h2> <i class="fa fa-arrows-v" aria-hidden="true"></i> <h2><?php echo $row3["drop_place"]; ?></h2><span></span></div>
-										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
-										<h4>Vehicle&nbsp; - &nbsp; <?php echo $row3["vehicle_name"]; ?></h4>
-										</div>
-										<p class="offers_text"><?php echo $row3["description"]; ?></p>
-										<div class="offers_icons">
-										<div class="offers_price">₹<?php echo $row3["price"]; ?><span></span></div>
-										</div>
-										<div class="button book_button"><a href="#">book now<span></span><span></span><span></span></a></div>
-										
-									</div>
-									<div class="offer_reviews" style="font-size:3vw;">
-											<div class="offer_reviews_content">
-												<div class="offer_reviews_title">Kilometers</div>
-												<div class="offer_reviews_subtitle"><?php echo $row3["duration"]; ?></div>
-											</div>
-											<div class="offer_reviews_rating text-center"><?php echo $row3["distance_km"]; ?></div>
-										</div>
-								</div>
-							</div>
-						</div>
-									</td>	
-					</tr>
 					
-                           <?php
-								}
-								}
-								?>
-</tbody>
-						</table>
-					
-					</div>
 				</div>
 
 			</div>
