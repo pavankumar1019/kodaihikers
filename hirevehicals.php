@@ -544,7 +544,7 @@ $result5 = $conn->query($sql5);
 												<div class="offer_reviews_title">Kilometers</div>
 												<div class="offer_reviews_subtitle">2h45m</div>
 											</div>
-											<div class="offer_reviews_rating text-center">80km</div>
+											<div class="offer_reviews_rating text-center">80</div>
 										</div>
 									</div>
 								</div>
