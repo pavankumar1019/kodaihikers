@@ -29,7 +29,7 @@ if(isset($_POST["action"]))
   {
    $output .= '
            <tr>
-           <td> "'.$row["pickup_place"].'"</td>
+           <td> jhgj</td>
            <td> "'.$row["drop_place"].'"</td>
            <td>"'.$row["vehicle_name"].'"</td>
            <td>"'.$row["description"].'" </td>
