@@ -168,7 +168,7 @@ $result3 = $conn->query($sql3);
 									<tr>	
 									<td>
 
-									<div class="container-fluid">
+									<div class="offers_item rating_4">
 							<div class="row">
 									<div class="col-lg-12">
 									<div class="offers_content">
