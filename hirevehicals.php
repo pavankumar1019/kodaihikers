@@ -489,7 +489,7 @@ $result2 = $conn->query($sql2);
 								</ul>
 							</li> -->
 							<li>
-								<span class="sorting_text">PICKUP AND DROP PLACE</span>
+								<span class="sorting_text">PICKUP AND DROP</span>
 								<i class="fa fa-chevron-down"></i>
 								<ul>
 									<li class="num_sorting_btn"><span>review</span></li>
