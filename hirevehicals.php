@@ -137,7 +137,7 @@ $result2 = $conn->query($sql2);
 					<div class="row fill_height no-margin">
 						<div class="col fill_height no-padding">
 
-							<!-- Search Tabs -->
+							Search Tabs
 <!-- 
 							<div class="search_tabs_container">
 								<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
@@ -514,8 +514,8 @@ $result2 = $conn->query($sql2);
 								<div class="col-lg-3 col-1680-4">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@kensuarez -->
-										<div class="offers_image_background" style="background-image:url(images/offer_1.jpg)"></div>
-										<div class="offer_name"><a href="single_listing.html">grand castle</a></div>
+										<!-- <div class="offers_image_background" style="background-image:url(images/offer_1.jpg)"></div>
+										<div class="offer_name"><a href="single_listing.html">grand castle</a></div> -->
 									</div>
 								</div>
 								<div class="col-lg-8">
