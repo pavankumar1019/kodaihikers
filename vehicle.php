@@ -322,6 +322,27 @@ Technologies
 	</div>
 
 </div>
+<script>  
+
+ 
+ fetch_data();
+
+ function fetch_data()
+ {
+  var action = "fetch";
+  $.ajax({
+   url:"fetch.php",
+   method:"POST",
+   data:{action:action},
+   success:function(data)
+   {
+    $('#image_data').html(data);
+   }
+  })
+ }
+
+ 
+</script>
 <script>
 $("table#transposeThis").each(function() {
         var $this = $(this);
@@ -351,27 +372,7 @@ $(document).ready(function(){
   });
 });
 </script>
-<script>  
 
- 
- fetch_data();
-
- function fetch_data()
- {
-  var action = "fetch";
-  $.ajax({
-   url:"fetch.php",
-   method:"POST",
-   data:{action:action},
-   success:function(data)
-   {
-    $('#image_data').html(data);
-   }
-  })
- }
-
- 
-</script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
