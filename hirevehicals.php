@@ -22,7 +22,7 @@ $result5 = $conn->query($sql5);
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/offers_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/offers_responsive.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -142,7 +142,7 @@ $result5 = $conn->query($sql5);
 						<div class="col fill_height no-padding">
 
 							Search Tabs
-<!-- 
+
 							<div class="search_tabs_container">
 								<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 									<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
@@ -442,7 +442,7 @@ $result5 = $conn->query($sql5);
 							</div>
 						</div>
 					</div>
-				</div>	 --> -->
+				</div>	 -->
 			</div>	
 		</div>
 
