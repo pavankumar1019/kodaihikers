@@ -525,7 +525,7 @@ $result5 = $conn->query($sql5);
 								</div>
 								<div class="col-lg-12">
 									<div class="offers_content">
-										<div class="offers_price"><h2>Kodai Road</h2> <i class="fa fa-exchange" aria-hidden="true"></i> <h2>kodai Kanal</h2><span></span></div>
+										<div class="offers_price"><h2>Kodai Road</h2> <i class="fa fa-arrows-v" aria-hidden="true"></i> <h2>kodai Kanal</h2><span></span></div>
 										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
 										
 										</div>
