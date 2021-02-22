@@ -148,7 +148,7 @@ $result3 = $conn->query($sql3);
                 <div>
 
 <!-- Offers Item -->
-<table class="table">
+<table  id='myTable' style="display: none;">
 <tr>
   <th>Header</th>
   <th>company 1</th> 
@@ -166,13 +166,16 @@ $result3 = $conn->query($sql3);
         while($row3 = $result3->fetch_assoc()) {
       
                                     ?>
-            <tr><td><?php echo $row3["pickup_place"]; ?></td></tr>
-            <tr><td><?php echo $row3["drop_place"]; ?></td></tr>
-            <tr><td><?php echo $row3["vehicle_name"]; ?></td></tr>
-            <tr><td><?php echo $row3["description"]; ?></td></tr>
-            <tr><td><?php echo $row3["price"]; ?></td></tr>
-            <tr><td><?php echo $row3["duration"]; ?></td></tr>
-            <tr><td><?php echo $row3["distance_km"]; ?></td></tr>
+            <tr>
+            <td><?php echo $row3["pickup_place"]; ?></td>
+            <td><?php echo $row3["drop_place"]; ?></td>
+            <td><?php echo $row3["vehicle_name"]; ?></td>
+            <td><?php echo $row3["description"]; ?></td>
+            <td><?php echo $row3["price"]; ?></td>
+            <td><?php echo $row3["duration"]; ?></td>
+            <td><?php echo $row3["distance_km"]; ?>
+            </tr>
+         
 
    <?php
         }
@@ -180,7 +183,7 @@ $result3 = $conn->query($sql3);
         ?>
 </tbody>
 </table>
-
+<div id='newt'></div>
 </div>
 				</div>
 
@@ -345,6 +348,37 @@ Technologies
 	</div>
 
 </div>
+<script>
+var myTable = document.getElementById('myTable');
+
+
+var newTable = document.createElement('table');
+var maxColumns = 0;
+// Find the max number of columns
+for(var r = 0; r < myTable.rows.length; r++) {
+    if(myTable.rows[r].cells.length > maxColumns) {
+        maxColumns = myTable.rows[r].cells.length;
+    }
+}
+
+
+for(var c = 0; c < maxColumns; c++) {
+    newTable.insertRow(c);
+    for(var r = 0; r < myTable.rows.length; r++) {
+        if(myTable.rows[r].length <= c) {
+            newTable.rows[c].insertCell(r);
+            newTable.rows[c].cells[r] = '-';
+        }
+        else {
+            newTable.rows[c].insertCell(r);
+        newTable.rows[c].cells[r].innerHTML = myTable.rows[r].cells[c].innerHTML;
+        }
+    }
+}
+var div = document.getElementById('newt');
+
+div.appendChild(newTable);
+</script>
 <script>
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
