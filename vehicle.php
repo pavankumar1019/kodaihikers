@@ -147,62 +147,18 @@ tr{
 		<div class="container-fluid">
 			<div class="row">
 				
-				<div class="col-lg-6">
+				<div class="col-lg-6" id="image_data">
 					
                 <div>
 
-<!-- Offers Item -->
-<table class="table table-striped table-hover mt-5"   id='transposeThis'>
 
-<tr>
-  <th>Pick Up Place</th>
-  <th>Drop Place</th> 
-  <th>Distance</th>
-        <th>Duration</th>
-  <th>Indigo</th>
-        <th>Swift Dzire</th>
-  <th>Etios</th>
-  <th>Tavera</th>
-        <th>Innova</th>
-  <th>Tempo Traveller</th>
-
-</tr>
-
-<tbody id="myTable" >
-<?php
-    if ($result3->num_rows > 0) {
-        // output data of each row
-        while($row3 = $result3->fetch_assoc()) {
-      
-                                    ?>
-            <tr>
-            <td><?php echo $row3["pickup_place"]; ?></td>
-            <td><?php echo $row3["drop_place"]; ?></td>
-            <td><?php echo $row3["vehicle_name"]; ?></td>
-            <td><?php echo $row3["description"]; ?></td>
-            <td><?php echo $row3["price"]; ?></td>
-            <td><?php echo $row3["duration"]; ?></td>
-            <td><?php echo $row3["distance_km"]; ?>
-            <td><?php echo $row3["duration"]; ?></td>
-            <td><?php echo $row3["distance_km"]; ?>
-            <td><?php echo $row3["distance_km"]; ?>
-            </tr>
-         
-
-   <?php
-        }
-        }
-        ?>
-</tbody>
-</table>
-<div id='newt'></div>
 </div>
 				</div>
 
 				<div class="col-lg-6">
 					<!-- Offers Grid -->
 <div class=" container-fluid mt-5">
-<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<button type="button" id="clickme" class="btn btn-primary btn-lg btn-block">Block level button</button>
 <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
 <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
 <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
@@ -393,6 +349,27 @@ $(document).ready(function(){
     });
   });
 });
+</script>
+<script>  
+ $('#clickme').submit(function(event){
+ 
+ fetch_data();
+
+ function fetch_data()
+ {
+  var action = "fetch";
+  $.ajax({
+   url:"action.php",
+   method:"POST",
+   data:{action:action},
+   success:function(data)
+   {
+    $('#image_data').html(data);
+   }
+  })
+ }
+ });
+ 
 </script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
