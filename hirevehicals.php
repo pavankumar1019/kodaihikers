@@ -148,8 +148,7 @@ $result3 = $conn->query($sql3);
 					<!-- Offers Sorting -->
 					<div class="form-group ">
    
-    <input type="text" id="myInput" class="form-control" placeholder="Search"> <span class="fa fa-search form-control-feedback"></span>
-  </div>
+    <input type="text" id="myInput" class="form-control" placeholder="Search"><i class="fa fa-search" aria-hidden="true"></i></div>
 				</div>
 
 				<div class="col-lg-12">
