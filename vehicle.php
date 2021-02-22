@@ -171,6 +171,7 @@ tr{
      <input type="button" class="btn btn-primary btn-lg btn-block" id="insert" value="<?php echo $row3["pickup_place"]; ?>&nbsp;To&nbsp;<?php echo $row3["drop_place"]; ?>" class="btn btn-info" />
       
     </form>
+	<br><h1></h1>
                                                             <?php
 								}
 								}
