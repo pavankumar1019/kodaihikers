@@ -168,7 +168,7 @@ $result3 = $conn->query($sql3);
 									<tr>	
 									<td>
 
-									<div class="offers_item rating_4">
+						
 							<div class="row">
 									<div class="col-lg-12">
 									<div class="offers_content">
@@ -192,7 +192,7 @@ $result3 = $conn->query($sql3);
 										</div>
 								</div>
 							</div>
-						</div>
+					
 									</td>	
 					</tr>
 					
