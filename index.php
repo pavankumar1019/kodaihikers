@@ -151,7 +151,7 @@ p{
 								<ul class="main_nav_list">
 									<li class="main_nav_item"><a href="#">home</a></li>
 									<li class="main_nav_item"><a href="about.php">about us</a></li>
-									<li class="main_nav_item"><a href="hirevehicals.php">hire vehicals</a></li>
+									<li class="main_nav_item"><a href="hirevehicals.php">hire vehicles</a></li>
 									<li class="main_nav_item"><a href="bookmytour.php">book my tour</a></li>
 									<li class="main_nav_item"><a href="blog.php">blogs</a></li>
 									<li class="main_nav_item"><a href="contact.php">contact</a></li>
@@ -184,7 +184,7 @@ p{
 				<ul>
 					<li class="menu_item"><a href="#">home</a></li>
 					<li class="menu_item"><a href="about.php">about us</a></li>
-					<li class="menu_item"><a href="hirevehicals.php">hire vehicals</a></li>
+					<li class="menu_item"><a href="hirevehicals.php">hire vehicles</a></li>
 					<li class="menu_item"><a href="bookmytour.php">book my tour</a></li>
 					<li class="menu_item"><a href="blog.php">blog</a></li>
 					<li class="menu_item"><a href="contact.php">contact</a></li>
@@ -1116,7 +1116,7 @@ p{
 							<div class="footer_title">tags</div>
 							<div class="footer_content footer_tags">
 								<ul class="tags_list clearfix">
-									<li class="tag_item"><a href="#">Hire vehicals</a></li>
+									<li class="tag_item"><a href="#">Hire vehicles</a></li>
 									<li class="tag_item"><a href="#">Booking Forms</a></li>
 									<li class="tag_item"><a href="#">Give Feedback</a></li>
 									<li class="tag_item"><a href="#">videos</a></li>
@@ -1193,7 +1193,7 @@ p{
 								<ul class="footer_nav_list">
 									<li class="footer_nav_item"><a href="#">home</a></li>
 									<li class="footer_nav_item"><a href="about.php">about us</a></li>
-									<li class="footer_nav_item"><a href="hirevehicals.php">hire vehicals</a></li>
+									<li class="footer_nav_item"><a href="hirevehicals.php">hire vehicles</a></li>
 									<li class="footer_nav_item"><a href="bookmytour.php">book my tour</a></li>
 									<li class="footer_nav_item"><a href="blog.php">blogs</a></li>
 									<li class="footer_nav_item"><a href="contact.php">contact</a></li>
