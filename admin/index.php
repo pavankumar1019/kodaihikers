@@ -924,7 +924,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                                     <label for="hf-email" class=" form-control-label">Distance in KM</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">
-                                              <input type="text" value="" name="distance" class="form-control" placeholder="ex:- 24km" >
+                                              <input type="number" value="" name="distance" class="form-control" placeholder="ex:- 24" >
                                                 </div>
                                             </div>
                                             <div class="form-group">
