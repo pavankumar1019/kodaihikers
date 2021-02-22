@@ -41,4 +41,5 @@ if(isset($_POST["action"]))
   $output .= '</table>';
   echo $output;
  }
+}
  ?>
