@@ -149,9 +149,7 @@ $result3 = $conn->query($sql3);
 					<div class="form-group">
                      <br><br><h1></h1>
                       <input type="text" id="myInput" class="form-control" placeholder="Search">
-	                 <div class="input-group-append">
-                        <span class="input-group-text">Search</span>
-                         </div>
+	                     
                    </div>
 				</div>
 				<!-- <div class="input-group mb-3">
