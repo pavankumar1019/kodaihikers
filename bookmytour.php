@@ -311,7 +311,7 @@ p{
 								<li class="tag_item"><a href="#">Booking forms</a></li>
 								
 								<li class="tag_item"><a href="#">Give feedback</a></li>
-								<li class="tag_item"><a href="#">videos</a></li>
+								<li class="tag_item"><a href="#">Videos</a></li>
 							</ul>
 						</div>
 					</div>

@@ -1119,7 +1119,7 @@ p{
 									<li class="tag_item"><a href="#">Hire vehicles</a></li>
 									<li class="tag_item"><a href="#">Booking Forms</a></li>
 									<li class="tag_item"><a href="#">Give Feedback</a></li>
-									<li class="tag_item"><a href="#">videos</a></li>
+									<li class="tag_item"><a href="#">Videos</a></li>
 								</ul>
 							</div>
 						</div>
