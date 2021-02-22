@@ -149,16 +149,21 @@ $result3 = $conn->query($sql3);
 
 <!-- Offers Item -->
 <table  id='myTable' style="display: none;">
+<thead>
 <tr>
-  <th>Header</th>
-  <th>company 1</th> 
-  <th>company 2</th>
-        <th>company 3</th>
-  <th>company 2</th>
-        <th>company 3</th>
-  <th>company 2</th>
+  <th>Pick Up Place</th>
+  <th>Drop Place</th> 
+  <th>Distance</th>
+        <th>Duration</th>
+  <th>Indigo</th>
+        <th>Swift Dzire</th>
+  <th>Etios</th>
+  <th>Tavera</th>
+        <th>Innova</th>
+  <th>Tempo Traveller</th>
 
 </tr>
+</thead>
 <tbody id="myTable" >
 <?php
     if ($result3->num_rows > 0) {
