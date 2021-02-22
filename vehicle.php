@@ -361,38 +361,22 @@ Technologies
 
 </div>
 <script>
-var myTable = document.getElementById('myTable');
-
-
-var newTable = document.createElement('table');
-var maxColumns = 0;
-// Find the max number of columns
-for(var r = 0; r < myTable.rows.length; r++) {
-    if(myTable.rows[r].cells.length > maxColumns) {
-        maxColumns = myTable.rows[r].cells.length;
-    }
-}
-
-
-for(var c = 0; c < maxColumns; c++) {
-    newTable.insertRow(c);
-    for(var r = 0; r < myTable.rows.length; r++) {
-        if(myTable.rows[r].length <= c) {
-            newTable.rows[c].insertCell(r);
-            newTable.rows[c].cells[r] = '-';
-        }
-        else {
-            newTable.rows[c].insertCell(r);
-        newTable.rows[c].cells[r].innerHTML = myTable.rows[r].cells[c].innerHTML;
-        }
-    }
-}
-var div = document.getElementById('newt');
-newTable.classList.add("table");
-myTable.appendChild(newTable);
-newTable.classList.add("table-striped");
-
-
+   $("table").each(function() {
+        var $this = $(this);
+        var newrows = [];
+        $this.find("tr").each(function(){
+            var i = 0;
+            $(this).find("td").each(function(){
+                i++;
+                if(newrows[i] === undefined) { newrows[i] = $("<tr></tr>"); }
+                newrows[i].append($(this));
+            });
+        });
+        $this.find("tr").remove();
+        $.each(newrows, function(){
+            $this.append(this);
+        });
+    });
 </script>
 <script>
 $(document).ready(function(){
