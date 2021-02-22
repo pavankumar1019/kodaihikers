@@ -29,20 +29,21 @@ if(isset($_POST["action"]))
   {
    $output .= '
            <tr>
-           <td> jhgj</td>
-           <td> "'.$row["drop_place"].'"</td>
-           <td>"'.$row["vehicle_name"].'"</td>
-           <td>"'.$row["description"].'" </td>
-           <td>"'.$row["price"].'"</td>
-           <td>"'.$row["duration"].'" </td>
-           <td> "'.$row["distance_km"].'"</td>
-           <td> "'.$row["duration"].'"</td>
-           <td> "'.$row["distance_km"].'"</td>
-           <td>"'.$row["distance_km"].'"</td>
+           <td>jhgj</td>
+           <td>ghfhf</td>
+           <td>jhgjh</td>
+           <td>hjgjhg</td>
+           <td>hggj</td>
+           <td>hjgjg</td>
+           <td>jhghjg</td>
+           <td>jhgjg</td>
+           <td>hjggh</td>
+           <td>hghjg</td>
            </tr>
    ';
   }
-  $output .= '</tbody></table>';
+  $output .= '</tbody>
+  </table>';
   echo $output;
 }
  }
