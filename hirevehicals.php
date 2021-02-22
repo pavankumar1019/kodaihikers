@@ -515,15 +515,7 @@ $result5 = $conn->query($sql5);
 <tr>
 						<div class="offers_item rating_4">
 							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@kensuarez -->
-										<!-- <div class="offers_image_background" style="background-image:url(images/offer_1.jpg)"></div>
-										<div class="offer_name"><a href="single_listing.html">grand castle</a></div> -->
-									</div>
-								</div>
-								<div class="col-lg-12">
+									<div class="col-lg-12">
 									<div class="offers_content">
 										<div class="offers_price"><h2>Kodai Road</h2> <i class="fa fa-arrows-v" aria-hidden="true"></i> <h2>kodai Kanal</h2><span></span></div>
 										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
