@@ -182,12 +182,12 @@ $result5 = $conn->query($sql5);
 									placeholder="Number of person" required="required" data-error="Subject is required.">
                                     <br>
                                     <h6></h6>
-                                   <p>Pickup date</p>
+                                   <p style="color:white;">Pickup date</p>
 								<input type="date"  id="pickupdate" name="pickupdate" class="contact_form_subject input_field"
 									placeholder="Pickup date" required="required" data-error="Subject is required.">
                                     <h6></h6>
                                     <br>
-                                    <p>Drop date</p>
+                                    <p style="color:white;">Drop date</p>
 								<input type="date"  id="dropdate" name="dropdate" class="contact_form_subject input_field"
 									placeholder="Drop date" required="required" data-error="Subject is required.">
 								<input type="text"  id="pickupplace" name="pickupplace" class="contact_form_subject input_field"
@@ -196,7 +196,7 @@ $result5 = $conn->query($sql5);
 									placeholder="Drop Place" required="required" data-error="Subject is required.">
 
 								<textarea id="message" class="text_field contact_form_message"
-									name="message" rows="4" placeholder="Message" required="required"
+									name="message" rows="3" placeholder="Message" required="required"
 									data-error="Please, write us a message."></textarea>
 								<button type="submit" id="butsave" class="form_submit_button button">
 									Book Now<span></span><span></span><span></span></button>
@@ -501,16 +501,26 @@ $(document).ready(function() {
 		$("#butsave").attr("disabled", "disabled");
 		var name = $('#name').val();
 		var email = $('#email').val();
-		var phone = $('#number').val();
+		var number = $('#number').val();
+		var noofperson = $('#noofperson').val();
+		var pickupdate = $('#pickupdate').val();
+		var dropdate = $('#dropdate').val();
+		var pickuplace = $('#pickuplace').val();
+		var dropplace = $('#dropplace').val();
 		var message = $('#message').val();
-		if(name!="" && email!="" && phone!="" && message!=""){
+		if(name!="" && email!="" && phone!="" && message!="" && noofperson!="" && pickupdate!="" && dropdate!="" && pickuplace!=""&& dropplace!=""){
 			$.ajax({
-				url: "save.php",
+				url: "bookvehicle_save.php",
 				type: "POST",
 				data: {
 					name: name,
 					email: email,
 					phone: phone,
+					noofperson: noofperson,				
+					pickupdate: pickupdate,
+					dropdate: dropdate,
+					pickuplace: pickuplace,
+					dropplace: dropplace,				
 					message: message				
 				},
 				cache: false,
