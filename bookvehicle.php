@@ -505,10 +505,10 @@ $(document).ready(function() {
 		var noofperson = $('#noofperson').val();
 		var pickupdate = $('#pickupdate').val();
 		var dropdate = $('#dropdate').val();
-		var pickuplace = $('#pickuplace').val();
+		var pickupplace = $('#pickupplace').val();
 		var dropplace = $('#dropplace').val();
 		var message = $('#message').val();
-		if(name!="" && email!="" && phone!="" && message!="" && noofperson!="" && pickupdate!="" && dropdate!="" && pickuplace!=""&& dropplace!=""){
+		if(name!="" && email!="" && phone!="" && message!="" && noofperson!="" && pickupdate!="" && dropdate!="" && pickupplace!=""&& dropplace!=""){
 			$.ajax({
 				url: "bookvehicle_save.php",
 				type: "POST",
@@ -519,7 +519,7 @@ $(document).ready(function() {
 					noofperson: noofperson,				
 					pickupdate: pickupdate,
 					dropdate: dropdate,
-					pickuplace: pickuplace,
+					pickupplace: pickupplace,
 					dropplace: dropplace,				
 					message: message				
 				},
