@@ -181,9 +181,11 @@ $result5 = $conn->query($sql5);
 								<input type="text" onkeypress="return onlyNumberKey(event)" id="noofperson" name="noofperson" class="contact_form_subject input_field"
 									placeholder="Number of person" required="required" data-error="Subject is required.">
                                     <br>
+                                    <h6></h6>
                                    <p>Pickup date</p>
 								<input type="date"  id="pickupdate" name="pickupdate" class="contact_form_subject input_field"
 									placeholder="Pickup date" required="required" data-error="Subject is required.">
+                                    <h6></h6>
                                     <br>
                                     <p>Drop date</p>
 								<input type="date"  id="dropdate" name="dropdate" class="contact_form_subject input_field"
