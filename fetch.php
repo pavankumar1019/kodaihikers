@@ -46,7 +46,7 @@ if(isset($_POST["action"]))
   }
   $output .= '
   </table>';
-  $output .= '<p>'.$des.'</p>	<button type="submit" id="butsave" class="btn btn-lg btn-primary"><a href="bookvehicle.php#contact">Book Now</a>
+  $output .= '<p>'.$des.'</p>	<button type="submit" id="butsave" class="btn btn-lg btn-primary"><a style="color:white;" href="bookvehicle.php#contact">Book Now</a>
   <span></span><span></span><span></span></button>';
   echo $output;
  }
