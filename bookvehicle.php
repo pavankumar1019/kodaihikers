@@ -170,7 +170,7 @@ $result5 = $conn->query($sql5);
 
 					<!-- Contact Form -->
 					<div class="contact_form_container">
-						<div class="contact_title text-center">get in touch</div>
+						<div class="contact_title text-center">Book Here.!</div>
 						<form id="fupForm" name="form1" method="post" class="contact_form">
 								<input type="text" id="name" name="name" class="contact_form_name input_field"
 									placeholder="Name"  required="required" data-error="Name is required.">
@@ -178,6 +178,17 @@ $result5 = $conn->query($sql5);
 									placeholder="E-mail" required="required" data-error="Email is required.">
 								<input type="text" onkeypress="return onlyNumberKey(event)" id="number" name="number" class="contact_form_subject input_field"
 									placeholder="Phone Number" required="required" data-error="Subject is required.">
+								<input type="text" onkeypress="return onlyNumberKey(event)" id="noofperson" name="noofperson" class="contact_form_subject input_field"
+									placeholder="Number of person" required="required" data-error="Subject is required.">
+								<input type="date" class="form-control" id="pickupdate" name="pickupdate" class="contact_form_subject input_field"
+									placeholder="Pickup date" required="required" data-error="Subject is required.">
+								<input type="date" class="form-control" id="dropdate" name="dropdate" class="contact_form_subject input_field"
+									placeholder="Drop date" required="required" data-error="Subject is required.">
+								<input type="date" class="form-control" id="pickupplace" name="pickupplace" class="contact_form_subject input_field"
+									placeholder="Pickup Place" required="required" data-error="Subject is required.">
+								<input type="date" class="form-control" id="dropplace" name="dropplace" class="contact_form_subject input_field"
+									placeholder="Drop Place" required="required" data-error="Subject is required.">
+
 								<textarea id="message" class="text_field contact_form_message"
 									name="message" rows="4" placeholder="Message" required="required"
 									data-error="Please, write us a message."></textarea>
