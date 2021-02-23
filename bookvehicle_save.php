@@ -2,7 +2,7 @@
 	include 'db_connection/db.php';
 	$name=$_POST['name'];
 	$email=$_POST['email'];
-	$phone=$_POST['phone'];
+	$phone=$_POST['number'];
 	$noofperson=$_POST['noofperson'];
 	$pickupdate=$_POST['pickupdate'];
 	$dropdate=$_POST['dropdate'];
