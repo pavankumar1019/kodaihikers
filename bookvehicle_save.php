@@ -9,7 +9,7 @@
 	$pickupplace=$_POST['pickupplace'];
 	$dropplace=$_POST['dropplace'];
 	$message=$_POST['message'];
-	$sql = "INSERT INTO `kh_hire_vehicles`(`id`, `name`, `mobile number`, `email`, `no_of_person`, `pickup_date`, `drop_date`, `pickup_place`, `drop_place`, `message`) 
+	$sql = "INSERT INTO `kh_hire_vehicles`(`id`, `name`, `mobile_number`, `email`, `no_of_person`, `pickup_date`, `drop_date`, `pickup_place`, `drop_place`, `message`) 
 	VALUES ('$name','$email','$phone','$noofperson','$pickupdate','$dropdate','$pickupplace','$dropplace','$message')";
 	if (mysqli_query($conn, $sql)) {
 		echo json_encode(array("statusCode"=>200));
