@@ -176,7 +176,7 @@ $result5 = $conn->query($sql5);
 									placeholder="Name"  required="required" data-error="Name is required.">
 								<input type="text" id="email" name="email" class="contact_form_email input_field"
 									placeholder="E-mail" required="required" data-error="Email is required.">
-								<input type="text" onkeypress="return onlyNumberKey(event)" id="number" name="number" class="contact_form_subject input_field"
+								<input type="text" onkeypress="return onlyNumberKey(event)" id="phone" name="phone" class="contact_form_subject input_field"
 									placeholder="Phone Number" required="required" data-error="Subject is required.">
 								<input type="text" onkeypress="return onlyNumberKey(event)" id="noofperson" name="noofperson" class="contact_form_subject input_field"
 									placeholder="Number of person" required="required" data-error="Subject is required.">
@@ -501,7 +501,7 @@ $(document).ready(function() {
 		$("#butsave").attr("disabled", "disabled");
 		var name = $('#name').val();
 		var email = $('#email').val();
-		var phone = $('#number').val();
+		var phone = $('#phone').val();
 		var noofperson = $('#noofperson').val();
 		var pickupdate = $('#pickupdate').val();
 		var dropdate = $('#dropdate').val();
