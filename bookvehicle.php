@@ -184,9 +184,9 @@ $result5 = $conn->query($sql5);
 									placeholder="Pickup date" required="required" data-error="Subject is required.">
 								<input type="date" class="form-control" id="dropdate" name="dropdate" class="contact_form_subject input_field"
 									placeholder="Drop date" required="required" data-error="Subject is required.">
-								<input type="date" class="form-control" id="pickupplace" name="pickupplace" class="contact_form_subject input_field"
+								<input type="text" class="form-control" id="pickupplace" name="pickupplace" class="contact_form_subject input_field"
 									placeholder="Pickup Place" required="required" data-error="Subject is required.">
-								<input type="date" class="form-control" id="dropplace" name="dropplace" class="contact_form_subject input_field"
+								<input type="text" class="form-control" id="dropplace" name="dropplace" class="contact_form_subject input_field"
 									placeholder="Drop Place" required="required" data-error="Subject is required.">
 
 								<textarea id="message" class="text_field contact_form_message"
