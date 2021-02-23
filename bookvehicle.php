@@ -501,7 +501,7 @@ $(document).ready(function() {
 		$("#butsave").attr("disabled", "disabled");
 		var name = $('#name').val();
 		var email = $('#email').val();
-		var number = $('#number').val();
+		var phone = $('#number').val();
 		var noofperson = $('#noofperson').val();
 		var pickupdate = $('#pickupdate').val();
 		var dropdate = $('#dropdate').val();
