@@ -222,7 +222,7 @@ $result5 = $conn->query($sql5);
 	<br><br>
 	<h3>+91 9751882527</h3>
 	<br>
-	<img src="upilogo.png" style="width:80px" />
+	<img src="upilogo.png" style="width:400px" />
 	<h1></h1>
 	</div>
 	
