@@ -152,8 +152,7 @@ tr{
 					
                 <div>
 
-				<button type="submit" id="butsave" class="form_submit_button button"><a href="bookvehicle.php#contact">Book Now</a>
-									<span></span><span></span><span></span></button>
+			
 </div>
 				</div>
 
