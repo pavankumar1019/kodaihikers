@@ -1117,7 +1117,7 @@ p{
 							<div class="footer_content footer_tags">
 								<ul class="tags_list clearfix">
 									<li class="tag_item"><a href="#">Hire vehicles</a></li>
-									<li class="tag_item"><a href="#">Booking Forms</a></li>
+									<li class="tag_item"><a href="bookvehicle.php#contact">Booking Forms</a></li>
 									<li class="tag_item"><a href="#">Give Feedback</a></li>
 									<li class="tag_item"><a href="#">Videos</a></li>
 								</ul>
