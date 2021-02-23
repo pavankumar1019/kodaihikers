@@ -192,8 +192,8 @@ $result5 = $conn->query($sql5);
 								<textarea id="message" class="text_field contact_form_message"
 									name="message" rows="4" placeholder="Message" required="required"
 									data-error="Please, write us a message."></textarea>
-								<button type="submit" id="butsave" class="form_submit_button button">send
-									message<span></span><span></span><span></span></button>
+								<button type="submit" id="butsave" class="form_submit_button button">
+									Book Now<span></span><span></span><span></span></button>
 								
 							</form>
 							<div id="success" style="color:red;"></div>
