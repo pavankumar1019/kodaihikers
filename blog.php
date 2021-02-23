@@ -446,11 +446,11 @@ $yourDateTime=$row3["date"];
 						<div class="footer_title">tags</div>
 						<div class="footer_content footer_tags">
 							<ul class="tags_list clearfix">
-								<li class="tag_item"><a href="#">Hire vehicles</a></li>
-								<li class="tag_item"><a href="#">Booking forms</a></li>
+								<li class="tag_item"><a href="hirevehicals.php">Hire vehicles</a></li>
+								<li class="tag_item"><a href="bookvehicle.php#contact">Booking forms</a></li>
 								
-								<li class="tag_item"><a href="#">Give feedback</a></li>
-								<li class="tag_item"><a href="#">Videos</a></li>
+								<li class="tag_item"><a href="bookmytour.php">Book My Tour</a></li>
+								<li class="tag_item"><a href="contact.php#contact">Get in Touch</a></li>
 							</ul>
 						</div>
 					</div>
@@ -464,7 +464,7 @@ $yourDateTime=$row3["date"];
 							<ul class="contact_info_list">
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/kodai_location_icon.png" alt=""></div></div>
-									<div class="contact_info_text">Kodai Hikers,Royal Complex,Near Upper Lake View,Pambarpuram,&nbsp; Kodaikanal,Tamilnadu-624103</div>								</li>
+									<div class="contact_info_text">Kodai Hikers,Royal Complex,Near Upper Lake View,Pambarpuram,&nbsp; Kodaikanal-624103,Tamilnadu</div>								</li>
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/kodai_iconphone.png" alt=""></div></div>
 									<div class="contact_info_text">+91 9751882527 <br> +91 8073130545</div>
