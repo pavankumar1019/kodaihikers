@@ -546,9 +546,9 @@ $result1 = $conn->query($sql1);
                                             <tbody>
                                                 
                                             <?php
-                            if ($result->num_rows > 0) {
+                            if ($result1->num_rows > 0) {
                                 // output data of each row
-                                while($row = $result->fetch_assoc()) {
+                                while($row1 = $result1->fetch_assoc()) {
 
                                     ?>
                                        <tr>
