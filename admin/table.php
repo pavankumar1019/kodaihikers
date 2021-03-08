@@ -502,7 +502,7 @@ $result1 = $conn->query($sql1);
                             </div>
                           
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <!-- USER DATA-->
                                 <div class="user-data m-b-30">
                                     <h3 class="title-3 m-b-30">
@@ -574,73 +574,11 @@ $result1 = $conn->query($sql1);
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="user-data__footer">
-                                        <button class="au-btn au-btn-load">load more</button>
-                                    </div>
+                                    
                                 </div>
                                 <!-- END USER DATA-->
                             </div>
-                            <div class="col-lg-6">
-                                <!-- TOP CAMPAIGN-->
-                                <div class="top-campaign">
-                                    <h3 class="title-3 m-b-30">Top tourist places in kodaikanal</h3>
-                                    <div class="table-responsive">
-                                        <table class="table table-top-campaign">
-                                            <tbody>
-                                                <tr>
-                                                    <td>1. Green Vally View</td>
-                                                    <td>$70,261.65</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2. Kodaikanal Lake</td>
-                                                    <td>$46,399.22</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3. Bear Shola Falls</td>
-                                                    <td>$35,364.90</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4. Pillar Rocks</td>
-                                                    <td>$20,366.96</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5. Thalaiyar Falls</td>
-                                                    <td>$10,366.96</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>6. Coakers Walk</td>
-                                                    <td>$35,364.90</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>7. Berijam Lake</td>
-                                                    <td>$20,366.96</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>8. Dolphins Nose</td>
-                                                    <td>$10,366.96</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>9. Bryant Park</td>
-                                                    <td>$35,364.90</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10. Silver Cascade Falls</td>
-                                                    <td>$20,366.96</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>11. Silent Vally View Point</td>
-                                                    <td>$10,366.96</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>12. Canopy Hill, Vattakanal</td>
-                                                    <td>$20,366.96</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <!--  END TOP CAMPAIGN-->
-                            </div>
+                           
                         </div>
                         <div class="row">
                             <div class="col-md-12">
