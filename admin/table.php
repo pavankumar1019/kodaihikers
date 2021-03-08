@@ -553,7 +553,7 @@ $result1 = $conn->query($sql1);
                                          <td><?php  echo $row1["price"];?>₹</td>   
                                          <td>
                                          <form action="./delete/delete_package.php" method="post">
-                                         <input type="hidden" name="delete" value="<?php  echo $row1["id"];?>">
+                                         <input type="hidden" name="idelete"  value="<?php  echo $row1["id"];?>">
                                          <button type="submit"><i class="zmdi zmdi-delete"></i></button>
                                          </form>
                                          </td>   
