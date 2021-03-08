@@ -529,12 +529,6 @@ $result1 = $conn->query($sql1);
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <td>
-                                                        <label class="au-checkbox">
-                                                            <input type="checkbox">
-                                                            <span class="au-checkmark"></span>
-                                                        </label>
-                                                    </td>
                                                     <td>Package Name</td>
                                                     <td>no of days</td>
                                                     <td>no of persons</td>
