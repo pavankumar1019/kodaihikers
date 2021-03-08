@@ -5,7 +5,7 @@ $query = "delete from kh_book_my_tours  where id = '".$id."'";  //query
 if(mysqli_query($conn, $query)){ //check is true or false 
  echo "deleted id ".$id." ";
  $_SESSION['messaged1'] = "Deleted.!";
- header('location: table.php#package');
+ header('location: ../table.php#package');
  exit();//out put if ture
  }
  else{ 
