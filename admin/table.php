@@ -11,6 +11,10 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
 include '../db_connection/db.php';
 $sql = "SELECT * FROM kh_get_in_touch ORDER BY date DESC";
 $result = $conn->query($sql);
+$sql1 = "SELECT * FROM kh_book_my_tours ORDER BY date DESC";
+$result1 = $conn->query($sql1);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -502,8 +506,8 @@ $result = $conn->query($sql);
                                 <!-- USER DATA-->
                                 <div class="user-data m-b-30">
                                     <h3 class="title-3 m-b-30">
-                                        <i class="zmdi zmdi-account-calendar"></i>user data</h3>
-                                    <div class="filters m-b-45">
+                                        <i class="zmdi zmdi-account-calendar"></i>Tour Packages</h3>
+                                    <!-- <div class="filters m-b-45">
                                         <div class="rs-select2--dark rs-select2--md m-r-10 rs-select2--border">
                                             <select class="js-select2" name="property">
                                                 <option selected="selected">All Properties</option>
@@ -520,7 +524,7 @@ $result = $conn->query($sql);
                                             </select>
                                             <div class="dropDownSelect2"></div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="table-responsive table-data">
                                         <table class="table">
                                             <thead>
@@ -531,149 +535,41 @@ $result = $conn->query($sql);
                                                             <span class="au-checkmark"></span>
                                                         </label>
                                                     </td>
-                                                    <td>name</td>
-                                                    <td>role</td>
-                                                    <td>type</td>
-                                                    <td></td>
+                                                    <td>Package Name</td>
+                                                    <td>no of days</td>
+                                                    <td>no of persons</td>
+                                                    <td>photo</td>
+                                                    <td>price</td>
+                                                    <td>Delete</td>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <label class="au-checkbox">
-                                                            <input type="checkbox">
-                                                            <span class="au-checkmark"></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h6>lori lynch</h6>
-                                                            <span>
-                                                                <a href="#">johndoe@gmail.com</a>
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span class="role admin">admin</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rs-select2--trans rs-select2--sm">
-                                                            <select class="js-select2" name="property">
-                                                                <option selected="selected">Full Control</option>
-                                                                <option value="">Post</option>
-                                                                <option value="">Watch</option>
-                                                            </select>
-                                                            <div class="dropDownSelect2"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span class="more">
-                                                            <i class="zmdi zmdi-more"></i>
-                                                        </span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="au-checkbox">
-                                                            <input type="checkbox" checked="checked">
-                                                            <span class="au-checkmark"></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h6>lori lynch</h6>
-                                                            <span>
-                                                                <a href="#">johndoe@gmail.com</a>
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span class="role user">user</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rs-select2--trans rs-select2--sm">
-                                                            <select class="js-select2" name="property">
-                                                                <option value="">Full Control</option>
-                                                                <option value="" selected="selected">Post</option>
-                                                                <option value="">Watch</option>
-                                                            </select>
-                                                            <div class="dropDownSelect2"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span class="more">
-                                                            <i class="zmdi zmdi-more"></i>
-                                                        </span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="au-checkbox">
-                                                            <input type="checkbox">
-                                                            <span class="au-checkmark"></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h6>lori lynch</h6>
-                                                            <span>
-                                                                <a href="#">johndoe@gmail.com</a>
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span class="role user">user</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rs-select2--trans rs-select2--sm">
-                                                            <select class="js-select2" name="property">
-                                                                <option value="">Full Control</option>
-                                                                <option value="" selected="selected">Post</option>
-                                                                <option value="">Watch</option>
-                                                            </select>
-                                                            <div class="dropDownSelect2"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span class="more">
-                                                            <i class="zmdi zmdi-more"></i>
-                                                        </span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="au-checkbox">
-                                                            <input type="checkbox">
-                                                            <span class="au-checkmark"></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <div class="table-data__info">
-                                                            <h6>lori lynch</h6>
-                                                            <span>
-                                                                <a href="#">johndoe@gmail.com</a>
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span class="role member">member</span>
-                                                    </td>
-                                                    <td>
-                                                        <div class="rs-select2--trans rs-select2--sm">
-                                                            <select class="js-select2" name="property">
-                                                                <option selected="selected">Full Control</option>
-                                                                <option value="">Post</option>
-                                                                <option value="">Watch</option>
-                                                            </select>
-                                                            <div class="dropDownSelect2"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <span class="more">
-                                                            <i class="zmdi zmdi-more"></i>
-                                                        </span>
-                                                    </td>
-                                                </tr>
+                                                
+                                            <?php
+                            if ($result->num_rows > 0) {
+                                // output data of each row
+                                while($row = $result->fetch_assoc()) {
+
+                                    ?>
+                                       <tr>
+                                         <td><?php  echo $row["package_name"];?></td>        
+                                         <td><?php  echo $row["no_of_days"];?></td>        
+                                         <td><?php  echo $row["no_of person"];?></td>        
+                                         <td><img src="../tourpackages/<?php  echo $row["photo"];?>" alt="" style="width:80px;" srcset=""></td>        
+                                         <td><?php  echo $row["price"];?></td>   
+                                         <td>
+                                         <form action="./delete/delete_package.php" method="post">
+                                         <input type="button" id="delete" value="<?php  echo $row["id"];?>" placeholder="Delete">
+                                         </form>
+                                         </td>   
+                                         </tr>         
+                                    <?php
+
+								}
+								}
+                              
+								?>
+                                               
                                             </tbody>
                                         </table>
                                     </div>
@@ -748,9 +644,9 @@ $result = $conn->query($sql);
                         <div class="row">
                             <div class="col-md-12">
                                 <!-- DATA TABLE -->
-                                <h3 class="title-5 m-b-35">data table</h3>
+                                <h3 class="title-5 m-b-35">Tour Packages</h3>
                                 <div class="table-data__tool">
-                                    <div class="table-data__tool-left">
+                                    <!-- <div class="table-data__tool-left">
                                         <div class="rs-select2--light rs-select2--md">
                                             <select class="js-select2" name="property">
                                                 <option selected="selected">All Properties</option>
@@ -769,8 +665,8 @@ $result = $conn->query($sql);
                                         </div>
                                         <button class="au-btn-filter">
                                             <i class="zmdi zmdi-filter-list"></i>filters</button>
-                                    </div>
-                                    <div class="table-data__tool-right">
+                                    </div> -->
+                                    <!-- <div class="table-data__tool-right">
                                         <button class="au-btn au-btn-icon au-btn--green au-btn--small">
                                             <i class="zmdi zmdi-plus"></i>add item</button>
                                         <div class="rs-select2--dark rs-select2--sm rs-select2--dark2">
@@ -781,7 +677,7 @@ $result = $conn->query($sql);
                                             </select>
                                             <div class="dropDownSelect2"></div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="table-responsive table-responsive-data2">
                                     <table class="table table-data2">
@@ -793,11 +689,11 @@ $result = $conn->query($sql);
                                                         <span class="au-checkmark"></span>
                                                     </label>
                                                 </th>
-                                                <th>name</th>
-                                                <th>email</th>
-                                                <th>description</th>
-                                                <th>date</th>
-                                                <th>status</th>
+                                                <th>photo</th>
+                                                <th>package name</th>
+                                                <th>no: of Days</th>
+                                                <th>price</th>
+                                                <th>no: of person</th>
                                                 <th>price</th>
                                                 <th></th>
                                             </tr>
