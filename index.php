@@ -555,9 +555,9 @@ p{
 									<div class="cta_title">Image Gallery</div>
 									<img src="./animated_gallery/<?php echo $row3["path"]; ?>" class="img-fluid rounded mx-auto d-block" style="width:600px;" alt="" srcset="">
 									<p class="cta_text"><?php echo $row3["description"]; ?></p>
-									<div class="button cta_button">
+									<!-- <div class="button cta_button">
 										<div class="button_bcg"></div><a href="#">Read more<span></span><span></span><span></span></a>
-									</div>
+									</div> -->
 								</div>
                                                             <?php
 								}
