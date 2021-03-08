@@ -527,8 +527,8 @@ $result1 = $conn->query($sql1);
                                     </div> -->
                                     <div class="table-responsive table-data" id="package">
                                     <?php if (isset($_SESSION['messaged1']) && !empty($_SESSION['messaged1'])) { ?>
-                        <div  class="container alert alert-success" role="alert"></div>
-                        <script>alert("<?php echo $_SESSION['messaged1']; ?>")</script>
+                        <div  class="container alert alert-success" role="alert"><?php echo $_SESSION['messaged1']; ?></div>
+                        
                         <?php
                         unset($_SESSION['messaged1']);
                     }
