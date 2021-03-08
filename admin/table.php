@@ -9,7 +9,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
 ?>
 <?php
 include '../db_connection/db.php';
-$sql = "SELECT * FROM kh_get_in_touch";
+$sql = "SELECT * FROM kh_get_in_touch ORDER BY date DESC";
 $result = $conn->query($sql);
 ?>
 
