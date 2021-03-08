@@ -9,6 +9,6 @@ if(mysqli_query($conn, $query)){ //check is true or false
  exit();//out put if ture
  }
  else{ 
-    header('location: table.php#package');//out put if false
+    header('location: ../table.php#package');//out put if false
 } 
 ?>
