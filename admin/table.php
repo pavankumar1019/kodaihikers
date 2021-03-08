@@ -554,12 +554,13 @@ $result1 = $conn->query($sql1);
                                        <tr>
                                          <td><?php  echo $row1["package_name"];?></td>        
                                          <td><?php  echo $row1["no_of_days"];?></td>        
-                                         <td><?php  echo $row1["no_of person"];?></td>        
+                                         <td><?php  echo $row1["no_of_person"];?></td>        
                                          <td><img src="../tourpackages/<?php  echo $row1["photo"];?>" alt="" style="width:80px;" srcset=""></td>        
                                          <td><?php  echo $row1["price"];?></td>   
                                          <td>
                                          <form action="./delete/delete_package.php" method="post">
-                                         <input type="button" id="delete" value="<?php  echo $row1["id"];?>" placeholder="Delete">
+                                         <input type="hidden" name="delete" value="<?php  echo $row1["id"];?>">
+                                         <input type="submit" id="delete" value="Delete">
                                          </form>
                                          </td>   
                                          </tr>         
