@@ -470,7 +470,7 @@ $result = $conn->query($sql);
                                                </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                         
                                                
                                                 <?php
                             if ($result->num_rows > 0) {
@@ -478,17 +478,19 @@ $result = $conn->query($sql);
                                 while($row = $result->fetch_assoc()) {
 
                                     ?>
+                                       <tr>
                                          <td><?php  echo $row["name"];?></td>        
                                          <td><?php  echo $row["email"];?></td>        
                                          <td><?php  echo $row["mobile_number"];?></td>        
-                                         <td><?php  echo $row["message"];?></td>            
+                                         <td><?php  echo $row["message"];?></td>   
+                                         </tr>         
                                     <?php
 
 								}
 								}
-								
+                              
 								?>
-                                            </tr>
+                                          
                                            
                                         </tbody>
                                     </table>
