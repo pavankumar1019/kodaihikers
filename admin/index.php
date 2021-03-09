@@ -539,7 +539,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                             
                            
                         </div>
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-lg-12">
                                 <h2 class="title-1 m-b-25">Clients enquiries</h2>
                                 <div class="table-responsive table--no-card m-b-40">
@@ -622,7 +622,7 @@ if(!isset($_SESSION['email']) || empty($_SESSION['name'])) {
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- <div class="col-lg-3">
                                 <h2 class="title-1 m-b-25">tourist places</h2>
                                 <div class="au-card au-card--bg-blue au-card-top-countries m-b-40">
