@@ -76,7 +76,7 @@ if ($uploadOk == 0) {
         curl_setopt($ch, CURLOPT_URL, "https://onesignal.com/api/v1/notifications");
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
             'Content-Type: application/json; charset=utf-8',
-            'Authorization: Basic NzA1ZDcyOTQtMTBkYS00ZmQ4LWFkYWItNTMxMjUzMTY2Yzhh'
+            'Authorization: Basic YmE4YTg1MDAtYTM3NC00YjNkLTljZDEtYzJmYTAzZjJlZTYw'
         ));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ch, CURLOPT_HEADER, FALSE);
