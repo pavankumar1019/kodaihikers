@@ -22,7 +22,7 @@ $result5 = $conn->query($sql5);
 <html lang="en">
 
 <head>
-	<title>Kodai Hikers Tours and Travels</title>
+	<title>Kodai Hikers (Tours and Travels)</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Kodai Hikers is a best tours and travels agency in Kodaikanal, budget tour packages,best hotels services, best vehicle services">
