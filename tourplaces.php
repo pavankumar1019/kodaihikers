@@ -13,7 +13,9 @@ $result2 = $conn->query($sql2);
 <title>bookmytour</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Travelix Project">
+<meta name="keywords" content="travels in kodaikanal,classic travels kodaikanal,kodaikanal trip from bangalore,kodaikanal trekking,kodaikanal places to visit,kodaikanal tours,kodaikanal tours packages,hiking in kodaikanal,vehicles,vehicles for tourism in kodaikanal,budget tours,students tours to kodaikanal,best tours and travels agency in Kodaikanal,best hotels in kodaikanal,kodaikanal tours,kodaikanal quality tour services,tour operators in kodaikanal,best travel agency in kodaikanal,kodaikanal travels car">
+  <meta name="author" content="Saravanan">
+  <link rel="icon" href="./kodai_logo.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
