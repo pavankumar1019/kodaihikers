@@ -25,12 +25,12 @@ $result5 = $conn->query($sql5);
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="travels in kodaikanal,classic travels kodaikanal,kodaikanal trip from bangalore,kodaikanal trekking,kodaikanal places to visit,kodaikanal tours,kodaikanal tours packages,hiking in kodaikanal,vehicles,vehicles for tourism in kodaikanal,budget tours,students tours to kodaikanal,best tours and travels agency in Kodaikanal,best hotels in kodaikanal,kodaikanal tours,kodaikanal quality tour services,tour operators in kodaikanal,best travel agency in kodaikanal,kodaikanal travels car">
+  <meta name="keywords" content="book holiday package to madurai, kodaikanal, kodaikanal tour packages,travels in kodaikanal,classic travels kodaikanal,kodaikanal trip from bangalore,kodaikanal trekking,kodaikanal places to visit,kodaikanal tours,kodaikanal tours packages,hiking in kodaikanal,vehicles,vehicles for tourism in kodaikanal,budget tours,students tours to kodaikanal,best tours and travels agency in Kodaikanal,best hotels in kodaikanal,kodaikanal tours,kodaikanal quality tour services,tour operators in kodaikanal,best travel agency in kodaikanal,kodaikanal travels car">
   <meta name="author" content="Saravanan">
   <link rel="icon" href="./kodai_logo.ico" type="image/x-icon">
 	<meta name="description" content="Kodai Hikers is a best tours and travels agency in Kodaikanal, budget tour packages,best hotels services, best vehicle services">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Kodai Hikers (Tours and Travels)</title>
+	<title>Kodai Hikers|Best Tours and Travels in kodaikanal|Quality Tour Services in Kodaikanal|Cheap and best tour packages in Kodaikanal|Trekking tours|Hotels</title>
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
