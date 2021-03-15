@@ -22,11 +22,12 @@ $result5 = $conn->query($sql5);
 <html lang="en">
 
 <head>
-	<title>Kodai Hikers (Tours and Travels)</title>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Kodai Hikers is a best tours and travels agency in Kodaikanal, budget tour packages,best hotels services, best vehicle services">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kodai Hikers (Tours and Travels)</title>
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -216,8 +217,8 @@ p{
 						<div class="home_slider_content text-center">
 							<div class="home_slider_content_inner" data-animation-in="flipInX"
 								data-animation-out="animate-out fadeOut">
-								<h1>Make your</h1>
-								<h1>Journey Easy...</h1>
+								<h1>best tour</h1>
+								<h1>Packages</h1>
 								<div class="button home_slider_button">
 									<div class="button_bcg"></div><a href="contact.php">contact
 										us<span></span><span></span><span></span></a>
